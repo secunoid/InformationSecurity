@@ -1,6 +1,6 @@
 = Blockchain Security
-Doc Writer <smsharif@hotmail.com>
-v1.0, 29th April, 2018
+Doc Writer <smsharif@secunoid.com>
+v1.1, 30th September, 2018
 :toc:
 :imagesdir: images
 :homepage: https://www.securityprivacyrisk.com
@@ -60,6 +60,12 @@ Other DL implementations include 1,2, and 3, but depending on what the consensus
 As more features get added to the DL platforms, they become more complex, and so does the security.
 
 For instance Ethereum uses a scripting engine to translate smart contracts written in Solidity Ethereum Virtual Machine has been developed by a group of developers but a thorough code review has not be done on it.  Nobody knows if it has any vulnerabilities exists in the code or an independent review  has been completed.
+
+== Centralized
+
+== De-centralized
+
+== Privacy
 
 == Security Organization
 For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
