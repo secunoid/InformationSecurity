@@ -1,11 +1,13 @@
 = Blockchain Security
 Doc Writer <smsharif@secunoid.com>
 v1.1, 30th September, 2018
-:toc:
+:toc: right
+:numbered:
+:description: blah blah
 :imagesdir: images
 :homepage: https://www.securityprivacyrisk.com
 '''
-:numbered:
+
 == Overview
 Relational databases were first introduced in 1970’s, prior to that, databases existed in one form or the other.  When relational databases became mainstream, their availability became a concern, and as a result various database vendors provided data replication capabilities amongst the databases.
 
@@ -13,7 +15,7 @@ Distributed ledgers are pretty much repositories that rely on a consensus algori
 Blockchain is one of the implementations of distributed ledger technology.
 Bitcoin was the very first use case of the distributed ledger technology using a specific consensus algorithm, proof of work.   
 
-Since the inception of Bitcoin, which is also called a cryptocurrency, various other implementations of blockchain distributed ledger came into existence and are called Alternate Coins or Alt Coins, some examples are:
+Since the inception of Bitcoin, which is also cryptocurrency, various other implementations of cryptocurrencies came into existence and are called Alternate Coins or Alt Coins, some examples are:
 
 . Litecoin
 . Darkcoin
@@ -43,11 +45,12 @@ This paper will present security framework that can be leveraged for private/pub
 . Security Operations
 . Governance, Risk, & Compliance
 
+<<<
 == Blockchain
 Blockchain is an implementation of a DL,  and in my opinion, the key ingredients are:
 
 . Users: Entities generating transactions when they send/receive bitcoin.
-. Distributed Ledger: All transactions are written all active nodes participating in the network
+. Distributed Ledger: All transactions are written all active nodes participating in the network.  It should rather be called 
 . Malleability:  Transactions written to the Blockchain cannot be changed as everyone has the same copy, no one party can change a transaction on their own, unless they own 51% of the hashing power. 
 . Proof of Work: To generate a block, the miners are given a range, within which the hash of their block should be in, if the hash is within the range, the miner gets a reward, which is a Bitcoin.  This activity of finding the hash value within a certain range is very resource intensive and requires multiple miners working together to solve this problem. Once this block is generated, the miner announces it to the network of nodes running the distributed ledgers that the problem has been solved and they can move to solving another block.  Proof of work algorithm addresses the issues with multiple miners announcing that they have solved the problem.
 . Miners: Entities with distributed ledgers who are using their computers to package x number of transactions into blocks. 
@@ -58,12 +61,28 @@ As more features get added to the DL platforms, they become more complex, and so
 
 For instance Ethereum uses a scripting engine to translate smart contracts written in Solidity, Ethereum Virtual Machine has been developed by a group of developers but a thorough code review has not be done on it.
 
-== Centralized
+<<<
+== Deployment Models
 
-== De-centralized
+=== Centralized
+All web platofors are in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Centralization introduces following risks:
 
-== Privacy
+* Mis-use of data
+* Honeypot, where there is so much data in one location that it becomes a target for hackers to gain access to by whatever means possible.
+* Censorship
+* Inappropriate use and access to user data.
+* Monitoring and disciplining of citizens
 
+=== De-centralized
+In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
+
+=== Hybrid
+
+<<<
+== Privacy Impacts
+Centralization has very damaging impacts 
+
+<<<
 == Security Organization
 For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
 
@@ -80,6 +99,7 @@ In centralized operational model, all aspects of security operations are within 
 
 In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
 
+<<<
 == Privacy & Data Protection
 Data that is being processed by the solution should care fully considered for:
 
@@ -87,12 +107,15 @@ Data that is being processed by the solution should care fully considered for:
 . Data retention: Based on regulatory, and industry requirements,  data should be retained for 
 . Data access & update: Allow end users ability to access their data and modify it as required.
 
+<<<
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
+<<<
 == Security Manual
 This document goes into details on the how the security policy requirements must be implemented.  It can be one document, or multiple depending on the size of implementation.
 
+<<<
 == Security Standards
 Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
 
@@ -152,6 +175,7 @@ Proof of Elapsed Time	As part of its Intelledger proposal, Intel has devised a m
 Whoever in the chain has the next soonest timestamp will be the one to decide which transactions will be a part of the next block in the chain. 
 This consensus method is extremely energy efficient compared to Proof of Work and therefore more adapted to IoT devices.
 
+[bibliography]
 == References
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
