@@ -63,15 +63,44 @@ For instance Ethereum uses a scripting engine to translate smart contracts writt
 
 <<<
 == Deployment Models
+This section will outline the models in use and their impacts to user privacy.
 
 === Centralized
-All web platofors are in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Centralization introduces following risks:
+All web platforms in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Users have to login to _Facebook_ servers to establish communications with other users. Centralization introduces following risks:
 
-* Mis-use of data
-* Honeypot, where there is so much data in one location that it becomes a target for hackers to gain access to by whatever means possible.
+* Mis-use
+* Honeypot, where there is so much data in one location, it becomes a target for hackers.
 * Censorship
-* Inappropriate use and access to user data.
-* Monitoring and disciplining of citizens
+* Monitoring
+
+Classic examples would be the difference between you using fiat vs electronic means such as:
+
+* Credit card
+* Debit card
+* Electronic Funds Transfer(EFT)
+
+When spending fiat, following table summarizes privacy impacts. (Traceability diminishing as you go down the list):
+
+[frame=topbot]
+[Caption: Table 1]
+.Transaction Traceability
+[%autowidth]
+,===
+No,Source, Spend Method, Traceability
+
+1,Any,Electronic, High
+2,Bank,Fiat,Medium
+3,Employer,Fiat,Medium 
+4,Family/Friend,Fiat, Low
+,===
+
+No matter what the source of income is, if you spend it via:
+
+* Electronic means, all your transactions are highly traceable. An individual has no privacy at all.
+* Non electronic means, only the party providing the funds knows who they provided the funds to, where it was spent they have no idea. An individuals privacy is well protected.
+
+
+ 
 
 === De-centralized
 In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
@@ -80,7 +109,9 @@ In a decentralized model, there is no cental body, users interact with each othe
 
 <<<
 == Privacy Impacts
-Centralization has very damaging impacts 
+Centralization has very damaging impacts to a users privacy.  Once the user has provided their information to an entity, they are at entities' mercy for data protection.
+
+Certain states want to keep 
 
 <<<
 == Security Organization
