@@ -218,6 +218,30 @@ Development, Operations, and Security operate as silos.
 
 image::knowyourapplication.png[title="Know your application"]
 
+=== OWASP Top 10 App Sec Risks
+
+. Injection
+. Broken Authentication
+. Sensitive Data Exposure
+. XML External Exposures (XXE)
+. Broken Access Control
+. Security Misconfiguration
+. Cross Site Scripting
+. Insecure Deserialization
+. Using component with known vulnerabilities
+. Insufficient Logging/Monitoring
+
+=== Real-Word Top 10 Attacks
+. Direct Object Reference
+. Forceful Browsing
+. Null Byte Attack
+. Command Injection
+. Feature Abuse
+. Evasion Techniques
+. Subdomin Takeover
+. Misconfiguration
+. Cross Site Scription
+. SQL Injection 
 
 <<<
 == Governance, Risk, & Compliance
