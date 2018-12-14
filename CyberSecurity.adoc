@@ -185,8 +185,17 @@ social engineering, phishing, vishing or simply posing as a company employee.
 == Threat Modeling
 Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?”
 
-=== Application Threat Modeling
+=== Threat Risk Assessments
+Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
+Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Controls, safeguards, countermeasures are implemented to reduce the risk.
+
+=== Threat Modeling
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
+
+=== CVSS
+
 
 === STRIDE
 STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
@@ -257,6 +266,8 @@ How easy is it to discover this threat?
 * 10 = the information is visible in the web browser address bar or in a form.
 
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
+
+==
 
 == Security Architecture
 
