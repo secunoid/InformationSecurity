@@ -183,16 +183,15 @@ Red team-blue team exercises take their name from their military antecedents. Th
 social engineering, phishing, vishing or simply posing as a company employee.
 
 == Threat Modeling
-Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?”
+Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
+
+It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
 === Threat Risk Assessments
 Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
 Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
 Controls, safeguards, countermeasures are implemented to reduce the risk.
-
-=== Threat Modeling
-It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
 === CVSS
 
