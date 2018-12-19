@@ -286,6 +286,21 @@ Development, Operations, and Security operate as silos.
 
 image::knowyourapplication.png[title="Know your application"]
 
+Some activities to consider for DevSecOps:
+
+* Threat Modeling
+* Attack Surface Evaluation
+* Static & dynamic code analysis
+* Penetration Testing
+* Fuzz Testing
+
+Teams who are considering DevSecOps should think about:
+
+* Frameworks & Tools
+* Automating core security tasks
+* Embedding securit controls and processes
+
+
 === OWASP Top 10 App Sec Risks
 
 . Injection
