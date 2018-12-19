@@ -294,6 +294,7 @@ Some activities to consider for DevSecOps:
 * Attack Surface Evaluation
 * Static & dynamic code analysis
 * Penetration Testing
+* Security Code Reviews
 * Fuzz Testing
 
 Teams who are considering DevSecOps should think about:
@@ -301,6 +302,15 @@ Teams who are considering DevSecOps should think about:
 * Frameworks & Tools
 * Automating core security tasks
 * Embedding securit controls and processes
+
+Five principles for Securing DevOps
+
+* Automate Security In
+* Integration to fail quickly
+* No false Alarm
+* Build Security Champions
+* Keep Operational Visibility
+
 
 
 === OWASP Top 10 App Sec Risks
