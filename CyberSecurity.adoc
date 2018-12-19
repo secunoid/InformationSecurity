@@ -282,7 +282,9 @@ All critical components must be monitored at all times, and SIEM   leveraged to 
 
 <<<
 == Dev, Sec, Ops
-Development, Operations, and Security operate as silos.  
+Development, Operations, and Security operate as silos. 
+
+*CiCd* or Continuous Integration and Continuous Delivery is key for *DevSecOps*
 
 image::knowyourapplication.png[title="Know your application"]
 
