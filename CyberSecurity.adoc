@@ -340,7 +340,30 @@ Five principles for Securing DevOps
 
 <<<
 == Governance, Risk, & Compliance
-A documented process must be followed to ensure compliance to security policy and to highlight risks that might be introduced when security policy requirements are not adhered to.
+A documented process must be followed to ensure compliance to security policy and to highlight risks that might be introduced when security policy requirements are not adhered to.  Some of the GRC functions are:
+
+* Enterprise Risk Management
+* IT Risk Management
+* Integrated Risk Management
+* Operational Risk Management
+* Compliance
+* Enterprise GRC Management
+* Vendor/Third-Party Risk Management
+* Business Continuity
+* Financial Audit
+
+=== Enterprise Risk Management
+
+* Not necessariity coveredy by insurance
+* Multi-dimensional assessment
+* Analyzes material risks and how they relate
+* Spans the entire organization ("holistic")
+* Proactive & continuous
+* Considers both upside and downside
+* Focuses on business goals, adding value and more
+* Embedded in culture and mindset 
+
+
 
 <<<<
 == Consensus Protocols
