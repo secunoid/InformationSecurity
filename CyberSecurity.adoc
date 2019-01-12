@@ -319,11 +319,11 @@ With SABASA organizations can achieve that important risk reward balance using a
 The SABSA model is the key to this and covers the whole lifecycle of operational capabilities.  The SABSA model has six layers:
 
 . Contextual Architecture: The Business View (Business wisdom and business decision making)
-. Conceptual Architecture: The Architect's vision (The 'big picture', business attribures profiel and risk objectives)
+. Conceptual Architecture: The Architect's vision (The 'big picture', business attributes profiel and risk objectives)
 . Logical Architecture: The Designers Vision (Information, services, processes, applications)
 . Physical Architecture: The builders/constructors view(Data mechanisms, infrastructure, platforms)
 . Component Architecture: The Trademan's View (Products, Tools, Specific Standards, Technologies)
-. Security Services Management Architecture: the service Manager's view (Service management activities, processes and monitoring)
+. Security Services Management Architecture: The Service Manager's view (Service management activities, processes and monitoring)
 
 Each of the layers of the architecture model are supported by a vertical analysis based on six key questions
 
@@ -334,9 +334,16 @@ Each of the layers of the architecture model are supported by a vertical analysi
 * Where
 * When
 
-The SABSA framework is flexible, scable and applicable to any industry sector.  Instead of replacing other risk based standards, it can be combined with TOGAF, COBIT and ITIL to create an integrated compliance framework.
+The SABSA framework is flexible, scalable and applicable to any industry sector.  Instead of replacing other risk based standards, it can be combined with TOGAF, COBIT and ITIL to create an integrated compliance framework.
 
 SABSA provides organization with "enterprise operational risk management architecture" that can be completely tailored to a specific business model. 
+
+SABSA's governance model provide a control feedback loop
+
+. Strategy & Planning
+. Design
+. Implement
+. Management & Measure
 
 
 == Security Architecture
