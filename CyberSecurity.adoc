@@ -266,7 +266,31 @@ How easy is it to discover this threat?
 
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
 
-==
+== Enterprise Architecture
+Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
+
+*Enterprise* is any organization that is large or small with a collaborative collection of sub-organizations with a shared set of objectives.
+
+*Architecture* is a designed structure of something.  A descript on of the structure (components) and behavious (Processes) of a system.  It is also an activity required to produce such a description.
+
+*Enterprise Architecture* is documentation describing the structure and behaviour of an enterprise including its information systems.  Also a process for describing an enterprise(including its information systems), then planning and governing changes to improve the integrity and flexibility of the enterprise.
+
+Frameworks provide guidelines on how to implement enterprise architecture.  Frameworks address following areas:
+* Content (strcuture, metamodel)
+* Process (activities)
+* Organization (roles, people)
+Some of the frameworks are:
+
+* TOGAF
+* Zachman
+* SABSA
+
+
+
+
+
+=== SABSA
+SABSA is a framework that supports the business in reachign its goals
 
 == Security Architecture
 
