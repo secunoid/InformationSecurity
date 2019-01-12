@@ -303,17 +303,41 @@ Following domains cut across the typical domains:
 
 *Architecture Activities* typically when you are performing any sort of change, you have to document the current state and future state.  This represents the strategic vision of the organization, where they want to be in 3-5 years time.
 
-Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.f
-
-
-
-
-
-
-
+Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.
 
 === SABSA
-SABSA is a framework that supports the business in reachign its goals
+SABSA is a framework that supports the business in reaching its goals.  It is the leading methodology for developing business operational risk-based architectures.  SABSA stands for Sherwood Applied Business Security Architecture.
+
+It provides a framework for developing risk driven enterprise information security and information assurance architectures.
+
+It also helps to deliver security infrastructure solutions that help critical business initiatives.
+
+The SABSA methodology provides guidance for aligning architecture with business value, it also addresses a critical need for greater integration between security and enterprise architecture within organizations.
+
+With SABASA organizations can achieve that important risk reward balance using a range of frameworks, models, methods, and process to manage risk and measure performance.
+
+The SABSA model is the key to this and covers the whole lifecycle of operational capabilities.  The SABSA model has six layers:
+
+. Contextual Architecture: The Business View (Business wisdom and business decision making)
+. Conceptual Architecture: The Architect's vision (The 'big picture', business attribures profiel and risk objectives)
+. Logical Architecture: The Designers Vision (Information, services, processes, applications)
+. Physical Architecture: The builders/constructors view(Data mechanisms, infrastructure, platforms)
+. Component Architecture: The Trademan's View (Products, Tools, Specific Standards, Technologies)
+. Security Services Management Architecture: the service Manager's view (Service management activities, processes and monitoring)
+
+Each of the layers of the architecture model are supported by a vertical analysis based on six key questions
+
+* What
+* Why
+* How
+* Who
+* Where
+* When
+
+The SABSA framework is flexible, scable and applicable to any industry sector.  Instead of replacing other risk based standards, it can be combined with TOGAF, COBIT and ITIL to create an integrated compliance framework.
+
+SABSA provides organization with "enterprise operational risk management architecture" that can be completely tailored to a specific business model. 
+
 
 == Security Architecture
 
