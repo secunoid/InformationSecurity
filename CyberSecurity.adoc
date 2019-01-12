@@ -285,6 +285,8 @@ Some of the frameworks are:
 * TOGAF (covers all three, content, process, and organization)
 * Zachman (Purely covers content)
 * SABSA
+* DODAF
+* MODAF
 
 Large organizations are complex, hence they can be broken down into following typical domains
 
@@ -297,6 +299,12 @@ Following domains cut across the typical domains:
 
 . Security
 . Compliance
+
+
+*Architecture Activities* typically when you are performing any sort of change, you have to document the current state and future state.  This represents the strategic vision of the organization, where they want to be in 3-5 years time.
+
+Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.f
+
 
 
 
