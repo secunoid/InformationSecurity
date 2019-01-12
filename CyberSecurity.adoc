@@ -279,11 +279,26 @@ Frameworks provide guidelines on how to implement enterprise architecture.  Fram
 * Content (strcuture, metamodel)
 * Process (activities)
 * Organization (roles, people)
+
 Some of the frameworks are:
 
-* TOGAF
-* Zachman
+* TOGAF (covers all three, content, process, and organization)
+* Zachman (Purely covers content)
 * SABSA
+
+Large organizations are complex, hence they can be broken down into following typical domains
+
+. Business (Why organization exisit, objectives, goals, strategic thinking, capabilities, processes, functions, organizatinal structure)
+. Data
+. Application(s)
+. Technology
+
+Following domains cut across the typical domains:
+
+. Security
+. Compliance
+
+
 
 
 
