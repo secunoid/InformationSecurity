@@ -1,6 +1,6 @@
-= CyberSecurity
+= CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.2, 28th October, 2018
+v1.5, 13th January, 2019
 :numbered:
 :sectnum:
 :chapter-label:
@@ -15,112 +15,35 @@ v1.2, 28th October, 2018
 :homepage: https://www.securityprivacyrisk.com
 '''
 
+
+
 == Overview
-Relational databases were first introduced in 1970’s, prior to that, databases existed in one form or the other.  When relational databases became mainstream, their availability became a concern, and as a result various database vendors provided data replication capabilities amongst the databases.
+Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important to protect it.
 
-Distributed ledgers are pretty much repositories that rely on a consensus algorithm to replicate data across geographically disparate ledgers. 
-Blockchain is one of the implementations of distributed ledger technology.
-Bitcoin was the very first use case of the distributed ledger technology using a specific consensus algorithm, proof of work.   
+=== Non-living Entities
+Data about non living entities when modified leads to mis-information and currently in the digital age our ability to provide the authenticity of that data is very difficult.  If the source is trustworthy, then we deem it authentic, currently there are no mechanisms to ensure that the data has not been modified in between from when the trustworthy source released and to the time it got to you.
 
-Since the inception of Bitcoin, which is also cryptocurrency, various other implementations of cryptocurrencies came into existence and are called Alternate Coins or Alt Coins, some examples are:
+=== Living Entities
+Data about living entities, especially us humans is very valuable.  With the devices we carry, and use in our daily lives, we are constantly producing data, every hour, every second of our lives. 
 
-. Litecoin
-. Darkcoin
-. Dogecoin
-. IOTA
-
-After the cryptocurrency craze, the business users started thinking of other use cases such as the need to implement some form of logic into blockchain, this would allow decisions based on parameters. As a result, Ethereum introduced this ability to implement logic as smart contracts. Then after Ethereum other implementations came to light which were private or public.  This stack allowed users the ability to implement Distributed Applications  (Dapp) on the distributed ledger.  Some of the implementations that seem to improve on Ethereum are:
-
-. Steem
-. EOS
-. Peerplays
-. Hyperledger
-. Tezos
-
-While the industry dabbles with various technologies, and implementation of smart contracts , the key to implementation would be the security of the underlying platform.
-
-== Goals
-This paper will present security framework that can be leveraged for private/public blockchain implementations of the Distributed Ledger technology. Some of the areas to consider are:
-
-. Security Organization
-. Privacy & Data Protection
-. Security Policy
-. Security Manual
-. Security Standards
-. Security Guidelines
-. Security Architecture
-. Security Operations
-. Governance, Risk, & Compliance
-
-<<<
-== Blockchain
-Blockchain is an implementation of a DL,  and in my opinion, the key ingredients are:
-
-. Users: Entities generating transactions when they send/receive bitcoin.
-. Distributed Ledger: All transactions are written all active nodes participating in the network.  It should rather be called 
-. Malleability:  Transactions written to the Blockchain cannot be changed as everyone has the same copy, no one party can change a transaction on their own, unless they own 51% of the hashing power. 
-. Proof of Work: To generate a block, the miners are given a range, within which the hash of their block should be in, if the hash is within the range, the miner gets a reward, which is a Bitcoin.  This activity of finding the hash value within a certain range is very resource intensive and requires multiple miners working together to solve this problem. Once this block is generated, the miner announces it to the network of nodes running the distributed ledgers that the problem has been solved and they can move to solving another block.  Proof of work algorithm addresses the issues with multiple miners announcing that they have solved the problem.
-. Miners: Entities with distributed ledgers who are using their computers to package x number of transactions into blocks. 
-
-=== Blockchain Platforms
-Some blockchain implementations include 1,2, and 3, but depending on what the consensus algorithm has implemented as in 4 above, 5 may or may not even exist.
-As more features get added to the DL platforms, they become more complex, and so does the security.
-
-For instance Ethereum uses a scripting engine to translate smart contracts written in Solidity, Ethereum Virtual Machine has been developed by a group of developers but a thorough code review has not be done on it.
-
-<<<
-== Deployment Models
-This section will outline the models in use and their impacts to user privacy.
-
-=== Centralized
-All web platforms in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Users have to login to _Facebook_ servers to establish communications with other users. Centralization introduces following risks:
-
-* Mis-use
-* Honeypot, where there is so much data in one location, it becomes a target for hackers.
-* Censorship
-* Monitoring
-
-Classic examples would be the difference between you using fiat vs electronic means such as:
-
-* Credit card
-* Debit card
-* Electronic Funds Transfer(EFT)
-
-When spending fiat, following table summarizes privacy impacts. (Traceability diminishing as you go down the list):
-
-[frame=topbot]
-[Caption: Table 1]
-.Transaction Traceability
-[%autowidth]
-,===
-No,Source, Spend Method, Traceability
-
-1,Any,Electronic, High
-2,Bank,Fiat,Medium
-3,Employer,Fiat,Medium 
-4,Family/Friend,Fiat, Low
-,===
-
-No matter what the source of income is, if you spend it via:
-
-* Electronic means, all your transactions are highly traceable. An individual has no privacy at all.
-* Non electronic means, only the party providing the funds knows who they provided the funds to, where it was spent they have no idea. An individuals privacy is well protected.
-
-
- 
-
-=== De-centralized
-In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
-
-=== Hybrid
-
-<<<
-== Privacy Impacts
+== Privacy
 Centralization has very damaging impacts to a users privacy.  Once the user has provided their information to an entity, they are at entities' mercy for data protection.
 
 Certain states want to keep 
 
+Data that is being processed by the solution should care fully considered for:
+
+. Data protection: Based on data classification ensure data is protected in storage and in transit.
+. Data retention: Based on regulatory, and industry requirements,  data should be retained for 
+. Data access & update: Allow end users ability to access their data and modify it as required.
 <<<
+
+== Data Protection
+
+<<<
+
+== Information Security    
+
 == Security Organization
 For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
 
@@ -138,6 +61,10 @@ In centralized operational model, all aspects of security operations are within 
 In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
 
 === Security Operations
+A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
+All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
+
+<<<
 
 === Security Architecture
 
@@ -146,17 +73,7 @@ In a decentralized operations model, the above aspects are managed by different 
 === Security Strategy
 
 <<<
-== Privacy
-Data that is being processed by the solution should care fully considered for:
 
-. Data protection: Based on data classification ensure data is protected in storage and in transit.
-. Data retention: Based on regulatory, and industry requirements,  data should be retained for 
-. Data access & update: Allow end users ability to access their data and modify it as required.
-<<<
-
-== Data Protection
-
-<<<
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
@@ -369,11 +286,7 @@ SABSA's governance model provide a control feedback loop
 
 === System Architecture
 
-== Security Operations
-A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
-All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
 
-<<<
 == Dev, Sec, Ops
 Development, Operations, and Security operate as silos. 
 
@@ -459,6 +372,108 @@ A documented process must be followed to ensure compliance to security policy an
 
 
 <<<<
+
+== Overview
+Relational databases were first introduced in 1970’s, prior to that, databases existed in one form or the other.  When relational databases became mainstream, their availability became a concern, and as a result various database vendors provided data replication capabilities amongst the databases.
+
+Distributed ledgers are pretty much repositories that rely on a consensus algorithm to replicate data across geographically disparate ledgers. 
+Blockchain is one of the implementations of distributed ledger technology.
+Bitcoin was the very first use case of the distributed ledger technology using a specific consensus algorithm, proof of work.   
+
+Since the inception of Bitcoin, which is also cryptocurrency, various other implementations of cryptocurrencies came into existence and are called Alternate Coins or Alt Coins, some examples are:
+
+. Litecoin
+. Darkcoin
+. Dogecoin
+. IOTA
+
+After the cryptocurrency craze, the business users started thinking of other use cases such as the need to implement some form of logic into blockchain, this would allow decisions based on parameters. As a result, Ethereum introduced this ability to implement logic as smart contracts. Then after Ethereum other implementations came to light which were private or public.  This stack allowed users the ability to implement Distributed Applications  (Dapp) on the distributed ledger.  Some of the implementations that seem to improve on Ethereum are:
+
+. Steem
+. EOS
+. Peerplays
+. Hyperledger
+. Tezos
+
+While the industry dabbles with various technologies, and implementation of smart contracts , the key to implementation would be the security of the underlying platform.
+
+== Goals
+This paper will present security framework that can be leveraged for private/public blockchain implementations of the Distributed Ledger technology. Some of the areas to consider are:
+
+. Security Organization
+. Privacy & Data Protection
+. Security Policy
+. Security Manual
+. Security Standards
+. Security Guidelines
+. Security Architecture
+. Security Operations
+. Governance, Risk, & Compliance
+
+<<<
+== Blockchain
+Blockchain is an implementation of a DL,  and in my opinion, the key ingredients are:
+
+. Users: Entities generating transactions when they send/receive bitcoin.
+. Distributed Ledger: All transactions are written all active nodes participating in the network.  It should rather be called 
+. Malleability:  Transactions written to the Blockchain cannot be changed as everyone has the same copy, no one party can change a transaction on their own, unless they own 51% of the hashing power. 
+. Proof of Work: To generate a block, the miners are given a range, within which the hash of their block should be in, if the hash is within the range, the miner gets a reward, which is a Bitcoin.  This activity of finding the hash value within a certain range is very resource intensive and requires multiple miners working together to solve this problem. Once this block is generated, the miner announces it to the network of nodes running the distributed ledgers that the problem has been solved and they can move to solving another block.  Proof of work algorithm addresses the issues with multiple miners announcing that they have solved the problem.
+. Miners: Entities with distributed ledgers who are using their computers to package x number of transactions into blocks. 
+
+=== Blockchain Platforms
+Some blockchain implementations include 1,2, and 3, but depending on what the consensus algorithm has implemented as in 4 above, 5 may or may not even exist.
+As more features get added to the DL platforms, they become more complex, and so does the security.
+
+For instance Ethereum uses a scripting engine to translate smart contracts written in Solidity, Ethereum Virtual Machine has been developed by a group of developers but a thorough code review has not be done on it.
+
+<<<
+== Deployment Models
+This section will outline the models in use and their impacts to user privacy.
+
+=== Centralized
+All web platforms in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Users have to login to _Facebook_ servers to establish communications with other users. Centralization introduces following risks:
+
+* Mis-use
+* Honeypot, where there is so much data in one location, it becomes a target for hackers.
+* Censorship
+* Monitoring
+
+Classic examples would be the difference between you using fiat vs electronic means such as:
+
+* Credit card
+* Debit card
+* Electronic Funds Transfer(EFT)
+
+When spending fiat, following table summarizes privacy impacts. (Traceability diminishing as you go down the list):
+
+[frame=topbot]
+[Caption: Table 1]
+.Transaction Traceability
+[%autowidth]
+,===
+No,Source, Spend Method, Traceability
+
+1,Any,Electronic, High
+2,Bank,Fiat,Medium
+3,Employer,Fiat,Medium 
+4,Family/Friend,Fiat, Low
+,===
+
+No matter what the source of income is, if you spend it via:
+
+* Electronic means, all your transactions are highly traceable. An individual has no privacy at all.
+* Non electronic means, only the party providing the funds knows who they provided the funds to, where it was spent they have no idea. An individuals privacy is well protected.
+
+
+ 
+
+=== De-centralized
+In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
+
+=== Hybrid
+
+<<<
+
 == Consensus Protocols
 Following are the predominant consensus protocols that are use by the distributed ledger implementations.
 
