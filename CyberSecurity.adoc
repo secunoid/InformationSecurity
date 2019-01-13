@@ -137,13 +137,24 @@ In centralized operational model, all aspects of security operations are within 
 
 In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
 
+=== Security Operations
+
+=== Security Architecture
+
+=== Security Development
+
+=== Security Strategy
+
 <<<
-== Privacy & Data Protection
+== Privacy
 Data that is being processed by the solution should care fully considered for:
 
 . Data protection: Based on data classification ensure data is protected in storage and in transit.
 . Data retention: Based on regulatory, and industry requirements,  data should be retained for 
 . Data access & update: Allow end users ability to access their data and modify it as required.
+<<<
+
+== Data Protection
 
 <<<
 == Security Policy
@@ -156,14 +167,16 @@ This document goes into details on the how the security policy requirements must
 <<<
 == Security Standards
 Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
-
-=== Application Security
+<<<
+== Security Guidelines
+<<<
+== Application Security
 The scope of application security would be the 
-
-==== Code Analysis
-
-==== Key Management
-
+<<<
+=== Code Analysis
+<<<
+=== Key Management
+<<<
 == System Security
 All the servers that the distributed ledger platform runs on must be:
 
@@ -171,24 +184,22 @@ All the servers that the distributed ledger platform runs on must be:
 . Monitored for availability
 . Intrusion Detection/Intrusion Protection mechanisms deployed to protect from attacks coupled with SIEM for proactive defense.
 . Based on the security be in a DMZ 
-
-== Security Guidelines
-
-== Vulnerability Management
-
+<<<
+=== Vulnerability Management
+<<<
 === Red team-Blue team
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
-
+<<<
 === Methods
 social engineering, phishing, vishing or simply posing as a company employee.
-
+<<<
 == Threat Modeling
 Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
-
+<<<
 === CVSS
-
+<<<
 
 === STRIDE
 STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
@@ -201,7 +212,7 @@ The threats are:
 * **I**nformation disclosure (privacy breach or data leak)
 * **D**enial of service (D.o.S)
 * **E**levation of privilege. 
-
+<<<
 === DREAD
 DREAD methodology is used to rate, compare and prioritize the severity of risk presented by each threat that is classified using STRIDE.
 
@@ -259,13 +270,17 @@ How easy is it to discover this threat?
 * 10 = the information is visible in the web browser address bar or in a form.
 
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
-
+<<<
 == Threat Risk Assessments
 Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
 Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
 Controls, safeguards, countermeasures are implemented to reduce the risk.
+<<<
 
+== Threat Hunting
+Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
+<<<
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
 
