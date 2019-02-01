@@ -277,6 +277,17 @@ SABSA's governance model provide a control feedback loop
 . Implement
 . Management & Measure
 
+== NIST Cyber Security Framework(CSF)
+Key functions are
+
+. Identify
+. Protect
+. Detect
+. Respond
+. Recover
+
+Top two are proactive measures, and bottom three are reactive measures.
+
 
 == Security Architecture
 
