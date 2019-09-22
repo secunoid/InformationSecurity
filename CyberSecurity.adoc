@@ -219,6 +219,8 @@ Playbook: https://pan-unit42.github.io/playbook_viewer/
 
 On Kali metasploit is in this directory: /usr/share/metssploit-framework
 
+To Update metasploit: apt update; apt install metasploit-framework
+
 <<< 
 
 == Enterprise Architecture
