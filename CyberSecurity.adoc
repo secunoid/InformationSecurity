@@ -102,7 +102,7 @@ All the servers that the distributed ledger platform runs on must be:
 . Intrusion Detection/Intrusion Protection mechanisms deployed to protect from attacks coupled with SIEM for proactive defense.
 . Based on the security be in a DMZ 
 <<<
-=== Vulnerability Management
+== Vulnerability Management
 <<<
 === Red team-Blue team
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
@@ -110,7 +110,7 @@ Red team-blue team exercises take their name from their military antecedents. Th
 === Methods
 social engineering, phishing, vishing or simply posing as a company employee.
 <<<
-== Threat Modeling
+=== Threat Modeling
 Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
@@ -195,29 +195,38 @@ Risk: Likelihood of a threat source to exploit a vulnerability to target a criti
 Controls, safeguards, countermeasures are implemented to reduce the risk.
 <<<
 
-== Threat Hunting
+=== Threat Hunting
 Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
 
-=== MITRE ATT&CK
+==== MITRE ATT&CK
 MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
 With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
 
 MITRE ATT&CK website: https://attack.mitre.org/ 
 
-=== Palo Alto Unit42
+==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
 
 Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
 Playbook: https://pan-unit42.github.io/playbook_viewer/ 
 
 <<<
+
+=== Penetration Testing
+
+==== Metasploit
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+<<< 
+
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
 
 *Enterprise* is any organization that is large or small with a collaborative collection of sub-organizations with a shared set of objectives.
 
-*Architecture* is a designed structure of something.  A descript on of the structure (components) and behavious (Processes) of a system.  It is also an activity required to produce such a description.
+*Architecture* is a designed structure of something.  A description of the structure (components) and behaviors (Processes) of a system.  It is also an activity required to produce such a description.
 
 *Enterprise Architecture* is documentation describing the structure and behaviour of an enterprise including its information systems.  Also a process for describing an enterprise(including its information systems), then planning and governing changes to improve the integrity and flexibility of the enterprise.
 
