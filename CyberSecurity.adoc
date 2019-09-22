@@ -205,6 +205,12 @@ With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems f
 
 MITRE ATT&CK website: https://attack.mitre.org/
 
+=== Palo Alto Unit42
+Unit 42 is the global threat intelligence team at Palo Alto Networks®
+
+Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
+Playbook: https://pan-unit42.github.io/playbook_viewer/ 
+
 <<<
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
