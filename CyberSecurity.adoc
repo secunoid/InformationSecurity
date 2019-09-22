@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.5, 13th January, 2019
+v1.6, 22nd September, 2019
 :numbered:
 :sectnum:
 :chapter-label:
@@ -197,6 +197,14 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 
 == Threat Hunting
 Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
+
+=== MITRE ATT&CK
+MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+
+With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
+MITRE Att&CK website: https://attack.mitre.org/ 
+
 <<<
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
