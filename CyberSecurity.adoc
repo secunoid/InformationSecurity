@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.6, 22nd September, 2019
+v1.61, 29th September, 2019
 :numbered:
 :sectnum:
 :chapter-label:
@@ -214,8 +214,19 @@ Playbook: https://pan-unit42.github.io/playbook_viewer/
 <<<
 
 === Penetration Testing
+Penetration testing is a technical control that is implemented to ensure the systems that are currently in production or are going to be production do not have any vulnerabilities that would allow threat vectors to exploit.
 
-==== Metasploit
+Penetration testing is considered a red team activity.
+
+The Penetration Testing Execution Standard (PTES) provides the necessary guidelines on how to conduct penetration testing.  More information can be found here: http://www.pentest-standard.org/index.php/Main_Page 
+
+==== Penetration Testing Tools
+
+===== NMAP
+
+===== NESSUS
+
+===== Metasploit
 
 On Kali metasploit is in this directory: /usr/share/metssploit-framework
 
