@@ -229,6 +229,8 @@ The Penetration Testing Execution Standard (PTES) provides the necessary guideli
 
 ===== Metasploit
 
+===== Burb Suite
+
 On Kali metasploit is in this directory: /usr/share/metssploit-framework
 
 To Update metasploit: apt update; apt install metasploit-framework
