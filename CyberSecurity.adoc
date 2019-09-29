@@ -234,6 +234,10 @@ On Kali metasploit is in this directory: /usr/share/metssploit-framework
 To Update metasploit: apt update; apt install metasploit-framework
 
 ===== Burb Suite
+Burb Suite is a web application testing tool
+
+===== CherryTree
+Chery Tree is a note taking app
 
 <<< 
 
@@ -410,7 +414,7 @@ A documented process must be followed to ensure compliance to security policy an
 
 === Enterprise Risk Management
 
-* Not necessariity coveredy by insurance
+* Not necessarily covered by insurance
 * Multi-dimensional assessment
 * Analyzes material risks and how they relate
 * Spans the entire organization ("holistic")
@@ -559,3 +563,8 @@ This consensus method is extremely energy efficient compared to Proof of Work an
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
 
 
+[References]
+
+ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+OSINT - Open Source Inteligence Tools
+TTP - Techniques, Tactics, Procedures
