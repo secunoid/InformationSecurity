@@ -233,11 +233,15 @@ On Kali metasploit is in this directory: /usr/share/metssploit-framework
 
 To Update metasploit: apt update; apt install metasploit-framework
 
-===== Burb Suite
-Burb Suite is a web application testing tool
+===== Burp Suite
+Burp Suite is a web application testing tool
+
+Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
 
 ===== CherryTree
 Chery Tree is a note taking app
+
+===== Hydra
 
 <<< 
 
