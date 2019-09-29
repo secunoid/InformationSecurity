@@ -214,6 +214,7 @@ Playbook: https://pan-unit42.github.io/playbook_viewer/
 <<<
 
 === Penetration Testing
+
 Penetration testing is a technical control that is implemented to ensure the systems that are currently in production or are going to be production do not have any vulnerabilities that would allow threat vectors to exploit.
 
 Penetration testing is considered a red team activity.
