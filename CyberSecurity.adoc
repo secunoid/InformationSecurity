@@ -223,6 +223,14 @@ The Penetration Testing Execution Standard (PTES) provides the necessary guideli
 
 ==== Penetration Testing Tools
 
+===== Burp Suite
+Burp Suite is a web application testing tool
+
+Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
+
+===== CherryTree
+Chery Tree is a note taking app
+
 ==== DIRB
 
 DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
@@ -239,33 +247,12 @@ License: GPLv2
 
 https://tools.kali.org/web-applications/dirb 
 
-===== Nikto
-Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
+===== Eyewitness
 
-Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker's anti-IDS methods in case you want to give it a try (or test your IDS system).
+===== HTTPROBE
 
+first install go: apt install golang upx-ucl -y
 
-Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.
-
-https://cirt.net/Nikto2 
-
-===== NMAP
-
-===== NESSUS
-
-===== Metasploit
-
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
-
-To Update metasploit: apt update; apt install metasploit-framework
-
-===== Burp Suite
-Burp Suite is a web application testing tool
-
-Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
-
-===== CherryTree
-Chery Tree is a note taking app
 
 ===== Hydra
 
@@ -282,6 +269,55 @@ To Update metasploit: apt update; apt install metasploit-framework
 The command to install all the tools is simply:
 
 sudo apt-get install kali-linux-full
+
+Kali Tools: https://en.kali.tools/all/
+
+===== Nikto
+Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
+
+Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker's anti-IDS methods in case you want to give it a try (or test your IDS system).
+
+
+Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.
+
+https://cirt.net/Nikto2 
+
+===== Metasploit
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+To Update metasploit: apt update; apt install metasploit-framework
+
+===== NESSUS
+
+===== NMAP
+
+===== Sublist3r
+Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
+
+Source: https://github.com/aboul3la/Sublist3r
+Sublist3r Homepage | Kali sublist3r Repo
+
+Author: Ahmed Aboul-Ela
+License: GPL-2+
+
+First open a terminal sessions and change the directory to the Desktop as following:
+
+cd Desktop
+
+The next step is to run the following command to clone the repository in a new directory:
+
+git clone https://github.com/aboul3la/Sublist3r.git
+
+Change the directory to Sublist3r:
+
+cd Sublist3r
+
+And finally complete the installation by installing the required dependencies with the following command:
+
+pip install -r requirements.txt
+
+python sublist3r -h
 
 <<< 
 
