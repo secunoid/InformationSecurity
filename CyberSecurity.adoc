@@ -243,6 +243,20 @@ Chery Tree is a note taking app
 
 ===== Hydra
 
+===== Kali Linux
+
+set date and time:
+$ sudo apt-get install ntpdate
+$ sudo ntpdate in.pool.ntp.org
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+To Update metasploit: apt update; apt install metasploit-framework
+
+The command to install all the tools is simply:
+
+sudo apt-get install kali-linux-full
+
 <<< 
 
 == Enterprise Architecture
