@@ -211,6 +211,12 @@ Unit 42 is the global threat intelligence team at Palo Alto Networks®
 Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
 Playbook: https://pan-unit42.github.io/playbook_viewer/ 
 
+https://www.packetstormsecurity.com
+https://www.securityfocus.com
+https://www.exploit-db.com
+
+
+
 <<<
 
 === Penetration Testing
@@ -302,6 +308,15 @@ sudo apt-get install kali-linux-full
 
 Kali Tools: https://en.kali.tools/all/
 
+
+===== Metasploit
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+To Update metasploit: apt update; apt install metasploit-framework
+
+Metasploit Online Database: https://www.rapid7.com/db/modules
+
 ===== Netcat
 
 nc -lvnp 9001
@@ -315,12 +330,6 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
 Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.
 
 https://cirt.net/Nikto2 
-
-===== Metasploit
-
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
-
-To Update metasploit: apt update; apt install metasploit-framework
 
 ===== NESSUS
 
