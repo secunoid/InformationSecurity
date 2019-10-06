@@ -231,7 +231,7 @@ Use vulnerable web application from the OWASP site: https://www.owasp.org/index.
 ===== CherryTree
 Chery Tree is a note taking app
 
-==== DIRB
+===== DIRB
 
 DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
 
@@ -248,6 +248,9 @@ License: GPLv2
 https://tools.kali.org/web-applications/dirb 
 
 ===== Dirbuster
+
+===== Exiftool
+shows exif data about a file.
 
 ===== Eyewitness
 
@@ -298,6 +301,10 @@ The command to install all the tools is simply:
 sudo apt-get install kali-linux-full
 
 Kali Tools: https://en.kali.tools/all/
+
+===== Netcat
+
+nc -lvnp 9001
 
 ===== Nikto
 Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
