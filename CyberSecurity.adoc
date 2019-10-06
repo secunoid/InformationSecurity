@@ -251,6 +251,9 @@ https://tools.kali.org/web-applications/dirb
 
 ===== Eyewitness
 
+===== Evilarc
+evilarc.py is an archiving tool that allows for folder manipulation.
+
 ===== Gobuster
 Gobuster is a tool used to brute-force:
 
