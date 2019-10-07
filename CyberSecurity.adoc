@@ -285,6 +285,8 @@ Gobuster Homepage | Kali gobuster Repo
 Author: OJ Reeves
 License: Apache-2.0
 
+===== Hashcat
+
 ===== HTTPROBE
 
 first install go: apt install golang upx-ucl -y
@@ -335,6 +337,10 @@ https://cirt.net/Nikto2
 
 ===== NMAP
 
+===== Responder
+does LLMNR Poisioning
+
+
 ===== Sublist3r
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
@@ -363,6 +369,7 @@ pip install -r requirements.txt
 python sublist3r -h
 
 <<< 
+
 
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
