@@ -313,6 +313,7 @@ sudo apt-get install kali-linux-full
 
 Kali Tools: https://en.kali.tools/all/
 
+===== Maltego
 
 ===== Metasploit
 
@@ -703,5 +704,6 @@ This consensus method is extremely energy efficient compared to Proof of Work an
 [References]
 
 ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+IOC - Indicators of Compromise
 OSINT - Open Source Inteligence Tools
 TTP - Techniques, Tactics, Procedures
