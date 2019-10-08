@@ -297,6 +297,8 @@ first install go: apt install golang upx-ucl -y
 
 ===== Hydra
 
+===== Impacket-secretsdump
+
 ===== Kali Linux
 
 set date and time:
