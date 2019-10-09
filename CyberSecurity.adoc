@@ -229,6 +229,8 @@ The Penetration Testing Execution Standard (PTES) provides the necessary guideli
 
 ==== Penetration Testing Tools
 
+===== Arpspoof
+
 ===== Burp Suite
 Burp Suite is a web application testing tool
 
@@ -257,6 +259,10 @@ License: GPLv2
 https://tools.kali.org/web-applications/dirb 
 
 ===== Dirbuster
+
+===== DNSSPOOF
+
+===== Ettercap
 
 ===== Exiftool
 shows exif data about a file.
