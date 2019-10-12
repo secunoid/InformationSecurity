@@ -102,10 +102,29 @@ All the servers that the distributed ledger platform runs on must be:
 . Intrusion Detection/Intrusion Protection mechanisms deployed to protect from attacks coupled with SIEM for proactive defense.
 . Based on the security be in a DMZ 
 <<<
-== Vulnerability Management
-<<<
-=== Red team-Blue team
+== Vulnerability Management Program
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
+
+=== Vulnerability Assessment
+Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
+
+=== Penetration Testing
+Penetration Testing goes further than vulnerability assessment.  After a vulnerability is identified, the tester attempts to exploit a vulnerability. This can be done numerous ways and, once a vulnerability is exploited, a good tester will not stop. They will continue to find and exploit other vulnerabilities, chaining attacks together, to reach their goal. Each organization is different, so this goal may change, but usually includes access to Personally Identifiable Information (PII), Protected Health Information (PHI), and trade secrets. Sometimes this requires Domain Administrator access; often it does not or Domain Administrator is not enough.
+
+=== Red team Assessment
+A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
+
+A Red Team Assessment does not look for multiple vulnerabilities but for those vulnerabilities that will achieve their goals. The goals are often the same as the Penetration Test. Methods used during a Red Team Assessment include Social Engineering (Physical and Electronic), Wireless, External, and more. A Red Team Assessment is NOT for everyone though and should be performed by organizations with mature security programs. These are organizations that often have penetration tests done, have patched most vulnerabilities, and have generally positive penetration test results.
+
+The Red Team Assessment might consist of the following:
+
+A member of the Red Team poses as a Fed-Ex delivery driver and accesses the building. Once inside, the Team member plants a device on the network for easy remote access. This device tunnels out using a common port allowed outbound, such as port 80, 443, or 53 (HTTP, HTTPS, or DNS), and establishes a command and control (C2) channel to the Red Team's servers. Another Team member picks up the C2 channel and pivots around the network, possibly using insecure printers or other devices that will take the sights off the device placed. The Team members then pivot around the network until they reach their goal, taking their time to avoid detection.
+
+This is just one of innumerable methods a Red Team may operate but is a good example of some tests we have performed.
+
+=== Blue Team Assessment
+Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
+
 <<<
 === Methods
 social engineering, phishing, vishing or simply posing as a company employee.
