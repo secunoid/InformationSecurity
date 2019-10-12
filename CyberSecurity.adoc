@@ -123,10 +123,18 @@ Penetration testing involves following steps:
 . Try to further explore other systems on the network and exploit them if possible.
 . Produce a report that identifies vulnerabilities, which ones were exploited, what was the outcome of exploitation and suggest high level remediation steps.
 
-There are two type of Penetration Tests:
-. Black Box
-. White Box
-. Grey Box
+There are three approaches to Penetration Tests:
+. Black Box: No knowledge of th infrastructure.
+. White Box: Full knowledge of the infrastructure.
+. Grey Box: Some knowledge of the infrastructure.
+
+Penetration Tests can include following scopes:
+. External
+. Internal
+. Web application
+. Wireless
+. Cloud
+. Social
 
 ====
 
