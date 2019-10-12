@@ -109,7 +109,26 @@ Red team-blue team exercises take their name from their military antecedents. Th
 Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
 
 === Penetration Testing
+Penetration testing, or pen testing for short, is an authorized attack against your computer system to discover and exploit vulnerabilities.  This activity is also known as ethical hacking.  
+
 Penetration Testing goes further than vulnerability assessment.  After a vulnerability is identified, the tester attempts to exploit a vulnerability. This can be done numerous ways and, once a vulnerability is exploited, a good tester will not stop. They will continue to find and exploit other vulnerabilities, chaining attacks together, to reach their goal. Each organization is different, so this goal may change, but usually includes access to Personally Identifiable Information (PII), Protected Health Information (PHI), and trade secrets. Sometimes this requires Domain Administrator access; often it does not or Domain Administrator is not enough.
+
+Penetration testing involves following steps:
+. Reconnaissance via open source intelligence (OSINT) gathering techniques.  IT does not involve probing any or your devices, but gathering as much information publicly available about your environment using internet sources. 
+. Scanning your network to identify active devices
+. Fingerprint active devices to identify operating system and applications installed
+. Find vulnerabilities for the services running on your systems
+. Exploiting those vulnerabilities
+. Once the vulnerability has been exploited, further probing the system to seek valuable information such as PII (Personally Identifiable Information) etc.
+. Try to further explore other systems on the network and exploit them if possible.
+. Produce a report that identifies vulnerabilities, which ones were exploited, what was the outcome of exploitation and suggest high level remediation steps.
+
+There are two type of Penetration Tests:
+. Black Box
+. White Box
+. Grey Box
+
+====
 
 === Red team Assessment
 A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
