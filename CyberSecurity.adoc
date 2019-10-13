@@ -407,12 +407,6 @@ How easy is it to discover this threat?
 
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
 <<<
-== Threat Risk Assessments
-Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
-Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
-Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
-Controls, safeguards, countermeasures are implemented to reduce the risk.
-<<<
 
 === Threat Hunting
 Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
@@ -435,14 +429,12 @@ https://www.securityfocus.com
 https://www.exploit-db.com
 
 
-
+=== Threat Risk Assessments
+Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
+Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Controls, safeguards, countermeasures are implemented to reduce the risk.
 <<<
-
-
-
-
-<<< 
-
 
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
