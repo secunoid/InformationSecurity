@@ -323,18 +323,21 @@ This is just one of innumerable methods a Red Team may operate but is a good exa
 Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
 
 <<<
+
 ==== Methods
 social engineering, phishing, vishing or simply posing as a company employee.
 <<<
+
 === Threat Modeling
 Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 <<<
-=== CVSS
+
+==== CVSS
 <<<
 
-=== STRIDE
+==== STRIDE
 STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
 
 The threats are:
@@ -346,7 +349,7 @@ The threats are:
 * **D**enial of service (D.o.S)
 * **E**levation of privilege. 
 <<<
-=== DREAD
+==== DREAD
 DREAD methodology is used to rate, compare and prioritize the severity of risk presented by each threat that is classified using STRIDE.
 
 * **D**amage
