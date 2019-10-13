@@ -27,6 +27,7 @@ Data about non living entities when modified leads to mis-information and curren
 
 === Living Entities
 Data about living entities, especially us humans is very valuable.  With the devices we carry, and use in our daily lives, we are constantly producing data, every hour, every second of our lives. 
+...
 
 == Privacy
 Centralization has very damaging impacts to a users privacy.  Once the user has provided their information to an entity, they are at entities' mercy for data protection.
