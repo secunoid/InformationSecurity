@@ -118,6 +118,10 @@ Vulnerability Assessment is designed to find vulnerabilities and assess to ensur
 === Penetration Testing
 Penetration testing, or pen testing for short, is an authorized attack against your computer system to discover and exploit vulnerabilities.  This activity is also known as ethical hacking.  
 
+Penetration testing is a technical control that is implemented to ensure the systems that are currently in production or are going to be production do not have any vulnerabilities that would allow threat vectors to exploit.
+
+The Penetration Testing Execution Standard (PTES) provides the necessary guidelines on how to conduct penetration testing.  More information can be found here: http://www.pentest-standard.org/index.php/Main_Page 
+
 Penetration Testing goes further than vulnerability assessment.  After a vulnerability is identified, the tester attempts to exploit a vulnerability. This can be done numerous ways and, once a vulnerability is exploited, a good tester will not stop. They will continue to find and exploit other vulnerabilities, chaining attacks together, to reach their goal. Each organization is different, so this goal may change, but usually includes access to Personally Identifiable Information (PII), Protected Health Information (PHI), and trade secrets. Sometimes this requires Domain Administrator access; often it does not or Domain Administrator is not enough.
 
 Penetration testing involves following steps:
@@ -142,141 +146,6 @@ Penetration Tests can include following scopes:
 . Wireless
 . Cloud
 . Social
-
-==== Red team Assessment
-A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
-
-A Red Team Assessment does not look for multiple vulnerabilities but for those vulnerabilities that will achieve their goals. The goals are often the same as the Penetration Test. Methods used during a Red Team Assessment include Social Engineering (Physical and Electronic), Wireless, External, and more. A Red Team Assessment is NOT for everyone though and should be performed by organizations with mature security programs. These are organizations that often have penetration tests done, have patched most vulnerabilities, and have generally positive penetration test results.
-
-The Red Team Assessment might consist of the following:
-
-A member of the Red Team poses as a Fed-Ex delivery driver and accesses the building. Once inside, the Team member plants a device on the network for easy remote access. This device tunnels out using a common port allowed outbound, such as port 80, 443, or 53 (HTTP, HTTPS, or DNS), and establishes a command and control (C2) channel to the Red Team's servers. Another Team member picks up the C2 channel and pivots around the network, possibly using insecure printers or other devices that will take the sights off the device placed. The Team members then pivot around the network until they reach their goal, taking their time to avoid detection.
-
-This is just one of innumerable methods a Red Team may operate but is a good example of some tests we have performed.
-
-==== Blue Team Assessment
-Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
-
-<<<
-==== Methods
-social engineering, phishing, vishing or simply posing as a company employee.
-<<<
-=== Threat Modeling
-Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
-
-It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
-<<<
-=== CVSS
-<<<
-
-=== STRIDE
-STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
-
-The threats are:
-
-* **S**poofing of user identity
-* **T**ampering
-* **R**epudiation
-* **I**nformation disclosure (privacy breach or data leak)
-* **D**enial of service (D.o.S)
-* **E**levation of privilege. 
-<<<
-=== DREAD
-DREAD methodology is used to rate, compare and prioritize the severity of risk presented by each threat that is classified using STRIDE.
-
-* **D**amage
-* **R**eproducibility
-* **E**xploitability
-* **A**ffected Users
-* **D**iscoverability
-
-DREAD Risk = (Damage + Reproduciblity + Exploitability + Affected Users + Discoverability) / 5. Calculation always produces a number between 0 and 10. Higher the number means more serious the risk is.
-
-Following is a customized mathematical approach to implement DREAD methodology:-
-
-*Damage Potential*
-If a threat exploit occurs, how much damage will be caused?
-
-* 0 = Nothing
-* 5 = Information disclosure that could be used in combination with other vulnerabilities
-* 8 = Individual/employer non sensitive user data is compromised.
-* 9 = Administrative non sensitive data is compromised.
-* 10 = Complete system or data destruction.
-* 10 = Application unavailability.
-
-*Reproducible*
-How easy is it to reproduce the threat exploit?
-
-* 0 = Very hard or impossible, even for administrators of the application.
-* 5 = Complex steps are required for authorized user.
-* 7.5 = Easy steps for Authenticated user
-* 10 = Just a web browser and the address bar is sufficient, without authentication.
-
-*Exploit-ability*
-What is needed to exploit this threat?
-
-* 2.5 = Advanced programming and networking knowledge, with custom or advanced attack tools.
-* 5 = Exploit exits in public, using available attack tools.
-* 9 = A Web Application Proxy tool
-* 10 = Just a web browser
-
-*Affected Users*
-How many users will be affected?
-
-* 0 = None
-* 2.5 individual/employer that is already compromised.
-* 6 = some users of individual or employer privileges, but not all.
-* 8 = Administrative users
-* 10 = All users
-
-*Discover-ability*
-How easy is it to discover this threat?
-
-* 0 = Very hard requires source code or administrative access.
-* 5 = Can figure it out by monitoring and manipulating HTTP requests
-* 8 = Details of faults like this are already in the public domain and can be easily discovered using a search engine.
-* 10 = the information is visible in the web browser address bar or in a form.
-
-DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
-<<<
-== Threat Risk Assessments
-Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
-Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
-Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
-Controls, safeguards, countermeasures are implemented to reduce the risk.
-<<<
-
-=== Threat Hunting
-Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
-
-==== MITRE ATT&CK
-MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
-
-With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
-
-MITRE ATT&CK website: https://attack.mitre.org/ 
-
-==== Palo Alto Unit42
-Unit 42 is the global threat intelligence team at Palo Alto Networks®
-
-Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
-Playbook: https://pan-unit42.github.io/playbook_viewer/ 
-
-https://www.packetstormsecurity.com
-https://www.securityfocus.com
-https://www.exploit-db.com
-
-
-
-<<<
-
-=== Penetration Testing
-
-Penetration testing is a technical control that is implemented to ensure the systems that are currently in production or are going to be production do not have any vulnerabilities that would allow threat vectors to exploit.
-
-Penetration testing is considered a red team activity.
-
-The Penetration Testing Execution Standard (PTES) provides the necessary guidelines on how to conduct penetration testing.  More information can be found here: http://www.pentest-standard.org/index.php/Main_Page 
 
 ==== Penetration Testing Tools
 
@@ -437,6 +306,135 @@ pip install -r requirements.txt
 python sublist3r -h
 
 ====== TheHarvester
+
+
+==== Red team Assessment
+A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
+
+A Red Team Assessment does not look for multiple vulnerabilities but for those vulnerabilities that will achieve their goals. The goals are often the same as the Penetration Test. Methods used during a Red Team Assessment include Social Engineering (Physical and Electronic), Wireless, External, and more. A Red Team Assessment is NOT for everyone though and should be performed by organizations with mature security programs. These are organizations that often have penetration tests done, have patched most vulnerabilities, and have generally positive penetration test results.
+
+The Red Team Assessment might consist of the following:
+
+A member of the Red Team poses as a Fed-Ex delivery driver and accesses the building. Once inside, the Team member plants a device on the network for easy remote access. This device tunnels out using a common port allowed outbound, such as port 80, 443, or 53 (HTTP, HTTPS, or DNS), and establishes a command and control (C2) channel to the Red Team's servers. Another Team member picks up the C2 channel and pivots around the network, possibly using insecure printers or other devices that will take the sights off the device placed. The Team members then pivot around the network until they reach their goal, taking their time to avoid detection.
+
+This is just one of innumerable methods a Red Team may operate but is a good example of some tests we have performed.
+
+==== Blue Team Assessment
+Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
+
+<<<
+==== Methods
+social engineering, phishing, vishing or simply posing as a company employee.
+<<<
+=== Threat Modeling
+Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
+
+It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
+<<<
+=== CVSS
+<<<
+
+=== STRIDE
+STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
+
+The threats are:
+
+* **S**poofing of user identity
+* **T**ampering
+* **R**epudiation
+* **I**nformation disclosure (privacy breach or data leak)
+* **D**enial of service (D.o.S)
+* **E**levation of privilege. 
+<<<
+=== DREAD
+DREAD methodology is used to rate, compare and prioritize the severity of risk presented by each threat that is classified using STRIDE.
+
+* **D**amage
+* **R**eproducibility
+* **E**xploitability
+* **A**ffected Users
+* **D**iscoverability
+
+DREAD Risk = (Damage + Reproduciblity + Exploitability + Affected Users + Discoverability) / 5. Calculation always produces a number between 0 and 10. Higher the number means more serious the risk is.
+
+Following is a customized mathematical approach to implement DREAD methodology:-
+
+*Damage Potential*
+If a threat exploit occurs, how much damage will be caused?
+
+* 0 = Nothing
+* 5 = Information disclosure that could be used in combination with other vulnerabilities
+* 8 = Individual/employer non sensitive user data is compromised.
+* 9 = Administrative non sensitive data is compromised.
+* 10 = Complete system or data destruction.
+* 10 = Application unavailability.
+
+*Reproducible*
+How easy is it to reproduce the threat exploit?
+
+* 0 = Very hard or impossible, even for administrators of the application.
+* 5 = Complex steps are required for authorized user.
+* 7.5 = Easy steps for Authenticated user
+* 10 = Just a web browser and the address bar is sufficient, without authentication.
+
+*Exploit-ability*
+What is needed to exploit this threat?
+
+* 2.5 = Advanced programming and networking knowledge, with custom or advanced attack tools.
+* 5 = Exploit exits in public, using available attack tools.
+* 9 = A Web Application Proxy tool
+* 10 = Just a web browser
+
+*Affected Users*
+How many users will be affected?
+
+* 0 = None
+* 2.5 individual/employer that is already compromised.
+* 6 = some users of individual or employer privileges, but not all.
+* 8 = Administrative users
+* 10 = All users
+
+*Discover-ability*
+How easy is it to discover this threat?
+
+* 0 = Very hard requires source code or administrative access.
+* 5 = Can figure it out by monitoring and manipulating HTTP requests
+* 8 = Details of faults like this are already in the public domain and can be easily discovered using a search engine.
+* 10 = the information is visible in the web browser address bar or in a form.
+
+DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
+<<<
+== Threat Risk Assessments
+Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
+Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Controls, safeguards, countermeasures are implemented to reduce the risk.
+<<<
+
+=== Threat Hunting
+Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
+
+==== MITRE ATT&CK
+MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+
+With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
+MITRE ATT&CK website: https://attack.mitre.org/ 
+
+==== Palo Alto Unit42
+Unit 42 is the global threat intelligence team at Palo Alto Networks®
+
+Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
+Playbook: https://pan-unit42.github.io/playbook_viewer/ 
+
+https://www.packetstormsecurity.com
+https://www.securityfocus.com
+https://www.exploit-db.com
+
+
+
+<<<
+
 
 
 
