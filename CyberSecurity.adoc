@@ -744,16 +744,19 @@ This consensus method is extremely energy efficient compared to Proof of Work an
 ** also a shift toward internal network focus, versus "the perimieter"
 ** Each asset has a permeter, and a software-defined perimeter policy that is attached to it and evaluated during interactions with other systems
 
+<<<
+== Terms Used
 
+ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+IOC - Indicators of Compromise
+OSINT - Open Source Inteligence Tools
+TTP - Techniques, Tactics, Procedures
+
+<<<
 [bibliography]
 == References
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
 
 
-[References]
 
-ATT&CK - Adversatial Tactics Techniques & Common Knowledge
-IOC - Indicators of Compromise
-OSINT - Open Source Inteligence Tools
-TTP - Techniques, Tactics, Procedures
