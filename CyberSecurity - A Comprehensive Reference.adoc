@@ -331,6 +331,23 @@ Threat modeling is a process by which potential threats, such as structural vuln
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
 ==== CVSS
+CVSS stands for Common Vulnerability Scoring System, which provides a score to indicate the severity of the CVE vulnerabilities.
+
+Assignment of a CVSS score is based on:
+
+* The primary impact on the confidentiality, integrity, and availability of the protected system/resources
+* The derivative impact on loss of life and/or properties
+* The percentage of the impacted area within the total environment
+* How easy it is to exploit the vulnerability
+* How easy it is to remediate the vulnerability
+* How confident the testing team is about the existence of the vulnerability
+
+==== NVD
+National Vulnerability Database (NVD) is the U.S. government repository of standards based vulnerability management data. NVD also provides severity rankings of "Low," "Medium," and "High" in addition to the numeric CVSS scores. These qualitative rankings are simply mapped from the numeric CVSS scores:
+
+* Vulnerabilities are labeled "Low" severity if they have a CVSS base score of 0.0-3.9.
+* Vulnerabilities will be labeled "Medium" severity if they have a base CVSS score of 4.0-6.9.
+* Vulnerabilities will be labeled "High" severity if they have a CVSS base score of 7.0-10.0.
 
 ==== STRIDE
 STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
