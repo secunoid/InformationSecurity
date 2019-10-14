@@ -166,9 +166,9 @@ Chery Tree is a note taking app
 
 DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
 
-DIRB comes with a set of preconfigured attack wordlists for easy usage but you can use your custom wordlists. Also DIRB sometimes can be used as a classic CGI scanner, but remember is a content scanner not a vulnerability scanner.
+DIRB comes with a set of pre-configured attack wordlists for easy usage but you can use your custom wordlists. Also DIRB sometimes can be used as a classic CGI scanner, but remember is a content scanner not a vulnerability scanner.
 
-DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can’t look for. It doesn’t search vulnerabilities nor does it look for web contents that can be vulnerables.
+DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can’t look for. It doesn’t search vulnerabilities nor does it look for web contents that can be vulnerable.
 
 Source: http://dirb.sourceforge.net/about.html
 DIRB Homepage | Kali DIRB Repo
@@ -402,9 +402,7 @@ How easy is it to discover this threat?
 
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
 
-
-=== Threat Hunting
-Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
+=== Threat Intelligence
 
 ==== MITRE ATT&CK
 MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
@@ -416,8 +414,8 @@ MITRE ATT&CK website: https://attack.mitre.org/
 ==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
 
-Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
-Playbook: https://pan-unit42.github.io/playbook_viewer/ 
+.. Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
+.. Playbook: https://pan-unit42.github.io/playbook_viewer/ 
 
 https://www.packetstormsecurity.com
 https://www.securityfocus.com
@@ -428,6 +426,21 @@ Threat: Any potential actor that has the capability, motivation, or intent to ex
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
 Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
 Controls, safeguards, countermeasures are implemented to reduce the risk.
+
+
+=== Threat Hunting
+Threat hunting is a relatively new focal area in information security.
+
+==== Tools
+.. Yara
+.. Crowd FMS
+.. botscot
+.. burbsuite pro
+.. hashicorp vault
+
+
+
+
 
 <<<
 == Enterprise Architecture
