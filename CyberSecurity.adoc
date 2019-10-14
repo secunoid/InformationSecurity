@@ -746,10 +746,10 @@ This consensus method is extremely energy efficient compared to Proof of Work an
 <<<
 == Terms Used
 
-ATT&CK - Adversatial Tactics Techniques & Common Knowledge
-IOC - Indicators of Compromise
-OSINT - Open Source Inteligence Tools
-TTP - Techniques, Tactics, Procedures
+* ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+* IOC - Indicators of Compromise
+* OSINT - Open Source Inteligence Tools
+* TTP - Techniques, Tactics, Procedures
 
 <<<
 [bibliography]
