@@ -1,0 +1,761 @@
+= CyberSecurity Considerations for Blockchain
+Doc Writer <smsharif@secunoid.com>
+v0.1, 14th October, 2019
+:numbered:
+:sectnum:
+:sectnumlevels: 5
+:chapter-label:
+:toc: right
+:toclevels: 5
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document covers all aspects of cybersecurity as related to blockchain technology
+:keywords: cybersecurity, it security, blockchain
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.securityprivacyrisk.com
+'''
+
+
+<<<
+== Overview
+Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important to protect it.
+
+=== Non-living Entities
+Data about non living entities when modified leads to mis-information and currently in the digital age our ability to provide the authenticity of that data is very difficult.  If the source is trustworthy, then we deem it authentic, currently there are no mechanisms to ensure that the data has not been modified in between from when the trustworthy source released and to the time it got to you.
+
+=== Living Entities
+Data about living entities, especially us humans is very valuable.  With the devices we carry, and use in our daily lives, we are constantly producing data, every hour, every second of our lives. 
+
+<<<
+== Privacy
+Centralization has very damaging impacts to a users privacy.  Once the user has provided their information to an entity, they are at entities' mercy for data protection.
+
+Certain states want to keep 
+
+Data that is being processed by the solution should care fully considered for:
+
+. Data protection: Based on data classification ensure data is protected in storage and in transit.
+. Data retention: Based on regulatory, and industry requirements,  data should be retained for 
+. Data access & update: Allow end users ability to access their data and modify it as required.
+
+<<<
+== Data Protection
+
+<<<
+== Information Security    
+
+<<<
+== Security Organization
+For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
+
+. Centralized
+. Distributed
+
+In centralized operational model, all aspects of security operations are within the security organization, such as:
+
+. User provisioning/deprovisioning
+. Security Information & Event Management (SIEM)
+. Security Operations Center
+. Incident Response
+. Firewall & Network Operations
+
+In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
+
+=== Security Operations
+A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
+All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
+
+=== Security Architecture
+
+=== Security Development
+
+=== Security Strategy
+
+<<<
+
+== Security Policy
+Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
+
+<<<
+== Security Manual
+This document goes into details on the how the security policy requirements must be implemented.  It can be one document, or multiple depending on the size of implementation.
+
+<<<
+== Security Standards
+Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
+
+<<<
+== Security Guidelines
+
+<<<
+== Application Security
+The scope of application security would be the 
+
+
+=== Code Analysis
+
+
+=== Key Management
+
+<<<
+== System Security
+All the servers that the distributed ledger platform runs on must be:
+
+. Hardened
+. Monitored for availability
+. Intrusion Detection/Intrusion Protection mechanisms deployed to protect from attacks coupled with SIEM for proactive defense.
+. Based on the security be in a DMZ 
+
+<<<
+== Vulnerability Management Program
+Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
+
+=== Vulnerability Assessment
+Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
+
+=== Penetration Testing
+Penetration testing, or pen testing for short, is an authorized attack against your computer system to discover and exploit vulnerabilities.  This activity is also known as ethical hacking.  
+
+Penetration testing is a technical control that is implemented to ensure the systems that are currently in production or are going to be production do not have any vulnerabilities that would allow threat vectors to exploit.
+
+The Penetration Testing Execution Standard (PTES) provides the necessary guidelines on how to conduct penetration testing.  More information can be found here: http://www.pentest-standard.org/index.php/Main_Page 
+
+Penetration Testing goes further than vulnerability assessment.  After a vulnerability is identified, the tester attempts to exploit a vulnerability. This can be done numerous ways and, once a vulnerability is exploited, a good tester will not stop. They will continue to find and exploit other vulnerabilities, chaining attacks together, to reach their goal. Each organization is different, so this goal may change, but usually includes access to Personally Identifiable Information (PII), Protected Health Information (PHI), and trade secrets. Sometimes this requires Domain Administrator access; often it does not or Domain Administrator is not enough.
+
+Penetration testing involves following steps:
+. Reconnaissance via open source intelligence (OSINT) gathering techniques.  IT does not involve probing any or your devices, but gathering as much information publicly available about your environment using internet sources. 
+. Scanning your network to identify active devices
+. Fingerprint active devices to identify operating system and applications installed
+. Find vulnerabilities for the services running on your systems
+. Exploiting those vulnerabilities
+. Once the vulnerability has been exploited, further probing the system to seek valuable information such as PII (Personally Identifiable Information) etc.
+. Try to further explore other systems on the network and exploit them if possible.
+. Produce a report that identifies vulnerabilities, which ones were exploited, what was the outcome of exploitation and suggest high level remediation steps.
+
+There are three approaches to Penetration Tests:
+. Black Box: No knowledge of th infrastructure.
+. White Box: Full knowledge of the infrastructure.
+. Grey Box: Some knowledge of the infrastructure.
+
+Penetration Tests can include following scopes:
+. External
+. Internal
+. Web application
+. Wireless
+. Cloud
+. Social
+
+==== Penetration Testing Tools
+
+===== Arpspoof
+
+===== Burp Suite
+Burp Suite is a web application testing tool
+
+Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
+
+===== CherryTree
+Chery Tree is a note taking app
+
+===== Crackmapexec
+
+
+===== DIRB
+
+DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
+
+DIRB comes with a set of preconfigured attack wordlists for easy usage but you can use your custom wordlists. Also DIRB sometimes can be used as a classic CGI scanner, but remember is a content scanner not a vulnerability scanner.
+
+DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can’t look for. It doesn’t search vulnerabilities nor does it look for web contents that can be vulnerables.
+
+Source: http://dirb.sourceforge.net/about.html
+DIRB Homepage | Kali DIRB Repo
+
+Author: The Dark Raver
+License: GPLv2
+
+https://tools.kali.org/web-applications/dirb 
+
+===== Dirbuster
+
+===== DNSSPOOF
+
+===== Ettercap
+
+===== Exiftool
+shows exif data about a file.
+
+===== Eyewitness
+
+===== Evilarc
+evilarc.py is an archiving tool that allows for folder manipulation.
+
+===== Gobuster
+Gobuster is a tool used to brute-force:
+
+URIs (directories and files) in web sites.
+DNS subdomains (with wildcard support).
+Because I wanted:
+
+something that didn’t have a fat Java GUI (console FTW).
+to build something that just worked on the command line.
+something that did not do recursive brute force.
+something that allowed me to brute force folders and multiple extensions at once.
+something that compiled to native on multiple platforms.
+something that was faster than an interpreted script (such as Python).
+something that didn’t require a runtime.
+use something that was good with concurrency (hence Go).
+to build something in Go that wasn’t totally useless.
+Source: https://github.com/OJ/gobuster
+Gobuster Homepage | Kali gobuster Repo
+
+Author: OJ Reeves
+License: Apache-2.0
+
+===== Hashcat
+
+===== HTTPROBE
+
+first install go: apt install golang upx-ucl -y
+
+
+===== Hydra
+
+===== Impacket-secretsdump
+
+===== Kali Linux
+
+set date and time:
+$ sudo apt-get install ntpdate
+$ sudo ntpdate in.pool.ntp.org
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+To Update metasploit: apt update; apt install metasploit-framework
+
+The command to install all the tools is simply:
+
+sudo apt-get install kali-linux-full
+
+Kali Tools: https://en.kali.tools/all/
+
+===== Maltego
+
+===== Metasploit
+
+On Kali metasploit is in this directory: /usr/share/metssploit-framework
+
+To Update metasploit: apt update; apt install metasploit-framework
+
+Metasploit Online Database: https://www.rapid7.com/db/modules
+
+===== Netcat
+
+nc -lvnp 9001
+
+===== Nikto
+Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
+
+Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker's anti-IDS methods in case you want to give it a try (or test your IDS system).
+
+
+Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.
+
+https://cirt.net/Nikto2 
+
+===== NESSUS
+
+===== NMAP
+
+===== Responder
+does LLMNR Poisioning
+
+===== Sbmclient
+
+===== Smbmap
+
+===== SSLStrip
+
+===== Sublist3r
+Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
+
+Source: https://github.com/aboul3la/Sublist3r
+Sublist3r Homepage | Kali sublist3r Repo
+
+Author: Ahmed Aboul-Ela
+License: GPL-2+
+
+First open a terminal sessions and change the directory to the Desktop as following:
+
+cd Desktop
+
+The next step is to run the following command to clone the repository in a new directory:
+
+git clone https://github.com/aboul3la/Sublist3r.git
+
+Change the directory to Sublist3r:
+
+cd Sublist3r
+
+And finally complete the installation by installing the required dependencies with the following command:
+
+pip install -r requirements.txt
+
+python sublist3r -h
+
+===== TheHarvester
+
+
+==== Red team Assessment
+A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
+
+A Red Team Assessment does not look for multiple vulnerabilities but for those vulnerabilities that will achieve their goals. The goals are often the same as the Penetration Test. Methods used during a Red Team Assessment include Social Engineering (Physical and Electronic), Wireless, External, and more. A Red Team Assessment is NOT for everyone though and should be performed by organizations with mature security programs. These are organizations that often have penetration tests done, have patched most vulnerabilities, and have generally positive penetration test results.
+
+The Red Team Assessment might consist of the following:
+
+A member of the Red Team poses as a Fed-Ex delivery driver and accesses the building. Once inside, the Team member plants a device on the network for easy remote access. This device tunnels out using a common port allowed outbound, such as port 80, 443, or 53 (HTTP, HTTPS, or DNS), and establishes a command and control (C2) channel to the Red Team's servers. Another Team member picks up the C2 channel and pivots around the network, possibly using insecure printers or other devices that will take the sights off the device placed. The Team members then pivot around the network until they reach their goal, taking their time to avoid detection.
+
+This is just one of innumerable methods a Red Team may operate but is a good example of some tests we have performed.
+
+==== Blue Team Assessment
+Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
+
+==== Methods
+social engineering, phishing, vishing or simply posing as a company employee.
+
+=== Threat Modeling
+Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
+
+It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
+
+==== CVSS
+
+==== STRIDE
+STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
+
+The threats are:
+
+* **S**poofing of user identity
+* **T**ampering
+* **R**epudiation
+* **I**nformation disclosure (privacy breach or data leak)
+* **D**enial of service (D.o.S)
+* **E**levation of privilege.
+
+==== DREAD
+DREAD methodology is used to rate, compare and prioritize the severity of risk presented by each threat that is classified using STRIDE.
+
+* **D**amage
+* **R**eproducibility
+* **E**xploitability
+* **A**ffected Users
+* **D**iscoverability
+
+DREAD Risk = (Damage + Reproduciblity + Exploitability + Affected Users + Discoverability) / 5. Calculation always produces a number between 0 and 10. Higher the number means more serious the risk is.
+
+Following is a customized mathematical approach to implement DREAD methodology:-
+
+*Damage Potential*
+If a threat exploit occurs, how much damage will be caused?
+
+* 0 = Nothing
+* 5 = Information disclosure that could be used in combination with other vulnerabilities
+* 8 = Individual/employer non sensitive user data is compromised.
+* 9 = Administrative non sensitive data is compromised.
+* 10 = Complete system or data destruction.
+* 10 = Application unavailability.
+
+*Reproducible*
+How easy is it to reproduce the threat exploit?
+
+* 0 = Very hard or impossible, even for administrators of the application.
+* 5 = Complex steps are required for authorized user.
+* 7.5 = Easy steps for Authenticated user
+* 10 = Just a web browser and the address bar is sufficient, without authentication.
+
+*Exploit-ability*
+What is needed to exploit this threat?
+
+* 2.5 = Advanced programming and networking knowledge, with custom or advanced attack tools.
+* 5 = Exploit exits in public, using available attack tools.
+* 9 = A Web Application Proxy tool
+* 10 = Just a web browser
+
+*Affected Users*
+How many users will be affected?
+
+* 0 = None
+* 2.5 individual/employer that is already compromised.
+* 6 = some users of individual or employer privileges, but not all.
+* 8 = Administrative users
+* 10 = All users
+
+*Discover-ability*
+How easy is it to discover this threat?
+
+* 0 = Very hard requires source code or administrative access.
+* 5 = Can figure it out by monitoring and manipulating HTTP requests
+* 8 = Details of faults like this are already in the public domain and can be easily discovered using a search engine.
+* 10 = the information is visible in the web browser address bar or in a form.
+
+DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
+
+
+=== Threat Hunting
+Tools Yara, Crowd FMS, botscot, burbsuite pro, hashicorp vault
+
+==== MITRE ATT&CK
+MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+
+With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
+MITRE ATT&CK website: https://attack.mitre.org/ 
+
+==== Palo Alto Unit42
+Unit 42 is the global threat intelligence team at Palo Alto Networks®
+
+Palo Alto Unit42 website: https://unit42.paloaltonetworks.com/ 
+Playbook: https://pan-unit42.github.io/playbook_viewer/ 
+
+https://www.packetstormsecurity.com
+https://www.securityfocus.com
+https://www.exploit-db.com
+
+=== Threat Risk Assessments
+Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
+Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Controls, safeguards, countermeasures are implemented to reduce the risk.
+
+<<<
+== Enterprise Architecture
+Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
+
+*Enterprise* is any organization that is large or small with a collaborative collection of sub-organizations with a shared set of objectives.
+
+*Architecture* is a designed structure of something.  A description of the structure (components) and behaviors (Processes) of a system.  It is also an activity required to produce such a description.
+
+*Enterprise Architecture* is documentation describing the structure and behaviour of an enterprise including its information systems.  Also a process for describing an enterprise(including its information systems), then planning and governing changes to improve the integrity and flexibility of the enterprise.
+
+Frameworks provide guidelines on how to implement enterprise architecture.  Frameworks address following areas:
+* Content (strcuture, metamodel)
+* Process (activities)
+* Organization (roles, people)
+
+Some of the frameworks are:
+
+* TOGAF (covers all three, content, process, and organization)
+* Zachman (Purely covers content)
+* SABSA
+* DODAF
+* MODAF
+
+Large organizations are complex, hence they can be broken down into following typical domains
+
+. Business (Why organization exisit, objectives, goals, strategic thinking, capabilities, processes, functions, organizatinal structure)
+. Data
+. Application(s)
+. Technology
+
+Following domains cut across the typical domains:
+
+. Security
+. Compliance
+
+
+*Architecture Activities* typically when you are performing any sort of change, you have to document the current state and future state.  This represents the strategic vision of the organization, where they want to be in 3-5 years time.
+
+Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.
+
+=== SABSA
+SABSA is a framework that supports the business in reaching its goals.  It is the leading methodology for developing business operational risk-based architectures.  SABSA stands for Sherwood Applied Business Security Architecture.
+
+It provides a framework for developing risk driven enterprise information security and information assurance architectures.
+
+It also helps to deliver security infrastructure solutions that help critical business initiatives.
+
+The SABSA methodology provides guidance for aligning architecture with business value, it also addresses a critical need for greater integration between security and enterprise architecture within organizations.
+
+With SABASA organizations can achieve that important risk reward balance using a range of frameworks, models, methods, and process to manage risk and measure performance.
+
+The SABSA model is the key to this and covers the whole lifecycle of operational capabilities.  The SABSA model has six layers:
+
+. Contextual Architecture: The Business View (Business wisdom and business decision making)
+. Conceptual Architecture: The Architect's vision (The 'big picture', business attributes profiel and risk objectives)
+. Logical Architecture: The Designers Vision (Information, services, processes, applications)
+. Physical Architecture: The builders/constructors view(Data mechanisms, infrastructure, platforms)
+. Component Architecture: The Trademan's View (Products, Tools, Specific Standards, Technologies)
+. Security Services Management Architecture: The Service Manager's view (Service management activities, processes and monitoring)
+
+Each of the layers of the architecture model are supported by a vertical analysis based on six key questions
+
+* What
+* Why
+* How
+* Who
+* Where
+* When
+
+The SABSA framework is flexible, scalable and applicable to any industry sector.  Instead of replacing other risk based standards, it can be combined with TOGAF, COBIT and ITIL to create an integrated compliance framework.
+
+SABSA provides organization with "enterprise operational risk management architecture" that can be completely tailored to a specific business model. 
+
+SABSA's governance model provide a control feedback loop
+
+. Strategy & Planning
+. Design
+. Implement
+. Management & Measure
+
+<<<
+== NIST Cyber Security Framework(CSF)
+Key functions are
+
+. Identify
+. Protect
+. Detect
+. Respond
+. Recover
+
+Top two are proactive measures, and bottom three are reactive measures.
+
+<<<
+== Security Architecture
+
+=== Network Architecture
+
+=== Application Architecture
+
+=== System Architecture
+
+<<<
+== Dev, Sec, Ops
+Development, Operations, and Security operate as silos. 
+
+*CiCd* or Continuous Integration and Continuous Delivery is key for *DevSecOps*
+
+image::knowyourapplication.png[title="Know your application"]
+
+Some activities to consider for DevSecOps:
+
+* Threat Modeling
+* Attack Surface Evaluation
+* Static & dynamic code analysis
+* Penetration Testing
+* Security Code Reviews
+* Fuzz Testing
+
+Teams who are considering DevSecOps should think about:
+
+* Frameworks & Tools
+* Automating core security tasks
+* Embedding securit controls and processes
+
+Five principles for Securing DevOps
+
+* Automate Security In
+* Integration to fail quickly
+* No false Alarm
+* Build Security Champions
+* Keep Operational Visibility
+
+
+
+=== OWASP Top 10 App Sec Risks
+
+. Injection
+. Broken Authentication
+. Sensitive Data Exposure
+. XML External Exposures (XXE)
+. Broken Access Control
+. Security Misconfiguration
+. Cross Site Scripting
+. Insecure Deserialization
+. Using component with known vulnerabilities
+. Insufficient Logging/Monitoring
+
+=== Real-Word Top 10 Attacks
+. Direct Object Reference
+. Forceful Browsing
+. Null Byte Attack
+. Command Injection
+. Feature Abuse
+. Evasion Techniques
+. Subdomin Takeover
+. Misconfiguration
+. Cross Site Scription
+. SQL Injection 
+
+<<<
+== Governance, Risk, & Compliance
+A documented process must be followed to ensure compliance to security policy and to highlight risks that might be introduced when security policy requirements are not adhered to.  Some of the GRC functions are:
+
+* Enterprise Risk Management
+* IT Risk Management
+* Integrated Risk Management
+* Operational Risk Management
+* Compliance
+* Enterprise GRC Management
+* Vendor/Third-Party Risk Management
+* Business Continuity
+* Financial Audit
+
+=== Enterprise Risk Management
+
+* Not necessarily covered by insurance
+* Multi-dimensional assessment
+* Analyzes material risks and how they relate
+* Spans the entire organization ("holistic")
+* Proactive & continuous
+* Considers both upside and downside
+* Focuses on business goals, adding value and more
+* Embedded in culture and mindset 
+
+<<<
+== Overview
+Relational databases were first introduced in 1970’s, prior to that, databases existed in one form or the other.  When relational databases became mainstream, their availability became a concern, and as a result various database vendors provided data replication capabilities amongst the databases.
+
+Distributed ledgers are pretty much repositories that rely on a consensus algorithm to replicate data across geographically disparate ledgers. 
+Blockchain is one of the implementations of distributed ledger technology.
+Bitcoin was the very first use case of the distributed ledger technology using a specific consensus algorithm, proof of work.   
+
+Since the inception of Bitcoin, which is also cryptocurrency, various other implementations of cryptocurrencies came into existence and are called Alternate Coins or Alt Coins, some examples are:
+
+. Litecoin
+. Darkcoin
+. Dogecoin
+. IOTA
+
+After the cryptocurrency craze, the business users started thinking of other use cases such as the need to implement some form of logic into blockchain, this would allow decisions based on parameters. As a result, Ethereum introduced this ability to implement logic as smart contracts. Then after Ethereum other implementations came to light which were private or public.  This stack allowed users the ability to implement Distributed Applications  (Dapp) on the distributed ledger.  Some of the implementations that seem to improve on Ethereum are:
+
+. Steem
+. EOS
+. Peerplays
+. Hyperledger
+. Tezos
+
+While the industry dabbles with various technologies, and implementation of smart contracts , the key to implementation would be the security of the underlying platform.
+
+== Goals
+This paper will present security framework that can be leveraged for private/public blockchain implementations of the Distributed Ledger technology. Some of the areas to consider are:
+
+. Security Organization
+. Privacy & Data Protection
+. Security Policy
+. Security Manual
+. Security Standards
+. Security Guidelines
+. Security Architecture
+. Security Operations
+. Governance, Risk, & Compliance
+
+<<<
+== Blockchain
+Blockchain is an implementation of a DL,  and in my opinion, the key ingredients are:
+
+. Users: Entities generating transactions when they send/receive bitcoin.
+. Distributed Ledger: All transactions are written all active nodes participating in the network.  It should rather be called 
+. Malleability:  Transactions written to the Blockchain cannot be changed as everyone has the same copy, no one party can change a transaction on their own, unless they own 51% of the hashing power. 
+. Proof of Work: To generate a block, the miners are given a range, within which the hash of their block should be in, if the hash is within the range, the miner gets a reward, which is a Bitcoin.  This activity of finding the hash value within a certain range is very resource intensive and requires multiple miners working together to solve this problem. Once this block is generated, the miner announces it to the network of nodes running the distributed ledgers that the problem has been solved and they can move to solving another block.  Proof of work algorithm addresses the issues with multiple miners announcing that they have solved the problem.
+. Miners: Entities with distributed ledgers who are using their computers to package x number of transactions into blocks. 
+
+=== Blockchain Platforms
+Some blockchain implementations include 1,2, and 3, but depending on what the consensus algorithm has implemented as in 4 above, 5 may or may not even exist.
+As more features get added to the DL platforms, they become more complex, and so does the security.
+
+For instance Ethereum uses a scripting engine to translate smart contracts written in Solidity, Ethereum Virtual Machine has been developed by a group of developers but a thorough code review has not be done on it.
+
+<<<
+== Deployment Models
+This section will outline the models in use and their impacts to user privacy.
+
+=== Centralized
+All web platforms in use today are deployed using the centralized model.  For instance, _Facebook_ has all user data in their data centres.  Users have to login to _Facebook_ servers to establish communications with other users. Centralization introduces following risks:
+
+* Mis-use
+* Honeypot, where there is so much data in one location, it becomes a target for hackers.
+* Censorship
+* Monitoring
+
+Classic examples would be the difference between you using fiat vs electronic means such as:
+
+* Credit card
+* Debit card
+* Electronic Funds Transfer(EFT)
+
+When spending fiat, following table summarizes privacy impacts. (Traceability diminishing as you go down the list):
+
+[frame=topbot]
+[Caption: Table 1]
+.Transaction Traceability
+[%autowidth]
+,===
+No,Source, Spend Method, Traceability
+
+1,Any,Electronic, High
+2,Bank,Fiat,Medium
+3,Employer,Fiat,Medium 
+4,Family/Friend,Fiat, Low
+,===
+
+No matter what the source of income is, if you spend it via:
+
+* Electronic means, all your transactions are highly traceable. An individual has no privacy at all.
+* Non electronic means, only the party providing the funds knows who they provided the funds to, where it was spent they have no idea. An individuals privacy is well protected.
+
+
+ 
+
+=== De-centralized
+In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
+
+=== Hybrid
+
+<<<
+
+== Consensus Protocols
+Following are the predominant consensus protocols that are use by the distributed ledger implementations.
+
+CONSENSUS PROTOCOL 	OVERVIEW
+Proof of Work	Uses computational power to validate new blocks of data.
+To participate in this scheme, participants are required to collate transactions within a single block and then apply a hash function with the use of some additional metadata.
+Proof of Stake	Validators (special nodes) voting on valid blocks whilst posting collateral in order to be able to participate in the validation process. 
+Unlike Proof of Work, Proof of Stake relies on proving the user is invested in the underlying token of value of the network being mined rather than being the owner of a large amount of computing power
+Ripple Protocol	In order to validate new transactions, servers amalgamate outstanding transactions into a “candidate list.”
+All participants then vote on valid transactions to be included in the ledger.
+Transactions that meet the 80% threshold of “yes” votes are included within the following last closed ledger state.
+Proof of Elapsed Time	As part of its Intelledger proposal, Intel has devised a means of establishing a validation lottery that takes advantage of the capability of its CPUs to produce a timestamp cryptographically signed by the hardware. 
+Whoever in the chain has the next soonest timestamp will be the one to decide which transactions will be a part of the next block in the chain. 
+This consensus method is extremely energy efficient compared to Proof of Work and therefore more adapted to IoT devices.
+
+== Adhoc Notes
+* Network (and cloud) security has changed signifivantly
+** Our network protection controls have to advance and improve to keep up with attacks
+* An additional level of application controls is needed that includes:
+** Trust analysis and realtionships
+** Application behaviour anlysis
+** Dynamic policy for prevention/detection
+
+*Micro-segmentation* is a model of defining network isolation polcies that alllows oranizaiont sto segment and control workloads based on applicaiton provilres and workload attributes
+** The focus is on making network security more granular and controllable
+** also a shift toward internal network focus, versus "the perimieter"
+** Each asset has a permeter, and a software-defined perimeter policy that is attached to it and evaluated during interactions with other systems
+
+<<<
+== Terms Used
+
+* ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+* IOC - Indicators of Compromise
+* OSINT - Open Source Inteligence Tools
+* TTP - Techniques, Tactics, Procedures
+
+<<<
+[bibliography]
+== References
+. Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
+. Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
+
+
+
