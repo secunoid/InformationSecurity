@@ -110,9 +110,6 @@ No matter what the source of income is, if you spend it via:
 * Electronic means, all your transactions are highly traceable. An individual has no privacy at all.
 * Non electronic means, only the party providing the funds knows who they provided the funds to, where it was spent they have no idea. An individuals privacy is well protected.
 
-
- 
-
 === De-centralized
 In a decentralized model, there is no cental body, users interact with each other via direct connections.  No central entity is able to control their actions or data
 
@@ -122,16 +119,13 @@ In a decentralized model, there is no cental body, users interact with each othe
 == Consensus Protocols
 Following are the predominant consensus protocols that are use by the distributed ledger implementations.
 
-CONSENSUS PROTOCOL 	OVERVIEW
-Proof of Work	Uses computational power to validate new blocks of data.
-To participate in this scheme, participants are required to collate transactions within a single block and then apply a hash function with the use of some additional metadata.
-Proof of Stake	Validators (special nodes) voting on valid blocks whilst posting collateral in order to be able to participate in the validation process. 
-Unlike Proof of Work, Proof of Stake relies on proving the user is invested in the underlying token of value of the network being mined rather than being the owner of a large amount of computing power
-Ripple Protocol	In order to validate new transactions, servers amalgamate outstanding transactions into a “candidate list.”
-All participants then vote on valid transactions to be included in the ledger.
-Transactions that meet the 80% threshold of “yes” votes are included within the following last closed ledger state.
-Proof of Elapsed Time	As part of its Intelledger proposal, Intel has devised a means of establishing a validation lottery that takes advantage of the capability of its CPUs to produce a timestamp cryptographically signed by the hardware. 
-Whoever in the chain has the next soonest timestamp will be the one to decide which transactions will be a part of the next block in the chain. 
+.. *Proof of Work* uses computational power to validate new blocks of data.  To participate in this scheme, participants are required to collate transactions within a single block and then apply a hash function with the use of some additional metadata.  Proof of Stake	Validators (special nodes) voting on valid blocks whilst posting collateral in order to be able to participate in the validation process. 
+
+.. *Proof of Stake* relies on proving the user is invested in the underlying token of value of the network being mined rather than being the owner of a large amount of computing power
+
+.. *Ripple Protocol* In order to validate new transactions, servers amalgamate outstanding transactions into a “candidate list.” All participants then vote on valid transactions to be included in the ledger.  Transactions that meet the 80% threshold of “yes” votes are included within the following last closed ledger state.
+
+.. *Proof of Elapsed Time*	As part of its Intelledger proposal, Intel has devised a means of establishing a validation lottery that takes advantage of the capability of its CPUs to produce a timestamp cryptographically signed by the hardware. Whoever in the chain has the next soonest timestamp will be the one to decide which transactions will be a part of the next block in the chain. 
 This consensus method is extremely energy efficient compared to Proof of Work and therefore more adapted to IoT devices.
 
 <<<
