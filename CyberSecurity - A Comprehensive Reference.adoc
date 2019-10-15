@@ -422,7 +422,7 @@ DREAD methodology can be customized to cater the needs of your application, duri
 === Threat Intelligence
 
 ==== MITRE ATT&CK
-MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
 
 With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
 
@@ -437,6 +437,16 @@ Unit 42 is the global threat intelligence team at Palo Alto Networks®
 https://www.packetstormsecurity.com
 https://www.securityfocus.com
 https://www.exploit-db.com
+
+==== STIX
+STIX (Structured Threat Information eXpression) was originally conceived as a language to describe cyber threat intelligence. This was groundbreaking at the time because it was the first language to provide a definition of cyber threat intelligence. Although it’s a bit of a fuzzy term, cyber threat intelligence generally describes information about adversaries and their behaviors that can inform defensive actions. For example, knowing that a certain adversary targets financial institutions by using specially crafted spear-phishing emails, and then delivers Trojans that will reach out to a certain set of websites that are known to be malicious, can be very helpful in defending against the attack. STIX captures that type of intelligence in a machine-readable form so that it can be shared among organizations and tools.
+
+The DHS Office of Cybersecurity and Communications funded MITRE, beginning in 2012, to act as the technical developer of STIX and serve as a community facilitator to jumpstart STIX. Once some level of maturity was reached, STIX would be transitioned to an international standards body. That goal was realized in 2015 when governance of STIX was transitioned to OASIS, an international standards consortium. This was a big step for STIX and a big success for DHS, MITRE, and the community because it meant that STIX was on its way to becoming an international standard. Although DHS and MITRE continue to serve in several leadership positions in the CTI TC, the majority of the leadership and the vast majority of participants in the TC are from industry. In fact, the OASIS CTI TC was founded with more participants than any other TC in OASIS history. It's that community that led the development of STIX 2.0.
+
+==== TAXII
+TAXII is a high-level protocol for moving cyber threat intelligence (primarily STIX) data around between systems and tools. We expect that, within the coming months, TAXII will be achieving this same milestone and opening its own public review period.
+
+If you're interested in learning more about STIX 2.0 or TAXII 2.0, the documentation page is the best place to start.
 
 === Threat Risk Assessments
 Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
@@ -648,6 +658,7 @@ A documented process must be followed to ensure compliance to security policy an
 == Terms Used
 
 * ATT&CK - Adversatial Tactics Techniques & Common Knowledge
+* CTI - Cyber Threat Intelligence
 * IOC - Indicators of Compromise
 * OSINT - Open Source Inteligence Tools
 * TTP - Techniques, Tactics, Procedures
