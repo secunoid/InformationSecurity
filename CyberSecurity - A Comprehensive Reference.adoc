@@ -119,7 +119,7 @@ Taxonomy is important as it ensures industry standard terms are used when talkin
 A malware is
 
 image::TypesOfMalware.jpg[]
-image::TypesOFAttacks.jpg[]
+image::TypesOfAttacks.jpg[]
 
 === Vulnerability Assessment
 Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
