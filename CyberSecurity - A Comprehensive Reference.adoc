@@ -204,6 +204,8 @@ Use vulnerable web application from the OWASP site: https://www.owasp.org/index.
 ===== CherryTree
 Chery Tree is a note taking app
 
+===== Chisel
+
 ===== Crackmapexec
 
 ===== DIRB
