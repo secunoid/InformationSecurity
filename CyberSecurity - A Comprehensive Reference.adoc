@@ -120,9 +120,42 @@ Taxonomy is important as it ensures industry standard terms are used when talkin
 image::TypesOfAttacks.jpg[]
 
 ==== Malware
-A malware is
+A malware is any piece of software that was written with the intent of damaging devices, stealing data, and generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the different kinds of malware.
+
+Malware is often created by teams of hackers: usually, they’re just looking to make money, either by spreading the malware themselves or selling it to the highest bidder on the Dark Web. However, there can be other reasons for creating malware too — it can be used as a tool for protest, a way to test security, or even as weapons of war between governments.
 
 image::TypesOfMalware.jpg[]
+
+* *Adware* Though not always malicious in nature, aggressive advertising software can undermine your security just to serve you ads — which can give other malware an easy way in. Plus, let’s face it: pop-ups are really annoying.
+
+* *Bots* Bots is a soft for roBot. Bots are usually controlled remotely and work as a network.
+
+* *Keylogger* It is one of the most dangerous threats to a PC user's privacy. This type of malware installs itself as a result of clicking while browsing the Internet or downloading software. Keyloggers keep track of all of your keystrokes when you are using your PC and then transfers the information to a remote server. It is capable of recording all of your online conversations, emails, and password logins, as well as creating screenshots of all of your PC activity.
+
+Keyloggers are not always in the form of malware or software; it can also be installed on your computer in the form of hardware through being placed between the plug on your keyboard and the entry port. Some keyloggers are legitimate applications such as those that record an employee's PC activity during work hours. Other keyloggers are in the form of malicious software that is designed to perform criminal activity.
+
+* *Ransomware* This kind of malware typically locks down your computer and your files, and threatens to erase everything unless you pay a ransom.
+
+* *Remote Access*
+
+* *Rootkit*
+
+* *Spyware* No surprise here — spyware is malware designed to spy on you. It hides in the background and takes notes on what you do online, including your passwords, credit card numbers, surfing habits, and more.
+
+* *Trojans* This kind of malware disguises itself as legitimate software, or is hidden in legitimate software that has been tampered with. It tends to act discreetly and create backdoors in your security to let other malware in.
+
+* *Virus* Like their biological namesakes, viruses attach themselves to clean files and infect other clean files. They can spread uncontrollably, damaging a system’s core functionality and deleting or corrupting files. They usually appear as an executable file (.exe)
+
+* *Worm* Worms infect entire networks of devices, either local or across the internet, by using network interfaces. It uses each consecutively infected machine to infect others.
+
+
+
+
+
+
+
+
+
 
 === Vulnerability Assessment
 Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
@@ -671,6 +704,7 @@ A documented process must be followed to ensure compliance to security policy an
 == References
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
+. What is Malware? https://www.avg.com/en/signal/what-is-malware
 
 
 
