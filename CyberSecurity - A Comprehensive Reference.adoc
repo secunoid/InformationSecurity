@@ -43,6 +43,17 @@ Data that is being processed by the solution should care fully considered for:
 <<<
 == Data Protection
 
+=== Password Strength
+Brute force password cracking - the importance of using a long password with a mix of uppercase, lowercase and special characters.
+
+Assuming an attacker has a reasonably fast connection and PC, the table is an estimate of the amount of time it would take to generate every possible combination of passwords for a given number of characters. After generating the list it's just a matter of time before the computer runs through all the possibilities – or gets shut down trying.
+
+Pay particular attention to the difference between using only lowercase characters and using all possible characters (uppercase, lowercase, and special characters – like @#$%^&*). Adding just one capital letter and one asterisk would change the processing time for an 8 character password from 2.4 days to 2.1 centuries.
+
+via Dan Williams (https://www.linkedin.com/in/ACoAAACDV6ABaDOtrduFQ5p-c5qgSka1HHTseAY/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BxdsE5HnqTDulyw2QOn9mCw%3D%3D)
+
+image::PasswordLengthComplexityCrackingTime.jpg[]
+
 <<<
 == Information Security    
 
@@ -147,15 +158,6 @@ Keyloggers are not always in the form of malware or software; it can also be ins
 * *Virus* Like their biological namesakes, viruses attach themselves to clean files and infect other clean files. They can spread uncontrollably, damaging a system’s core functionality and deleting or corrupting files. They usually appear as an executable file (.exe)
 
 * *Worm* Worms infect entire networks of devices, either local or across the internet, by using network interfaces. It uses each consecutively infected machine to infect others.
-
-
-
-
-
-
-
-
-
 
 === Vulnerability Assessment
 Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
