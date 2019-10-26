@@ -366,19 +366,14 @@ first install go: apt install golang upx-ucl -y
 
 ===== Kali Linux
 
-set date and time:
-$ sudo apt-get install ntpdate
-$ sudo ntpdate in.pool.ntp.org
-
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
-
-To Update metasploit: apt update; apt install metasploit-framework
-
-The command to install all the tools is simply:
-
-sudo apt-get install kali-linux-full
-
-Kali Tools: https://en.kali.tools/all/
+[horizontal]
+Install ntpdate package:: sudo apt-get install ntpdate
+Sync date & time with ntp source:: sudo ntpdate in.pool.ntp.org
+Metasploit directory:: /usr/share/metssploit-framework
+Update Metasploit::  apt update; apt install metasploit-framework
+Install all the tools on Kali:: sudo apt-get install kali-linux-full
+Kali Tools Listing:: https://en.kali.tools/all/
+Update Kali:: sudo apt-get update; sudo apt-get dist-upgrade;sudo apt-get clean
 
 ===== Maltego
 
