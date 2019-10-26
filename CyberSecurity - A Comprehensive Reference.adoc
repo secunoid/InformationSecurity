@@ -356,8 +356,9 @@ License: Apache-2.0
 ===== Hashcat
 
 ===== HTTPROBE
-
-first install go: apt install golang upx-ucl -y
+[horizontal]
+Github:: https://github.com/tomnomnom/httprobe
+Perform a scan on specific ports:: cat domains.txt | httprobe -s -p https:8443
 
 
 ===== Hydra
