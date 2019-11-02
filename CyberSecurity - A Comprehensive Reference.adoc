@@ -652,6 +652,12 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 === Threat Hunting
 Threat hunting is a relatively new focal area in information security.
 
+<<<
+== Digital Forensics
+
+=== Tools
+
+==== Loki
 
 <<<
 == Enterprise Architecture
