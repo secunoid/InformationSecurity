@@ -367,7 +367,7 @@ https://tools.kali.org/web-applications/dirb
 ===== Ettercap
 
 ===== Exiftool
-shows exif data about a file.
+Shows exif data about a file.   To ensure you get the correct date time meta data, always use wget.
 
 ===== Eyewitness
 
