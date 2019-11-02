@@ -642,6 +642,14 @@ TAXII is a high-level protocol for moving cyber threat intelligence (primarily S
 
 If you're interested in learning more about STIX 2.0 or TAXII 2.0, the documentation page is the best place to start.
 
+==== Tools
+
+===== MISP
+MISP - Open Source Threat Intelligence Platform & Open Standards For Threat Information Sharing
+
+Link: https://www.misp-project.org/
+
+
 === Threat Risk Assessments
 Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
