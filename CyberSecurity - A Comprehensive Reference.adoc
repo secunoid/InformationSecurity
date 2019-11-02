@@ -91,7 +91,7 @@ Now working through the layers just like peeling an onion. You have gone through
 * Assets within these zone would be placed in cabinets that are again secured via lock and key
 
 === Technical Security
-Now that we have addressed the physical security aspects Once inside the computer room, this is where information security starts to take shape.  All the computers in the computer room will need to be accessed by the users.  People with different levels of access would be physically seperated into specific areas.  For instance Super users were in a different physical space than regular users.
+Now that we have addressed the physical security aspects Once inside the computer room, this is where information security starts to take shape.  All the computers in the computer room will need to be accessed by the users.  People with different levels of access would be physically separated into specific areas.  For instance Super users were in a different physical space than regular users.
 
 With the advent of networking,TCP/IP, and better access control mechanisms in operating systems that requirement to physically segregate users started to diminish.
 
@@ -101,7 +101,20 @@ Applications that operated on top of the operating system implemented fine grain
 
 The gates and guards started getting replaced by electronic locks with pin pads and cameras.  Whereby to prove that you were authorized to access an area, you would have the PIN to the door which you would use to get access.  
 
-The PIN pads later got replaced by   
+The PIN pads later got replaced by card access, where you had to scan your card to enter an area.
+
+As you can see a lot of Physical Security controls are also moving into information security space whereby the cameras that are recording and the recording management software, the card access system and access management are all managed by applications that are operating on top of an operating system running on a computer system.
+
+Enter Information Security, which at the most fundamental level is the basis for:
+
+* Information Technology Security
+* System Security
+**  Network Security
+**  Application Security
+*** Database Security
+* Cyber Security
+
+This book will cover the various aspects of implementing an Information Security Program at an organization of any size. You don't have to be a huge organization to have an information security program.  If you are in business you are collecting, storing, and transmitting all kinds of information and it important that you know how to ensure that information is protected at all times.  If it is not then maybe your business might be at risk.
 
 <<<
 == Security Organization
