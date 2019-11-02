@@ -260,7 +260,7 @@ Red team-blue team exercises take their name from their military antecedents. Th
 === Deep vs Dark Web
 Dark web is every resource where hackers & criminal underground engage with each other.  Tor is a mechanism that is used as a transport for the dark web.
 
-image::DeepWebDarkWeb.jpg[]
+image::DeepWebDarkWeb.jpeg[]
 
 Source: https://heimdalsecurity.com/blog/deep-web-vs-dark-web-what-is-each/ 
 
