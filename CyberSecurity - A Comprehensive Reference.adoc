@@ -71,7 +71,37 @@ via Dan Williams (https://www.linkedin.com/in/ACoAAACDV6ABaDOtrduFQ5p-c5qgSka1HH
 image::PasswordLengthComplexityCrackingTime.jpg[]
 
 <<<
-== Information Security    
+== Information Security 
+Information Security as you can infer, all about information protection.  Before the advent of internet information was stored in corporate data centers and they had mechanisms in place to protect the information.  The two main areas that are focused are logical and technical security.
+
+=== Logical Security
+Logical controls are about physical aspects of the information protection.  The computer system is housed in a building in a particular area.  Depending on the sensitivity of the information various mechanisms are put in place like:
+
+* Fenced building perimeter
+* Gates at the entry and exit points
+* Guards manning those gates to ensure that only authorized individuals are allowed through the gates
+
+Now working through the layers just like peeling an onion. You have gone through the first layer the perimeter. Now once in the perimeter it has to be ensured:
+
+* Ensuring protections are in place to prevent vehicles damaging the building via direct impacts
+* Split the building into zones with different levels of access levels for the personnel and this can be gated & guarded area
+* Ensure computer room is in the middle of the building without any window access
+* The computer room can be split into zones depending on the sensitivity of the information
+* Access to these zones can be gated and guarded
+* Assets within these zone would be placed in cabinets that are again secured via lock and key
+
+=== Technical Security
+Now that we have addressed the physical security aspects Once inside the computer room, this is where information security starts to take shape.  All the computers in the computer room will need to be accessed by the users.  People with different levels of access would be physically seperated into specific areas.  For instance Super users were in a different physical space than regular users.
+
+With the advent of networking,TCP/IP, and better access control mechanisms in operating systems that requirement to physically segregate users started to diminish.
+
+That requirement to physically segregate users with different levels of access via gates and guards moved to the network and operating system level and this is where information security started to take a foot hold.
+
+Applications that operated on top of the operating system implemented fine grained access mechanisms for the users.
+
+The gates and guards started getting replaced by electronic locks with pin pads and cameras.  Whereby to prove that you were authorized to access an area, you would have the PIN to the door which you would use to get access.  
+
+The PIN pads later got replaced by   
 
 <<<
 == Security Organization
