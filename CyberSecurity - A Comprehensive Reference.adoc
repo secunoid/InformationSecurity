@@ -257,6 +257,15 @@ All the servers that the distributed ledger platform runs on must be:
 == Vulnerability Management Program
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
 
+=== Deep vs Dark Web
+Dark web is every resource where hackers & criminal underground engage with each other.  Tor is a mechanism that is used as a transport for the dark web.
+
+image::DeepWebDarkWeb.jpg[]
+Source: https://heimdalsecurity.com/blog/deep-web-vs-dark-web-what-is-each/ 
+
+
+=== Pastebin
+
 === Taxonomy
 Taxonomy is important as it ensures industry standard terms are used when talking about vulnerabilities, threat actors, and reporting.
 
