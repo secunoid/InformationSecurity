@@ -428,6 +428,11 @@ Install all the tools on Kali:: sudo apt-get install kali-linux-full
 Kali Tools Listing:: https://en.kali.tools/all/
 Update Kali:: sudo apt-get update; sudo apt-get dist-upgrade;sudo apt-get clean
 
+===== LinEnum
+Linux enumeration & privilege escalation checks
+
+Link: https://github.com/rebootuser/LinEnum
+
 ===== Maltego
 
 ===== Metasploit
