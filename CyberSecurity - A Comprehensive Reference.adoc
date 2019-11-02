@@ -118,7 +118,7 @@ This book will cover the various aspects of implementing an Information Security
 
 <<<
 == Security Organization
-For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
+For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
 
 . Centralized
 . Distributed
