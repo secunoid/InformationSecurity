@@ -453,6 +453,11 @@ To Update metasploit: apt update; apt install metasploit-framework
 
 Metasploit Online Database: https://www.rapid7.com/db/modules
 
+===== Mimikatz
+Mimikatz is a leading post-exploitation tool that dumps passwords from memory, as well as hashes, PINs and Kerberos tickets. Other useful attacks it enables are pass-the-hash, pass-the-ticket or building Golden Kerberos tickets. This makes post-exploitation lateral movement within a network easy for attackers.
+
+Link: https://github.com/gentilkiwi/mimikatz
+
 ===== Netcat
 
 nc -lvnp 9001
