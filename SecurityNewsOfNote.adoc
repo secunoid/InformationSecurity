@@ -1,0 +1,24 @@
+= Security News Of Note
+Doc Writer <smsharif@secunoid.com>
+v0.1, 3rd November, 2019
+:numbered:
+:sectnum:
+:sectnumlevels: 5
+:chapter-label:
+:toc: right
+:toclevels: 5
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This weekly newsletter covers important events in the cyber security universe
+:keywords: cybersecurity, it security, news
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.securityprivacyrisk.com
+'''
+
+
+<<<
+== Overview
+This newsletter will be updated on a weekly basis and released Sunday night every week.
+
