@@ -692,10 +692,25 @@ Density can also be understood as "entropy". However, the algorithm behind densi
 Link: https://www.cert.at/downloads/software/densityscout_en.html
 
 ==== Kape
+KAPE is a multi-function program that primarily: 
+
+. collects files
+. processes collected files with one or more programs.
+
+KAPE reads configuration files on the fly and based on their contents, collects and processes relevant files. This makes KAPE very extensible in that the program’s author does not need to be involved to add or expand functionality.
+
+As we will see later in more detail, KAPE uses the concepts of targets and modules to do its work. KAPE comes with a range of default targets and modules for operations most commonly required in forensic exams. These can also serve as models  for creating new targets and modules.
+
+At a high level, KAPE works by adding file masks to a queue. This queue is then used to find and copy files from a source location. For files that are locked by the operating system, a second run bypasses the lock. At the end of the process, KAPE will make a copy and preserve metadata about all available files from a source location into a given directory. The second (optional) stage of processing is to run one or more programs against the collected data. This too works by targeting either specific file names or directories. Various programs are run against the files, and the output from the programs is then saved in directories named after a category, such as EvidenceOfExecution, BrowserHistory or AccountUsage.
+
+By grouping things by category, examiners of all skill levels have the means to discover relevant information regardless of an individual artifact's source. In other words, an examiner no longer need to know how to process prefetch, shimcache, amcache, userassist, etc., as they relate to evidence of execution artifacts. Ultimately, a wider range of artifacts can be leveraged for any given requirement.
+
+Link: https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape
 
 ==== Loki
 
-
+<<<
+== Incident Response
 
 
 <<<
