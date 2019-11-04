@@ -682,6 +682,9 @@ Threat hunting is a relatively new focal area in information security.
 
 ==== Loki
 
+==== Kape
+
+
 <<<
 == Enterprise Architecture
 Source: https://www.youtube.com/watch?v=NUD-LXUE4tM 
