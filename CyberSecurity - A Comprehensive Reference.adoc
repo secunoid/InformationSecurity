@@ -680,9 +680,22 @@ Threat hunting is a relatively new focal area in information security.
 
 === Tools
 
-==== Loki
+==== DensityScout
+DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
+
+*So what does DensityScout do?*
+DensityScout's main focus is to scan a desired file-system-path by calculating the density of each file to finally print out an accordingly descending list. Usually most Microsoft Windows executables are not packed or encrypted in any way which throws the hits of malicious executables to the top of the list where one can easily focus on.
+
+*What's Density?*
+Density can also be understood as "entropy". However, the algorithm behind density is not 100% equal to the one which entropy is based on. So we decided to choose a different name.
+
+Link: https://www.cert.at/downloads/software/densityscout_en.html
 
 ==== Kape
+
+==== Loki
+
+
 
 
 <<<
