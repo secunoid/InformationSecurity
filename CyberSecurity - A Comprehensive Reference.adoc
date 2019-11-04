@@ -904,12 +904,14 @@ A documented process must be followed to ensure compliance to security policy an
 
 <<<
 == Terms Used
-
-* ATT&CK - Adversatial Tactics Techniques & Common Knowledge
-* CTI - Cyber Threat Intelligence
-* IOC - Indicators of Compromise
-* OSINT - Open Source Inteligence Tools
-* TTP - Techniques, Tactics, Procedures
+[horizontal]
+ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
+CTF:: Capture The Flag
+CTI:: Cyber Threat Intelligence
+IOC:: Indicators of Compromise
+OCG:: Organized Criminal groups
+OSINT:: Open Source Inteligence Tools
+TTP:: Techniques, Tactics, Procedures
 
 <<<
 [bibliography]
