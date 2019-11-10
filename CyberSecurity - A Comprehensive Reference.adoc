@@ -478,12 +478,6 @@ does LLMNR Poisioning
 ===== Sublist3r
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
-Source: https://github.com/aboul3la/Sublist3r
-Sublist3r Homepage | Kali sublist3r Repo
-
-Author: Ahmed Aboul-Ela
-License: GPL-2+
-
 First open a terminal sessions and change the directory to the Desktop as following:
 
 cd Desktop
@@ -502,7 +496,20 @@ pip install -r requirements.txt
 
 python sublist3r -h
 
+[horizontal]
+Source:: https://github.com/aboul3la/Sublist3r
+Author:: Ahmed Aboul-Ela
+License:: GPL-2+
+
 ===== TheHarvester
+
+===== Wfuzz
+Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
+
+[horizontal]
+Source:: https://github.com/xmendez/wfuzz/
+Author:: Christian Martorella, Carlos del ojo, Xavier Mendez aka Javi
+License:: GPLv2
 
 ===== Yara
 
