@@ -422,8 +422,6 @@ More information here: https://stedolan.github.io/jq/
 [horizontal]
 Install ntpdate package:: sudo apt-get install ntpdate
 Sync date & time with ntp source:: sudo ntpdate in.pool.ntp.org
-Metasploit directory:: /usr/share/metssploit-framework
-Update Metasploit::  apt update; apt install metasploit-framework
 Install all the tools on Kali:: sudo apt-get install kali-linux-full
 Kali Tools Listing:: https://en.kali.tools/all/
 Update Kali:: sudo apt-get update; sudo apt-get dist-upgrade;sudo apt-get clean
@@ -437,11 +435,10 @@ Link: https://github.com/rebootuser/LinEnum
 
 ===== Metasploit
 
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
-
-To Update metasploit: apt update; apt install metasploit-framework
-
-Metasploit Online Database: https://www.rapid7.com/db/modules
+[horizontal]
+On Kali metasploit is in this directory:: /usr/share/metssploit-framework
+To Update metasploit:: apt update; apt install metasploit-framework
+Metasploit Online Database:: https://www.rapid7.com/db/modules
 
 ===== Mimikatz
 Mimikatz is a leading post-exploitation tool that dumps passwords from memory, as well as hashes, PINs and Kerberos tickets. Other useful attacks it enables are pass-the-hash, pass-the-ticket or building Golden Kerberos tickets. This makes post-exploitation lateral movement within a network easy for attackers.
