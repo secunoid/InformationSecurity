@@ -40,15 +40,85 @@ Data that is being processed by the solution should care fully considered for:
 . Data retention: Based on regulatory, and industry requirements,  data should be retained for 
 . Data access & update: Allow end users ability to access their data and modify it as required.
 
+Governments across the world are responding to the global cybersecurity crisis by creating new regulations that govern the way companies handle and store valuable consumer data. This includes important information such as personal identifications, banking and credit card numbers, and purchase history.
+
+The European Union, in particular, has been a leader in this field. One of its pioneering efforts is the General Data Protection Regulations (GDPR) what was passed in 2016 and went into effect in Spring 2018. It impacts all companies that do business with European customers, regardless of where the company is located.
+
+The GDPR requires that companies receive consent from consumers before processing data, collect and store data anonymously, and notify customers when their information has potentially been breached. It also requires large businesses to appoint a data privacy protection officer to oversee implementation of the regulations.
+
+Furthermore, while the U.S. federal government has yet to create a set of strong data privacy protections, several states have drawn up their legislation, including Hawaii, Massachusetts, Maryland, Mississippi, New Mexico, and Washington.
+
+However, the most important of these regulations come from California, the largest state in the country by population with nearly 40 million residents. The California Consumer Privacy Act (CCPA) goes into effect on January 1, 2020, and governs the way companies must store and secure data.
+
+CCPA allows consumers to demand crucial information about their personal data held by corporations.
+
+When requested, businesses must inform consumers about the type of personal data they possess, provide them with specific personal information collected in the previous year, and allow customers to request that their information not be shared with third parties. Companies will also have to delete customer data when requested.
+
+
+
 <<<
 == Data Protection
 
+=== Password Strength
+Brute force password cracking - the importance of using a long password with a mix of uppercase, lowercase and special characters.
+
+Assuming an attacker has a reasonably fast connection and PC, the table is an estimate of the amount of time it would take to generate every possible combination of passwords for a given number of characters. After generating the list it's just a matter of time before the computer runs through all the possibilities – or gets shut down trying.
+
+Pay particular attention to the difference between using only lowercase characters and using all possible characters (uppercase, lowercase, and special characters – like @#$%^&*). Adding just one capital letter and one asterisk would change the processing time for an 8 character password from 2.4 days to 2.1 centuries.
+
+via Dan Williams (https://www.linkedin.com/in/ACoAAACDV6ABaDOtrduFQ5p-c5qgSka1HHTseAY/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BxdsE5HnqTDulyw2QOn9mCw%3D%3D)
+
+image::PasswordLengthComplexityCrackingTime.jpg[]
+
 <<<
-== Information Security    
+== Information Security 
+Information Security as you can infer, all about information protection.  Before the advent of internet information was stored in corporate data centers and they had mechanisms in place to protect the information.  The two main areas that are focused are logical and technical security.
+
+=== Logical Security
+Logical controls are about physical aspects of the information protection.  The computer system is housed in a building in a particular area.  Depending on the sensitivity of the information various mechanisms are put in place like:
+
+* Fenced building perimeter
+* Gates at the entry and exit points
+* Guards manning those gates to ensure that only authorized individuals are allowed through the gates
+
+Now working through the layers just like peeling an onion. You have gone through the first layer the perimeter. Now once in the perimeter it has to be ensured:
+
+* Ensuring protections are in place to prevent vehicles damaging the building via direct impacts
+* Split the building into zones with different levels of access levels for the personnel and this can be gated & guarded area
+* Ensure computer room is in the middle of the building without any window access
+* The computer room can be split into zones depending on the sensitivity of the information
+* Access to these zones can be gated and guarded
+* Assets within these zone would be placed in cabinets that are again secured via lock and key
+
+=== Technical Security
+Now that we have addressed the physical security aspects Once inside the computer room, this is where information security starts to take shape.  All the computers in the computer room will need to be accessed by the users.  People with different levels of access would be physically separated into specific areas.  For instance Super users were in a different physical space than regular users.
+
+With the advent of networking,TCP/IP, and better access control mechanisms in operating systems that requirement to physically segregate users started to diminish.
+
+That requirement to physically segregate users with different levels of access via gates and guards moved to the network and operating system level and this is where information security started to take a foot hold.
+
+Applications that operated on top of the operating system implemented fine grained access mechanisms for the users.
+
+The gates and guards started getting replaced by electronic locks with pin pads and cameras.  Whereby to prove that you were authorized to access an area, you would have the PIN to the door which you would use to get access.  
+
+The PIN pads later got replaced by card access, where you had to scan your card to enter an area.
+
+As you can see a lot of Physical Security controls are also moving into information security space whereby the cameras that are recording and the recording management software, the card access system and access management are all managed by applications that are operating on top of an operating system running on a computer system.
+
+Enter Information Security, which at the most fundamental level is the basis for:
+
+* Information Technology Security
+* System Security
+**  Network Security
+**  Application Security
+*** Database Security
+* Cyber Security
+
+This book will cover the various aspects of implementing an Information Security Program at an organization of any size. You don't have to be a huge organization to have an information security program.  If you are in business you are collecting, storing, and transmitting all kinds of information and it important that you know how to ensure that information is protected at all times.  If it is not then maybe your business might be at risk.
 
 <<<
 == Security Organization
-For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO , the operational structure can be based on two models:
+For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
 
 . Centralized
 . Distributed
@@ -86,6 +156,81 @@ This document goes into details on the how the security policy requirements must
 == Security Standards
 Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
 
+=== Windows Web Server Hardening
+
+*Services*
+
+* Unnecessary Windows services are disabled.
+* Services are running with least-privileged accounts.
+* FTP, SMTP, and NNTP services are disabled if they are not required.
+* Telnet service is disabled.
+
+*Protocols*
+
+* WebDAV is disabled if not used by the application OR it is secured if it is required.
+* TCP/IP stack is hardened
+* NetBIOS and SMB are disabled (closes ports 137, 138, 139, and 445).
+
+*Accounts*
+
+* Unused accounts are removed from the server.
+* Guest account is disabled.
+* IUSR_MACHINE account is disabled if it is not used by the application.
+* If your applications require anonymous access, a custom least-privileged anonymous account is created.
+* The anonymous account does not have write access to Web content directories and cannot execute command-line tools.
+Strong account and password policies are enforced for the server.
+* Remote logons are restricted. (The “Access this computer from the network” user-right is removed from the Everyone group.)
+* Accounts are not shared among administrators.
+* Null sessions (anonymous logons) are disabled.
+* Approval is required for account delegation.
+* Users and administrators do not share accounts.
+* No more than two accounts exist in the Administrators group.
+* Administrators are required to log on locally OR the remote administration solution is secure.
+
+*Files and Directories*
+
+* Files and directories are contained on NTFS volumes
+Web site content is located on a non-system NTFS volume.
+* Log files are located on a non-system NTFS volume and not on the same volume where the Web site content resides.
+* The Everyone group is restricted (no access to \WINNT\system32 or Web directories).
+* Web site root directory has denied write ACE for anonymous Internet accounts.
+* Content directories have deny write ACE for anonymous Internet accounts.
+* Remote  administration application is removed
+* Resource kit tools, utilities, and SDKs are removed.
+* Sample applications are removed
+
+*Shares*
+
+* All unnecessary shares are removed (including default administration shares).
+* Access to required shares is restricted (the Everyone group does not have access).
+* Administrative shares (C$ and Admin$) are removed if they are not required (Microsoft Management Server (SMS) and Microsoft Operations Manager (MOM) require these shares).
+
+*Ports*
+
+* Internet-facing interfaces are restricted to port 80 (and 443 if SSL is used)
+* Intranet traffic is encrypted (for example, with SSL) or restricted if you do not have a secure data center infrastructure.
+
+*Registry*
+
+* Remote registry access is restricted.
+* SAM is secured (HKLM\System\CurrentControlSet\Control\LSA\NoLMHash).
+
+*Auditing and Logging*
+
+* Failed logon attempts are audited.
+* IIS log files are relocated and secured.
+* Log files are configured with an appropriate size depending on the application security requirement.
+* Log files are regularly archived and analyzed.
+* Access to the Metabase.bin file is audited.
+* IIS is configured for W3C Extended log file format auditing.
+
+*Server Certificates*
+
+* Ensure certificate date ranges are valid.
+* Only use certificates for their intended purpose (For example, the server certificate is not used for e-mail).
+* Ensure the certificate’s public key is valid, all the way to a trusted root authority.
+* Confirm that the certificate has not been revoked.
+
 <<<
 == Security Guidelines
 
@@ -111,6 +256,52 @@ All the servers that the distributed ledger platform runs on must be:
 <<<
 == Vulnerability Management Program
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
+
+=== Deep vs Dark Web
+Dark web is every resource where hackers & criminal underground engage with each other.  Tor is a mechanism that is used as a transport for the dark web.
+
+image::DeepWebDarkWeb.jpeg[]
+
+Source: https://heimdalsecurity.com/blog/deep-web-vs-dark-web-what-is-each/ 
+
+
+=== Pastebin
+
+=== Taxonomy
+Taxonomy is important as it ensures industry standard terms are used when talking about vulnerabilities, threat actors, and reporting.
+
+==== Attacks
+
+image::TypesOfAttacks.jpg[]
+
+==== Malware
+A malware is any piece of software that was written with the intent of damaging devices, stealing data, and generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the different kinds of malware.
+
+Malware is often created by teams of hackers: usually, they’re just looking to make money, either by spreading the malware themselves or selling it to the highest bidder on the Dark Web. However, there can be other reasons for creating malware too — it can be used as a tool for protest, a way to test security, or even as weapons of war between governments.
+
+image::TypesOfMalware.jpg[]
+
+* *Adware* Though not always malicious in nature, aggressive advertising software can undermine your security just to serve you ads — which can give other malware an easy way in. Plus, let’s face it: pop-ups are really annoying.
+
+* *Bots* Bots is a soft for roBot. Bots are usually controlled remotely and work as a network.
+
+* *Keylogger* It is one of the most dangerous threats to a PC user's privacy. This type of malware installs itself as a result of clicking while browsing the Internet or downloading software. Keyloggers keep track of all of your keystrokes when you are using your PC and then transfers the information to a remote server. It is capable of recording all of your online conversations, emails, and password logins, as well as creating screenshots of all of your PC activity.
+
+Keyloggers are not always in the form of malware or software; it can also be installed on your computer in the form of hardware through being placed between the plug on your keyboard and the entry port. Some keyloggers are legitimate applications such as those that record an employee's PC activity during work hours. Other keyloggers are in the form of malicious software that is designed to perform criminal activity.
+
+* *Ransomware* This kind of malware typically locks down your computer and your files, and threatens to erase everything unless you pay a ransom.
+
+* *Remote Access*
+
+* *Rootkit*
+
+* *Spyware* No surprise here — spyware is malware designed to spy on you. It hides in the background and takes notes on what you do online, including your passwords, credit card numbers, surfing habits, and more.
+
+* *Trojans* This kind of malware disguises itself as legitimate software, or is hidden in legitimate software that has been tampered with. It tends to act discreetly and create backdoors in your security to let other malware in.
+
+* *Virus* Like their biological namesakes, viruses attach themselves to clean files and infect other clean files. They can spread uncontrollably, damaging a system’s core functionality and deleting or corrupting files. They usually appear as an executable file (.exe)
+
+* *Worm* Worms infect entire networks of devices, either local or across the internet, by using network interfaces. It uses each consecutively infected machine to infect others.
 
 === Vulnerability Assessment
 Vulnerability Assessment is designed to find vulnerabilities and assess to ensure they are not false positives. The next step is to remediate the vulnerability by patching the system, reconfiguring it, or implementing other controls to reduce the risk. 
@@ -159,8 +350,9 @@ Use vulnerable web application from the OWASP site: https://www.owasp.org/index.
 ===== CherryTree
 Chery Tree is a note taking app
 
-===== Crackmapexec
+===== Chisel
 
+===== Crackmapexec
 
 ===== DIRB
 
@@ -185,7 +377,7 @@ https://tools.kali.org/web-applications/dirb
 ===== Ettercap
 
 ===== Exiftool
-shows exif data about a file.
+Shows exif data about a file.   To ensure you get the correct date time meta data, always use wget.
 
 ===== Eyewitness
 
@@ -195,61 +387,63 @@ evilarc.py is an archiving tool that allows for folder manipulation.
 ===== Gobuster
 Gobuster is a tool used to brute-force:
 
-URIs (directories and files) in web sites.
-DNS subdomains (with wildcard support).
-Because I wanted:
+* URIs (directories and files) in web sites.
+* DNS subdomains (with wildcard support).
 
-something that didn’t have a fat Java GUI (console FTW).
-to build something that just worked on the command line.
-something that did not do recursive brute force.
-something that allowed me to brute force folders and multiple extensions at once.
-something that compiled to native on multiple platforms.
-something that was faster than an interpreted script (such as Python).
-something that didn’t require a runtime.
-use something that was good with concurrency (hence Go).
-to build something in Go that wasn’t totally useless.
-Source: https://github.com/OJ/gobuster
-Gobuster Homepage | Kali gobuster Repo
-
-Author: OJ Reeves
-License: Apache-2.0
+[horizontal]
+Source:: https://github.com/OJ/gobuster
+Author:: OJ Reeves
+License:: Apache-2.0
+Syntax:: gobuster dir -u http://<site-name or IP address>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirbust-root.log
 
 ===== Hashcat
 
 ===== HTTPROBE
-
-first install go: apt install golang upx-ucl -y
+[horizontal]
+Github:: https://github.com/tomnomnom/httprobe
+Perform a scan on specific ports:: cat domains.txt | httprobe -s -p https:8443
 
 
 ===== Hydra
 
 ===== Impacket-secretsdump
 
+===== JQ
+jq is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that sed, awk, grep and friends let you play with text.
+
+jq is written in portable C, and it has zero runtime dependencies. You can download a single binary, scp it to a far away machine of the same type, and expect it to work.
+
+jq can mangle the data format that you have into the one that you want with very little effort, and the program to do so is often shorter and simpler than you’d expect.
+
+More information here: https://stedolan.github.io/jq/
+
 ===== Kali Linux
 
-set date and time:
-$ sudo apt-get install ntpdate
-$ sudo ntpdate in.pool.ntp.org
+[horizontal]
+Install ntpdate package:: sudo apt-get install ntpdate
+Sync date & time with ntp source:: sudo ntpdate in.pool.ntp.org
+Install all the tools on Kali:: sudo apt-get install kali-linux-full
+Kali Tools Listing:: https://en.kali.tools/all/
+Update Kali:: sudo apt-get update; sudo apt-get dist-upgrade;sudo apt-get clean
 
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
+===== LinEnum
+Linux enumeration & privilege escalation checks
 
-To Update metasploit: apt update; apt install metasploit-framework
-
-The command to install all the tools is simply:
-
-sudo apt-get install kali-linux-full
-
-Kali Tools: https://en.kali.tools/all/
+Link: https://github.com/rebootuser/LinEnum
 
 ===== Maltego
 
 ===== Metasploit
 
-On Kali metasploit is in this directory: /usr/share/metssploit-framework
+[horizontal]
+On Kali metasploit is in this directory:: /usr/share/metssploit-framework
+To Update metasploit:: apt update; apt install metasploit-framework
+Metasploit Online Database:: https://www.rapid7.com/db/modules
 
-To Update metasploit: apt update; apt install metasploit-framework
+===== Mimikatz
+Mimikatz is a leading post-exploitation tool that dumps passwords from memory, as well as hashes, PINs and Kerberos tickets. Other useful attacks it enables are pass-the-hash, pass-the-ticket or building Golden Kerberos tickets. This makes post-exploitation lateral movement within a network easy for attackers.
 
-Metasploit Online Database: https://www.rapid7.com/db/modules
+Link: https://github.com/gentilkiwi/mimikatz
 
 ===== Netcat
 
@@ -281,12 +475,6 @@ does LLMNR Poisioning
 ===== Sublist3r
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
-Source: https://github.com/aboul3la/Sublist3r
-Sublist3r Homepage | Kali sublist3r Repo
-
-Author: Ahmed Aboul-Ela
-License: GPL-2+
-
 First open a terminal sessions and change the directory to the Desktop as following:
 
 cd Desktop
@@ -305,7 +493,22 @@ pip install -r requirements.txt
 
 python sublist3r -h
 
+[horizontal]
+Source:: https://github.com/aboul3la/Sublist3r
+Author:: Ahmed Aboul-Ela
+License:: GPL-2+
+
 ===== TheHarvester
+
+===== Wfuzz
+Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
+
+[horizontal]
+Source:: https://github.com/xmendez/wfuzz/
+Author:: Christian Martorella, Carlos del ojo, Xavier Mendez aka Javi
+License:: GPLv2
+
+===== Yara
 
 
 ==== Red team Assessment
@@ -448,6 +651,14 @@ TAXII is a high-level protocol for moving cyber threat intelligence (primarily S
 
 If you're interested in learning more about STIX 2.0 or TAXII 2.0, the documentation page is the best place to start.
 
+==== Tools
+
+===== MISP
+MISP - Open Source Threat Intelligence Platform & Open Standards For Threat Information Sharing
+
+Link: https://www.misp-project.org/
+
+
 === Threat Risk Assessments
 Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
@@ -458,15 +669,42 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 === Threat Hunting
 Threat hunting is a relatively new focal area in information security.
 
-==== Tools
-.. Yara
-.. Crowd FMS
-.. botscot
-.. burbsuite pro
-.. hashicorp vault
+<<<
+== Digital Forensics
 
+=== Tools
 
+==== DensityScout
+DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
 
+*So what does DensityScout do?*
+DensityScout's main focus is to scan a desired file-system-path by calculating the density of each file to finally print out an accordingly descending list. Usually most Microsoft Windows executables are not packed or encrypted in any way which throws the hits of malicious executables to the top of the list where one can easily focus on.
+
+*What's Density?*
+Density can also be understood as "entropy". However, the algorithm behind density is not 100% equal to the one which entropy is based on. So we decided to choose a different name.
+
+Link: https://www.cert.at/downloads/software/densityscout_en.html
+
+==== Kape
+KAPE is a multi-function program that primarily: 
+
+. collects files
+. processes collected files with one or more programs.
+
+KAPE reads configuration files on the fly and based on their contents, collects and processes relevant files. This makes KAPE very extensible in that the program’s author does not need to be involved to add or expand functionality.
+
+As we will see later in more detail, KAPE uses the concepts of targets and modules to do its work. KAPE comes with a range of default targets and modules for operations most commonly required in forensic exams. These can also serve as models  for creating new targets and modules.
+
+At a high level, KAPE works by adding file masks to a queue. This queue is then used to find and copy files from a source location. For files that are locked by the operating system, a second run bypasses the lock. At the end of the process, KAPE will make a copy and preserve metadata about all available files from a source location into a given directory. The second (optional) stage of processing is to run one or more programs against the collected data. This too works by targeting either specific file names or directories. Various programs are run against the files, and the output from the programs is then saved in directories named after a category, such as EvidenceOfExecution, BrowserHistory or AccountUsage.
+
+By grouping things by category, examiners of all skill levels have the means to discover relevant information regardless of an individual artifact's source. In other words, an examiner no longer need to know how to process prefetch, shimcache, amcache, userassist, etc., as they relate to evidence of execution artifacts. Ultimately, a wider range of artifacts can be leveraged for any given requirement.
+
+Link: https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape
+
+==== Loki
+
+<<<
+== Incident Response
 
 
 <<<
@@ -553,11 +791,15 @@ SABSA's governance model provide a control feedback loop
 == NIST Cyber Security Framework(CSF)
 Key functions are
 
-. Identify
-. Protect
-. Detect
-. Respond
-. Recover
+Identify:: involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
+
+Protect:: is about deploying the required security controls (technologies and processes) to defend your digital assets, and then validating that these controls align to the risks you identified. For example, controls should be applied to set up defenses against exploit kits, as well as undisclosed zero-day and embargoed vulnerabilities, as identified by your threat intelligence platform. You also need to safeguard against the exploitation of high-risk vulnerabilities in your technology stack.
+
+Detect:: revolves around your ability to block attacks before they impact digital assets. Threat intelligence helps by enabling you to identify and research the evolution and trends of malware families with high risk to your organization. In addition to identifying the security patches to apply, you will also gain intelligence on which systems are most susceptible and which are being actively targeted and exploited.
+
+Respond:: refers to how fast your security team reacts to breaches; even the strongest security postures do not offer a 100% guarantee that cyberattacks will not succeed. Threat intelligence assists in the response process by evaluating the data exposure and the digital asset damage your organization is facing. This can then be reported to all affected parties and stakeholders — not only for remediation teams, but also for non-technical personnel who may need to prepare for the impact on day-to-day operations and the potential impact on vendors, clients, and perhaps even the overall market in which you operate.
+
+Recover:: is all about how quickly the damage inflicted upon the organization’s technology stack and surrounding ecosystem can be mitigated, including any and all operations that must be restored as the security incidents are being closed out. Threat intelligence helps pinpoint the specific measures the security team should take in order to quarantine infected systems and inoculate the malicious elements coursing through the environment. The ultimate goal in the case of a breach, of course, is to quickly and safely restore the digital assets back to fully functioning systems with all security measures intact.
 
 Top two are proactive measures, and bottom three are reactive measures.
 
@@ -656,18 +898,21 @@ A documented process must be followed to ensure compliance to security policy an
 
 <<<
 == Terms Used
-
-* ATT&CK - Adversatial Tactics Techniques & Common Knowledge
-* CTI - Cyber Threat Intelligence
-* IOC - Indicators of Compromise
-* OSINT - Open Source Inteligence Tools
-* TTP - Techniques, Tactics, Procedures
+[horizontal]
+ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
+CTF:: Capture The Flag
+CTI:: Cyber Threat Intelligence
+IOC:: Indicators of Compromise
+OCG:: Organized Criminal groups
+OSINT:: Open Source Inteligence Tools
+TTP:: Techniques, Tactics, Procedures
 
 <<<
 [bibliography]
 == References
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
+. What is Malware? https://www.avg.com/en/signal/what-is-malware
 
 
 
