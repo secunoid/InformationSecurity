@@ -708,7 +708,11 @@ Loki Github: http://github.com/Neo23x0/Loki
 
 Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html
 
-==== 
+==== Autollr
+
+Github: https://github.com/Dead-Simple-Scripts/AutoLLR 
+
+Dead Simple Scripts: http://github.com/Dead-Simple-Scripts 
 
 <<<
 == Incident Response
