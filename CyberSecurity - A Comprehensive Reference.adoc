@@ -702,6 +702,13 @@ By grouping things by category, examiners of all skill levels have the means to 
 Link: https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape
 
 ==== Loki
+LOKI Free IOC Scanner: http://www.nextron-systems.com/loki/ 
+
+Loki Github: http://github.com/Neo23x0/Loki
+
+Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html
+
+==== 
 
 <<<
 == Incident Response
