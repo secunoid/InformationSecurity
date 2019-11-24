@@ -433,6 +433,10 @@ Link: https://github.com/rebootuser/LinEnum
 
 ===== Maltego
 
+===== Maryam
+OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
+Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
+
 ===== Metasploit
 
 [horizontal]
