@@ -1,6 +1,10 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
+<<<<<<< HEAD
 v1.63, 22 November, 2019
+=======
+v1.63, 23 November, 2019
+>>>>>>> 3bab35c2b489a413cea4d6c178537128e7bfce9e
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -388,6 +392,10 @@ Shows exif data about a file.   To ensure you get the correct date time meta dat
 ===== Evilarc
 evilarc.py is an archiving tool that allows for folder manipulation.
 
+===== Ghidra
+Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra supports a wide variety of processor instruction sets and executable formats and can be run in both user-interactive and automated modes. Users may also develop their own Ghidra plug-in components and/or scripts using Java or Python.
+Link: https://ghidra-sre.org/
+
 ===== Gobuster
 Gobuster is a tool used to brute-force:
 
@@ -436,6 +444,10 @@ Linux enumeration & privilege escalation checks
 Link: https://github.com/rebootuser/LinEnum
 
 ===== Maltego
+
+===== Maryam
+OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
+Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
 
 ===== Metasploit
 
@@ -706,6 +718,17 @@ By grouping things by category, examiners of all skill levels have the means to 
 Link: https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape
 
 ==== Loki
+LOKI Free IOC Scanner: http://www.nextron-systems.com/loki/ 
+
+Loki Github: http://github.com/Neo23x0/Loki
+
+Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html
+
+==== Autollr
+
+Github: https://github.com/Dead-Simple-Scripts/AutoLLR 
+
+Dead Simple Scripts: http://github.com/Dead-Simple-Scripts 
 
 <<<
 == Incident Response
