@@ -1,6 +1,10 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
+<<<<<<< HEAD
+v1.63, 22 November, 2019
+=======
 v1.63, 23 November, 2019
+>>>>>>> 3bab35c2b489a413cea4d6c178537128e7bfce9e
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -241,6 +245,10 @@ The scope of application security would be the
 
 === Code Analysis
 
+==== PEpper
+An open source tool to perform malware static analysis on Portable Executable
+Link: https://github.com/Th3Hurrican3/PEpper
+
 
 === Key Management
 
@@ -353,6 +361,9 @@ Chery Tree is a note taking app
 ===== Chisel
 
 ===== Crackmapexec
+CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
+
+Link: https://github.com/byt3bl33d3r/CrackMapExec
 
 ===== DIRB
 
