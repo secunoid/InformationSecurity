@@ -1154,7 +1154,33 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
 	Get-ADDomain DOMAINNAME | FT RIDMaster
 
-. 
+. Add FSMO Role to a new computer
+
+	Move-ADDirectoryServerOperationMasterRols - Identity NEW-DC -OperationMasterRole RIDMaster,InfrastrcutureMaster,DomainNamingMaster -Force
+
+. Enable Remote Desktop
+
+	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
+
+. Check for updates
+
+	get-hotfix|grid-view
+
+. Set Date & Timezone
+
+	set-date "1/1/2020 10:10 PM"
+	(get-WmiObject win32_timezone).caption
+	TZUTIL /s "Eastern Standard Time"
+
+. List all accounts where password is not set to expire
+
+	Search-ADAccount -PasswordNeverExpires | out-gridview
+
+. List all accounts not use in last 90 days & Export to CSV
+
+	Import-Module ActiveDirectory
+	Search-ADAccount –AccountInactive -TimeSpan 90.00:00:00 -UsersOnly | Select -Property Name,DistinguishedName,LastLogonDate |	Export-CSV "C:\\InactiveADUsers.csv" -NoTypeInformation -Encoding UTF8
+
 <<<
 == Github
 
