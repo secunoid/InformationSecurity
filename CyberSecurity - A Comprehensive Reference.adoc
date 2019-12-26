@@ -953,7 +953,7 @@ A documented process must be followed to ensure compliance to security policy an
 	
 	help *service*
 
-. Update help:
+. Update help with latest modifications from Microsoft:
 
 	Update-Help
 
