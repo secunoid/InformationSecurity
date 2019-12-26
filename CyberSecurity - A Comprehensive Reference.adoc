@@ -936,6 +936,7 @@ A documented process must be followed to ensure compliance to security policy an
 
 <<<
 == Powershell Reference
+
 . Powershell Training: Complete Powershell in one video-beginner to professional powershell scripting
 . Get-adobject: https://adamtheautomator.com/get-adobject/
 . Good website: https://lazywinadmin.com/
