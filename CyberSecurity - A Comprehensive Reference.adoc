@@ -1077,16 +1077,40 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	Test-NetConnection www.bing.com -Port 80
 	Test-NetConnection smtp.com -Port 25
 
-. Restart a service
+. Service management
 
+	Stop-Service <service name>
+	Start-Service <service name>
 	Restart-Service <service name>
+	Set-Service <service name> <-Change Service properties
 
 . View All services in a GUI
 
 	Get-Service | Out-Gridview
 
-. 
+. Rename computer
 
+	Rename-Computer <new name>
+
+. Restart computer
+
+	Restart-Computer
+
+. Shutdown computer
+
+	Shutdown-Computer
+
+. Add computer to a domain
+
+	Add-Computer -DomainName <domain name>
+
+. Add roles & Features
+
+	Install-WindowsFeature -IncludeAllSubfeature -IncludeManagementTools File-Services
+
+. Install .Net Framework
+
+	Install-WindowsFeature Net-Framework-Core -source d:\sources\sxs
 
 . 
 <<<
