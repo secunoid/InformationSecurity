@@ -1072,7 +1072,20 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Test-NetConnection www.bing.com -traceroute
 
+. Telnet to a port
 
+	Test-NetConnection www.bing.com -Port 80
+	Test-NetConnection smtp.com -Port 25
+
+. Restart a service
+
+	Restart-Service <service name>
+
+. View All services in a GUI
+
+	Get-Service | Out-Gridview
+
+. 
 
 
 . 
