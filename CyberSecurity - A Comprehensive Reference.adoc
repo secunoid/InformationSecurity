@@ -828,6 +828,7 @@ SABSA's governance model provide a control feedback loop
 
 <<<
 == NIST Cyber Security Framework(CSF)
+
 Key functions are
 
 Identify:: involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
@@ -853,6 +854,7 @@ Top two are proactive measures, and bottom three are reactive measures.
 
 <<<
 == Dev, Sec, Ops
+
 Development, Operations, and Security operate as silos. 
 
 *CiCd* or Continuous Integration and Continuous Delivery is key for *DevSecOps*
@@ -898,6 +900,7 @@ Five principles for Securing DevOps
 . Insufficient Logging/Monitoring
 
 === Real-Word Top 10 Attacks
+
 . Direct Object Reference
 . Forceful Browsing
 . Null Byte Attack
@@ -911,6 +914,7 @@ Five principles for Securing DevOps
 
 <<<
 == Governance, Risk, & Compliance
+
 A documented process must be followed to ensure compliance to security policy and to highlight risks that might be introduced when security policy requirements are not adhered to.  Some of the GRC functions are:
 
 * Enterprise Risk Management
