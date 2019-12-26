@@ -941,10 +941,10 @@ A documented process must be followed to ensure compliance to security policy an
 <<<
 == Powershell Reference
 
-. Powershell Training: Complete Powershell in one video-beginner to professional powershell scripting
+. Complete Powershell in one video-beginner to professional powershell scripting: https://www.youtube.com/watch?v=plqpmZruOYk
 . Get-adobject: https://adamtheautomator.com/get-adobject/
 . Good website: https://lazywinadmin.com/
-. How to create and run a PowerShell script file on Windows 10
+. How to create and run a PowerShell script file on Windows 10: https://www.windowscentral.com/how-create-and-run-your-first-powershell-script-file-windows-10 
 . Change color of error text:
 
 	$host.PrivateData.ErrorForegroundcolor = 'green'
