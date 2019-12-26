@@ -1112,6 +1112,48 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Install-WindowsFeature Net-Framework-Core -source d:\sources\sxs
 
+. Repair trust relationship of a computer
+
+	test-computersecurechannel -credential domain\admin -Repair
+
+. Enable/Disable Firewall
+
+	set-netfirewallprofile -profile domain,public,private -enabled true/false
+
+. Add a firewall rule
+
+	New-NetFirewallRule -DisplayName "Allow Inbound Port80" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
+
+	New-NetFirewallRule -DisplayName "Block Outbound Port80" -Direction Outbound -LocalPort 80 -Protocol TCP -Action Block
+
+. Create a VM
+
+	New-VM -MemoryStartupBytes 2048MB -Name VMNAME -path "d:\folder" -VHDPath "d:\folder\name.vhdx"
+
+. Assign VM Network
+
+	Get-VM -Name VMNAME | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -Swtichname 'SWITCHNAME'
+
+. Checkpoint a VM
+
+	Get-VM | Checkpoint-VM
+
+. Password Reset
+
+	$newpwd = ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force
+
+	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset
+
+	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset -PassThru | Set-ADuser -ChangePasswordAtlogon $True
+
+. Locate FSMO Roles
+
+	Get-ADForest DOMAINNAME | FT SchemaMaster
+	Get-ADForest DOMAINNAME | FT DomainNamingMaster
+	Get-ADDomain DOMAINNAME | FT PDCEmulator
+	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
+	Get-ADDomain DOMAINNAME | FT RIDMaster
+
 . 
 <<<
 == Github
