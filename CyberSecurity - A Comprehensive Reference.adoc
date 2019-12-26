@@ -1003,15 +1003,24 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 === Adding a new repository to github.com
 
-. On the github.com page, click on 
+* On the github.com page, click on 
+
 image::github1.png[]
-. Select "New Repository"
+* Select "New Repository" 
+
 image::github2.png[]
-. Provide repository name in the provided field
+* Provide repository name in the provided field 
+
 image::github3.png[]
-. Click to create repository
+* Click to create repository 
+
 image::github4.png[] 
-. Follow instructions on the page displayed on you local computer which has ssh access to github.
+* Follow instructions on the page displayed on you local computer which has ssh access to github.
+
+=== Creating a local folder on your computer
+* Change Directory to the root folder where you want the GIT repository to be stored
+* Clone the respository
+	git clone <repository URL from git page>
 
 
 	
