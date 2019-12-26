@@ -1063,6 +1063,18 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddress 172.16.0.10
 
+. Ping alternate
+
+	Test-NetConnection
+	Test-NetConnection 8.8.8.8
+
+. Traceroute alternative
+
+	Test-NetConnection www.bing.com -traceroute
+
+
+
+
 . 
 <<<
 == Github
