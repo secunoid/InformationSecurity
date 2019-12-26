@@ -1176,7 +1176,7 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Search-ADAccount -PasswordNeverExpires | out-gridview
 
-. List all accounts not use in last 90 days & Export to CSV
+. List all accounts not used in last 90 days & Export to CSV
 
 	Import-Module ActiveDirectory
 	Search-ADAccount –AccountInactive -TimeSpan 90.00:00:00 -UsersOnly | Select -Property Name,DistinguishedName,LastLogonDate |	Export-CSV "C:\\InactiveADUsers.csv" -NoTypeInformation -Encoding UTF8
