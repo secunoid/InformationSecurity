@@ -977,7 +977,7 @@ A documented process must be followed to ensure compliance to security policy an
 .. Session-specified temporary drives and persistent mapped network drives that you create by using the New-PSDrive cmdlet.
 Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cmdlet can create mapped network drives that are saved on the local computer and are available in other sessions. For more information, see New-PSDrive.
 	
-Also, beginning in Windows PowerShell 3.0, when an external drive is connected to the computer, Windows PowerShell automatically adds a PSDrive to the file system that represents the new drive. You do not need to restart Windows PowerShell. Similarly, when an external drive is disconnected from the computer, Windows PowerShell automatically deletes the PSDrive that represents the removed drive.
+	Also, beginning in Windows PowerShell 3.0, when an external drive is connected to the computer, Windows PowerShell automatically adds a PSDrive to the file system that represents the new drive. You do not need to restart Windows PowerShell. Similarly, when an external drive is disconnected from the computer, Windows PowerShell automatically deletes the PSDrive that represents the removed drive.
 
 . Show contents of a file:
 	Get-content or gc
