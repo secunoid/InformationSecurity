@@ -934,6 +934,85 @@ A documented process must be followed to ensure compliance to security policy an
 * Focuses on business goals, adding value and more
 * Embedded in culture and mindset 
 
+<<<
+== Powershell Reference
+. Powershell Training: Complete Powershell in one video-beginner to professional powershell scripting
+. Get-adobject: https://adamtheautomator.com/get-adobject/
+. Good website: https://lazywinadmin.com/
+. How to create and run a PowerShell script file on Windows 10
+. Change color of error text:  
+	$host.PrivateData.ErrorForegroundcolor = 'green'
+. Help for all commandlets with service in the name:  
+	help *service*
+. Update help:
+	Update-Help
+. Show all help about a commandlet:
+	Help <cmdlet> -full
+. Show online help about a commandlet:
+	Help <cmdlet> -online
+. To show a gui for a cmdlet:
+	Show-command <cmdlet>
+. Show event log settings:
+	get-eventlog -list
+. Show top ten biggest processes:
+	Get-process| sort-object -property pm -descending | select-object -first 10
+. Get all objects in a cmdlet:
+	Get-service|get-member
+. Show services that are running:
+	Get-service| where-object -FilterScript { $_.Status -eq 'Running'}
+. Gsv is alias for get-service
+. ? Is alias for where
+. Find out what cmdlet an alias is:
+	Help gsv or get-alias gsv
+. List all alias:
+	Gal
+. The Get-PSProvider cmdlet gets the Windows PowerShell providers in the current session. You can get a particular drive or all drives in the session. Windows PowerShell providers let you access a variety of data stores as though they were file system drives.
+	The Get-PSDrive cmdlet gets the drives in the current session. You can get a particular drive or all drives in the session.
+	
+	    This cmdlet gets the following types of drives:
+	
+	    - Windows logical drives on the computer, including drives mapped to network shares.
+	
+	    - Drives exposed by Windows PowerShell providers (such as the Certificate:, Function:, and Alias: drives) and the HKLM: and HKCU: drives that are exposed by the
+	    Windows PowerShell Registry provider.
+	
+	    - Session-specified temporary drives and persistent mapped network drives that you create by using the New-PSDrive cmdlet.
+	
+	
+	Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cmdlet can create mapped network drives that are saved on the local computer and are available in other sessions. For more information, see New-PSDrive.
+	
+	Also, beginning in Windows PowerShell 3.0, when an external drive is connected to the computer, Windows PowerShell automatically adds a PSDrive to the file system that represents the new drive. You do not need to restart Windows PowerShell. Similarly, when an external drive is disconnected from the computer, Windows PowerShell automatically deletes the PSDrive that represents the removed drive.
+. Show contents of a file:
+	Get-content or gc
+. List modules available: 
+	Get-module -List Available
+. To import a module: import-module <modulename>
+. To list all commands available in a module: get-command -module <modulename>
+. To list all computers in AD: get-adcomputer -filter *|select -ExpandProperty name
+. List services running on all computers in your domain: invoke-command -ComputerName (get-adcomputer -filter *|select -ExpandProperty name) -scriptblock { get-service }
+. Implicit Remoting:
+	Establish a session with remote computer: $session = New-PSSession -ComputerName ABCD
+	Invoke-Command -Session $session -ScriptBlock { import-module activedirectory }
+	Import-PSSession -Session $session -Module ActiveDirectory
+	Close session: get-PSSession | remove-PSSession
+. Invoke a powershell session on a remote computer: Enter-PSSession -ComputerName ABCD
+. Invoke Troubleshooting pack:
+	import-module troubleshootingpack
+	get-troubleshootingpack c:\windows\diagnostics\system\Networking
+	get-troubleshootingpack c:\windows\diagnostics\system\Networking| Invoke-TroubleshootingPack
+. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 
 <<<
 == Terms Used
