@@ -987,6 +987,7 @@ The Get-PSDrive cmdlet gets the drives in the current session. You can get a par
 Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cmdlet can create mapped network drives that are saved on the local computer and are available in other sessions. For more information, see New-PSDrive.
 	
 Also, beginning in Windows PowerShell 3.0, when an external drive is connected to the computer, Windows PowerShell automatically adds a PSDrive to the file system that represents the new drive. You do not need to restart Windows PowerShell. Similarly, when an external drive is disconnected from the computer, Windows PowerShell automatically deletes the PSDrive that represents the removed drive.
+
 . Show contents of a file:
 	Get-content or gc
 . List modules available: 
