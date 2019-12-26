@@ -1046,6 +1046,24 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	get-troubleshootingpack c:\windows\diagnostics\system\Networking
 	get-troubleshootingpack c:\windows\diagnostics\system\Networking| Invoke-TroubleshootingPack
 
+. Replacement for ipconfig /all
+
+	get-NetIPConfiguration
+
+. Find out network adapter names and statistics
+
+	get-NetAdapter
+	get-NetAdapterStatistics
+
+. Configure IP Address
+
+	New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 10.10.10.10 -PrefixLength 24 -DefaultGateway 10.10.10.1
+
+. Configure DNS Server
+
+	Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddress 172.16.0.10
+
+. 
 <<<
 == Github
 
