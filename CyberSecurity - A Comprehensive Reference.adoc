@@ -997,7 +997,23 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	import-module troubleshootingpack
 	get-troubleshootingpack c:\windows\diagnostics\system\Networking
 	get-troubleshootingpack c:\windows\diagnostics\system\Networking| Invoke-TroubleshootingPack
-. 
+
+<<<
+== Github
+
+=== Adding a new repository to github.com
+
+. On the github.com page, click on 
+image::github1.png[]
+. Select "New Repository"
+image::github2.png[]
+. Provide repository name in the provided field
+image::github3.png[]
+. Click to create repository
+image::github4.png[] 
+. Follow instructions on the page displayed on you local computer which has ssh access to github.
+
+
 	
 	
 	
