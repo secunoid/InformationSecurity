@@ -1162,9 +1162,12 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
 
-. Check for updates
+. Check for updates and install updates
 
 	get-hotfix|grid-view
+	Install-Module -Name PSWindowsUpdate
+	Get-Package -Name PSWindowsUpdate
+	Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 
 . Set Date & Timezone
 
