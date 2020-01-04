@@ -948,6 +948,8 @@ A documented process must be followed to ensure compliance to security policy an
 . Install RSAT Tools:
 
 	Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
+	or
+	ADD-WindowsFeature RSAT-Role-Tools
 
 . Change color of error text:
 
