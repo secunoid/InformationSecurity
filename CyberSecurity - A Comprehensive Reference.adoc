@@ -1135,41 +1135,17 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	New-NetFirewallRule -DisplayName "Allow Inbound Port80" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
 	New-NetFirewallRule -DisplayName "Block Outbound Port80" -Direction Outbound -LocalPort 80 -Protocol TCP -Action Block
 
-. Create a VM
-
-	New-VM -MemoryStartupBytes 2048MB -Name VMNAME -path "d:\folder" -VHDPath "d:\folder\name.vhdx"
-
-. Assign VM Network
-
-	Get-VM -Name VMNAME | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -Swtichname 'SWITCHNAME'
-
-. Checkpoint a VM
-
-	Get-VM | Checkpoint-VM
-
 . Password Reset
 
 	$newpwd = ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force
 	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset
 	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset -PassThru | Set-ADuser -ChangePasswordAtlogon $True
 
-. Locate FSMO Roles
-
-	Get-ADForest DOMAINNAME | FT SchemaMaster
-	Get-ADForest DOMAINNAME | FT DomainNamingMaster
-	Get-ADDomain DOMAINNAME | FT PDCEmulator
-	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
-	Get-ADDomain DOMAINNAME | FT RIDMaster
-
-. Add FSMO Role to a new computer
-
-	Move-ADDirectoryServerOperationMasterRols - Identity NEW-DC -OperationMasterRole RIDMaster,InfrastrcutureMaster,DomainNamingMaster -Force
-
 . Enable Remote Desktop
 
 	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
 
-. Enable Remote Desktop through firewall
+. Add firewall rules to allow Remote Desktop traffic
 
 	Enable-NetFirewallRule -DisplayGroup “Remote Desktop”
 
@@ -1186,7 +1162,7 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	(get-WmiObject win32_timezone).caption
 	TZUTIL /s "Eastern Standard Time"
 
-. Add a Domain controller
+. Add a first domain controller
 
 	Install-windowsfeature -name AD-Domain-Services -IncludeManagementTools
 	Get-Command -Module ADDSDeployment
@@ -1206,6 +1182,18 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	Add-WindowsFeature AD-Domain-Services
 	Install-ADDSDomainController -InstallDns -Credential (Get-Credential "CORP\Administrator") -DomainName "corp.contoso.com"
 
+. Locate FSMO Roles
+
+	Get-ADForest DOMAINNAME | FT SchemaMaster
+	Get-ADForest DOMAINNAME | FT DomainNamingMaster
+	Get-ADDomain DOMAINNAME | FT PDCEmulator
+	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
+	Get-ADDomain DOMAINNAME | FT RIDMaster
+
+. Add FSMO Role to a new computer
+
+	Move-ADDirectoryServerOperationMasterRols - Identity NEW-DC -OperationMasterRole RIDMaster,InfrastrcutureMaster,DomainNamingMaster -Force
+
 . List all accounts where password is not set to expire
 
 	Search-ADAccount -PasswordNeverExpires | out-gridview
@@ -1214,6 +1202,18 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Import-Module ActiveDirectory
 	Search-ADAccount –AccountInactive -TimeSpan 90.00:00:00 -UsersOnly | Select -Property Name,DistinguishedName,LastLogonDate |	Export-CSV "C:\\InactiveADUsers.csv" -NoTypeInformation -Encoding UTF8
+
+. Create a VM
+
+	New-VM -MemoryStartupBytes 2048MB -Name VMNAME -path "d:\folder" -VHDPath "d:\folder\name.vhdx"
+
+. Assign VM Network
+
+	Get-VM -Name VMNAME | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -Swtichname 'SWITCHNAME'
+
+. Checkpoint a VM
+
+	Get-VM | Checkpoint-VM
 
 <<<
 == Github
