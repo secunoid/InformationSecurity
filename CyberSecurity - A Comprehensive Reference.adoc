@@ -1186,6 +1186,21 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	(get-WmiObject win32_timezone).caption
 	TZUTIL /s "Eastern Standard Time"
 
+. Add a Domain controller
+
+	Install-windowsfeature -name AD-Domain-Services -IncludeManagementTools
+	Get-Command -Module ADDSDeployment
+	Create Root Domain: Install-ADDSForest -DomainName “corp.momco.com”
+
+. Add DNS Primary Zone
+
+	Add-DnsServerPrimaryZone -NetworkID 192.168.64.0/24 -ZoneFile “192.168.64.2.in-addr.arpa.dns”
+	Add-DnsServerForwarder -IPAddress 8.8.8.8 -PassThru
+
+. Confirm DNS is working
+
+	Test-DnsServer -IPAddress 192.168.64.2 -ZoneName "corp.momco.com"
+
 . Add a second domain controller 
 
 	Add-WindowsFeature AD-Domain-Services
