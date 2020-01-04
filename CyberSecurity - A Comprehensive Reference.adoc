@@ -945,6 +945,152 @@ A documented process must be followed to ensure compliance to security policy an
 . Get-adobject: https://adamtheautomator.com/get-adobject/
 . Good website: https://lazywinadmin.com/
 . How to create and run a PowerShell script file on Windows 10: https://www.windowscentral.com/how-create-and-run-your-first-powershell-script-file-windows-10 
+. Configure IP Address on a computer
+
+	New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 10.10.10.10 -PrefixLength 24 -DefaultGateway 10.10.10.1
+
+. Configure DNS on a computer
+
+	Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddress 172.16.0.10
+
+. IP v6 - Current Status
+
+	Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’
+
+. IP v6 - Disable 
+	
+	Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’ | Disable-NetAdapterBinding -ComponentID ‘ms_tcpip6’ -PassThru
+
+. Rename computer
+
+	Rename-Computer <new name>
+
+. Restart computer
+
+	Restart-Computer
+
+. Shutdown computer
+
+	Shutdown-Computer
+
+. Enable Remote Desktop
+
+	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
+
+. Add firewall rules to allow Remote Desktop traffic
+
+	Enable-NetFirewallRule -DisplayGroup “Remote Desktop”
+
+. Check for updates and install updates
+
+	get-hotfix|grid-view
+	Install-Module -Name PSWindowsUpdate
+	Get-Package -Name PSWindowsUpdate
+	Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
+
+. Set Date & Timezone
+
+	set-date "1/1/2020 10:10 PM"
+	(get-WmiObject win32_timezone).caption
+	TZUTIL /s "Eastern Standard Time"
+
+. Add a first domain controller
+
+	Install-windowsfeature -name AD-Domain-Services -IncludeManagementTools
+	Get-Command -Module ADDSDeployment
+	Create Root Domain: Install-ADDSForest -DomainName “corp.momco.com”
+
+. Add DNS Primary Zone
+
+	Add-DnsServerPrimaryZone -NetworkID 192.168.64.0/24 -ZoneFile “192.168.64.2.in-addr.arpa.dns”
+	Add-DnsServerForwarder -IPAddress 8.8.8.8 -PassThru
+
+. Confirm DNS is working
+
+	Test-DnsServer -IPAddress 192.168.64.2 -ZoneName "corp.momco.com"
+
+. Add computer to a domain
+
+	Add-Computer -DomainName <domain name>
+
+. Add a second domain controller 
+
+	Add-WindowsFeature AD-Domain-Services
+	Install-ADDSDomainController -InstallDns -Credential (Get-Credential "CORP\Administrator") -DomainName "corp.contoso.com"
+
+. Locate FSMO Roles
+
+	Get-ADForest DOMAINNAME | FT SchemaMaster
+	Get-ADForest DOMAINNAME | FT DomainNamingMaster
+	Get-ADDomain DOMAINNAME | FT PDCEmulator
+	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
+	Get-ADDomain DOMAINNAME | FT RIDMaster
+
+. Add FSMO Role to a new computer
+
+	Move-ADDirectoryServerOperationMasterRols - Identity NEW-DC -OperationMasterRole RIDMaster,InfrastrcutureMaster,DomainNamingMaster -Force
+
+. List all accounts where password is not set to expire
+
+	Search-ADAccount -PasswordNeverExpires | out-gridview
+
+. List all accounts not used in last 90 days & Export to CSV
+
+	Import-Module ActiveDirectory
+	Search-ADAccount –AccountInactive -TimeSpan 90.00:00:00 -UsersOnly | Select -Property Name,DistinguishedName,LastLogonDate |	Export-CSV "C:\\InactiveADUsers.csv" -NoTypeInformation -Encoding UTF8
+
+. Create a VM
+
+	New-VM -MemoryStartupBytes 2048MB -Name VMNAME -path "d:\folder" -VHDPath "d:\folder\name.vhdx"
+
+. Assign VM Network
+
+	Get-VM -Name VMNAME | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -Swtichname 'SWITCHNAME'
+
+. Checkpoint a VM
+
+	Get-VM | Checkpoint-VM
+
+. Ping alternate
+
+	Test-NetConnection
+	Test-NetConnection 8.8.8.8
+
+. Traceroute alternative
+
+	Test-NetConnection www.bing.com -traceroute
+
+. Telnet to a port
+
+	Test-NetConnection www.bing.com -Port 80
+	Test-NetConnection smtp.com -Port 25
+
+. Service management
+
+	Stop-Service <service name>
+	Start-Service <service name>
+	Restart-Service <service name>
+	Set-Service <service name> <-Change Service properties
+
+. View All services in a GUI
+
+	Get-Service | Out-Gridview
+
+. Enable/Disable Firewall
+
+	set-netfirewallprofile -profile domain,public,private -enabled true/false
+
+. Add a firewall rule
+
+	New-NetFirewallRule -DisplayName "Allow Inbound Port80" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
+	New-NetFirewallRule -DisplayName "Block Outbound Port80" -Direction Outbound -LocalPort 80 -Protocol TCP -Action Block
+
+. Password Reset
+
+	$newpwd = ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force
+	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset
+	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset -PassThru | Set-ADuser -ChangePasswordAtlogon $True
+
 . Install RSAT Tools:
 
 	Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
@@ -1023,6 +1169,18 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	
 	get-command -module <modulename>
 
+. Add roles & Features
+
+	Install-WindowsFeature -IncludeAllSubfeature -IncludeManagementTools File-Services
+
+. Install .Net Framework
+
+	Install-WindowsFeature Net-Framework-Core -source d:\sources\sxs
+
+. Repair trust relationship of a computer
+
+	test-computersecurechannel -credential domain\admin -Repair
+
 . To list all computers in AD:
 
 	get-adcomputer -filter *|select -ExpandProperty name
@@ -1056,164 +1214,6 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	get-NetAdapter
 	get-NetAdapterStatistics
-
-. Configure IP Address
-
-	New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 10.10.10.10 -PrefixLength 24 -DefaultGateway 10.10.10.1
-
-. Configure DNS Server
-
-	Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddress 172.16.0.10
-
-. IP v6 - Current Status
-
-	Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’
-
-. IP v6 - Disable 
-	
-	Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’ | Disable-NetAdapterBinding -ComponentID ‘ms_tcpip6’ -PassThru
-
-. Ping alternate
-
-	Test-NetConnection
-	Test-NetConnection 8.8.8.8
-
-. Traceroute alternative
-
-	Test-NetConnection www.bing.com -traceroute
-
-. Telnet to a port
-
-	Test-NetConnection www.bing.com -Port 80
-	Test-NetConnection smtp.com -Port 25
-
-. Service management
-
-	Stop-Service <service name>
-	Start-Service <service name>
-	Restart-Service <service name>
-	Set-Service <service name> <-Change Service properties
-
-. View All services in a GUI
-
-	Get-Service | Out-Gridview
-
-. Rename computer
-
-	Rename-Computer <new name>
-
-. Restart computer
-
-	Restart-Computer
-
-. Shutdown computer
-
-	Shutdown-Computer
-
-. Add computer to a domain
-
-	Add-Computer -DomainName <domain name>
-
-. Add roles & Features
-
-	Install-WindowsFeature -IncludeAllSubfeature -IncludeManagementTools File-Services
-
-. Install .Net Framework
-
-	Install-WindowsFeature Net-Framework-Core -source d:\sources\sxs
-
-. Repair trust relationship of a computer
-
-	test-computersecurechannel -credential domain\admin -Repair
-
-. Enable/Disable Firewall
-
-	set-netfirewallprofile -profile domain,public,private -enabled true/false
-
-. Add a firewall rule
-
-	New-NetFirewallRule -DisplayName "Allow Inbound Port80" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
-	New-NetFirewallRule -DisplayName "Block Outbound Port80" -Direction Outbound -LocalPort 80 -Protocol TCP -Action Block
-
-. Password Reset
-
-	$newpwd = ConvertTo-SecureString -String "P@ssw0rd" -AsPlainText -Force
-	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset
-	Set-ADAccountPassword ACCOUNTNAME -NewPassword $newpwd -Reset -PassThru | Set-ADuser -ChangePasswordAtlogon $True
-
-. Enable Remote Desktop
-
-	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
-
-. Add firewall rules to allow Remote Desktop traffic
-
-	Enable-NetFirewallRule -DisplayGroup “Remote Desktop”
-
-. Check for updates and install updates
-
-	get-hotfix|grid-view
-	Install-Module -Name PSWindowsUpdate
-	Get-Package -Name PSWindowsUpdate
-	Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
-
-. Set Date & Timezone
-
-	set-date "1/1/2020 10:10 PM"
-	(get-WmiObject win32_timezone).caption
-	TZUTIL /s "Eastern Standard Time"
-
-. Add a first domain controller
-
-	Install-windowsfeature -name AD-Domain-Services -IncludeManagementTools
-	Get-Command -Module ADDSDeployment
-	Create Root Domain: Install-ADDSForest -DomainName “corp.momco.com”
-
-. Add DNS Primary Zone
-
-	Add-DnsServerPrimaryZone -NetworkID 192.168.64.0/24 -ZoneFile “192.168.64.2.in-addr.arpa.dns”
-	Add-DnsServerForwarder -IPAddress 8.8.8.8 -PassThru
-
-. Confirm DNS is working
-
-	Test-DnsServer -IPAddress 192.168.64.2 -ZoneName "corp.momco.com"
-
-. Add a second domain controller 
-
-	Add-WindowsFeature AD-Domain-Services
-	Install-ADDSDomainController -InstallDns -Credential (Get-Credential "CORP\Administrator") -DomainName "corp.contoso.com"
-
-. Locate FSMO Roles
-
-	Get-ADForest DOMAINNAME | FT SchemaMaster
-	Get-ADForest DOMAINNAME | FT DomainNamingMaster
-	Get-ADDomain DOMAINNAME | FT PDCEmulator
-	Get-ADDomain DOMAINNAME | FT InfrastructureMaster
-	Get-ADDomain DOMAINNAME | FT RIDMaster
-
-. Add FSMO Role to a new computer
-
-	Move-ADDirectoryServerOperationMasterRols - Identity NEW-DC -OperationMasterRole RIDMaster,InfrastrcutureMaster,DomainNamingMaster -Force
-
-. List all accounts where password is not set to expire
-
-	Search-ADAccount -PasswordNeverExpires | out-gridview
-
-. List all accounts not used in last 90 days & Export to CSV
-
-	Import-Module ActiveDirectory
-	Search-ADAccount –AccountInactive -TimeSpan 90.00:00:00 -UsersOnly | Select -Property Name,DistinguishedName,LastLogonDate |	Export-CSV "C:\\InactiveADUsers.csv" -NoTypeInformation -Encoding UTF8
-
-. Create a VM
-
-	New-VM -MemoryStartupBytes 2048MB -Name VMNAME -path "d:\folder" -VHDPath "d:\folder\name.vhdx"
-
-. Assign VM Network
-
-	Get-VM -Name VMNAME | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -Swtichname 'SWITCHNAME'
-
-. Checkpoint a VM
-
-	Get-VM | Checkpoint-VM
 
 <<<
 == Github
