@@ -1065,16 +1065,16 @@ A documented process must be followed to ensure compliance to security policy an
 	Test-NetConnection www.bing.com -Port 80
 	Test-NetConnection smtp.com -Port 25
 
+. View All services in a GUI
+
+	Get-Service | Out-Gridview
+
 . Service management
 
 	Stop-Service <service name>
 	Start-Service <service name>
 	Restart-Service <service name>
 	Set-Service <service name> <-Change Service properties
-
-. View All services in a GUI
-
-	Get-Service | Out-Gridview
 
 . Enable/Disable Firewall
 
