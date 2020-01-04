@@ -1063,6 +1063,11 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 
 	Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddress 172.16.0.10
 
+. Disable IP v6
+
+	*Get Status of IP v6* Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’
+	*Disable IPv6* Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’ | Disable-NetAdapterBinding -ComponentID ‘ms_tcpip6’ -PassThru
+
 . Ping alternate
 
 	Test-NetConnection
