@@ -1248,6 +1248,7 @@ ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
 CTF:: Capture The Flag
 CTI:: Cyber Threat Intelligence
 IOC:: Indicators of Compromise
+LLMNR:: Link Local Multicast Name Resolution
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
 TTP:: Techniques, Tactics, Procedures
