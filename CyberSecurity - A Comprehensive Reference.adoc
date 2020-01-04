@@ -1184,6 +1184,11 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	(get-WmiObject win32_timezone).caption
 	TZUTIL /s "Eastern Standard Time"
 
+. Add a second domain controller 
+
+	Add-WindowsFeature AD-Domain-Services
+	Install-ADDSDomainController -InstallDns -Credential (Get-Credential "CORP\Administrator") -DomainName "corp.contoso.com"
+
 . List all accounts where password is not set to expire
 
 	Search-ADAccount -PasswordNeverExpires | out-gridview
