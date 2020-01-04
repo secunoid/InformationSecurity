@@ -1252,6 +1252,7 @@ LLMNR:: Link Local Multicast Name Resolution
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
 TTP:: Techniques, Tactics, Procedures
+WPAD:: Web Proxy Auto Discovery Protocol
 
 <<<
 [bibliography]
