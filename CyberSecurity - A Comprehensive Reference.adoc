@@ -492,7 +492,12 @@ https://cirt.net/Nikto2
 ===== NMAP
 
 ===== Responder
-does LLMNR Poisioning
+This tool is first an LLMNR and NBT-NS responder, it will answer to *specific* NBT-NS (NetBIOS Name Service) queries based on their name suffix (see: http://support.microsoft.com/kb/163409). By default, the tool will only answers to File Server Service request, which is for SMB. The concept behind this, is to target our answers, and be stealthier on the network. This also helps to ensure that we don’t break legitimate NBT-NS behavior. You can set the -r option to 1 via command line if you want this tool to answer to the Workstation Service request name suffix.
+
+responder Usage Example
+Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogue proxy (-w On), answers for netbios wredir (-r On), and fingerprinting (-f On):
+
+	responder -i 192.168.1.202 -w On -r On -f On
 
 ===== Sbmclient
 
