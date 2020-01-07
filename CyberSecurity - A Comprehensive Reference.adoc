@@ -713,6 +713,16 @@ Threat hunting is a relatively new focal area in information security.
 <<<
 == Digital Forensics
 
+=== Base64 Encoded Data
+Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
+
+
+Some Links
+Finding encoded evidence: https://digital-forensics.sans.org/blog/2011/01/09/digital-forensics-finding-encoded-evidence
+Finding and Decoding Malicious PowerShell Scripts: https://az4n6.blogspot.com/2017/10/finding-and-decoding-malicious.html
+Different Types Of Encoding Schemes – A Primer: https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/
+decode.py: https://github.com/secnonsense/decode.py
+
 === Tools
 
 ==== DensityScout
