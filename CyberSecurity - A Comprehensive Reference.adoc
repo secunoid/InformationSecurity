@@ -713,6 +713,8 @@ Threat hunting is a relatively new focal area in information security.
 <<<
 == Digital Forensics
 
+
+
 === Base64 Encoded Data
 Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
 
@@ -1270,6 +1272,7 @@ image::github4.png[]
 ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
 CTF:: Capture The Flag
 CTI:: Cyber Threat Intelligence
+ICS:: Industrial Conrol Systems
 IOC:: Indicators of Compromise
 LLMNR:: Link Local Multicast Name Resolution
 mDNS:: Multicast Domain Name System
