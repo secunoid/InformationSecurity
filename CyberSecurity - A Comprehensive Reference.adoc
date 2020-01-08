@@ -563,8 +563,30 @@ A member of the Red Team poses as a Fed-Ex delivery driver and accesses the buil
 
 This is just one of innumerable methods a Red Team may operate but is a good example of some tests we have performed.
 
+* Offensive Security
+* Ethical Hacking
+* Exploiting Vulnerabilities
+* Penetration Testing
+* Black Box Testing
+* Social Engineering
+* Web App Scanning
+
 ==== Blue Team Assessment
 Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
+
+* Defensive Security
+* Infrastructure Protection
+* Damage Control
+* Incident Response
+* Operational Security
+* Threat Hunters
+* Digital Forensics
+
+==== Purple Team
+* Collaborative Security
+* Reand & Blue Teams Function Together
+* Cooperate to improve/test detection
+* Vulnerability Scanning & Pen Testing
 
 ==== Methods
 social engineering, phishing, vishing or simply posing as a company employee.
