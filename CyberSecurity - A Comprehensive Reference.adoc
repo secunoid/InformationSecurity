@@ -1297,6 +1297,7 @@ CTI:: Cyber Threat Intelligence
 ICS:: Industrial Conrol Systems
 IOC:: Indicators of Compromise
 LLMNR:: Link Local Multicast Name Resolution
+Med-jacking:: is a new kind of cybersecurity threat to health care systems. Medjacking involves hacking into medical devices using backdoors to access software on the device.
 mDNS:: Multicast Domain Name System
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
