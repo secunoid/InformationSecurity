@@ -350,11 +350,12 @@ Penetration Tests can include following scopes:
 
 . Enumerate subdomains
 
-	sublist3r
+	sublist3r -d <domainname> -t3 -o <filename.txt>
 
 . Discovery Scan
 
 	nmap -sC -sV -oA foldername/filename IPAddress
+	nmap -sC -sV -oA foldername/filename -iL <inputfilename>
 
 . Recon scan all ports
 	
