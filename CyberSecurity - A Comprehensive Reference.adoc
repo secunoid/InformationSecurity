@@ -1009,6 +1009,10 @@ A documented process must be followed to ensure compliance to security policy an
 
 	usermod -a -G <username>
 
+. Change user shell to bash
+
+	chsh -s /bin/bash <username>
+
 <<<
 == Powershell Reference
 
