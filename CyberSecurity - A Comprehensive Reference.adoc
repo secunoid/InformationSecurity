@@ -347,6 +347,7 @@ Penetration Tests can include following scopes:
 . Social
 
 ==== Penetration Testing Methodology
+
 . Discovery Scan
 	nmap -sC -sV -oA foldername/filename IPAddress
 . Recon scan all ports
