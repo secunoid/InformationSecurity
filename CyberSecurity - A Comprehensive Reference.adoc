@@ -348,6 +348,10 @@ Penetration Tests can include following scopes:
 
 ==== Penetration Testing Methodology
 
+. Enumerate subdomains
+
+	sublist3r
+
 . Discovery Scan
 
 	nmap -sC -sV -oA foldername/filename IPAddress
@@ -997,6 +1001,13 @@ A documented process must be followed to ensure compliance to security policy an
 * Considers both upside and downside
 * Focuses on business goals, adding value and more
 * Embedded in culture and mindset 
+
+<<<
+== Kali Linux Command Reference
+
+. Add a user to sudoers file
+
+	usermod -a -G <username>
 
 <<<
 == Powershell Reference
