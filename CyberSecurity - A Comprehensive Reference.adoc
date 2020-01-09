@@ -355,8 +355,9 @@ Penetration Tests can include following scopes:
 . Recon scan all ports
 	
 	nmap -p- -v -oA foldername/filename-allports IPAddress
-	
-.
+
+. Take notes of all the findings and also include screen captures.
+. 
 
 ==== Penetration Testing Tools
 
