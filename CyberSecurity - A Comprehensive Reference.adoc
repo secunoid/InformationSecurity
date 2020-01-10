@@ -540,22 +540,30 @@ Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogu
 ===== Sublist3r
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
-First open a terminal sessions and change the directory to the Desktop as following:
+*Installation*
+. Login as root
+. Open a terminal session
+. Change directory to /opt
 
-	cd Desktop
+	cd /opt
 
-The next step is to run the following command to clone the repository in a new directory:
+. Download the latest version from git
 
 	git clone https://github.com/aboul3la/Sublist3r.git
 
-Change the directory to Sublist3r:
+. Change the directory to Sublist3r:
 
 	cd Sublist3r
 
-And finally complete the installation by installing the required dependencies with the following command:
+. Install the required dependencies:
 
 	pip install -r requirements.txt
+
+. Execute the sublist3r
+
 	python sublist3r -h
+	or
+	./sublist3r.py -h 
 
 [horizontal]
 Source:: https://github.com/aboul3la/Sublist3r
