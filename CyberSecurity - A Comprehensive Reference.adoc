@@ -538,6 +538,7 @@ Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogu
 ===== SSLStrip
 
 ===== Sublist3r
+
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
 *Installation*
@@ -1337,6 +1338,7 @@ image::github4.png[]
 === By Pethuraj M
 
 Following references were posted on LinkedIn by https://www.pethuraj.in https://www.pethuraj.com 
+
 • 𝗔𝘄𝗲𝘀𝗼𝗺𝗲 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀 𝗙𝗼𝗿 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗛𝗮𝗰𝗸𝗶𝗻𝗴 & 𝗣𝗲𝗻𝘁𝗲𝘀𝘁𝗶𝗻𝗴
 http://tiny.cc/s5Ig
 
