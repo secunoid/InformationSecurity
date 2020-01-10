@@ -1331,6 +1331,38 @@ image::github4.png[]
 	git clone <repository URL from git page>
 
 <<<
+
+== Ethical Hacking References
+
+=== By Pethuraj M
+
+Following references were posted on LinkedIn by https://www.pethuraj.in https://www.pethuraj.com 
+• 𝗔𝘄𝗲𝘀𝗼𝗺𝗲 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀 𝗙𝗼𝗿 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗛𝗮𝗰𝗸𝗶𝗻𝗴 & 𝗣𝗲𝗻𝘁𝗲𝘀𝘁𝗶𝗻𝗴
+http://tiny.cc/s5Ig
+
+• 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀-𝗳𝗼𝗿-𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴-𝗛𝗮𝗰𝗸𝗶𝗻𝗴
+http://tiny.cc/7OiG
+
+• 𝗘𝘁𝗵𝗶𝗰𝗮𝗹 𝗛𝗮𝗰𝗸𝗶𝗻𝗴 & 𝗖𝘆𝗯𝗲𝗿 𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗕𝗶𝗯𝗹𝗲
+http://tiny.cc/0wGg
+
+• 𝗖𝘆𝗯𝗲𝗿 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀
+http://tiny.cc/m6Ig
+
+• 𝗔𝘄𝗲𝘀𝗼𝗺𝗲 𝗛𝗮𝗰𝗸𝗶𝗻𝗴 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀
+http://tiny.cc/pqJg
+
+• 𝗲𝘁𝗵𝗶𝗰𝗮𝗹-𝗵𝗮𝗰𝗸𝗶𝗻𝗴-𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆
+http://tiny.cc/IqYg
+
+• 𝗙𝗿𝗲𝗲 𝗘𝘁𝗵𝗶𝗰𝗮𝗹 𝗛𝗮𝗰𝗸𝗶𝗻𝗴 𝗲𝗕𝗼𝗼𝗸𝘀
+http://tiny.cc/b6Rg
+
+
+#cybersecurity #hackerone #bugcrowd #wapt #pentest #security #hacking #pentesting #bugbounty #owasp #burpsuite #ceh #oscp #ethicalhacking #infosec
+
+
+
 == Terms Used
 [horizontal]
 ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
