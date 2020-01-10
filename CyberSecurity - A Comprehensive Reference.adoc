@@ -1383,6 +1383,7 @@ WPAD:: Web Proxy Auto Discovery Protocol
 <<<
 [bibliography]
 == References
+
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
 . What is Malware? https://www.avg.com/en/signal/what-is-malware
