@@ -1020,6 +1020,14 @@ A documented process must be followed to ensure compliance to security policy an
 <<<
 == Kali Linux Command Reference
 
+. login as root and the user
+
+	useradd -m <username>
+
+. Assign a password to the user
+
+	passwd <username>
+
 . Add a user to sudoers file
 
 	usermod -a -G <username>
