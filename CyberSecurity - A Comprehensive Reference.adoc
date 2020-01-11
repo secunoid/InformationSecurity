@@ -1047,21 +1047,48 @@ A documented process must be followed to ensure compliance to security policy an
 <<<
 == Kali Linux Command Reference
 
-. login as root and the user
+. Add user and give root privs
+.. login as root and the user
 
 	useradd -m <username>
 
-. Assign a password to the user
+.. Assign a password to the user
 
 	passwd <username>
 
-. Add a user to sudoers file
+.. Add a user to sudoers file
 
 	usermod -a -G sudo <username>
 
-. Change user shell to bash
+.. Change user shell to bash
 
 	chsh -s /bin/bash <username>
+
+. Shrink partition
+.. Login to your system as root and open a terminal window.  Lets assume the paritition is /dev/xxx/yyy and is currently 40G, and you want to reduce it to 30G
+
+	df -k
+	unmount /dev/xxx/yyy
+	e2fsck -fy /dev/xxx/yyy
+	resize2fs /dev/xxx/yyy 30G
+	lvreduce -L 30G /dev/xxx/yyy
+	resize2fs /dev/xxx/yyy
+	mount /dev/xxx/yyy
+
+. Expand partition
+
+Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to add another 10G
+.. Show space in current Volume group, look for Free PE/Size and make note of it, in our case it
+
+	vgdisplay
+
+.. Extend the logical volume
+
+	lvextend -L+10G /dev/xxx/yyy
+
+.. Resize the filesystem
+
+	resize2fs /dev/xxx/yyy
 
 <<<
 == Powershell Reference
