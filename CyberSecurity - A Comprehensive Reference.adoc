@@ -367,6 +367,10 @@ Penetration Tests can include following scopes:
 	
 	nmap -p- -v -oA foldername/filename-allports IPAddress
 
+. If webservers are found perform web server enumeration:
+
+	dirb -d <domainname> 
+	
 . Take notes of all the findings and also include screen captures.
 . 
 
