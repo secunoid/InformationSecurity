@@ -348,9 +348,15 @@ Penetration Tests can include following scopes:
 
 ==== Penetration Testing Methodology
 
-. Enumerate subdomains
+===== Reconnaissance
+. Open Source Intelligence Gathering
+.. Look for sub-domains:
 
 	sublist3r -d <domainname> -t3 -o <filename.txt>
+
+.. Look for sub-domains, users, etc:
+
+	theharvester -d <domainname> -b all -f <outputfilename>
 
 . Discovery Scan
 
