@@ -1057,7 +1057,7 @@ A documented process must be followed to ensure compliance to security policy an
 
 . Add a user to sudoers file
 
-	usermod -a -G <username>
+	usermod -a -G sudo <username>
 
 . Change user shell to bash
 
