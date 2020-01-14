@@ -238,6 +238,10 @@ Web site content is located on a non-system NTFS volume.
 <<<
 == Security Guidelines
 
+<<<
+== Cryptography
+
+Cryptographic Blinding
 
 <<<
 == Digital Identity
