@@ -238,6 +238,19 @@ Web site content is located on a non-system NTFS volume.
 <<<
 == Security Guidelines
 
+
+<<<
+== Digital Identity
+
+Digital Identity is a bridge that connects the physical and the digital world.  You can call them Personna's in a digital world.
+
+Cost of financial intermediation is been going up due to regulation.
+
+According to Europol we are spending about $20b to intercept 0.15% of the fraudulent flows of money.
+
+
+
+
 <<<
 == Application Security
 The scope of application security would be the 
