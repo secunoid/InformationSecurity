@@ -795,6 +795,12 @@ Threat hunting is a relatively new focal area in information security.
 == Digital Forensics
 
 
+=== SOF ELK
+
+SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat). With a significant amount of customization and ongoing development, SOF-ELK® users can avoid the typically long and involved setup process the Elastic stack requires. Instead, they can simply download the pre-built and ready-to-use SOF-ELK® virtual appliance that consumes various source data types (numerous log types as well as NetFlow), parsing out the most critical data and visualizing it on several stock dashboards. Advanced users can build visualizations the suit their own investigative or operational requirements, optionally contributing those back to the primary code repository.
+
+Link: https://github.com/philhagen/sof-ELK 
+Training: https://youtu.be/Hk6An-LJ4jY   
 
 === Base64 Encoded Data
 Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
