@@ -645,6 +645,11 @@ This is just one of innumerable methods a Red Team may operate but is a good exa
 * Social Engineering
 * Web App Scanning
 
+===== Red Team Resources
+
+. https://www.hackingarticles.in/red-teaming/ 
+
+
 ==== Blue Team Assessment
 Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
 
