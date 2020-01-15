@@ -481,8 +481,9 @@ Usage
 
 Scan a website (-u http://192.168.0.155/) for directories using a wordlist (-w /usr/share/wordlists/dirb/common.txt) and print the full URLs of discovered paths (-e):
 
-	gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -o filename.txt
-	gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirbuster/directgory-list-2.3-medium.txt -o filename.txt
+	*Using dirb word lists* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -o filename.txt
+	*Using dirbuster word lists* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirbuster/directgory-list-2.3-medium.txt -o filename.txt
+	*Using a cookie* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirbuster/directgory-list-2.3-medium.txt -o filename.txt -c 'cookievariable=valie'
 
 
 [horizontal]
