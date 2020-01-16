@@ -466,6 +466,10 @@ evilarc.py is an archiving tool that allows for folder manipulation.
 Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra supports a wide variety of processor instruction sets and executable formats and can be run in both user-interactive and automated modes. Users may also develop their own Ghidra plug-in components and/or scripts using Java or Python.
 Link: https://ghidra-sre.org/
 
+===== Gitleaks
+
+Link: https://github.com/zricethezav/gitleaks
+
 ===== Gobuster
 
 Gobuster is a tool used to brute-force:
@@ -614,6 +618,10 @@ Author:: Ahmed Aboul-Ela
 License:: GPL-2+
 
 ===== TheHarvester
+
+===== TruffleHog
+
+Link: https://github.com/dxa4481/truffleHog
 
 ===== Wfuzz
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
