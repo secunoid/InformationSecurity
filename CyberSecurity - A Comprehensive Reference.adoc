@@ -1464,6 +1464,7 @@ http://tiny.cc/b6Rg
 == Terms Used
 [horizontal]
 ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
+APT:: Advanced Persistent Threat
 CTF:: Capture The Flag
 CTI:: Cyber Threat Intelligence
 ICS:: Industrial Conrol Systems
@@ -1473,7 +1474,9 @@ Med-jacking:: is a new kind of cybersecurity threat to health care systems. Medj
 mDNS:: Multicast Domain Name System
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
+Smishing:: Phishing through SMS
 TTP:: Techniques, Tactics, Procedures
+Vishing:: Phishing through voice calls
 WPAD:: Web Proxy Auto Discovery Protocol
 
 <<<
