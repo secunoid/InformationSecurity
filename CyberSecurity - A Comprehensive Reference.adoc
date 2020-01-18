@@ -824,17 +824,31 @@ Looking for persistent outbound signal
 * Is there consistency in timing
 * 
 
+==== Detecting C2 over DNS
+* Capture all DNS traffic
+** Capture tool of your choice
+** Longer the capture time, the better
+* Filter so it is DNS traffic only
+* Extract to text so we can sort and count
+* Review total FQDNs per domain
+* Check domain with a lot of FQDNs
+
+
+
 ==== Bro
 Network sniffing tool
 
 ==== Tshark
-tshark -q -z conv,ip -r dnscat2.pcapng | tr -s ' ' | cut -d " " -f 1,2,3,10 | sort -k 4 -rn | head 
+	tshark -q -z conv,ip -r dnscat2.pcapng | tr -s ' ' | cut -d " " -f 1,2,3,10 | sort -k 4 -rn | head 
+	
+	tshark -r thunt-lab.pcapng -T fields -e dns.qry.name | sort |uniq | rev | cut -d '.' -f 1-2 |rev | uniq -c | sort -rn | head -10
+
 
 ==== Zeek
 Network sniffing tool
 
 
-==== Referenc Sites
+==== Reference Sites
 . https://pentestmag.com/using-the-mitre-attck-navigator-for-intelligence-gathering-pre-purple-teaming/
 . https://www.activecountermeasures.com/raspberry_pi_sensor/
 . https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClarCAC
@@ -843,7 +857,12 @@ Network sniffing tool
 . https://en.wikipedia.org/wiki/Domain_fronting
 . https://www.bleepingcomputer.com/news/security/teamviewer-confirms-undisclosed-breach-from-2016/
 . https://www.linkedin.com/posts/kirtaroza_cyberthreatintelligence-note-paython-activity-6600672896148959232-J-r8/
-. 
+. https://github.com/activecm/passer
+. http://www.stearns.org/doc/pcap-apps.html
+. HELKS
+. SELKS
+. Packet Squirrel https://shop.hak5.org/products/packet-squirrel
+. https://register.gotowebinar.com/register/2540509980495221261?source=ACMtwitter
 
 
 
