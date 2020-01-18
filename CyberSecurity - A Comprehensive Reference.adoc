@@ -838,6 +838,10 @@ Looking for persistent outbound signal
 ==== Bro
 Network sniffing tool
 
+==== RITA
+
+Link: https://www.activecountermeasures.com/free-tools/rita/ 
+
 ==== Tshark
 	tshark -q -z conv,ip -r dnscat2.pcapng | tr -s ' ' | cut -d " " -f 1,2,3,10 | sort -k 4 -rn | head 
 	
