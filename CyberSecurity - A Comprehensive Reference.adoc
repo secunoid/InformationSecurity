@@ -817,7 +817,36 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 
 
 === Threat Hunting
-Threat hunting is a relatively new focal area in information security.
+Threat hunting is a relatively new focal area in information security.  Actively looking for C2C in your environment.  Firewalls, IDS/IPS, SIEM are not able to detect C2C.
+
+*Beacons*
+Looking for persistent outbound signal
+* Is there consistency in timing
+* 
+
+==== Bro
+Network sniffing tool
+
+==== Tshark
+tshark -q -z conv,ip -r dnscat2.pcapng | tr -s ' ' | cut -d " " -f 1,2,3,10 | sort -k 4 -rn | head 
+
+==== Zeek
+Network sniffing tool
+
+
+==== Referenc Sites
+. https://pentestmag.com/using-the-mitre-attck-navigator-for-intelligence-gathering-pre-purple-teaming/
+. https://www.activecountermeasures.com/raspberry_pi_sensor/
+. https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClarCAC
+. https://gist.github.com/MSAdministrator/7a61025263e279a740835da4b205e6d0
+. https://www.twistlock.com/2019/01/02/whitelisting-blacklisting-security-strategy/
+. https://en.wikipedia.org/wiki/Domain_fronting
+. https://www.bleepingcomputer.com/news/security/teamviewer-confirms-undisclosed-breach-from-2016/
+. https://www.linkedin.com/posts/kirtaroza_cyberthreatintelligence-note-paython-activity-6600672896148959232-J-r8/
+. 
+
+
+
 
 <<<
 == Digital Forensics
