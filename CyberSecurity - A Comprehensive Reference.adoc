@@ -833,11 +833,6 @@ Looking for persistent outbound signal
 * Review total FQDNs per domain
 * Check domain with a lot of FQDNs
 
-
-
-==== Bro
-Network sniffing tool
-
 ==== RITA
 
 Link: https://www.activecountermeasures.com/free-tools/rita/ 
@@ -847,9 +842,8 @@ Link: https://www.activecountermeasures.com/free-tools/rita/
 	
 	tshark -r thunt-lab.pcapng -T fields -e dns.qry.name | sort |uniq | rev | cut -d '.' -f 1-2 |rev | uniq -c | sort -rn | head -10
 
-
 ==== Zeek
-Network sniffing tool
+Network sniffing tool, formerly called Bro.
 
 
 ==== Reference Sites
@@ -867,6 +861,7 @@ Network sniffing tool
 . SELKS
 . Packet Squirrel https://shop.hak5.org/products/packet-squirrel
 . https://register.gotowebinar.com/register/2540509980495221261?source=ACMtwitter
+. netgear gs305e
 
 
 
