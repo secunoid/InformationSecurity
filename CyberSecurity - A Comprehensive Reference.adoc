@@ -822,14 +822,6 @@ MISP - Open Source Threat Intelligence Platform & Open Standards For Threat Info
 
 Link: https://www.misp-project.org/
 
-
-=== Threat Risk Assessments
-Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
-Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
-Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
-Controls, safeguards, countermeasures are implemented to reduce the risk.
-
-
 === Threat Hunting
 Threat hunting is a relatively new focal area in information security.  Actively looking for C2C in your environment.  Firewalls, IDS/IPS, SIEM are not able to detect C2C.
 
@@ -877,8 +869,32 @@ Network sniffing tool, formerly called Bro.
 . https://register.gotowebinar.com/register/2540509980495221261?source=ACMtwitter
 . netgear gs305e
 
+=== Threat Risk Assessments
+*Threat*: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
 
+*Risk*: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Controls, safeguards, countermeasures are implemented to reduce the risk.
 
+=== Bug Bounty / Crowsourced Security Platforms
+. Hackerone
+. Bugcrowd
+. Synack
+. Detectify
+. cobalt
+. Open Bug Bounty
+. Zerocopter
+. YesWeHack
+. HackenProof
+. Vulnerability Lab
+. FireBounty
+. BugBounty.jp
+. AntiHACK
+. Intigriti
+. SafeHats
+. RedStorm
+. Cyber Army ID
+. Yogosha
 
 <<<
 == Digital Forensics
