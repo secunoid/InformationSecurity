@@ -1140,7 +1140,7 @@ A documented process must be followed to ensure compliance to security policy an
 * Embedded in culture and mindset 
 
 <<<
-== Kali Linux Command Reference
+== Kali Reference
 
 . Add user and give root privs
 .. login as root and the user
@@ -1463,7 +1463,7 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	get-NetAdapterStatistics
 
 <<<
-== Github
+== Github Reference
 
 === Adding a new repository to github.com
 
@@ -1488,8 +1488,21 @@ image::github4.png[]
 
 	git clone <repository URL from git page>
 
-<<<
+=== What to do after renaming your github username?
+After you have changed your github.com user name, you will have to relink all your local github repositories to the github on the web.  Here are the steps:
 
+. Open GitCMD or GitBASH
+. Change directory to the repository where you have cloned the respository from the web
+. Check where does this repository points:
+	git remote -v
+. The output will be: image::github-repo-now.png[]
+. Change to new github repository
+	git remote set-url origin git@github.com:secprivrisk/CyberSecurity.git
+. Confirm the change by issuing the command:
+	git remote -v
+. The output will be: image::github-repo-new.png[]
+
+<<<
 == Ethical Hacking References
 
 === By Pethuraj M
