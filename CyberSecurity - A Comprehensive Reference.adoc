@@ -781,6 +781,8 @@ With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems f
 
 MITRE ATT&CK website: https://attack.mitre.org/ 
 
+==== Open Threat Exchange(OTX)
+
 ==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
 
@@ -790,6 +792,18 @@ Unit 42 is the global threat intelligence team at Palo Alto Networks®
 https://www.packetstormsecurity.com
 https://www.securityfocus.com
 https://www.exploit-db.com
+
+==== Cisco Talos
+Cisco Talos Intelligence Group is one of the largest commercial threat intelligence teams in the world, comprised of world-class researchers, analysits and engineers.  These teams are supposed by unrivaled telemetry and sophisticated systems to create accurate, rapid and actionable threat intelligence for Cisco Customers, products and services.  Talos defends Cisco customers against knowns and emerging threats, discovers new vulnerabilities in common software, and interdicts threats in the wild beofre they can further harm the internet at large.  Talos maintains the official rules sets of Snort.org, ClamAV, and SpanCop, in addition to releasing many open-source research and analysis tools.
+
+Talos was formed by combining SourceFire's Vulnerability Research Team, the Cisco Threat Research and Communications group, and the Cisco Security Applications Group.  The combined expertise is backed by a sophisticated infrastrucutre, and Cisco's unrivaled telemetry of data that spans across networks, endpoints, cloud environments, virtual systems, and daily web and email traffic.
+
+Link: https://talosintelligence.com/ 
+
+==== Sophos Labs
+
+
+Link: https://www.sophos.com/en-us/labs.aspx 
 
 ==== STIX
 STIX (Structured Threat Information eXpression) was originally conceived as a language to describe cyber threat intelligence. This was groundbreaking at the time because it was the first language to provide a definition of cyber threat intelligence. Although it’s a bit of a fuzzy term, cyber threat intelligence generally describes information about adversaries and their behaviors that can inform defensive actions. For example, knowing that a certain adversary targets financial institutions by using specially crafted spear-phishing emails, and then delivers Trojans that will reach out to a certain set of websites that are known to be malicious, can be very helpful in defending against the attack. STIX captures that type of intelligence in a machine-readable form so that it can be shared among organizations and tools.
