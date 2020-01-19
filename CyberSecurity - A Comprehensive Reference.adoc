@@ -1494,13 +1494,19 @@ After you have changed your github.com user name, you will have to relink all yo
 . Open GitCMD or GitBASH
 . Change directory to the repository where you have cloned the respository from the web
 . Check where does this repository points:
+
 	git remote -v
-. The output will be: image::github-repo-now.png[]
+
+image::github-repo-now.png[]
 . Change to new github repository
+
 	git remote set-url origin git@github.com:secprivrisk/CyberSecurity.git
+
 . Confirm the change by issuing the command:
+
 	git remote -v
-. The output will be: image::github-repo-new.png[]
+
+image::github-repo-new.png[]
 
 <<<
 == Ethical Hacking References
