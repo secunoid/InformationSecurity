@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.65, 22nd January, 2020
+v1.66, 24th January, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -248,7 +248,14 @@ Cost of financial intermediation is been going up due to regulation.
 
 According to Europol we are spending about $20b to intercept 0.15% of the fraudulent flows of money.
 
+<<<
+== Training & Education
 
+=== Phishing
+
+==== GoPhish
+An opensource toolkit to generate phishing campaigns for organizations to test their employee phishing knowledge
+Link: https://github.com/gophish/gophish/releases/
 
 
 <<<
