@@ -1255,6 +1255,12 @@ Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to
 
 	Shutdown-Computer
 
+. Set log application, system, and security log files to 100MB and roll over after 21 days
+
+	limit-eventlog -logname "application" -maximumsize 100MB -retentiondays 21 -overflowaction overwriteolder 
+	limit-eventlog -logname "security" -maximumsize 100MB -retentiondays 21 -overflowaction overwriteolder 
+	limit-eventlog -logname "system" -maximumsize 100MB -retentiondays 21 -overflowaction overwriteolder 
+
 . Enable Remote Desktop
 
 	set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -Value 0
