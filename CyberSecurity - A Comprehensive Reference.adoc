@@ -1246,6 +1246,9 @@ Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to
 <<<
 == Powershell Reference
 
+. Powershell 7 , download and install it here: https://github.com/PowerShell
+. Powershell books:
+.. Windows Powershell Cookbook http://shop.oreilly.com/product/0636920024132.do
 . Complete Powershell in one video-beginner to professional powershell scripting: https://www.youtube.com/watch?v=plqpmZruOYk
 . Get-adobject: https://adamtheautomator.com/get-adobject/
 . Good website: https://lazywinadmin.com/
