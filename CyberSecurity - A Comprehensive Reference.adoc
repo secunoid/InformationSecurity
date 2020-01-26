@@ -622,6 +622,11 @@ License:: GPL-2+
 
 ===== TheHarvester
 
+===== Tokenvator
+A Tool to Elevate Privilege using Windows Tokens
+
+Link: https://blog.netspi.com/tokenvator-a-tool-to-elevate-privilege-using-windows-tokens/
+
 ===== TruffleHog
 
 Link: https://github.com/dxa4481/truffleHog
