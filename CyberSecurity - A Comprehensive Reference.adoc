@@ -582,6 +582,13 @@ Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogu
 
 ===== Sbmclient
 
+===== Sharp Cookie Monster
+
+If you steal a users Chrome cookie, you can log into their accounts on every website they are logged into.
+Normally you need the user’s password to do it, @mangopdf found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome’s Remote Debugging Protocol
+
+Link: https://www.blackhatethicalhacking.com/tools/sharp-cookie-monster/
+
 ===== Smbmap
 
 ===== SSLStrip
