@@ -413,6 +413,14 @@ Burp Suite is a web application testing tool
 
 Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
 
+===== Cookie Crimes
+
+If you steal someone’s Chrome cookies, you can log in to their accounts on every website they’re logged in to.
+
+Normally you need the user’s password to do it, but I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome’s Remote Debugging Protocol.
+
+Link: https://github.com/defaultnamehere/cookie_crimes
+
 ===== CherryTree
 Chery Tree is a note taking app
 
@@ -585,7 +593,10 @@ Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogu
 ===== Sharp Cookie Monster
 
 If you steal a users Chrome cookie, you can log into their accounts on every website they are logged into.
+
 Normally you need the user’s password to do it, @mangopdf found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome’s Remote Debugging Protocol
+
+This tool is based on Cookie Crimes module: https://github.com/defaultnamehere/cookie_crimes 
 
 Link: https://www.blackhatethicalhacking.com/tools/sharp-cookie-monster/
 
