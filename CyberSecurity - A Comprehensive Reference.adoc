@@ -59,6 +59,28 @@ When requested, businesses must inform consumers about the type of personal data
 <<<
 == Data Protection
 
+=== Methodology
+. Define what to classify
+. Define where to classify
+. Define who applies classification
+. Define conditions
+. Assign labels to users and groups
+. Define Access rights
+. Create classification policies
+. Test Classification policies
+. Deploy classification policies
+. Monitor and accelerate remediation
+
+=== Know your data
+. Where is my sensitive data 
+located? 
+. What are the risky activities happening in my organization – files shared externally, across 1st and 3rd party apps?
+. I need to comply with a new regulation? Where is my PII data located & where is it being generated? 
+. How do I control data sprawl and build a strategy for ROT before I bring data
+. How do I see activity around classification and labeling across retention and sensitivity labels once they have been used across governance and retention outcomes?
+. How do I monitor  ongoing risk around label activity?
+
+
 === Password Strength
 Brute force password cracking - the importance of using a long password with a mix of uppercase, lowercase and special characters.
 
