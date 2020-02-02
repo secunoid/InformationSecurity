@@ -1606,6 +1606,49 @@ image::github-repo-new.png[]
 <<<
 == Ethical Hacking References
 
+=== By Mayur Parmar
+Want resource for OSCP?
+here is the material to clear OSCP.
+All the best for your journey.
+How to prepare for OSCP complete guide 
+
+Below are 5 skills which you have to improve before registering for OSCP
+> Learn basic of Computer Network, Web application, and Linux
+> Learn Bash and Python scripting
+> Enumeration is key in OSCP lab, I repeat Enumeration is key in OSCP Lab and in real world too
+> Download vulnerable VM machines from vulnhub
+> Buffer Overflow (BOF) exploitation
+
+Below are the free reference before registration of OSCP 
+> https://lnkd.in/fBcwnBF
+> https://lnkd.in/fXtRZK5
+> https://lnkd.in/fcHg29E
+> https://lnkd.in/f2-wBQJ
+> https://lnkd.in/fkFNATW
+
+Below are the reference for Buffer overflow and exploit developmet for OSCP
+> https://lnkd.in/fmmU_Uz
+> https://lnkd.in/fZDh9Vd
+
+For Bash Scripting 
+> https://lnkd.in/fn2wpZ5
+
+Transferring Files from Linux to Windows & post-exploitation
+> https://lnkd.in/fSJ44Eb
+> https://lnkd.in/fJUGq3s
+
+Privilege Escalation:
+> https://lnkd.in/f4jsZfa
+> https://lnkd.in/fFAeE3g
+> https://lnkd.in/fUx6HZQ
+> https://lnkd.in/fDNJGHw
+> https://lnkd.in/fqPJzMP
+> https://lnkd.in/fixKjR6
+> https://lnkd.in/f2Nz3_a
+> https://lnkd.in/fpZcJT9
+
+
+
 === By Pethuraj M
 
 Following references were posted on LinkedIn by https://www.pethuraj.in https://www.pethuraj.com 
