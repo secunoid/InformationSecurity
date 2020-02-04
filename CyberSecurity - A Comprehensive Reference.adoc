@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.67, 2nd February, 2020
+v1.68, 3rd February, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1646,6 +1646,22 @@ Privilege Escalation:
 > https://lnkd.in/fixKjR6
 > https://lnkd.in/f2Nz3_a
 > https://lnkd.in/fpZcJT9
+
+
+Some tips and tricks for OSCP Exam & write-ups.
+https://lnkd.in/fWugM5F
+https://lnkd.in/fs_dDJr
+https://lnkd.in/fzh5M_V
+https://lnkd.in/fV3m55b
+https://lnkd.in/faWFaea
+https://lnkd.in/fiFGmV9
+https://lnkd.in/fShfYRe
+https://lnkd.in/f9mKEgu
+https://lnkd.in/fjuxWZ5
+https://lnkd.in/ffett24
+https://lnkd.in/fivVvaz
+https://lnkd.in/f973szJ
+https://lnkd.in/f8ec7z5
 
 
 
