@@ -966,6 +966,7 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 == Digital Forensics
 
 
+
 === Persistence Investigations & Layered Drivers
 * Layered drivers help find network sniffers, keyboard key loggers
 * Triage methodology for persistence, focusing on layered drivers
@@ -996,6 +997,22 @@ Different Types Of Encoding Schemes – A Primer: https://skorks.com/2009/08/dif
 decode.py: https://github.com/secnonsense/decode.py
 
 === Tools
+==== Autollr
+
+Github: https://github.com/Dead-Simple-Scripts/AutoLLR 
+
+Dead Simple Scripts: http://github.com/Dead-Simple-Scripts 
+
+==== Bulk-extractor
+bulk_extractor is a program that extracts features such as email addresses, credit card numbers, URLs, and other types of information from digital evidence files. It is a useful forensic investigation tool for many tasks such as malware and intrusion investigations, identity investigations and cyber investigations, as well as analyzing imagery and pass-word cracking. The program provides several unusual capabilities including:
+
+* It finds email addresses, URLs and credit card numbers that other tools miss because it can process compressed data (like ZIP, PDF and GZIP ﬁles) and incomplete or partially corrupted data. It can carve JPEGs, office documents and other kinds of files out of fragments of compressed data. It will detect and carve encrypted RAR files.
+* It builds word lists based on all of the words found within the data, even those in compressed files that are in unallocated space. Those word lists can be useful for password cracking.
+* It is multi-threaded; running bulk_extractor on a computer with twice the number of cores typically makes it complete a run in half the time.
+* It creates histograms showing the most common email addresses, URLs, domains, search terms and other kinds of information on the drive.
+
+Link: https://tools.kali.org/forensics/bulk-extractor
+
 
 ==== DensityScout
 DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
@@ -1031,11 +1048,19 @@ Loki Github: http://github.com/Neo23x0/Loki
 
 Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html
 
-==== Autollr
+==== SIFT Workstation
+The SIFT Workstation is a group of free open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep dive digital forensic techniques to intrusions can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.
 
-Github: https://github.com/Dead-Simple-Scripts/AutoLLR 
+Link: https://digital-forensics.sans.org/community/downloads
 
-Dead Simple Scripts: http://github.com/Dead-Simple-Scripts 
+==== Volatility Framework
+Digital investigations had focused primarily on finding contraband within hard drive images. Volatility introduced people to the power of analyzing the runtime state of a system using the data found in volatile storage (RAM). It also provided a cross-platform, modular, and extensible platform to encourage further work into this exciting area of research. Another major goal of the project was to encourage the collaboration, innovation, and accessibility to knowledge that had been common within the offensive software communities.
+
+​Since that time, memory analysis has become one of the most important topics to the future of digital investigations and Volatility has become the world’s most widely used memory forensics platform. The project is supported by one of the largest and most active communities in the forensics industry. Volatility also provides a unique platform that enables cutting edge research to be immediately transitioned into the hands of digital investigators. As a result, research built on top of Volatility has appeared at the top academic conferences and Volatility has been used on some of the most critical investigations of the past decade. It has become an indispensible digital investigation tool relied upon by law enforcement, military, academia, and commercial investigators throughout the world.
+
+Volatility development is now supported by The Volatility Foundation, an independent 501(c) (3) non-profit organization. The foundation was established to promote the use of Volatility and memory analysis within the forensics community, to defend the project's intellectual property (trademarks, licenses, etc.) and longevity, and, finally, to help advance innovative memory analysis research. Along these lines, the foundation was also formed to help protect the rights of the developers who sacrifice their time and resources to make the world’s most advanced memory forensics platform free and open source.
+
+Link: https://www.volatilityfoundation.org/
 
 <<<
 == Incident Response
