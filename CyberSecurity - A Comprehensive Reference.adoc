@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.69, 9th February, 2020
+v1.70, 11th February, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -965,7 +965,25 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 <<<
 == Digital Forensics
 
+=== Windows Persistence
+Focus on System & Security logs.  Standard artifact utilized in any investigation.
 
+Following log types are important:
+
+. Task logs 
+. Events concerning services
+.. 7045 - Code for new service installed, should be a low frequency event.
+.. 7009 - Service failed to start, what should be running and is not.
+.. 7035/7036 - Services being tampered with for malicious purposes. Look for services that have no descrption, and have image path that is in a non standard directory.  DLL is in the same directory as exe, which is a side loading technique. Check for start type, if it is changed to 2, which is auto start. Type 10 means that the service is running under user account authority.
+.. 601 - Attempt to install a service
+.. 7034 - Service has crashed unexpectedly
+. Events concerning schedules tasks
+.. 4698 - When a scheduled task is created on a system that has been compromised
+.. 4702 - When a scheduled task has been altered
+.. 4701/4699 
+.. 4700 - A scheduled task has been enabled.
+
+Scheduled tasks with abnormal names or directories.  Attackers usually create a verly long task name.  Check the command syntax.
 
 === Persistence Investigations & Layered Drivers
 * Layered drivers help find network sniffers, keyboard key loggers
