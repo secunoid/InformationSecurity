@@ -588,6 +588,11 @@ Linux enumeration & privilege escalation checks
 
 Link: https://github.com/rebootuser/LinEnum
 
+===== Metabigor
+Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
+
+Link: https://www.kitploit.com/2020/02/metabigor-intelligence-tool-but-without.html
+
 ===== Maltego
 
 ===== Maryam
