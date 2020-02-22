@@ -620,6 +620,12 @@ Install Instructions:: http://www.hackandtinker.net/2013/10/16/how-to-install-se
 
 ===== NMAP
 
+===== Pupy
+Pupy is a cross-platform, post exploitation tool as well as a multi-function RAT. It’s written in python which makes it very convenient. It also has low detectability that’s why it’s a great tool for the red team.  Pupy can communicate using multiple transports, migrate into processes using reflective injection, and load remote python code, python packages and python C-extensions from memory.
+
+It uses a reflected DLL to load python interpreter from memory which is great as nothing will be shown in the disk. It doesn’t have any special dependencies. It can also migrate into other processes. The communication protocols of pupy are modular and stackable. It can execute non-interactive commands on multiple hosts at once. All the interactive shells can be accessed remotely.
+Link: https://www.hackingarticles.in/command-control-tool-pupy/
+
 ===== Responder
 This tool is first an LLMNR and NBT-NS responder, it will answer to *specific* NBT-NS (NetBIOS Name Service) queries based on their name suffix (see: http://support.microsoft.com/kb/163409). By default, the tool will only answers to File Server Service request, which is for SMB. The concept behind this, is to target our answers, and be stealthier on the network. This also helps to ensure that we don’t break legitimate NBT-NS behavior. You can set the -r option to 1 via command line if you want this tool to answer to the Workstation Service request name suffix.
 
