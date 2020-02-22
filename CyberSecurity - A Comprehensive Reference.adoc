@@ -635,6 +635,12 @@ Install Instructions:: http://www.hackandtinker.net/2013/10/16/how-to-install-se
 
 ===== NMAP
 
+===== Powershell Empire
+Empire has an inbuilt listener named http_hop which allows us to redirect our traffic to one of our another active listener after getting an agent. Thus, the name hop as it hops the agent from one listener to another in order to redirect traffic.
+
+Similar to Metasploit, the hop listener in empire uses a hop.php file. When you activate the hop listener, it will generate three PHP files that will redirect your existing listener. Place the said files in your jump server (ubuntu) and then set up your stager in according to get the session through the mediator i.e. our hop listener.
+Link: https://www.hackingarticles.in/hiding-ip-during-pentest-using-powershell-empire-http_hop/
+
 ===== Pupy
 Pupy is a cross-platform, post exploitation tool as well as a multi-function RAT. It’s written in python which makes it very convenient. It also has low detectability that’s why it’s a great tool for the red team.  Pupy can communicate using multiple transports, migrate into processes using reflective injection, and load remote python code, python packages and python C-extensions from memory.
 
