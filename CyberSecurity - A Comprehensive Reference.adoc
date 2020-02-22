@@ -584,6 +584,10 @@ Link: https://github.com/rebootuser/LinEnum
 OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
 Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
 
+===== Mentalist
+Mentalist is a graphical tool for custom wordlist generation. It utilizes common human paradigms for constructing passwords and can output the full wordlist as well as rules compatible with Hashcat and John the Ripper.
+Link: https://github.com/sc0tfree/mentalist/blob/master/README.md
+
 ===== Metasploit
 
 [horizontal]
