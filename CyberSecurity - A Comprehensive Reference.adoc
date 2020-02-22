@@ -1022,6 +1022,8 @@ Scheduled tasks with abnormal names or directories.  Attackers usually create a 
 === Reverse Engineering
 
 Link: https://github.com/0xZ0F/Z0FCourse_ReverseEngineering
+Link: https://github.com/wtsxDev/reverse-engineering
+
 
 === Cortex
 Cortex tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
