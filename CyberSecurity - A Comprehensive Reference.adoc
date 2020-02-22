@@ -482,6 +482,16 @@ https://tools.kali.org/web-applications/dirb
 
 ===== Dirbuster
 
+===== DNSCAT
+DNScat is such praised tool because it can create a command and control tunnel over the DNS protocol which lets an attacker work in stealth mode. You can access any data along with uploading and downloading files and to get a shell. For this tool to work over 53 port, you don’t need to have authoritative access to DNS server, you can just simply establish your connection over port 53 and it will be faster and it will still be sensed as usual traffic. But it makes its presence well known in the packet log.
+
+DNScat is made of two components i.e. a server and a client. To know the working of dnscat, it is important to understand both of these components.
+
+The client is intended to be kept running on a target machine. It’s written in C and has the least amount of the prerequisites. When you run the client, you regularly indicate a domain name. All packets will be sent to the local DNS server, which is then directed to the legitimate DNS server for that domain (which you, apparently, have control of).
+
+The server is intended to be kept running on a definitive DNS server. It’s developed in ruby and relies upon a few distinct gems. When you run it, much like the client, you indicate from which domain(s) it listens to over 53. When it gets traffic for one of those domains, it endeavours to set up a legitimate association. It gets other traffic it will automatically disregard it but, however, it can also advance it upstream.
+Link: https://www.hackingarticles.in/dnscat2-command-and-control-over-the-dns/?
+
 ===== DNSSPOOF
 
 ===== Empire
