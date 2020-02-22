@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.70, 11th February, 2020
+v1.71, 22nd  February, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -11,7 +11,7 @@ v1.70, 11th February, 2020
 :docinfo1:
 :docinfo2:
 :description: This document covers all aspects of cybersecurity
-:keywords: cybersecurity, it security, blockchain
+:keywords: cybersecurity, it security, compliance, risk management
 :imagesdir: images
 :stylesheet:
 :homepage: https://www.securityprivacyrisk.com
