@@ -930,6 +930,10 @@ Looking for persistent outbound signal
 * Is there consistency in timing
 * 
 
+==== Sysmon
+Microsoft Sysinternals Sysmon configuration repository, set up modular for easier maintenance and generation of specific configs.
+link: https://github.com/olafhartong/sysmon-modular
+
 ==== Detecting C2 over DNS
 * Capture all DNS traffic
 ** Capture tool of your choice
