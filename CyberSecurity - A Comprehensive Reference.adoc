@@ -1147,8 +1147,8 @@ Digital investigations had focused primarily on finding contraband within hard d
 
 Volatility development is now supported by The Volatility Foundation, an independent 501(c) (3) non-profit organization. The foundation was established to promote the use of Volatility and memory analysis within the forensics community, to defend the project's intellectual property (trademarks, licenses, etc.) and longevity, and, finally, to help advance innovative memory analysis research. Along these lines, the foundation was also formed to help protect the rights of the developers who sacrifice their time and resources to make the world’s most advanced memory forensics platform free and open source.
 
-Link: https://www.volatilityfoundation.org/
-Link: https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls/ 
+. https://www.volatilityfoundation.org/[Volatility Foundation]
+. https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls/[Volatility Cheatsheet] 
 
 ==== Wireshark
 
@@ -1156,18 +1156,23 @@ Link: https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part
 <<<
 == Incident Response
 
+=== Preparation
+. Never use flow charts for incident response
+. 
 
+=== How to start the Incident Response Process
 
-
-=== First Incident Response
-FIR (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
+=== Tools
+==== First Incident Response
+https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
 
 FIR is for anyone needing to track cybersecurity incidents (CSIRTs, CERTs, SOCs, etc.). It was tailored to suit our needs and our team's habits, but we put a great deal of effort into making it as generic as possible before releasing it so that other teams around the world may also use it and customize it as they see fit.
-Link: https://github.com/certsocietegenerale/FIR
 
-=== The Hive Project
-TheHive is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
-Link: https://github.com/TheHive-Project
+==== The Hive Project
+https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
+
+=== Reference Material
+. https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
 
 <<<
 == Enterprise Architecture
