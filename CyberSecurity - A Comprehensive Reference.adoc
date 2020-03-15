@@ -1212,14 +1212,35 @@ https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and
 === Network Tools
 
 ==== Security Onion
+https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
 
 ==== Suricata
+https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
+
+The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
+
+Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
+
+With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
+
+Suricata’s fast paced community driven development focuses on security, usability and efficiency.
+
+The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
 
 ==== Bro/Zeek
+https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
+
+Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
+
+Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
 
 ==== RITA
+https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
 
 ==== Ntop
+https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
+
+The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
 
 ==== Coffee
 
