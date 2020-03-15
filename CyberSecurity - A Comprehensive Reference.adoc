@@ -1494,13 +1494,14 @@ Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to
 <<<
 == Powershell Reference
 
-. Powershell 7 , download and install it here: https://github.com/PowerShell
-. Powershell books:
-.. Windows Powershell Cookbook http://shop.oreilly.com/product/0636920024132.do
-. Complete Powershell in one video-beginner to professional powershell scripting: https://www.youtube.com/watch?v=plqpmZruOYk
-. Get-adobject: https://adamtheautomator.com/get-adobject/
-. Good website: https://lazywinadmin.com/
-. How to create and run a PowerShell script file on Windows 10: https://www.windowscentral.com/how-create-and-run-your-first-powershell-script-file-windows-10 
+. https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html[Powershell Logging]
+. https://github.com/PowerShell[Powershell 7]
+. http://shop.oreilly.com/product/0636920024132.do[Windows Powershell Cookbook]
+. https://www.youtube.com/watch?v=plqpmZruOYk[Complete Powershell in one video-beginner to professional powershell scripting]
+. https://adamtheautomator.com/get-adobject/[Get-adobject]
+. https://lazywinadmin.com/[Lazy Windows Administrator]
+. https://www.windowscentral.com/how-create-and-run-your-first-powershell-script-file-windows-10[How to create and run a PowerShell script file on Windows 10]
+. https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing[Command Line Process Auditing]
 . Configure IP Address on a computer
 
 	New-NetIPAddress -InterfaceAlias Ethernet -IPAddress 10.10.10.10 -PrefixLength 24 -DefaultGateway 10.10.10.1
