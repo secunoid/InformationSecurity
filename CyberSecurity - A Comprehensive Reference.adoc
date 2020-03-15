@@ -1237,6 +1237,8 @@ Thanks to its network optimized programming language, vibrant open source commun
 ==== RITA
 https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
 
+RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
+
 ==== Ntop
 https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
 
