@@ -1031,6 +1031,26 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 .. Router Logs
 .. Access Point Logs
 
+==== Windows Persistence
+Focus on System & Security logs.  Standard artifact utilized in any investigation.
+
+Following log types are important:
+
+. Task logs 
+. Events concerning services
+.. 7045 - Code for new service installed, should be a low frequency event.
+.. 7009 - Service failed to start, what should be running and is not.
+.. 7035/7036 - Services being tampered with for malicious purposes. Look for services that have no descrption, and have image path that is in a non standard directory.  DLL is in the same directory as exe, which is a side loading technique. Check for start type, if it is changed to 2, which is auto start. Type 10 means that the service is running under user account authority.
+.. 601 - Attempt to install a service
+.. 7034 - Service has crashed unexpectedly
+. Events concerning schedules tasks
+.. 4698 - When a scheduled task is created on a system that has been compromised
+.. 4702 - When a scheduled task has been altered
+.. 4701/4699 
+.. 4700 - A scheduled task has been enabled.
+
+Scheduled tasks with abnormal names or directories.  Attackers usually create a verly long task name.  Check the command syntax.
+
 === System Tools
 
 ==== DeepBlueCLI
@@ -1059,105 +1079,6 @@ This tool can visualize the following event id related to Windows logon based on
 ==== The Hive Project
 https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
 
-=== Network Tools
-
-==== Security Onion
-https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-
-==== Suricata
-https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
-
-The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
-
-Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
-
-With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
-
-Suricata’s fast paced community driven development focuses on security, usability and efficiency.
-
-The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
-
-==== Bro/Zeek
-https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
-
-Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
-
-Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
-
-==== RITA
-https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
-
-RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
-
-==== Ntop
-https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
-
-The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
-
-==== Coffee
-
-=== Windows Persistence
-Focus on System & Security logs.  Standard artifact utilized in any investigation.
-
-Following log types are important:
-
-. Task logs 
-. Events concerning services
-.. 7045 - Code for new service installed, should be a low frequency event.
-.. 7009 - Service failed to start, what should be running and is not.
-.. 7035/7036 - Services being tampered with for malicious purposes. Look for services that have no descrption, and have image path that is in a non standard directory.  DLL is in the same directory as exe, which is a side loading technique. Check for start type, if it is changed to 2, which is auto start. Type 10 means that the service is running under user account authority.
-.. 601 - Attempt to install a service
-.. 7034 - Service has crashed unexpectedly
-. Events concerning schedules tasks
-.. 4698 - When a scheduled task is created on a system that has been compromised
-.. 4702 - When a scheduled task has been altered
-.. 4701/4699 
-.. 4700 - A scheduled task has been enabled.
-
-Scheduled tasks with abnormal names or directories.  Attackers usually create a verly long task name.  Check the command syntax.
-
-=== Reverse Engineering
-
-Link: https://github.com/0xZ0F/Z0FCourse_ReverseEngineering
-Link: https://github.com/wtsxDev/reverse-engineering
-
-
-=== Cortex
-Cortex tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
-
-Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
-Link: https://github.com/TheHive-Project/Cortex/ 
-
-=== Persistence Investigations & Layered Drivers
-* Layered drivers help find network sniffers, keyboard key loggers
-* Triage methodology for persistence, focusing on layered drivers
-* Common attacker practices:
-** Redline - detects drivers and displaying information about them
-** NTFS Driver - System Restore Driver should be check what is layered on top of it. It is called SR
-KBD Class driver, associated with Key logging driver.
-
-New Audit Viewer for Memoryze: https://www.fireeye.com/blog/threat-research/2008/11/new-audit-viewer-for-memoryze.html
-Forensics #2 / Windows Forensics using Redline: https://attackersmindset.com/2018/05/22/forensics-2-windows-forensics-using-redline/
-Redline user’s Guide: https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf
-
-=== SOF ELK
-
-SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat). With a significant amount of customization and ongoing development, SOF-ELK® users can avoid the typically long and involved setup process the Elastic stack requires. Instead, they can simply download the pre-built and ready-to-use SOF-ELK® virtual appliance that consumes various source data types (numerous log types as well as NetFlow), parsing out the most critical data and visualizing it on several stock dashboards. Advanced users can build visualizations the suit their own investigative or operational requirements, optionally contributing those back to the primary code repository.
-
-Link: https://github.com/philhagen/sof-ELK 
-Training: https://youtu.be/Hk6An-LJ4jY   
-
-=== Base64 Encoded Data
-Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
-
-
-Some Links
-Finding encoded evidence: https://digital-forensics.sans.org/blog/2011/01/09/digital-forensics-finding-encoded-evidence
-Finding and Decoding Malicious PowerShell Scripts: https://az4n6.blogspot.com/2017/10/finding-and-decoding-malicious.html
-Different Types Of Encoding Schemes – A Primer: https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/
-decode.py: https://github.com/secnonsense/decode.py
-
-=== Tools
 ==== Autollr
 AutoLLR is a live Linux evidence collection script that gathers key artifacts important for Incident Response investigations. In addition to gathering artifacts AutoLLR does some low overhead post processing to produce refined results that analysts can look at immediately.
 
@@ -1241,9 +1162,86 @@ Digital investigations had focused primarily on finding contraband within hard d
 Volatility development is now supported by The Volatility Foundation, an independent 501(c) (3) non-profit organization. The foundation was established to promote the use of Volatility and memory analysis within the forensics community, to defend the project's intellectual property (trademarks, licenses, etc.) and longevity, and, finally, to help advance innovative memory analysis research. Along these lines, the foundation was also formed to help protect the rights of the developers who sacrifice their time and resources to make the world’s most advanced memory forensics platform free and open source.
 
 . https://www.volatilityfoundation.org/[Volatility Foundation]
-. https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls/[Volatility Cheatsheet] 
+. https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls/[Volatility Cheatsheet]
+
+=== Network Tools
+
+==== Security Onion
+https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+
+==== Suricata
+https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
+
+The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
+
+Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
+
+With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
+
+Suricata’s fast paced community driven development focuses on security, usability and efficiency.
+
+The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
+
+==== Bro/Zeek
+https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
+
+Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
+
+Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
+
+==== RITA
+https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
+
+RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
+
+==== Ntop
+https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
+
+The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
+
+==== Coffee
 
 ==== Wireshark
+
+=== Reverse Engineering
+
+Link: https://github.com/0xZ0F/Z0FCourse_ReverseEngineering
+Link: https://github.com/wtsxDev/reverse-engineering
+
+=== Cortex
+Cortex tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
+
+Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
+Link: https://github.com/TheHive-Project/Cortex/ 
+
+=== Persistence Investigations & Layered Drivers
+* Layered drivers help find network sniffers, keyboard key loggers
+* Triage methodology for persistence, focusing on layered drivers
+* Common attacker practices:
+** Redline - detects drivers and displaying information about them
+** NTFS Driver - System Restore Driver should be check what is layered on top of it. It is called SR
+KBD Class driver, associated with Key logging driver.
+
+New Audit Viewer for Memoryze: https://www.fireeye.com/blog/threat-research/2008/11/new-audit-viewer-for-memoryze.html
+Forensics #2 / Windows Forensics using Redline: https://attackersmindset.com/2018/05/22/forensics-2-windows-forensics-using-redline/
+Redline user’s Guide: https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf
+
+=== SOF ELK
+
+SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat). With a significant amount of customization and ongoing development, SOF-ELK® users can avoid the typically long and involved setup process the Elastic stack requires. Instead, they can simply download the pre-built and ready-to-use SOF-ELK® virtual appliance that consumes various source data types (numerous log types as well as NetFlow), parsing out the most critical data and visualizing it on several stock dashboards. Advanced users can build visualizations the suit their own investigative or operational requirements, optionally contributing those back to the primary code repository.
+
+Link: https://github.com/philhagen/sof-ELK 
+Training: https://youtu.be/Hk6An-LJ4jY   
+
+=== Base64 Encoded Data
+Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
+
+
+Some Links
+Finding encoded evidence: https://digital-forensics.sans.org/blog/2011/01/09/digital-forensics-finding-encoded-evidence
+Finding and Decoding Malicious PowerShell Scripts: https://az4n6.blogspot.com/2017/10/finding-and-decoding-malicious.html
+Different Types Of Encoding Schemes – A Primer: https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/
+decode.py: https://github.com/secnonsense/decode.py
 
 === References
 . https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
