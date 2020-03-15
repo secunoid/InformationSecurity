@@ -1143,6 +1143,11 @@ Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/20
 ==== Red Ripper
 When you an image file, load them into red ripper.  Has plugins that you can run against a registry hive.
 
+==== Rekall
+http://www.rekall-forensic.com/[Rekall] is an advanced forensic and incident response framework. While it began life purely as a memory forensic framework, it has now evolved into a complete platform.  Rekall implements the most advanced analysis techniques in the field, while still being developed in the open, with a free and open source license. Many of the innovations implemented within Rekall have been published in http://www.rekall-forensic.com/documentation-1/publications[peer reviewed papers] .  
+
+Rekall provides an end-to-end solution to incident responders and forensic analysts. From state of the art acquisition tools, to the most advanced open source memory analysis framework. http://www.rekall-forensic.com/documentation-1/rekall-documentation/rekall-at-a-glance[Rekall at a glance].
+
 ==== Rsync
 Last ditch collection tool.  
 
