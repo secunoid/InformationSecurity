@@ -1170,6 +1170,9 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 === During the Incident
 . Secure the impacted environment to ensure no one but Incident Responders only
 . Document every activity during the incident in a log to ensure you have a timeline
+. Dump the memory using following tools(this is not an exhaustive list):
+.. PMEM
+.. FTKIMAGER
 . Decide which logs do you need to conduct your analysis, for example:
 .. Active Directory Logs if you are an AD Shop, 99% environments today are.
 .. File Server Logs
@@ -1248,6 +1251,7 @@ The industry is full of hardware companies who bundle their products with open-s
 
 === Reference Material
 . https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
+
 
 <<<
 == Enterprise Architecture
@@ -1818,6 +1822,14 @@ image::github-repo-now.png[]
 	git remote -v
 
 image::github-repo-new.png[]
+<<<
+== Cheat Sheets
+. https://zeltser.com/cheat-sheets[IT and Information Security Cheat Sheets]
+. https://digital-forensics.sans.org/community/cheat-sheets[SANS DFIR Community: Cheat Sheets]
+. https://www.sans.org/blog/4-cheat-sheets-for-malware-analysis/[4 Cheat Sheets for Malware Analysis]
+. https://cheatography.com/tag/ir/[IR Cheat Sheets]
+. https://www.malwarearchaeology.com/cheat-sheets[Cheat Sheets to help you in configuring your systems]
+
 
 <<<
 == Ethical Hacking References
