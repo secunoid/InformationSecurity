@@ -1926,6 +1926,8 @@ IOC:: Indicators of Compromise
 LLMNR:: Link Local Multicast Name Resolution
 Med-jacking:: is a new kind of cybersecurity threat to health care systems. Medjacking involves hacking into medical devices using backdoors to access software on the device.
 mDNS:: Multicast Domain Name System
+MDR:: Managed Detection and Response
+MSSP:: Managed Security Services Provider
 OCG:: Organized Criminal groups
 OSINT:: Open Source Inteligence Tools
 PLC:: Programmagle Logic controller
