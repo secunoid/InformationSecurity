@@ -1090,6 +1090,11 @@ It is a program that extracts features such as email addresses, credit card numb
 
 Link: https://tools.kali.org/forensics/bulk-extractor
 
+==== Cortex
+https://github.com/TheHive-Project/Cortex/[Cortex] tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
+
+Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
+
 ==== DensityScout
 DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
 
@@ -1164,11 +1169,7 @@ Digital investigations had focused primarily on finding contraband within hard d
 
 Volatility development is now supported by The Volatility Foundation, an independent 501(c) (3) non-profit organization. The foundation was established to promote the use of Volatility and memory analysis within the forensics community, to defend the project's intellectual property (trademarks, licenses, etc.) and longevity, and, finally, to help advance innovative memory analysis research. Along these lines, the foundation was also formed to help protect the rights of the developers who sacrifice their time and resources to make the world’s most advanced memory forensics platform free and open source.
 
-==== Cortex
-Cortex tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
-
-Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
-Link: https://github.com/TheHive-Project/Cortex/ 
+==== Winpmem
 
 ==== Persistence Investigations & Layered Drivers
 * Layered drivers help find network sniffers, keyboard key loggers
