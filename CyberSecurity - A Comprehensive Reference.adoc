@@ -1158,9 +1158,22 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 
 === Preparation
 . Never use flow charts for incident response
-. 
+. Know your tools, practise, practise, practise
+. Have procedures on when and how to use your tools
 
-=== How to start the Incident Response Process
+=== During the Incident
+. Secure the impacted environment to ensure no one but Incident Responders only
+. Document every activity during the incident in a log to ensure you have a timeline
+. Decide which logs do you need to conduct your analysis, for example:
+.. Active Directory Logs if you are an AD Shop, 99% environments today are.
+.. File Server Logs
+.. Web Server Logs
+.. Application Server Logs
+.. Database Server Logs
+.. Firewall Logs
+.. Switch Logs
+.. Router Logs
+.. Access Point Logs
 
 === Tools
 ==== First Incident Response
@@ -1852,6 +1865,7 @@ OSINT:: Open Source Inteligence Tools
 PLC:: Programmagle Logic controller
 Smishing:: Phishing through SMS
 TTP:: Techniques, Tactics, Procedures
+UEBA:: User Entity Behaviorial Analytics
 Vishing:: Phishing through voice calls
 WPAD:: Web Proxy Auto Discovery Protocol
 
