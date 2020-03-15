@@ -1160,6 +1160,12 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 . Never use flow charts for incident response
 . Know your tools, practise, practise, practise
 . Have procedures on when and how to use your tools
+. There are differences on how to respond to an incident based on based on environment, hence ensure you are familiar with the environment and know which tools to use.  Some to of environments are:
+.. On Premise
+.. Azure
+.. GCP
+.. AWS
+.. Other cloud provider
 
 === During the Incident
 . Secure the impacted environment to ensure no one but Incident Responders only
@@ -1176,6 +1182,13 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 .. Access Point Logs
 
 === Tools
+
+==== DeepBlueCLI
+https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs
+
+===== References
+. https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
+
 ==== First Incident Response
 https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
 
