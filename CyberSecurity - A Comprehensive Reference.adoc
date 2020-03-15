@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.71, 22nd  February, 2020
+v1.71, 15th March, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1155,6 +1155,9 @@ Link: https://www.andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part
 
 <<<
 == Incident Response
+
+
+
 
 === First Incident Response
 FIR (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
