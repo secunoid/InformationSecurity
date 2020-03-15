@@ -1181,13 +1181,14 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 .. Router Logs
 .. Access Point Logs
 
-=== Tools
+=== System Tools
 
 ==== DeepBlueCLI
-https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs
+https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
 
 ===== References
 . https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
+. https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
 
 ==== First Incident Response
 https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
@@ -1207,6 +1208,20 @@ This tool can visualize the following event id related to Windows logon based on
 
 ==== The Hive Project
 https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
+
+=== Network Tools
+
+==== Security Onion
+
+==== Suricata
+
+==== Bro/Zeek
+
+==== RITA
+
+==== Ntop
+
+==== Coffee
 
 === Reference Material
 . https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
