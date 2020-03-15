@@ -1001,7 +1001,100 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 . Yogosha
 
 <<<
-== Digital Forensics
+== Digital Forensics & Incident Response
+
+=== Preparation
+. Never use flow charts for incident response
+. Know your tools, practise, practise, practise
+. Have procedures on when and how to use your tools
+. There are differences on how to respond to an incident based on based on environment, hence ensure you are familiar with the environment and know which tools to use.  Some to of environments are:
+.. On Premise
+.. Azure
+.. GCP
+.. AWS
+.. Other cloud provider
+
+=== During the Incident
+. Secure the impacted environment to ensure no one but Incident Responders only
+. Document every activity during the incident in a log to ensure you have a timeline
+. Dump the memory using following tools(this is not an exhaustive list):
+.. PMEM
+.. FTKIMAGER
+. Decide which logs do you need to conduct your analysis, for example:
+.. Active Directory Logs if you are an AD Shop, 99% environments today are.
+.. File Server Logs
+.. Web Server Logs
+.. Application Server Logs
+.. Database Server Logs
+.. Firewall Logs
+.. Switch Logs
+.. Router Logs
+.. Access Point Logs
+
+=== System Tools
+
+==== DeepBlueCLI
+https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
+
+===== References
+. https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
+. https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
+
+==== First Incident Response
+https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
+
+FIR is for anyone needing to track cybersecurity incidents (CSIRTs, CERTs, SOCs, etc.). It was tailored to suit our needs and our team's habits, but we put a great deal of effort into making it as generic as possible before releasing it so that other teams around the world may also use it and customize it as they see fit.
+
+==== LogonTracer
+https://github.com/JPCERTCC/LogonTracer[LogonTracer] is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs. This tool associates a host name (or an IP address) and account name found in logon-related events and displays it as a graph. This way, it is possible to see in which account login attempt occurs and which host is used.
+This tool can visualize the following event id related to Windows logon based on https://www.first.org/resources/papers/conf2016/FIRST-2016-105.pdf[this research].
+
+* 4624: Successful logon
+* 4625: Logon failure
+* 4768: Kerberos Authentication (TGT Request)
+* 4769: Kerberos Service Ticket (ST Request)
+* 4776: NTLM Authentication
+* 4672: Assign special privileges
+
+==== The Hive Project
+https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
+
+=== Network Tools
+
+==== Security Onion
+https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+
+==== Suricata
+https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
+
+The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
+
+Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
+
+With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
+
+Suricata’s fast paced community driven development focuses on security, usability and efficiency.
+
+The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
+
+==== Bro/Zeek
+https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
+
+Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
+
+Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
+
+==== RITA
+https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
+
+RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
+
+==== Ntop
+https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
+
+The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
+
+==== Coffee
 
 === Windows Persistence
 Focus on System & Security logs.  Standard artifact utilized in any investigation.
@@ -1152,106 +1245,8 @@ Volatility development is now supported by The Volatility Foundation, an indepen
 
 ==== Wireshark
 
-
-<<<
-== Incident Response
-
-=== Preparation
-. Never use flow charts for incident response
-. Know your tools, practise, practise, practise
-. Have procedures on when and how to use your tools
-. There are differences on how to respond to an incident based on based on environment, hence ensure you are familiar with the environment and know which tools to use.  Some to of environments are:
-.. On Premise
-.. Azure
-.. GCP
-.. AWS
-.. Other cloud provider
-
-=== During the Incident
-. Secure the impacted environment to ensure no one but Incident Responders only
-. Document every activity during the incident in a log to ensure you have a timeline
-. Dump the memory using following tools(this is not an exhaustive list):
-.. PMEM
-.. FTKIMAGER
-. Decide which logs do you need to conduct your analysis, for example:
-.. Active Directory Logs if you are an AD Shop, 99% environments today are.
-.. File Server Logs
-.. Web Server Logs
-.. Application Server Logs
-.. Database Server Logs
-.. Firewall Logs
-.. Switch Logs
-.. Router Logs
-.. Access Point Logs
-
-=== System Tools
-
-==== DeepBlueCLI
-https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
-
-===== References
-. https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
-. https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
-
-==== First Incident Response
-https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
-
-FIR is for anyone needing to track cybersecurity incidents (CSIRTs, CERTs, SOCs, etc.). It was tailored to suit our needs and our team's habits, but we put a great deal of effort into making it as generic as possible before releasing it so that other teams around the world may also use it and customize it as they see fit.
-
-==== LogonTracer
-https://github.com/JPCERTCC/LogonTracer[LogonTracer] is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs. This tool associates a host name (or an IP address) and account name found in logon-related events and displays it as a graph. This way, it is possible to see in which account login attempt occurs and which host is used.
-This tool can visualize the following event id related to Windows logon based on https://www.first.org/resources/papers/conf2016/FIRST-2016-105.pdf[this research].
-
-* 4624: Successful logon
-* 4625: Logon failure
-* 4768: Kerberos Authentication (TGT Request)
-* 4769: Kerberos Service Ticket (ST Request)
-* 4776: NTLM Authentication
-* 4672: Assign special privileges
-
-==== The Hive Project
-https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
-
-=== Network Tools
-
-==== Security Onion
-https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-
-==== Suricata
-https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
-
-The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
-
-Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
-
-With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
-
-Suricata’s fast paced community driven development focuses on security, usability and efficiency.
-
-The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
-
-==== Bro/Zeek
-https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
-
-Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
-
-Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
-
-==== RITA
-https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
-
-RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
-
-==== Ntop
-https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
-
-The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
-
-==== Coffee
-
-=== Reference Material
+=== References
 . https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
-
 
 <<<
 == Enterprise Architecture
