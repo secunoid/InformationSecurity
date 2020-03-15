@@ -1909,14 +1909,13 @@ http://tiny.cc/b6Rg
 
 #cybersecurity #hackerone #bugcrowd #wapt #pentest #security #hacking #pentesting #bugbounty #owasp #burpsuite #ceh #oscp #ethicalhacking #infosec
 
-
-
 == Terms Used
 [horizontal]
 ATT&CK:: Adversatial Tactics Techniques & Common Knowledge
 APT:: Advanced Persistent Threat
 CTF:: Capture The Flag
 CTI:: Cyber Threat Intelligence
+EDR:: Endpoint Detection and Response
 ICS:: Industrial Conrol Systems
 IOC:: Indicators of Compromise
 LLMNR:: Link Local Multicast Name Resolution
