@@ -1159,6 +1159,9 @@ Last ditch collection tool.
 ==== SIFT Workstation
 The https://digital-forensics.sans.org/community/downloads[SIFT] Workstation is a group of free open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep dive digital forensic techniques to intrusions can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.
 
+==== Sysmon
+A windows system driver that captures events and sends them to eventlog. It can be downloaded from sysinternals website. 
+
 ==== The Hive Project
 https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
 
