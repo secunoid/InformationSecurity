@@ -1490,10 +1490,12 @@ Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to
 
 <<<
 == Business Resilience
-Business Resilience
+For a business to be sustainable it has to be able to bear any hardship it faces.  These hardships or risks can be financial, environmental, labor, suppliers, intellectual property , and technical.  Hence every business has to ensure it has documented plans on how to address the risks and become resilient.
+
+In order for a business to be resilient, it has to ensure it follows Business Continuity Management(BCM) strategies and methodologies. BCM itself can be split into two general areas Business Continuity and Disaster Recovery.
 
 === Business Continuity
-
+Some of the strategies and methodologies that a business implements are directly associated to 
 
 === Disaster Recovery
 
