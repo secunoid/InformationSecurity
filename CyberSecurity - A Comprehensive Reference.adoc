@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.71, 15th March, 2020
+v1.72, 20th March, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1487,6 +1487,16 @@ Lets assume the file system is /dev/xxx/yyy. Current size is 10G and you want to
 .. Resize the filesystem
 
 	resize2fs /dev/xxx/yyy
+
+<<<
+== Business Resilience
+Business Resilience
+
+=== Business Continuity
+
+
+=== Disaster Recovery
+
 
 <<<
 == Powershell Reference
