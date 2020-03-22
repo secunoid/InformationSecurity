@@ -1497,6 +1497,38 @@ In order for a business to be resilient, it has to ensure it follows Business Co
 === Business Continuity
 Some of the strategies and methodologies that a business implements are directly associated to 
 
+==== Remote Working Guidelines
+*Employees*
+
+. Greet your team members using TEAMS chat feature
+. Use camera when in meetings
+. When in doubt call the team member
+. Keep the team connected using Teams Chat and other means as per team norms.
+. Over communicate
+. Lock your computer when you walk away from your computer  (Windows Key + L)
+. Inform you team if you are going to be away from your computer for an extended period
+. Avoid multitasking
+
+*Leader*
+
+. Establish team norms:
+.. Do we meet more frequently as a team? When? How long?
+.. If we use an online meeting platform, does everyone turn on their video camera?
+.. How do we ensure people are present and not multitasking?
+.. What is the recommended response time to a text or email? Should we use the phone more?
+.. How will we share sensitive information? Email? 
+. Ensure your team knows what is the best method to contact you
+. Conduct Morning Huddles
+. Frequent Check-ins
+. Use Teams to share for quick feedback
+
+*References*
+
+. https://www.forbes.com/sites/danpontefract/2020/03/01/in-the-wake-of-coronavirus-heres-how-to-lead-remote-employees/#1d44ec7152a4
+. https://www.timedoctor.com/blog/run-a-remote-team/
+	
+
+
 === Disaster Recovery
 
 
