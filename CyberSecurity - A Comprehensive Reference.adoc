@@ -1497,6 +1497,18 @@ In order for a business to be resilient, it has to ensure it follows Business Co
 === Business Continuity
 Some of the strategies and methodologies that a business implements are directly associated to 
 
+==== Conference Call Guidelines
+. Use a pre-conferencing/green room/waiting room (This is already configured for Teams Meetings)
+. Don't re-use conference access codes (This is already configured for Teams Meetings)
+. Don't record the meeting unless necessary
+. Do a role call to ensure only invited attendees are on the call
+. Before sharing your screen ensure you close all confidential files/applications
+. If it is a sensitive meeting, and you record it, ensure the recording is encrypted and stored in a location with limited user access
+. If the recording is saved on the web platform ensure you download the recording and delete it from the web platform
+
+*References*
+. NIST Guidance: https://www.nist.gov/system/files/documents/2020/03/17/Conference%20Call%20Security%20Graphic.pdf
+
 ==== Remote Working Guidelines
 *Employees*
 
