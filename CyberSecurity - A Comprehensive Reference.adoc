@@ -873,6 +873,11 @@ How easy is it to discover this threat?
 DREAD methodology can be customized to cater the needs of your application, during consultancy engagements it should be approved from the client before starting the security assessment so that after you perform the analysis the results produced by DREAD couldn’t be challenged.
 
 === Threat Intelligence
+This is the key methodology that every cyber security practictioner should be familiar with.  It ensures that one stays in sync with all the activites of threat actors and use that information to proactively protect their environments.
+
+==== Search Engines
+
+
 
 ==== MITRE ATT&CK
 MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
