@@ -480,15 +480,12 @@ https://tools.kali.org/web-applications/dirb
 
 ====== Dirbuster
 
-
 ===== Reconnaissance
 Combining the information gathered from OSINT and Footprinting activities.  This leads to finding vulnerabilities, exploiting them, lateral movement, persistence.
 
 ===== Exploitation
 
 ====== Arpspoof
-
-
 
 ====== Burp Suite
 Burp Suite is a web application testing tool
@@ -503,22 +500,23 @@ Normally you need the user’s password to do it, but I found a way to do it wit
 
 Link: https://github.com/defaultnamehere/cookie_crimes
 
-===== Lateral Movement
+===== Post-Exploitation
 
-
-===== Persistence
-
-
-
-===== Chisel
-
-===== Crackmapexec
+====== Crackmapexec
 CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
 
 Link: https://github.com/byt3bl33d3r/CrackMapExec
 
 Usage:
 	crackmapexec smb <IP Of Domain Controller> -u <username> -p '<password>'
+
+===== Lateral Movement
+
+===== Persistence
+
+===== Chisel
+
+
 
 
 
