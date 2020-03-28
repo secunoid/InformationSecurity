@@ -428,6 +428,24 @@ Penetration Tests can include following scopes:
 . 
 
 ==== Penetration Testing Tools
+Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
+
+===== Reconnaissance
+
+====== Masscan
+https://github.com/robertdavidgraham/masscan[MASSCAN] is an Internet-scale port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second, from a single machine.
+
+It's input/output is similar to nmap, the most famous port scanner. When in doubt, try one of those features.
+
+Internally, it uses asynchronous transmissions, similar to port scanners like scanrand, unicornscan, and ZMap. It's more flexible, allowing arbitrary port and address ranges.
+
+NOTE: masscan uses a its own custom TCP/IP stack. Anything other than simple port scans may cause conflict with the local TCP/IP stack. This means you need to either the --src-ip option to run from a different IP address, or use --src-port to configure which source ports masscan uses, then also configure the internal firewall (like pf or iptables) to firewall those ports from the rest of the operating system.
+
+====== NESSUS
+
+Install Instructions:: http://www.hackandtinker.net/2013/10/16/how-to-install-setup-and-use-nessus-on-kali/
+
+====== NMAP
 
 ===== Arpspoof
 
@@ -630,12 +648,6 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
 Not every check is a security problem, though most are. There are some items that are "info only" type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.
 
 https://cirt.net/Nikto2 
-
-===== NESSUS
-
-Install Instructions:: http://www.hackandtinker.net/2013/10/16/how-to-install-setup-and-use-nessus-on-kali/
-
-===== NMAP
 
 ===== Powershell Empire
 Empire has an inbuilt listener named http_hop which allows us to redirect our traffic to one of our another active listener after getting an agent. Thus, the name hop as it hops the agent from one listener to another in order to redirect traffic.
