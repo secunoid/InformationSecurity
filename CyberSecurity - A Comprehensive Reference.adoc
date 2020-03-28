@@ -430,7 +430,9 @@ Penetration Tests can include following scopes:
 ==== Penetration Testing Tools
 Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
 
-===== Reconnaissance
+===== Open Source Intelligence (OSINT)
+
+===== Footprinting
 
 ====== Masscan
 https://github.com/robertdavidgraham/masscan[MASSCAN] is an Internet-scale port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second, from a single machine.
@@ -443,9 +445,14 @@ NOTE: masscan uses a its own custom TCP/IP stack. Anything other than simple por
 
 ====== NESSUS
 
-Install Instructions:: http://www.hackandtinker.net/2013/10/16/how-to-install-setup-and-use-nessus-on-kali/
+http://www.hackandtinker.net/2013/10/16/how-to-install-setup-and-use-nessus-on-kali/[Install Instructions]
 
 ====== NMAP
+
+
+===== Reconnaissance
+Combining the information gathered from OSINT and Footprinting activities.  This leads to finding vulnerabilities, exploiting them, lateral movement, persistence.
+
 
 ===== Arpspoof
 
