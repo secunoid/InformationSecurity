@@ -430,9 +430,22 @@ Penetration Tests can include following scopes:
 ==== Penetration Testing Tools
 Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
 
+===== Documentation
+====== CherryTree
+Chery Tree is a note taking app
+
 ===== Open Source Intelligence (OSINT)
 
 ===== Footprinting
+
+===== Bloodhound
+BloodHound is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a PowerShell/C# ingestor.
+
+BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Attacks can use BloodHound to easily identify highly complex attack paths that would otherwise be impossible to quickly identify. Defenders can use BloodHound to identify and eliminate those same attack paths. Both blue and red teams can use BloodHound to easily gain a deeper understanding of privilege relationships in an Active Directory environment.
+
+BloodHound is developed by @_wald0, @CptJesus, and @harmj0y.
+
+Wiki: https://github.com/BloodHoundAD/Bloodhound/wiki
 
 ====== Masscan
 https://github.com/robertdavidgraham/masscan[MASSCAN] is an Internet-scale port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second, from a single machine.
@@ -449,49 +462,7 @@ http://www.hackandtinker.net/2013/10/16/how-to-install-setup-and-use-nessus-on-k
 
 ====== NMAP
 
-
-===== Reconnaissance
-Combining the information gathered from OSINT and Footprinting activities.  This leads to finding vulnerabilities, exploiting them, lateral movement, persistence.
-
-
-===== Arpspoof
-
-===== Bloodhound
-BloodHound is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a PowerShell/C# ingestor.
-
-BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Attacks can use BloodHound to easily identify highly complex attack paths that would otherwise be impossible to quickly identify. Defenders can use BloodHound to identify and eliminate those same attack paths. Both blue and red teams can use BloodHound to easily gain a deeper understanding of privilege relationships in an Active Directory environment.
-
-BloodHound is developed by @_wald0, @CptJesus, and @harmj0y.
-
-Wiki: https://github.com/BloodHoundAD/Bloodhound/wiki
-
-===== Burp Suite
-Burp Suite is a web application testing tool
-
-Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
-
-===== Cookie Crimes
-
-If you steal someone’s Chrome cookies, you can log in to their accounts on every website they’re logged in to.
-
-Normally you need the user’s password to do it, but I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome’s Remote Debugging Protocol.
-
-Link: https://github.com/defaultnamehere/cookie_crimes
-
-===== CherryTree
-Chery Tree is a note taking app
-
-===== Chisel
-
-===== Crackmapexec
-CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
-
-Link: https://github.com/byt3bl33d3r/CrackMapExec
-
-Usage:
-	crackmapexec smb <IP Of Domain Controller> -u <username> -p '<password>'
-
-===== DIRB
+====== DIRB
 
 DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
 
@@ -507,7 +478,49 @@ License: GPLv2
 
 https://tools.kali.org/web-applications/dirb 
 
-===== Dirbuster
+====== Dirbuster
+
+
+===== Reconnaissance
+Combining the information gathered from OSINT and Footprinting activities.  This leads to finding vulnerabilities, exploiting them, lateral movement, persistence.
+
+===== Exploitation
+
+====== Arpspoof
+
+
+
+====== Burp Suite
+Burp Suite is a web application testing tool
+
+Use vulnerable web application from the OWASP site: https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline  
+
+====== Cookie Crimes
+
+If you steal someone’s Chrome cookies, you can log in to their accounts on every website they’re logged in to.
+
+Normally you need the user’s password to do it, but I found a way to do it without the password. You just need to be able to execute code on their computer. It works by using Chrome’s Remote Debugging Protocol.
+
+Link: https://github.com/defaultnamehere/cookie_crimes
+
+===== Lateral Movement
+
+
+===== Persistence
+
+
+
+===== Chisel
+
+===== Crackmapexec
+CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of large Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
+
+Link: https://github.com/byt3bl33d3r/CrackMapExec
+
+Usage:
+	crackmapexec smb <IP Of Domain Controller> -u <username> -p '<password>'
+
+
 
 ===== DNSCAT
 DNScat is such praised tool because it can create a command and control tunnel over the DNS protocol which lets an attacker work in stealth mode. You can access any data along with uploading and downloading files and to get a shell. For this tool to work over 53 port, you don’t need to have authoritative access to DNS server, you can just simply establish your connection over port 53 and it will be faster and it will still be sensed as usual traffic. But it makes its presence well known in the packet log.
