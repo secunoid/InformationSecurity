@@ -22,6 +22,8 @@ v1.72, 20th March, 2020
 == Overview
 Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important to protect it.
 
+There exists approximately 4,294,967,296 (four billion two hundred ninety-four million nine hundred sixty-seven thousand to hundred ninety-six) IPv4 Addresses.  This pool is 32-bits in size.  Scanning these addresses is an embarrassingly parallel workload and ca be easily distributed over any number of systems.  The term embarrassingly parallel simply means that little or no effort is needed to seperate this problem into a number of parallel tasks.  Password cracking and 3d video rendering are also examples o this type of problem.
+
 === Non-living Entities
 Data about non living entities when modified leads to mis-information and currently in the digital age our ability to provide the authenticity of that data is very difficult.  If the source is trustworthy, then we deem it authentic, currently there are no mechanisms to ensure that the data has not been modified in between from when the trustworthy source released and to the time it got to you.
 
@@ -876,6 +878,12 @@ DREAD methodology can be customized to cater the needs of your application, duri
 This is the key methodology that every cyber security practictioner should be familiar with.  It ensures that one stays in sync with all the activites of threat actors and use that information to proactively protect their environments.
 
 ==== Search Engines
+
+===== IoT
+
+. Shodan is a search engine for devices connected to internet
+
+==== Threat Exchanges
 
 
 
