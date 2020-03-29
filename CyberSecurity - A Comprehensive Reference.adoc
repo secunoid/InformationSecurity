@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <smsharif@secunoid.com>
-v1.72, 20th March, 2020
+v1.73, 29th March, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -42,7 +42,7 @@ Data that is being processed by the solution should care fully considered for:
 . Data retention: Based on regulatory, and industry requirements,  data should be retained for 
 . Data access & update: Allow end users ability to access their data and modify it as required.
 
-Governments across the world are responding to the global cybersecurity crisis by creating new regulations that govern the way companies handle and store valuable consumer data. This includes important information such as personal identifications, banking and credit card numbers, and purchase history.
+Governments across the world are responding to the global cyber security crisis by creating new regulations that govern the way companies handle and store valuable consumer data. This includes important information such as personal identifications, banking and credit card numbers, and purchase history.
 
 The European Union, in particular, has been a leader in this field. One of its pioneering efforts is the General Data Protection Regulations (GDPR) what was passed in 2016 and went into effect in Spring 2018. It impacts all companies that do business with European customers, regardless of where the company is located.
 
@@ -149,7 +149,7 @@ For Security to be taken seriously a security organization is mandatory, while t
 
 In centralized operational model, all aspects of security operations are within the security organization, such as:
 
-. User provisioning/deprovisioning
+. User provisioning/de-provisioning
 . Security Information & Event Management (SIEM)
 . Security Operations Center
 . Incident Response
@@ -431,10 +431,37 @@ Penetration Tests can include following scopes:
 Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
 
 ===== Documentation
-====== CherryTree
+==== CherryTree
 Chery Tree is a note taking app
 
 ===== Open Source Intelligence (OSINT)
+
+====== Metabigor
+Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
+
+Link: https://www.kitploit.com/2020/02/metabigor-intelligence-tool-but-without.html
+
+====== Maltego
+
+====== Maryam
+OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
+Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
+
+====== Recon_Spider
+https://github.com/Aravindha1234u/Recon_Spider[Recon_Spider] scrapes social media account details from Instagram, Facebook and Twitter. It can find details about Phone number, Email data Breach.
+Domain module has various scans for domain check for vulnerability and spider crawlers
+Metadata Analyser
+Reverse Image Search
+IP Heatmap generator
+Mac Address finder of manufacturer
+IP2Proxy checks whether provided ip uses any kind of Proxy/VPN if any then check for DNSLeaks
+Torrent Download History
+Tool is currently available only in Command Line Interface (CLI)
+
+Its public to use with your own api keys
+
+====== Shodan
+. Shodan is a search engine for devices connected to internet
 
 ===== Footprinting
 
@@ -626,16 +653,7 @@ Linux enumeration & privilege escalation checks
 
 Link: https://github.com/rebootuser/LinEnum
 
-===== Metabigor
-Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
 
-Link: https://www.kitploit.com/2020/02/metabigor-intelligence-tool-but-without.html
-
-===== Maltego
-
-===== Maryam
-OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
-Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
 
 ===== Mentalist
 Mentalist is a graphical tool for custom wordlist generation. It utilizes common human paradigms for constructing passwords and can output the full wordlist as well as rules compatible with Hashcat and John the Ripper.
@@ -911,18 +929,15 @@ This is the key methodology that every cyber security practictioner should be fa
 
 ===== IoT
 
-. Shodan is a search engine for devices connected to internet
+
 
 ==== Threat Exchanges
 
 
-
 ==== MITRE ATT&CK
-MITRE ATT&CK™ is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
+https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
 
 With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
-
-MITRE ATT&CK website: https://attack.mitre.org/ 
 
 ==== Open Threat Exchange(OTX)
 
