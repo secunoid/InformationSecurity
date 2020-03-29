@@ -537,6 +537,10 @@ Link: https://github.com/byt3bl33d3r/CrackMapExec
 Usage:
 	crackmapexec smb <IP Of Domain Controller> -u <username> -p '<password>'
 
+====== PoshC2
+https://www.hackingarticles.in/command-control-poshc2/[PoshC2] is an open-source remote administration and post-exploitation framework that is publicly available on GitHub. The server-side components of the tool are primarily written in Python, while the implants are written in PowerShell. Although PoshC2 primarily focuses on Windows implantation, it does contain a basic Python dropper for Linux/macOS.
+
+
 ===== Lateral Movement
 
 ===== Persistence
