@@ -436,6 +436,10 @@ Chery Tree is a note taking app
 
 ===== Open Source Intelligence (OSINT)
 
+====== Katana
+https://github.com/adnane-X-tebbaa/Katana[Katana-ds] (ds for dork_scanner) is a simple python tool that automates Google Hacking/Dorking and support Tor
+It becomes a more powerfull in combination with https://www.exploit-db.com/google-hacking-database[GHDB]
+
 ====== Metabigor
 Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
 
@@ -465,14 +469,13 @@ Its public to use with your own api keys
 
 ===== Footprinting
 
-===== Bloodhound
-BloodHound is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a PowerShell/C# ingestor.
+====== Bloodhound
+https://github.com/BloodHoundAD/Bloodhound/wiki[BloodHound] is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a PowerShell/C# ingestor.
 
 BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Attacks can use BloodHound to easily identify highly complex attack paths that would otherwise be impossible to quickly identify. Defenders can use BloodHound to identify and eliminate those same attack paths. Both blue and red teams can use BloodHound to easily gain a deeper understanding of privilege relationships in an Active Directory environment.
 
 BloodHound is developed by @_wald0, @CptJesus, and @harmj0y.
 
-Wiki: https://github.com/BloodHoundAD/Bloodhound/wiki
 
 ====== Masscan
 https://github.com/robertdavidgraham/masscan[MASSCAN] is an Internet-scale port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second, from a single machine.
