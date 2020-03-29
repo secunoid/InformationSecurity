@@ -2034,8 +2034,9 @@ mDNS:: Multicast Domain Name System
 MDR:: Managed Detection and Response
 MSSP:: Managed Security Services Provider
 OCG:: Organized Criminal groups
-OSINT:: Open Source Inteligence Tools
+OSINT:: Open Source Inteligence Tools: Gathering odata from open source or readily and freely available sources
 PLC:: Programmagle Logic controller
+SIGINT:: Signals Intelligence is the act of gathering information in transit by interception.
 Smishing:: Phishing through SMS
 TTP:: Techniques, Tactics, Procedures
 UEBA:: User Entity Behaviorial Analytics
