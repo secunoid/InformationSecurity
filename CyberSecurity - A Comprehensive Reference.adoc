@@ -513,6 +513,13 @@ https://tools.kali.org/web-applications/dirb
 ===== Reconnaissance
 Combining the information gathered from OSINT and Footprinting activities.  This leads to finding vulnerabilities, exploiting them, lateral movement, persistence.
 
+===== Cryptcat
+https://tools.kali.org/maintaining-access/cryptcat[CryptCat] is a simple Unix utility which reads and writes data across network connections, using TCP or UDP protocol while encrypting the data being transmitted. It is designed to be a reliable “back-end” tool that can be used directly or easily driven by other programs and scripts. At the same time, it is a feature-rich network debugging and exploration tool, since it can create almost any kind of connection you would need and has several interesting built-in capabilities.
+
+===== Netcat
+
+nc -lvnp 9001
+
 ===== Exploitation
 
 ====== Arpspoof
@@ -678,9 +685,7 @@ Mimikatz is a leading post-exploitation tool that dumps passwords from memory, a
 
 Link: https://github.com/gentilkiwi/mimikatz
 
-===== Netcat
 
-nc -lvnp 9001
 
 ===== Nikto
 Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
