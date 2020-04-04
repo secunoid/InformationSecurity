@@ -1162,6 +1162,15 @@ https://github.com/TheHive-Project/Cortex/[Cortex] tries to solve a common probl
 
 Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
 
+==== Cuckoo
+https://cuckoosandbox.org/[Cuckoo] Sandbox is the leading open source automated malware analysis system.You can throw any suspicious file at it and in a matter of minutes Cuckoo will provide a detailed report outlining the behavior of the file when executed inside a realistic but isolated environment.
+
+Malware is the swiss-army knife of cybercriminals and any other adversary to your corporation or organization.
+
+In these evolving times, detecting and removing malware artifacts is not enough: it's vitally important to understand how they operate in order to understand the context, the motivations, and the goals of a breach.
+
+Cuckoo Sandbox is free software that automated the task of analyzing any malicious file under Windows, macOS, Linux, and Android.
+
 ==== DeepBlueCLI
 https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
 
