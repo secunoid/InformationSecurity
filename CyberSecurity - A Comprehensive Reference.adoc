@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
-Doc Writer <smsharif@secunoid.com>
-v1.73, 29th March, 2020
+Doc Writer <shahid.sharif@securityprivacyrisk.com>
+v1.74, 4th April, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1118,9 +1118,6 @@ Scheduled tasks with abnormal names or directories.  Attackers usually create a 
 
 === System Tools
 
-==== DeepBlueCLI
-https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
-
 ===== References
 . https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
 . https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
@@ -1159,6 +1156,9 @@ Link: https://tools.kali.org/forensics/bulk-extractor
 https://github.com/TheHive-Project/Cortex/[Cortex] tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
 
 Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
+
+==== DeepBlueCLI
+https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
 
 ==== DensityScout
 DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
@@ -1220,6 +1220,9 @@ Rekall provides an end-to-end solution to incident responders and forensic analy
 
 ==== Rsync
 Last ditch collection tool.  
+
+==== Sharpchromium
+https://www.blackhatethicalhacking.com/tools/sharp-chromium/
 
 ==== SIFT Workstation
 The https://digital-forensics.sans.org/community/downloads[SIFT] Workstation is a group of free open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep dive digital forensic techniques to intrusions can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.
