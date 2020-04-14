@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.74, 4th April, 2020
+v1.75, 14th April, 2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1184,6 +1184,9 @@ DensityScout's main focus is to scan a desired file-system-path by calculating t
 Density can also be understood as "entropy". However, the algorithm behind density is not 100% equal to the one which entropy is based on. So we decided to choose a different name.
 
 Link: https://www.cert.at/downloads/software/densityscout_en.html
+
+==== DNSTwist
+https://www.blackhatethicalhacking.com/tools/dnstwist/[dnstwist] takes in your domain name as a seed, generates a list of potential phishing domains and then checks to see if they are registered. Additionally it can test if the mail server from MX record can be used to intercept misdirected corporate e-mails and it can generate fuzzy hashes of the web pages to see if they are live phishing sites.
 
 ==== First Incident Response
 https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
