@@ -1,6 +1,6 @@
 = CyberSecurity: A Comprehensive Reference
 Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.75, 14th April, 2020
+v1.76, 29Nov2020
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -844,6 +844,8 @@ social engineering, phishing, vishing or simply posing as a company employee.
 Threat modeling is a process by which potential threats, such as structural vulnerabilities can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view. The purpose of threat modeling is to provide defenders with a systematic analysis of the probable attacker’s profile, the most likely attack vectors, and the assets most desired by an attacker. Threat modeling answers the questions “Where are the high-value assets?” “Where am I most vulnerable to attack?” “What are the most relevant threats?” “Is there an attack vector that might go unnoticed?
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
+
+https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
 
 ==== CVSS
 CVSS stands for Common Vulnerability Scoring System, which provides a score to indicate the severity of the CVE vulnerabilities.
