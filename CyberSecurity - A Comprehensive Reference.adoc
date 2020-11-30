@@ -845,7 +845,7 @@ Threat modeling is a process by which potential threats, such as structural vuln
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
-Some great information here https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
+Some great information here  https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
 
 ==== CVSS
 CVSS stands for Common Vulnerability Scoring System, which provides a score to indicate the severity of the CVE vulnerabilities.
