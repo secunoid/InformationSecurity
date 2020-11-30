@@ -436,6 +436,10 @@ Chery Tree is a note taking app
 
 ===== Open Source Intelligence (OSINT)
 
+====== Search Engines
+
+image::SearchEnginesForSecurityProfessionals.jpg[] 
+
 ====== Katana
 https://github.com/adnane-X-tebbaa/Katana[Katana-ds] (ds for dork_scanner) is a simple python tool that automates Google Hacking/Dorking and support Tor
 It becomes a more powerfull in combination with https://www.exploit-db.com/google-hacking-database[GHDB]
