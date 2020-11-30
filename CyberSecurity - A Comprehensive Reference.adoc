@@ -451,6 +451,16 @@ Link: https://www.kitploit.com/2020/02/metabigor-intelligence-tool-but-without.h
 OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
 Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
 
+====== OSI.IG
+https://github.com/th3unkn0n/osi.ig [Instagram OSINT Tool] gets a range of information from an Instagram account that you normally wouldn't be able to get from just looking at their profile
+
+The information includes:
+
+* [ profile ] : user id, followers / following, number of uploads, profile img URL, business enum, external URL, joined Recently, etc
+* [ tags & mentions ] : most used hashtags and mentioned accounts
+* [ email ] : if any email is used any where it'll be displayed
+* [ posts ] : accessability caption, location, timestamp, caption, picture url, etc
+
 ====== Recon_Spider
 https://github.com/Aravindha1234u/Recon_Spider[Recon_Spider] scrapes social media account details from Instagram, Facebook and Twitter. It can find details about Phone number, Email data Breach.
 Domain module has various scans for domain check for vulnerability and spider crawlers
