@@ -845,7 +845,7 @@ Threat modeling is a process by which potential threats, such as structural vuln
 
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
-https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
+Some great information here https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
 
 ==== CVSS
 CVSS stands for Common Vulnerability Scoring System, which provides a score to indicate the severity of the CVE vulnerabilities.
@@ -864,7 +864,7 @@ National Vulnerability Database (NVD) is the U.S. government repository of stand
 
 * Vulnerabilities are labeled "Low" severity if they have a CVSS base score of 0.0-3.9.
 * Vulnerabilities will be labeled "Medium" severity if they have a base CVSS score of 4.0-6.9.
-* Vulnerabilities will be labeled "High" severity if they have a CVSS base score of 7.0-10.0.
+* Vulnerabilities will be labeled "High" severity if they have a CVSS base score of 7.0-10.0
 
 ==== STRIDE
 STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft[1] for identifying computer security threats.[2] It provides a mnemonic for security threats in six categories.[3]
@@ -1125,7 +1125,7 @@ Scheduled tasks with abnormal names or directories.  Attackers usually create a 
 
 === System Tools
 
-===== References
+==== References
 . https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
 . https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
 
