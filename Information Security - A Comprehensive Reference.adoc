@@ -32,7 +32,8 @@ Data about living entities, especially us humans is very valuable.  With the dev
 
 <<<
 == What is information security?
-The foundation of information security is based on three pillars
+The foundation of information security is based on three pillars also known as a *triad*
+
 . Confidentiality
 . Integrity
 . Availability
