@@ -10,11 +10,11 @@ v1.77, 27Mar2021
 :docinfo:
 :docinfo1:
 :docinfo2:
-:description: This document covers all aspects of cybersecurity
-:keywords: cybersecurity, it security, compliance, risk management
+:description: This document covers all aspects of information security
+:keywords: information security, cyber security, it security, data security, compliance, risk management
 :imagesdir: images
 :stylesheet:
-:homepage: https://www.securityprivacyrisk.com
+:homepage: https://www.secunoid.com
 '''
 
 
