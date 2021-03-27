@@ -41,12 +41,24 @@ The foundation of information security is based on three pillars also known as t
 == Why are they important?
 What is the the topic of discussion, *Information Security* , there two key words here *information* and *security*, viz a viz securing information.
 
-You have to condition yourself to always think about how are you giong to protect the *information*.  Once you get this concept the rest is easy.
+You have to condition yourself to always think about what protecting,  the *information*.  Once you get this concept the rest is easy.
+
+Then think of how does this information move in the environment.  Information of any type goes through follwoing lifecycle stages, also knows as CRUD:
+
+. Create
+. Read
+. Update
+. Delete
 
 
 The sections below will build upon them.
 
 === Confidentiality
+
+=== Integrity
+
+=== Availability
+
 
 
 <<<
