@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.77, 27Mar2021
+v1.78, 2May2021
 :numbered:
 :sectnum:
 :sectnumlevels: 5
