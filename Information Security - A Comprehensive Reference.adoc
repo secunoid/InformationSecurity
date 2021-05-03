@@ -58,7 +58,7 @@ The sections below will build upon them.
 === Integrity
 
 === Availability
-
+v
 
 
 <<<
@@ -364,6 +364,19 @@ Taxonomy is important as it ensures industry standard terms are used when talkin
 ==== Attacks
 
 image::TypesOfAttacks.jpg[]
+
+===== Social Engineering Attacks
+* *Phishing* The perpatrator send an email or text to the target, seeking valuable information
+
+* *Vishing* The perpatrator makes a fradulent phone calls to the target, seeking valuable information
+
+* *Baiting* Baiting attacks use a false promise to pique a victims's curiosity.  They lure users into a trap that steals their personal information.
+
+* *Quid pro quo* The perpatratpr makes random calls to a company's employees offering a service or a benefit in exchange for information or access
+
+* *Pretexting* It is often initiated by a perpatrator pretending to need sensitive information from a victim so as to perform a critical task.  The success rate of this attack heavily depends on the attackers ability to build trust.
+
+* *Watering Hole* The perpetrator injects malicious code into the web pages that the targets visit.  Once a victim visits the page on the compromised website, a backdoor Trojan is installed on thier computer.
 
 ==== Malware
 A malware is any piece of software that was written with the intent of damaging devices, stealing data, and generally causing a mess. Viruses, Trojans, spyware, and ransomware are among the different kinds of malware.
