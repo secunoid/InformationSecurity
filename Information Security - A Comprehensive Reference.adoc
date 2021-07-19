@@ -60,7 +60,7 @@ NIST defines "Confidentiality" as Preserving authorized restrictions on informat
 NIST defines "Integrity" as Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity.
 
 === Availability
-
+NIST devines "Availability" as Ensuring timely and reliable access to and use of information.
 
 
 <<<
