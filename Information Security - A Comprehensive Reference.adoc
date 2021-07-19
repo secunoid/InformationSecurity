@@ -54,12 +54,13 @@ Then think of how does this information move in the environment.  Information of
 The sections below will build upon them.
 
 === Confidentiality
+NIST defines "Confidentiality" as Preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information.
 
 === Integrity
 NIST defines "Integrity" as Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity.
 
 === Availability
-v
+
 
 
 <<<
