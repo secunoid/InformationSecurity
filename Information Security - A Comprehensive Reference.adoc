@@ -177,6 +177,7 @@ This book will cover the various aspects of implementing an Information Security
 == Organizational Structure
 You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
 
+
 <<<	
 === Security Organization
 For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
@@ -205,6 +206,13 @@ All critical components must be monitored at all times, and SIEM   leveraged to 
 ==== Security Strategy
 
 <<<
+=== Project Management Office (PMO)
+Its responsibility to set standards for how projects are managed and to monitor their progress.
+. Define standards and rules for project management
+. Monitor and approve projects
+. Improve the success rate of projects
+. Provide training around project management methodologies and standards
+. Create relevant documentation and templates
 
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
