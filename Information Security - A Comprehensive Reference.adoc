@@ -175,6 +175,7 @@ This book will cover the various aspects of implementing an Information Security
 
 <<<
 == Organizational Structure
+You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
 
 <<<	
 === Security Organization
