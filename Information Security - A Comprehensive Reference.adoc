@@ -215,6 +215,12 @@ Its responsibility to set standards for how projects are managed and to monitor 
 . Provide training around project management methodologies and standards
 . Create relevant documentation and templates
 
+There are different reason for having a PMO:
+
+* Improve overall project success rate. If many of the projects in your company fail, exceed their budget or get delayed, then that’s a good reason for having a PMO.
+* Set common standards. If every department has their own set of templates and follows their own project methodology, this can make it hard for cross-functional projects to succeed. A PMO can define common standards that departments have to follow.
+* Ensure compliance with business strategy. The reason why companies run projects is because they need to innovate. They must constantly create new products or services so they won’t end up as the next Kodak. Once you understand this, you understand why having projects succeed is so important. A PMO can act as a watchdog for ensuring projects actually deliver business value.
+
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
