@@ -177,7 +177,7 @@ This book will cover the various aspects of implementing an Information Security
 == Organizational Structure
 
 <<<	
-== Security Organization
+=== Security Organization
 For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
 
 . Centralized
@@ -193,15 +193,15 @@ In centralized operational model, all aspects of security operations are within 
 
 In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
 
-=== Security Operations
+==== Security Operations
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
 All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
 
-=== Security Architecture
+==== Security Architecture
 
-=== Security Development
+==== Security Development
 
-=== Security Strategy
+==== Security Strategy
 
 <<<
 
