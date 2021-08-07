@@ -208,6 +208,7 @@ All critical components must be monitored at all times, and SIEM   leveraged to 
 <<<
 === Project Management Office (PMO)
 Its responsibility to set standards for how projects are managed and to monitor their progress.
+
 . Define standards and rules for project management
 . Monitor and approve projects
 . Improve the success rate of projects
