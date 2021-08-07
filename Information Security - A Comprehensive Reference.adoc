@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.79, 18Jul2021
+v1.80, 7Aug2021
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -11,7 +11,7 @@ v1.79, 18Jul2021
 :docinfo1:
 :docinfo2:
 :description: This document covers all aspects of information security
-:keywords: information security, cyber security, it security, data security, compliance, risk management
+:keywords: information security, cyber security, it security, data security, compliance, risk management, project management
 :imagesdir: images
 :stylesheet:
 :homepage: https://www.secunoid.com
