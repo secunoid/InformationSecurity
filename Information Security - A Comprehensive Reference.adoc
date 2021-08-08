@@ -226,7 +226,7 @@ There are key roles every project needs, and PMO has to ensure that those roles 
 
 ==== Key Roles
 
-* Product Owner *
+* **Product Owner**
 * Business Analyst * 
 * Systems Analyst *
 
