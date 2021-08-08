@@ -236,6 +236,7 @@ image::PMOStructure-Centralized.png[Centralized PMO]
 image::PMOStructure-DeCentralized.png[De-centralized PMO with COE]
 
 ==== Key Organizational Roles
+This section identifies roles that are key for successful project delivery and organizational compliance.
 
 ===== Product Owner 
 
@@ -289,7 +290,19 @@ image::PMOStructure-DeCentralized.png[De-centralized PMO with COE]
 * Capacity Planning
 * Infrastructure Resiliency Planning, Designing, and Implementation
 
+==== Project Delivery Process
 
+===== Gate 0 --> Gate 3
+
+image::Project Lifecycle Gate 0-3.png[]
+
+===== Gate 4
+
+image::Project Lifecycle Gate 4.png[]
+
+===== Gate 5 --> Gate 6
+
+image::Project Lifecycle Gate 5-6.png[]
 
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
