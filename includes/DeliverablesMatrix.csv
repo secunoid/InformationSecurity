@@ -1,0 +1,8 @@
+Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,Infrastructure Architect
+Project Scope,R- A,I,I,I,C-I
+Project Plan,R- A,C,C,C,C-I
+Design Document,A,R-C-I,R-C-I,R-C-I,C-I
+Security Requirements,A,C-I,C-I,R,C-I
+Technical Requirements,A,C-I,R,C-I,R
+Functional Requirements,A,R,C-I,C-I,C-I
+Business Requirements,A,R,C-I,C-I,C-I
