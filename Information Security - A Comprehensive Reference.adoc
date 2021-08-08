@@ -224,7 +224,18 @@ Reasons for having a PMO:
 
 There are key roles every project needs, and PMO has to ensure that those roles exist in the organization.
 
-==== Key Roles
+==== Organizational Structure
+Following organizational structures have been put togther for illustrative purposes, and can be modified as long as the segegration of duty and deliverables are maintained.
+
+===== Centralized
+
+image::PasswordLengthComplexityCrackingTime.jpg[]
+
+===== De-Centralized
+
+image::PasswordLengthComplexityCrackingTime.jpg[]
+
+==== Key Organizational Roles
 
 ===== Product Owner 
 
@@ -246,8 +257,38 @@ There are key roles every project needs, and PMO has to ensure that those roles 
 * Work with external stakeholders to understand and investigate feedback into the service/function/product provided
 * Use data modeling practises to analyse findings and create suggestions for strategic and operational improvements and changes
 * Product end to end process maps to for the entire lifecycle of the product
+* Good understanding of flowcharting specifically Business Process Modeling Notation (BPMN)
 
 ===== Systems Analyst
+
+* Ability to understand translate BPMN diagrams to system level flow diagrams
+* Identify, understand and plan for organizational and human impacts of planned systems, and ensure that new technical requirements are properly integrated with existing processes and skill sets.
+* Plan a system flow from the ground up.
+* Interact with internal users and customers to learn and document requirements that are then used to produce business required documents.
+* Write technical requirements from a critical phase.
+* Interact with software architects to understand software limitations.
+* Help programmers during system development, e.g. provide use cases, flowcharts, UML and BPMN diagrams.
+* Document requirements or contribute to user manuals.
+* Whenever a development process is conducted, the system analyst is responsible for designing components and providing that information to the developer.
+* Identify Impacted Systems and required configuration changes
+
+===== Security Architect
+
+* Enssure Information Security Policy is being adered to
+* Information protection mechanisms are considered in the design
+* Security Monitoring 
+* Incident Response
+* Data Retention
+* Security Testing
+
+===== Infrastructure Architect
+
+* Identify Network, Server, Storage, & Monitoring Requirements
+* Create Network, Server, Storage, & Monitoring Designs
+* Create Network, Server, Storage, & Monitoring Implementation Plans
+* Capacity Planning
+* Infrastructure Resiliency Planning, Designing, and Implementation
+
 
 
 == Security Policy
