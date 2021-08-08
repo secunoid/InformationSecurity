@@ -307,7 +307,7 @@ image::Project Lifecycle Gate 5-6.png[]
 
 ==== Project Deliverables Matrix
 
-[format="csv",cols="e,a,m",options="header"]
+[format="csv",options="header"]
 |===================================================
 Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,Infrastructure Architect 
 include::includes/DeliverablesMatrix.csv[]
