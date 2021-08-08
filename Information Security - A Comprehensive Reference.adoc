@@ -229,11 +229,11 @@ Following organizational structures have been put togther for illustrative purpo
 
 ===== Centralized
 
-image::PMOStructure-Centralized.png[]
+image::PMOStructure-Centralized.png[Centralized PMO]
 
 ===== De-Centralized
 
-image::PMOStructure-DeCentralized.png[]
+image::PMOStructure-DeCentralized.png[De-centralized PMO with COE]
 
 ==== Key Organizational Roles
 
