@@ -310,7 +310,7 @@ image::Project Lifecycle Gate 5-6.png[]
 [format="csv",cols="^1,4*2",options="header"]
 |===================================================
 Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,Infrastructure Architect 
-include::includes/deliverablesmatrix.csv[]
+include::includes/DeliverablesMatrix.csv[]
 |===================================================
 
 
