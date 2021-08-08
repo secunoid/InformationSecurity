@@ -229,11 +229,11 @@ Following organizational structures have been put togther for illustrative purpo
 
 ===== Centralized
 
-image::PasswordLengthComplexityCrackingTime.jpg[]
+image::PMOStructure-Centralized.png[]
 
 ===== De-Centralized
 
-image::PasswordLengthComplexityCrackingTime.jpg[]
+image::PMOStructure-DeCentralized.png[]
 
 ==== Key Organizational Roles
 
