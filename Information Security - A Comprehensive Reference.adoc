@@ -229,6 +229,7 @@ There are key roles every project needs, and PMO has to ensure that those roles 
 ===== Product Owner 
 
 * Sits in the business hierarchy
+* Translates business requirements into how the product will operate within the organization
 * Product creation, operationalization, and ongoing evolutionevolution
 * Maintains the product lifecycle
 * Understands roles of everty department in the organization as it pertains to operating and maintaining the product
@@ -236,7 +237,15 @@ There are key roles every project needs, and PMO has to ensure that those roles 
 
 ===== Business Analyst
 
+“Business analysis is the practice of enabling change in an enterprise by defining needs and recommending solutions that deliver value to stakeholders”
 
+* Consult with management, staff and customers on how work is done in an organization
+* Design solutions to improve organizational efficiency and productivity
+* Write functional requiremnets using models and diagrams
+* Communicate with internal colleagues to understand the needs of departments and the ogranization as a whole
+* Work with external stakeholders to understand and investigate feedback into the service/function/product provided
+* Use data modeling practises to analyse findings and create suggestions for strategic and operational improvements and changes
+* Product end to end process maps to for the entire lifecycle of the product
 
 ===== Systems Analyst
 
