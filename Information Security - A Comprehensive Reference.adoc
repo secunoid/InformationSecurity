@@ -226,9 +226,19 @@ There are key roles every project needs, and PMO has to ensure that those roles 
 
 ==== Key Roles
 
-* **Product Owner**
-* Business Analyst * 
-* Systems Analyst *
+===== Product Owner 
+
+* Sits in the business hierarcgy
+* Product creation, operationalization, and ongoing evolutionevolution
+* Maintains the product lifecycle
+* Understands roles of everty department in the organization as it pertains to operating and maintaining the product
+* Ultimate decision maker on behalf of the business
+
+===== Business Analyst
+
+
+
+===== Systems Analyst
 
 
 == Security Policy
