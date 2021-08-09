@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
-Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.21.08.08.02
+Doc Writer <ssharif@secunoid.com>
+v1.21.08.09.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -258,11 +258,12 @@ This section identifies roles that are key for successful project delivery and o
 * Work with external stakeholders to understand and investigate feedback into the service/function/product provided
 * Use data modeling practises to analyse findings and create suggestions for strategic and operational improvements and changes
 * Product end to end process maps to for the entire lifecycle of the product
-* Good understanding of flowcharting specifically Business Process Modeling Notation (BPMN)
+* Good understanding of flowcharting specifically Business Process Model & Notation (BPMN)
 
 ===== Systems Analyst
 
 * Ability to understand translate BPMN diagrams to system level flow diagrams
+* Ability to create Unified Modeling Language (UML) diagrams
 * Identify, understand and plan for organizational and human impacts of planned systems, and ensure that new technical requirements are properly integrated with existing processes and skill sets.
 * Plan a system flow from the ground up.
 * Interact with internal users and customers to learn and document requirements that are then used to produce business required documents.
@@ -292,6 +293,18 @@ This section identifies roles that are key for successful project delivery and o
 * Capacity Planning
 * Infrastructure Resiliency Planning, Designing, and Implementation
 
+==== Tools
+Following tools & technology are may be required to establish a successful project delivey pipeline
+
+* Project Management
+* Requirements mangement & tracabillity tools such as: 
+** Azure Dev Ops
+** JIRA
+* Business Process Model & Notification (BPMN) Tools, such as:
+** Camunda
+* Unified Modeling Language (UML) tools such as: 
+** Rational Tools 
+
 ==== Project Delivery Process & Governance
 This section outlines the process, key deliverables at each phase of the project delivery.
 
@@ -315,6 +328,16 @@ Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,I
 include::includes/DeliverablesMatrix.csv[]
 |===================================================
 image::DeliverablesMatrix.png[]
+
+==== Implementation Plan
+
+. Business alignment for required org structure
+. Create Templates for: 
+.. Meeting Minutes
+.. Implementation Plans/MOP's
+. Create Job Aids and Samples
+. Create Checklists
+. Governance Processes
 
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
