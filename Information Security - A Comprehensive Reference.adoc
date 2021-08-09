@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.08.09.01
+v1.21.08.09.02
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -303,7 +303,7 @@ Following tools & technology are may be required to establish a successful proje
 * Business Process Model & Notification (BPMN) Tools, such as:
 ** Camunda
 * Unified Modeling Language (UML) tools such as: 
-** Rational Tools 
+** Rational Rose Tools 
 
 ==== Project Delivery Process & Governance
 This section outlines the process, key deliverables at each phase of the project delivery.
