@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <shahid.sharif@securityprivacyrisk.com>
-v1.21.08.08.01
+v1.21.08.08.02
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -275,7 +275,9 @@ This section identifies roles that are key for successful project delivery and o
 
 ===== Security Architect
 
-* Enssure Information Security Policy is being adered to
+* Ensure Information Security Policy is being adered to
+* Privacy Impact Assessment (PIA) is completed
+* Data Classification is completed 
 * Information protection mechanisms are considered in the design
 * Security Monitoring 
 * Incident Response
