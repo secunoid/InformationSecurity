@@ -308,7 +308,7 @@ Following tools & technology are may be required to establish a successful proje
 ==== Project Delivery Process & Governance
 This section outlines the process, key deliverables at each phase of the project delivery.
 
-===== Gate 0 --> Gate 3
+===== Gate 0 -> Gate 3
 
 image::Project Lifecycle Gate 0-3.png[]
 
@@ -316,7 +316,7 @@ image::Project Lifecycle Gate 0-3.png[]
 
 image::Project Lifecycle-Gate 4.png[]
 
-===== Gate 5 --> Gate 6
+===== Gate 5 -> Gate 6
 
 image::Project Lifecycle-Gate 5 - 6.png[]
 
