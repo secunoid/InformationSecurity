@@ -314,7 +314,7 @@ image::Project Lifecycle Gate 0-3.png[]
 
 ===== Gate 4
 
-image::Project Lifecycle Gate 4.png[]
+image::Project Lifecycle-Gate 4.png[]
 
 ===== Gate 5 --> Gate 6
 
