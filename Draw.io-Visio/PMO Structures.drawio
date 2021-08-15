@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-15T19:11:33.904Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="85abryg-WSped9kUJYFC" version="14.9.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-15T19:11:50.792Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="YIiVl3dehFJpxwr630wH" version="14.9.6" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="CentralizedPMO">
     <mxGraphModel dx="1564" dy="1468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -142,7 +142,7 @@
       <root>
         <mxCell id="ZjTOBvKSlMeCe0TCrfZz-0" />
         <mxCell id="ZjTOBvKSlMeCe0TCrfZz-1" parent="ZjTOBvKSlMeCe0TCrfZz-0" />
-        <mxCell id="ZjTOBvKSlMeCe0TCrfZz-2" value="Centralized PMO" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;rounded=1;" vertex="1" parent="ZjTOBvKSlMeCe0TCrfZz-1">
+        <mxCell id="ZjTOBvKSlMeCe0TCrfZz-2" value="De-Centralized PMO" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;rounded=1;" vertex="1" parent="ZjTOBvKSlMeCe0TCrfZz-1">
           <mxGeometry x="290" y="219" width="875" height="390" as="geometry" />
         </mxCell>
         <mxCell id="ZjTOBvKSlMeCe0TCrfZz-3" value="CEO" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="ZjTOBvKSlMeCe0TCrfZz-2">
