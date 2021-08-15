@@ -336,8 +336,26 @@ To ensure the project meets is deliverables, timelines, and budget, it has to ha
 It goes without saying how important minutes for each of these meetings are to ensure all the decisions were documented and action items logged and assigned to named individuals.
 
 ===== Gates
-"Gates" are checkpoints where two distinct teams should be reviewing the projects.  First review should be done by the 
-Each of the "Gates" that I have specifed are checkpoints were a team of 
+"Gates" are checkpoints where two distinct teams should be reviewing the projects.  
+
+====== Technical Review
+A technical review board should be established that conducts the review of the solution from Gates 1 through 4.  This review ensures projects' adherence strategic plan and blueprints for: 
+
+* Business Requirements
+* Enterprise Architecture
+** Business Architecture
+** Application Architecture
+** Data Architecture
+** Technology/Infrastructure Architecture
+* Security Architecture
+* Compliance  
+ 
+====== Financial Review
+Financial Reivew is ususally conducted by the Finance to who is providing funding to the project.  Funding is released at specific deliverable milestones.  Most organizations align these reviews to the Technical Reviews whereby after the technical reivew is compelte, i.e. the criteria for that specific gate has been met then the project is cleared to request funding for the next Gate of the project.  The Finance team can review following criteria:
+
+* Estimates vs Actuals
+* Capital Burn Rate
+* Depending on the project performance and timelines decide how much to fund this initiative
 
 ===== Steering Committee Meetings
 Also called Steerco meetings are held with project sponsors and key stakeholders at senior level where identified project risks are discussed and their treatment discussed.
