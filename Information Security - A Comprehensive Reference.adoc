@@ -370,15 +370,22 @@ These meetings are held with external entities who are part of the project deliv
 ==== Implementation Plan
 The organizational structure and methodology that has been proposed above is the "Lean" way to get "started", what I may call quick and dirty.
 
-. Business alignment for required org structure
-. 
-. Templates for: 
+. Keep it simple, do not overwhelm the business with too much information, advise them of the end goal and provide assurances that you will manage the complexity of this implementation.  
+. The whole implementation could take years, however implement changes in phases to ensure organization is not overwhelmed by the changes.
+. In absence of the establishment of the required org structure, document a plan on how to start using the new methodology
+. Start creating Templates for: 
+.. Project Charter
+.. Project Change Requests
 .. Meeting Minutes
+.. Issues and Actions register
+.. Financial Reporting
+.. Financial Expenses Tracking
 .. Implementation Plans/MOP's
 . Create Job Aids and Samples
 . Create Checklists
 . Governance Processes
 
+<<<
 == Security Policy
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
