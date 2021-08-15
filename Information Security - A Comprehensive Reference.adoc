@@ -229,11 +229,11 @@ Following organizational structures have been put togther for illustrative purpo
 
 ===== Centralized
 
-image::PMOStructure-Centralized.png[Centralized PMO]
+image::PMOStructure-Centralized.png[]
 
 ===== De-Centralized
 
-image::PMOStructure-DeCentralized.png[De-centralized PMO with COE]
+image::PMOStructure-DeCentralized.png[]
 
 ==== Key Organizational Roles
 This section identifies roles that are key for successful project delivery and organizational compliance.
