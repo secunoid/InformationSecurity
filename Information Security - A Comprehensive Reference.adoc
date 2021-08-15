@@ -329,7 +329,27 @@ include::includes/DeliverablesMatrix.csv[]
 |===================================================
 image::DeliverablesMatrix.png[]
 
+==== Meeting Minutes
+It goes without saying how important minutes for each of these meetings are to ensure all the decisions were documented and action items logged and assigned to named individuals.
+
+==== Governance
+To ensure the project meets is deliverables, timelines, and budget, it has to have checkpoints at different intervals to ensure all the stakeholders are on the same page.  The sub-sections below will outline "suggested" checkpoints for you to consider.  
+
+===== Gates
+"Gates" are checkpoints where two distinct teams should be reviewing the projects.  First review should be done by the 
+Each of the "Gates" that I have specifed are checkpoints were a team of 
+
+===== Steering Committee Meetings
+Also called Steerco meetings as held with project sponsors where identified project risks are discussed and 
+===== Weekly Internal Team Meetings
+These are meetings of the 
+
+===== Weekly Internal/External Team Meetings
+
+
+
 ==== Implementation Plan
+The organizational structure and methodology that has been proposed above is the "Lean" way to get "started", what I may call quick and dirty.
 
 . Business alignment for required org structure
 . Create Templates for: 
