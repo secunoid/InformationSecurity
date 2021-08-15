@@ -332,7 +332,7 @@ image::DeliverablesMatrix.png[]
 ==== Project Governance
 To ensure the project meets is deliverables, timelines, and budget, it has to have checkpoints at different intervals to ensure all the stakeholders are on the same page.  The sub-sections below will outline "suggested" checkpoints for you to consider.
 
-image::ProjectGovernance.png[]
+image::Project Governance.png[]
 
 ===== Meeting Minutes
 It goes without saying how important minutes for each of these meetings are to ensure all the decisions were documented and action items logged and assigned to named individuals.
