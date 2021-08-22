@@ -1812,11 +1812,11 @@ A documented process must be followed to ensure compliance to security policy an
 * IT Risk Management
 * Integrated Risk Management
 * Operational Risk Management
-* Compliance
 * Enterprise GRC Management
 * Vendor/Third-Party Risk Management
 * Business Continuity
 * Financial Audit
+* Compliance
 
 === Enterprise Risk Management
 
@@ -1828,6 +1828,28 @@ A documented process must be followed to ensure compliance to security policy an
 * Considers both upside and downside
 * Focuses on business goals, adding value and more
 * Embedded in culture and mindset 
+
+=== IT Risk Management
+
+=== Integrated Risk Management
+
+=== Opertional Risk Management
+
+=== Enterprise GRC Management
+
+=== Vendor/Third-Party Risk Management
+
+=== Business Continuity
+
+=== Financial Audit
+
+=== Compliance
+Compliance function ensures that all the Industry, Governmental,  & Financial requirements are adhered to.
+
+==== Assesment Tools
+
+Automating security assessments using Cloud Katana: https://www.microsoft.com/security/blog/2021/08/19/automating-security-assessments-using-cloud-katana/ 
+
 
 <<<
 == Kali Reference
