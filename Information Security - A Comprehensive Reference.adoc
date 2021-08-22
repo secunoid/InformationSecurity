@@ -177,6 +177,12 @@ This book will cover the various aspects of implementing an Information Security
 == Leadership
 Having the right leadership at every level is key to the success of an organization.  This starts all the way from the top.  Leading a team is just like tending to a garden, that needs constant grooming, support and care.  It is this capability that helps the leader identify any issues and correct them before they get out of control.
 
+Giving someone a title does not mean that they know exactly what is required.  To set the team member(s) for success the leader has to understand which key ingredients the team member is missing to fulfill the role.  Then come up with a plan to to coach them to build and/or strengthen those capabilities and slowly move them into higher roles.
+
+Inexperienced leaders often make this mistake of promoting a team member to a role without any coaching and skillset development.  Nine out of ten times, the leader has pretty much set the team member for failure and this also becomes the cause of stress and anxiety for the team member.  The team member ends up in meeting where they are expected for deliverables which they have never produced and have no idea on how to produce them.  Since the leader themselves are inexperienced they have no way of salvaging the situation either.
+
+Eventually team members start looking for ways out of the team or the organization.
+
 Important qualities of a leader: 
 * Domain Expert
 * Being a domain expert brings with it: 
