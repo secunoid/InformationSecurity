@@ -1843,6 +1843,8 @@ The top operational risks in banking include:
 * External fraud: Fraud committed by third parties includes check fraud, theft, hacking, breaching system security, and data theft.
 * Business disruption and systems failures: Hardware or software system failures, power failures, and disruption in telecommunications can interrupt the financial institution’s business operations and cause financial loss.
 
+Operational risk management, which entails incorporating operational risk management practices into a financial institution’s systems, processes, and culture, should be at the center of a financial institution’s operations. Operational risk management is an ongoing process that involves risk assessment, risk decision making, and adopting internal controls to help financial institutions mitigate or avoid risk.
+
 === Enterprise GRC Management
 
 === Vendor/Third-Party Risk Management
