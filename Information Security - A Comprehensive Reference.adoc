@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.08.22.03
+v1.21.08.24.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1834,6 +1834,14 @@ A documented process must be followed to ensure compliance to security policy an
 === Integrated Risk Management
 
 === Opertional Risk Management
+
+The top operational risks in banking include:
+	
+* Cybersecurity risks: Even as financial institutions ramp up their cybersecurity efforts, cyber risks, including ransomware and phishing, have become more frequent and more effective, posing a major risk to financial institutions. 
+* Third-party risk: Increasingly, financial institutions are relying on third-party providers, which means they have to thoroughly identify, evaluate, and control third-party risks throughout the lifecycle of their relationships with those companies. However, financial institutions also have to identify and evaluate the risks associated with the vendors, suppliers, and contractors that their third-party vendors use. 
+* Internal fraud: Losses from fraud inside a financial institution can stem from misappropriation of assets, forgery, tax non-compliance, bribes, and theft.
+* External fraud: Fraud committed by third parties includes check fraud, theft, hacking, breaching system security, and data theft.
+* Business disruption and systems failures: Hardware or software system failures, power failures, and disruption in telecommunications can interrupt the financial institution’s business operations and cause financial loss.
 
 === Enterprise GRC Management
 
