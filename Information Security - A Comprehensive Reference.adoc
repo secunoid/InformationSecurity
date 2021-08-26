@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.08.24.01
+v1.21.08.26.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -218,6 +218,15 @@ Following are some of the qualities a leader should have:
 * Understand the difference between Managing People vs Leading People
 * Good listener
 * Familiar with Project delivery methodologies
+
+=== Building Teams
+Building high performing teams entirely depends on the leader.  The leader must understand they they have to deliverables are and then build their team based on business requriements to ensure alignment with business.
+
+One, is that the leader hires team members who are domian experts and also have developing high performing teams.
+
+Two, is that the leader is also a domain expert and is willing to groom and coach team members into the role they need to be in.
+
+In each case leader is they key, they should know enough about business and domains to lead and coach the teams.
 
 
 <<<
