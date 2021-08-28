@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.08.26.01
+v1.21.08.28.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -184,6 +184,9 @@ One, is that the leader hires team members who are domian experts and also have 
 Two, is that the leader is also a domain expert and is willing to groom and coach team members into the role they need to be in.
 
 In each case leader is they key, they should know enough about business and domains to lead and coach the teams.
+
+=== Leader vs Manager
+A manager typically ensures tasks are assigned and delivered on time.  A leader on the other hand is someone who provides direction to the organization and the team.  A Leader invests time and energy in grooming and coaching their team members to be successful in their career at the current organization and also in their future endavours.
 
 === Why do team members leave?
 Here are some of the reasons that might cause team members to leave an organization.
