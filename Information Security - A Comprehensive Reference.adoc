@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.08.28.01
+v1.21.09.12.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -19,6 +19,9 @@ v1.21.08.28.01
 
 
 <<<
+== Author
+Shahid Sharif
+
 == Overview
 Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important to protect it.
 
@@ -252,6 +255,18 @@ In centralized operational model, all aspects of security operations are within 
 * Firewall & Network Operations
 
 In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
+
+==== Reporting to CEO (Ideal)
+image::CyberSecurityOrganization-27Dec2018-v03-Ideal.png[]
+
+==== Reporting to CFO
+image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
+
+==== Reporting to CIO
+image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
+
+==== Reporting to CtO
+image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
 
 ==== Security Operations
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
