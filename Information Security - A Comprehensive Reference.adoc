@@ -1,10 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-<<<<<<< HEAD
 v1.21.09.12.01
-=======
-v1.21.08.05.01
->>>>>>> 5fce0d9559d9622c12257ae9c4b4bebb20d2fe3d
 :numbered:
 :sectnum:
 :sectnumlevels: 5
