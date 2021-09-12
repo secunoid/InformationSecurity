@@ -1,6 +1,10 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
+<<<<<<< HEAD
 v1.21.09.12.01
+=======
+v1.21.08.05.01
+>>>>>>> 5fce0d9559d9622c12257ae9c4b4bebb20d2fe3d
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -80,10 +84,12 @@ Data that is being processed by the solution should care fully considered for:
 
 Governments across the world are responding to the global cyber security crisis by creating new regulations that govern the way companies handle and store valuable consumer data. This includes important information such as personal identifications, banking and credit card numbers, and purchase history.
 
+=== GDPR
 The European Union, in particular, has been a leader in this field. One of its pioneering efforts is the General Data Protection Regulations (GDPR) what was passed in 2016 and went into effect in Spring 2018. It impacts all companies that do business with European customers, regardless of where the company is located.
 
 The GDPR requires that companies receive consent from consumers before processing data, collect and store data anonymously, and notify customers when their information has potentially been breached. It also requires large businesses to appoint a data privacy protection officer to oversee implementation of the regulations.
 
+=== CCPA
 Furthermore, while the U.S. federal government has yet to create a set of strong data privacy protections, several states have drawn up their legislation, including Hawaii, Massachusetts, Maryland, Mississippi, New Mexico, and Washington.
 
 However, the most important of these regulations come from California, the largest state in the country by population with nearly 40 million residents. The California Consumer Privacy Act (CCPA) goes into effect on January 1, 2020, and governs the way companies must store and secure data.
@@ -91,6 +97,9 @@ However, the most important of these regulations come from California, the large
 CCPA allows consumers to demand crucial information about their personal data held by corporations.
 
 When requested, businesses must inform consumers about the type of personal data they possess, provide them with specific personal information collected in the previous year, and allow customers to request that their information not be shared with third parties. Companies will also have to delete customer data when requested.
+
+=== PIPL
+On 1 November 2021, the new Personal Information Protection Law (PIPL) of the People’s Republic of China will enter into force. This law, adopted on 20 August 2021, is an omnibus privacy law that will apply to all organisations doing business in China or targeting people in China, and has major compliance consequences similar to GDPR.
 
 
 
@@ -175,6 +184,101 @@ Enter Information Security, which at the most fundamental level is the basis for
 * Cyber Security
 
 This book will cover the various aspects of implementing an Information Security Program at an organization of any size. You don't have to be a huge organization to have an information security program.  If you are in business you are collecting, storing, and transmitting all kinds of information and it important that you know how to ensure that information is protected at all times.  If it is not then maybe your business might be at risk.
+
+=== Information Security Program
+
+image::InformationSecurityProgram.png[]
+
+=== Security Policy
+Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
+
+<<<
+=== Security Manual
+This document goes into details on the how the security policy requirements must be implemented.  It can be one document, or multiple depending on the size of implementation.
+
+<<<
+=== Security Standards
+Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
+
+==== Windows Web Server Hardening
+
+*Services*
+
+* Unnecessary Windows services are disabled.
+* Services are running with least-privileged accounts.
+* FTP, SMTP, and NNTP services are disabled if they are not required.
+* Telnet service is disabled.
+
+*Protocols*
+
+* WebDAV is disabled if not used by the application OR it is secured if it is required.
+* TCP/IP stack is hardened
+* NetBIOS and SMB are disabled (closes ports 137, 138, 139, and 445).
+
+*Accounts*
+
+* Unused accounts are removed from the server.
+* Guest account is disabled.
+* IUSR_MACHINE account is disabled if it is not used by the application.
+* If your applications require anonymous access, a custom least-privileged anonymous account is created.
+* The anonymous account does not have write access to Web content directories and cannot execute command-line tools.
+Strong account and password policies are enforced for the server.
+* Remote logons are restricted. (The “Access this computer from the network” user-right is removed from the Everyone group.)
+* Accounts are not shared among administrators.
+* Null sessions (anonymous logons) are disabled.
+* Approval is required for account delegation.
+* Users and administrators do not share accounts.
+* No more than two accounts exist in the Administrators group.
+* Administrators are required to log on locally OR the remote administration solution is secure.
+
+*Files and Directories*
+
+* Files and directories are contained on NTFS volumes
+Web site content is located on a non-system NTFS volume.
+* Log files are located on a non-system NTFS volume and not on the same volume where the Web site content resides.
+* The Everyone group is restricted (no access to \WINNT\system32 or Web directories).
+* Web site root directory has denied write ACE for anonymous Internet accounts.
+* Content directories have deny write ACE for anonymous Internet accounts.
+* Remote  administration application is removed
+* Resource kit tools, utilities, and SDKs are removed.
+* Sample applications are removed
+
+*Shares*
+
+* All unnecessary shares are removed (including default administration shares).
+* Access to required shares is restricted (the Everyone group does not have access).
+* Administrative shares (C$ and Admin$) are removed if they are not required (Microsoft Management Server (SMS) and Microsoft Operations Manager (MOM) require these shares).
+
+*Ports*
+
+* Internet-facing interfaces are restricted to port 80 (and 443 if SSL is used)
+* Intranet traffic is encrypted (for example, with SSL) or restricted if you do not have a secure data center infrastructure.
+
+*Registry*
+
+* Remote registry access is restricted.
+* SAM is secured (HKLM\System\CurrentControlSet\Control\LSA\NoLMHash).
+
+*Auditing and Logging*
+
+* Failed logon attempts are audited.
+* IIS log files are relocated and secured.
+* Log files are configured with an appropriate size depending on the application security requirement.
+* Log files are regularly archived and analyzed.
+* Access to the Metabase.bin file is audited.
+* IIS is configured for W3C Extended log file format auditing.
+
+*Server Certificates*
+
+* Ensure certificate date ranges are valid.
+* Only use certificates for their intended purpose (For example, the server certificate is not used for e-mail).
+* Ensure the certificate’s public key is valid, all the way to a trusted root authority.
+* Confirm that the certificate has not been revoked.
+
+<<<
+=== Security Guidelines
+
+<<<
 
 <<<
 == Leadership
@@ -461,96 +565,7 @@ The organizational structure and methodology that has been proposed above is the
 . Governance Processes
 
 <<<
-== Security Policy
-Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
-<<<
-== Security Manual
-This document goes into details on the how the security policy requirements must be implemented.  It can be one document, or multiple depending on the size of implementation.
-
-<<<
-== Security Standards
-Standards are mandatory requirements that must be adhered to. Some of the standards to be considered are:
-
-=== Windows Web Server Hardening
-
-*Services*
-
-* Unnecessary Windows services are disabled.
-* Services are running with least-privileged accounts.
-* FTP, SMTP, and NNTP services are disabled if they are not required.
-* Telnet service is disabled.
-
-*Protocols*
-
-* WebDAV is disabled if not used by the application OR it is secured if it is required.
-* TCP/IP stack is hardened
-* NetBIOS and SMB are disabled (closes ports 137, 138, 139, and 445).
-
-*Accounts*
-
-* Unused accounts are removed from the server.
-* Guest account is disabled.
-* IUSR_MACHINE account is disabled if it is not used by the application.
-* If your applications require anonymous access, a custom least-privileged anonymous account is created.
-* The anonymous account does not have write access to Web content directories and cannot execute command-line tools.
-Strong account and password policies are enforced for the server.
-* Remote logons are restricted. (The “Access this computer from the network” user-right is removed from the Everyone group.)
-* Accounts are not shared among administrators.
-* Null sessions (anonymous logons) are disabled.
-* Approval is required for account delegation.
-* Users and administrators do not share accounts.
-* No more than two accounts exist in the Administrators group.
-* Administrators are required to log on locally OR the remote administration solution is secure.
-
-*Files and Directories*
-
-* Files and directories are contained on NTFS volumes
-Web site content is located on a non-system NTFS volume.
-* Log files are located on a non-system NTFS volume and not on the same volume where the Web site content resides.
-* The Everyone group is restricted (no access to \WINNT\system32 or Web directories).
-* Web site root directory has denied write ACE for anonymous Internet accounts.
-* Content directories have deny write ACE for anonymous Internet accounts.
-* Remote  administration application is removed
-* Resource kit tools, utilities, and SDKs are removed.
-* Sample applications are removed
-
-*Shares*
-
-* All unnecessary shares are removed (including default administration shares).
-* Access to required shares is restricted (the Everyone group does not have access).
-* Administrative shares (C$ and Admin$) are removed if they are not required (Microsoft Management Server (SMS) and Microsoft Operations Manager (MOM) require these shares).
-
-*Ports*
-
-* Internet-facing interfaces are restricted to port 80 (and 443 if SSL is used)
-* Intranet traffic is encrypted (for example, with SSL) or restricted if you do not have a secure data center infrastructure.
-
-*Registry*
-
-* Remote registry access is restricted.
-* SAM is secured (HKLM\System\CurrentControlSet\Control\LSA\NoLMHash).
-
-*Auditing and Logging*
-
-* Failed logon attempts are audited.
-* IIS log files are relocated and secured.
-* Log files are configured with an appropriate size depending on the application security requirement.
-* Log files are regularly archived and analyzed.
-* Access to the Metabase.bin file is audited.
-* IIS is configured for W3C Extended log file format auditing.
-
-*Server Certificates*
-
-* Ensure certificate date ranges are valid.
-* Only use certificates for their intended purpose (For example, the server certificate is not used for e-mail).
-* Ensure the certificate’s public key is valid, all the way to a trusted root authority.
-* Confirm that the certificate has not been revoked.
-
-<<<
-== Security Guidelines
-
-<<<
 == Cryptography
 
 Cryptographic Blinding
