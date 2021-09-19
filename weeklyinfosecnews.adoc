@@ -35,10 +35,15 @@ This newsletter is updated daily with news grouped by week.
 . https://www.blackhatethicalhacking.com/news/new-malware-uses-windows-subsystem-for-linux-for-stealthy-attacks[New malware uses Windows Subsystem for Linux for stealthy attacks]
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
+=== FYI!
+. https://9to5mac.com/2021/09/19/report-60-of-the-apps-delisted-from-the-app-store-didnt-have-a-privacy-policy/[Report: 60% of the apps delisted from the App Store didn’t have a privacy policy]
+
+
 === Tools/Frameworks
 . https://owasp.org/Top10/[OWASP Top 10 updated]
 . https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
 . https://github.com/threatexpress/red-team-scripts[Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.]
+. https://www.ehacking.net/2020/04/how-to-identify-companys-hacked-email-addresses-using-maltego-osint-haveibeenpawned.html[How to Identify Company’s Hacked Email Addresses Using Maltego & HaveIbeenPawned]
 
 == Week of 6 September, 2021
 
