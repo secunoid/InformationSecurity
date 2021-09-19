@@ -26,12 +26,20 @@ https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 This newsletter is updated daily with news grouped by week.
 
 <<<
-== Week of 20 September, 2021 
+== Week of 20 September, 2021
 
+=== Active Threats
 
+=== Privacy
+
+=== FYI!
+
+=== Tools/Frameworks
+
+<<<
 == Week of 13 September, 2021
 
-=== Active Threat
+=== Active Threats
 . https://www.helpnetsecurity.com/2021/09/14/cve-2021-30860/[Apple fixes “zero-click” iMessage zero-day exploited to deliver spyware (CVE-2021-30860)]
 . https://thehackernews.com/2021/09/update-google-chrome-to-patch-2-new.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheHackersNews+%28The+Hackers+News+-+Cyber+Security+Blog%29[Update Google Chrome to Patch 2 New Zero-Day Flaws Under Attack]
 . https://us-cert.cisa.gov/ncas/alerts/aa21-259a[APT Actors Exploiting Newly Identified Vulnerability in ManageEngine ADSelfService Plus]
@@ -50,7 +58,6 @@ This newsletter is updated daily with news grouped by week.
 . https://9to5mac.com/2021/09/19/report-60-of-the-apps-delisted-from-the-app-store-didnt-have-a-privacy-policy/[Report: 60% of the apps delisted from the App Store didn’t have a privacy policy]
 . https://www.fastcompany.com/90672384/microsoft-president-brad-smith-solarwinds-exclusive[What it was like inside Microsoft during the worst cyberattack in history]
 
-
 === Tools/Frameworks
 . https://www.kitploit.com/2021/09/qlog-windows-security-logging.html[QLOG - Windows Security Logging]
 . https://owasp.org/Top10/[OWASP Top 10 updated]
@@ -58,9 +65,21 @@ This newsletter is updated daily with news grouped by week.
 . https://github.com/threatexpress/red-team-scripts[Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.]
 . https://www.ehacking.net/2020/04/how-to-identify-companys-hacked-email-addresses-using-maltego-osint-haveibeenpawned.html[How to Identify Company’s Hacked Email Addresses Using Maltego & HaveIbeenPawned]
 
+<<<
 == Week of 6 September, 2021
 
 === Active Threats
 . https://thehackernews.com/2021/09/new-0-day-attack-targeting-windows.html[New Zero day attack targetting windows]
 . https://threatpost.com/thousands-of-fortinet-vpn-account-credentials-leaked/169348/[Thousands-of-fortinet-vpn-account-credentials-leaked]
 . https://www.slashgear.com/microsoft-has-another-windows-security-nightmare-on-its-hands-08690134/[Microsoft has another Windows security nightmare on its hands]
+
+<<<
+== Template - Week of DD MMMMMMMM, 2021
+
+=== Active Threats
+
+=== Privacy
+
+=== FYI!
+
+=== Tools/Frameworks
