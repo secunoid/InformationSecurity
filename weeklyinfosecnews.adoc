@@ -31,16 +31,24 @@ This newsletter is updated daily with news grouped by week.
 
 == Week of 13 September, 2021
 
-=== Active Threats
+=== Active Threat
+. https://thehackernews.com/2021/09/update-google-chrome-to-patch-2-new.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheHackersNews+%28The+Hackers+News+-+Cyber+Security+Blog%29[Update Google Chrome to Patch 2 New Zero-Day Flaws Under Attack]
+. https://us-cert.cisa.gov/ncas/alerts/aa21-259a[APT Actors Exploiting Newly Identified Vulnerability in ManageEngine ADSelfService Plus]
+. https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution[“Secret” Agent Exposes Azure Customers To Unauthorized Code Execution]
+. https://citizenlab.ca/2021/09/forcedentry-nso-group-imessage-zero-click-exploit-captured-in-the-wild/[NSO Group iMessage Zero-Click Exploit Captured in the Wild]
+. https://www.lacework.com/blog/pysa-ransomware-gang-adds-linux-support/[PYSA Ransomware Gang adds Linux Support]
 . https://www.blackhatethicalhacking.com/news/new-malware-uses-windows-subsystem-for-linux-for-stealthy-attacks[New malware uses Windows Subsystem for Linux for stealthy attacks]
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
 === FYI!
+. https://securityaffairs.co/wordpress/122365/intelligence/edward-snowden-expressvpn.html[Why Edward Snowden is urging users to stop using ExpressVPN?]
+. https://securityaffairs.co/wordpress/122352/laws-and-regulations/biden-administration-ransomware-sanctions.html[The Biden administration plans to target exchanges supporting ransomware operations with sanctions]
 . https://9to5mac.com/2021/09/19/report-60-of-the-apps-delisted-from-the-app-store-didnt-have-a-privacy-policy/[Report: 60% of the apps delisted from the App Store didn’t have a privacy policy]
 . https://www.fastcompany.com/90672384/microsoft-president-brad-smith-solarwinds-exclusive[What it was like inside Microsoft during the worst cyberattack in history]
 
 
 === Tools/Frameworks
+. https://www.kitploit.com/2021/09/qlog-windows-security-logging.html[QLOG - Windows Security Logging]
 . https://owasp.org/Top10/[OWASP Top 10 updated]
 . https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
 . https://github.com/threatexpress/red-team-scripts[Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.]
