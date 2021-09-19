@@ -32,7 +32,8 @@ This newsletter is updated daily with news grouped by week.
 
 === Active Threats
 
-=== Tools
+=== Tools/Frameworks
+. https://owasp.org/Top10/[OWASP Top 10 updated]
 . https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
 . https://github.com/threatexpress/red-team-scripts[Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.]
 
