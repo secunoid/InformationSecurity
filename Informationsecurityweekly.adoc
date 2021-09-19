@@ -1,0 +1,34 @@
+= Information Security Weekly
+Doc Writer <ssharif@secunoid.com>
+v1.21.09.19.01
+:numbered:
+:sectnum:
+:sectnumlevels: 5
+:chapter-label:
+:toc: right
+:toclevels: 5
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This weekly newsletter covers important events in the cyber security universe
+:keywords: cybersecurity, it security, news
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+<<<
+== Author
+https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
+
+<<<
+== Overview
+This newsletter is updated daily with news grouped by week.
+
+<<<
+== Week of 20 September, 2021 
+
+== Week of 13 September, 2021
+
+
+
