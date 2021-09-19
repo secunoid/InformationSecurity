@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.19.05
+v1.21.09.19.06
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -54,6 +54,7 @@ Tags: #numando #bankingtrojan #trojan #crypto #cryptoscam #zloader #windowsdefen
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
 === Privacy
+. https://www.laptopmag.com/how-to/stop-apple-from-scanning-your-iphone-photos[How to stop Apple from scanning your iPhone photos]
 . https://www.huntonprivacyblog.com/2021/09/17/new-york-city-to-require-food-delivery-services-to-share-customer-data-with-restaurants/[New York City to Require Food Delivery Services to Share Customer Data with Restaurants]
 
 === FYI!
