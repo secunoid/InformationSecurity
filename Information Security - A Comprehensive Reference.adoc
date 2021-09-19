@@ -1855,6 +1855,15 @@ A documented process must be followed to ensure compliance to https://github.com
 * Financial Audit
 * Compliance
 
+=== Lines of Defence
+In 2013 The Institute of Internal Auditors released a position paper titled https://na.theiia.org/standards-guidance/Public%20Documents/PP%20The%20Three%20Lines%20of%20Defense%20in%20Effective%20Risk%20Management%20and%20Control.pdf/[The Three Lines of Defence In Effective Risk Management and Contol].  This paper highlighted how an organization can manage risk and how the risk gaps can be captured across the orgnization just in case it was missed at the front lines.
+
+If the frontline/operational teams miss it, then governance teams can pick it up, and if governance teams miss it then internal audit will catch that.  After internal audit it is the regulators.
+
+In a mature organization, 80% of the risks are handled by the frontline/operational teams, leaving little for governance and internal audit teams to identify.
+
+image::TheThreeLinesOfDefenseModel.png[]
+
 === Enterprise Risk Management
 
 * Not necessarily covered by insurance
