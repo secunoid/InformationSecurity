@@ -37,6 +37,7 @@ This newsletter is updated daily with news grouped by week.
 
 === FYI!
 . https://9to5mac.com/2021/09/19/report-60-of-the-apps-delisted-from-the-app-store-didnt-have-a-privacy-policy/[Report: 60% of the apps delisted from the App Store didn’t have a privacy policy]
+. https://www.fastcompany.com/90672384/microsoft-president-brad-smith-solarwinds-exclusive[What it was like inside Microsoft during the worst cyberattack in history]
 
 
 === Tools/Frameworks
