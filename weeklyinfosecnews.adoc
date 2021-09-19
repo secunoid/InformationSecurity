@@ -28,14 +28,21 @@ This newsletter is updated daily with news grouped by week.
 <<<
 == Week of 20 September, 2021 
 
+
 == Week of 13 September, 2021
 
 === Active Threats
+. https://www.blackhatethicalhacking.com/news/new-malware-uses-windows-subsystem-for-linux-for-stealthy-attacks[New malware uses Windows Subsystem for Linux for stealthy attacks]
+. https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
 === Tools/Frameworks
 . https://owasp.org/Top10/[OWASP Top 10 updated]
 . https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
 . https://github.com/threatexpress/red-team-scripts[Red Team Scripts is a collection of red teaming related tools, scripts, techniques, and notes developed or discovered over time during engagements.]
 
+== Week of 6 September, 2021
 
-
+=== Active Threats
+. https://thehackernews.com/2021/09/new-0-day-attack-targeting-windows.html[New Zero day attack targetting windows]
+. https://threatpost.com/thousands-of-fortinet-vpn-account-credentials-leaked/169348/[Thousands-of-fortinet-vpn-account-credentials-leaked]
+. https://www.slashgear.com/microsoft-has-another-windows-security-nightmare-on-its-hands-08690134/[Microsoft has another Windows security nightmare on its hands]
