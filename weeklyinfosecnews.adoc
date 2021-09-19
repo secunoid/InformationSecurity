@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.19.02
+v1.21.09.19.03
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -32,6 +32,7 @@ This newsletter is updated daily with news grouped by week.
 == Week of 13 September, 2021
 
 === Active Threat
+. https://www.helpnetsecurity.com/2021/09/14/cve-2021-30860/[Apple fixes “zero-click” iMessage zero-day exploited to deliver spyware (CVE-2021-30860)]
 . https://thehackernews.com/2021/09/update-google-chrome-to-patch-2-new.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheHackersNews+%28The+Hackers+News+-+Cyber+Security+Blog%29[Update Google Chrome to Patch 2 New Zero-Day Flaws Under Attack]
 . https://us-cert.cisa.gov/ncas/alerts/aa21-259a[APT Actors Exploiting Newly Identified Vulnerability in ManageEngine ADSelfService Plus]
 . https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution[“Secret” Agent Exposes Azure Customers To Unauthorized Code Execution]
@@ -39,6 +40,9 @@ This newsletter is updated daily with news grouped by week.
 . https://www.lacework.com/blog/pysa-ransomware-gang-adds-linux-support/[PYSA Ransomware Gang adds Linux Support]
 . https://www.blackhatethicalhacking.com/news/new-malware-uses-windows-subsystem-for-linux-for-stealthy-attacks[New malware uses Windows Subsystem for Linux for stealthy attacks]
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
+
+=== Privacy
+. https://www.huntonprivacyblog.com/2021/09/17/new-york-city-to-require-food-delivery-services-to-share-customer-data-with-restaurants/[New York City to Require Food Delivery Services to Share Customer Data with Restaurants]
 
 === FYI!
 . https://securityaffairs.co/wordpress/122365/intelligence/edward-snowden-expressvpn.html[Why Edward Snowden is urging users to stop using ExpressVPN?]
