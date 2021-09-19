@@ -30,5 +30,10 @@ This newsletter is updated daily with news grouped by week.
 
 == Week of 13 September, 2021
 
+=== Active Threats
+
+=== Tools
+. https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
+
 
 
