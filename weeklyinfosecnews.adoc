@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.19.03
+v1.21.09.19.06
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -38,8 +38,12 @@ This newsletter is updated daily with news grouped by week.
 
 <<<
 == Week of 13 September, 2021
+Tags: #numando #bankingtrojan #trojan #crypto #cryptoscam #zloader #windowsdefender #defenderATP #microsoft #scams #romancescams
 
 === Active Threats
+. https://www.bleepingcomputer.com/news/security/new-zloader-attacks-disable-windows-defender-to-evade-detection/[New Zloader attacks disable Windows Defender to evade detection]
+. https://securityaffairs.co/wordpress/122371/malware/numando-banking-trojan.html[Numando, a new banking Trojan that abuses YouTube for remote configuration]
+. https://www.bleepingcomputer.com/news/security/new-elon-musk-club-crypto-giveaway-scam-promoted-via-email/[New "Elon Musk Club" crypto giveaway scam promoted via email]
 . https://www.helpnetsecurity.com/2021/09/14/cve-2021-30860/[Apple fixes “zero-click” iMessage zero-day exploited to deliver spyware (CVE-2021-30860)]
 . https://thehackernews.com/2021/09/update-google-chrome-to-patch-2-new.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheHackersNews+%28The+Hackers+News+-+Cyber+Security+Blog%29[Update Google Chrome to Patch 2 New Zero-Day Flaws Under Attack]
 . https://us-cert.cisa.gov/ncas/alerts/aa21-259a[APT Actors Exploiting Newly Identified Vulnerability in ManageEngine ADSelfService Plus]
@@ -50,16 +54,19 @@ This newsletter is updated daily with news grouped by week.
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
 === Privacy
+. https://www.laptopmag.com/how-to/stop-apple-from-scanning-your-iphone-photos[How to stop Apple from scanning your iPhone photos]
 . https://www.huntonprivacyblog.com/2021/09/17/new-york-city-to-require-food-delivery-services-to-share-customer-data-with-restaurants/[New York City to Require Food Delivery Services to Share Customer Data with Restaurants]
 
 === FYI!
+. https://hackernoon.com/how-a-team-of-hackers-left-stolen-phishing-credentials-up-for-grabs[How a Team of Hackers left Stolen Phishing Credentials up for Grabs]
+. https://www.ic3.gov/Media/Y2021/PSA210916[Scammers Defraud Victims of Millions of Dollars in New Trend in Romance Scams]
+. https://www.bleepingcomputer.com/news/security/atandt-lost-200m-in-seven-years-to-illegal-phone-unlocking-scheme/[AT&T lost $200M in seven years to illegal phone unlocking scheme]
 . https://securityaffairs.co/wordpress/122365/intelligence/edward-snowden-expressvpn.html[Why Edward Snowden is urging users to stop using ExpressVPN?]
 . https://securityaffairs.co/wordpress/122352/laws-and-regulations/biden-administration-ransomware-sanctions.html[The Biden administration plans to target exchanges supporting ransomware operations with sanctions]
 . https://9to5mac.com/2021/09/19/report-60-of-the-apps-delisted-from-the-app-store-didnt-have-a-privacy-policy/[Report: 60% of the apps delisted from the App Store didn’t have a privacy policy]
 . https://www.fastcompany.com/90672384/microsoft-president-brad-smith-solarwinds-exclusive[What it was like inside Microsoft during the worst cyberattack in history]
 
 === Tools/Frameworks
-. https://www.kitploit.com/2021/09/inlineexecute-assembly-poc-beacon.html[InlineExecute-Assembly - A PoC Beacon Object File (BOF) That Allows Security Professionals To Perform In Process .NET Assembly Execution]
 . https://www.kitploit.com/2021/09/qlog-windows-security-logging.html[QLOG - Windows Security Logging]
 . https://owasp.org/Top10/[OWASP Top 10 updated]
 . https://github.com/optiv/Go365[Go365 is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365]
@@ -76,7 +83,7 @@ This newsletter is updated daily with news grouped by week.
 
 <<<
 == Template - Week of DD MMMMMMMM, 2021
-
+Tags: 
 === Active Threats
 
 === Privacy
