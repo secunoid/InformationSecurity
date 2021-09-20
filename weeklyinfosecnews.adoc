@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.19.07
+v1.21.09.20.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -27,14 +27,26 @@ This newsletter is updated daily with news grouped by week.
 
 <<<
 == Week of 20 September, 2021
+Tags: #xdr #ransomware #
 
 === Active Threats
+. https://thehackernews.com/2021/09/a-new-wave-of-malware-attack-targeting.html[A New Wave of Malware Attack Targeting Organizations in South America]
+. https://www.csoonline.com/article/3262972/7-hot-cyber-security-trends-and-4-going-cold.html[7 hot cybersecurity trends (and 4 going cold)]
+
+=== Incident Response
+. https://www.csoonline.com/article/3632854/7-unexpected-ransomware-costs.html[7 unexpected ransomware costs]
 
 === Privacy
 
 === FYI!
+. https://thehackernews.com/2021/09/europol-busts-major-cybercrime-ring.html[Europol Busts Major Crime Ring, Arrests Over 100 Online Fraudsters]
+. https://newsroom.nccgroup.com/pressreleases/ncc-group-reveals-threefold-increase-in-targeted-ransomware-attacks-in-2021-3124798[NCC Group reveals threefold increase in targeted ransomware attacks in 2021]
+. https://securityaffairs.co/wordpress/122382/cyber-crime/att-hacking-scheme-man-sentenced.html[Pakistani man sentenced to 12 years of prison for his role in AT&T hacking scheme]
+. https://thehackernews.com/2021/09/google-to-auto-reset-unused-android-app.html[Google to Auto-Reset Unused Android App Permissions for Billions of Devices]
 
 === Tools/Frameworks
+. https://www.kitploit.com/2021/09/ps2exe-module-to-compile-powershell.html[PS2EXE - Module To Compile Powershell Scripts To Executables]
+. https://www.csoonline.com/article/3633896/5-observations-about-xdr.html[5 observations about XDR]
 
 <<<
 == Week of 13 September, 2021
@@ -53,11 +65,16 @@ Tags: #numando #bankingtrojan #trojan #crypto #cryptoscam #zloader #windowsdefen
 . https://www.blackhatethicalhacking.com/news/new-malware-uses-windows-subsystem-for-linux-for-stealthy-attacks[New malware uses Windows Subsystem for Linux for stealthy attacks]
 . https://thehackernews.com/2021/09/windows-mshtml-0-day-exploited-to.html[Windows MSHTML 0-Day Exploited to Deploy Cobalt Strike Beacon in Targeted Attacks]
 
+=== Incident Response
+. https://www.tripwire.com/state-of-security/security-data-protection/everything-you-need-to-know-about-cyber-crisis-tabletop-exercises/[Everything You Need to Know about Cyber Crisis Tabletop Exercises]
+. https://www.tripwire.com/state-of-security/security-data-protection/the-digital-pandemic-ransomware/[The Digital Pandemic – Ransomware]
+
 === Privacy
 . https://www.laptopmag.com/how-to/stop-apple-from-scanning-your-iphone-photos[How to stop Apple from scanning your iPhone photos]
 . https://www.huntonprivacyblog.com/2021/09/17/new-york-city-to-require-food-delivery-services-to-share-customer-data-with-restaurants/[New York City to Require Food Delivery Services to Share Customer Data with Restaurants]
 
 === FYI!
+. https://www.sans.org/newsletters/ouch/disposing-of-your-mobile-device/[Disposing of Your Mobile Device]
 . https://www.msspalert.com/investments/pwc-buys-avaleris/[PricewaterhouseCoopers Canada has acquired Avaleris, an MSSP that offers Microsoft identity, security and cloud services. Financial terms of the deal were not disclosed.]
 . https://www.msspalert.com/cybersecurity-markets/americas/u-s-vows-surge-to-fight-nation-state-ransomware-backers/[US Vows "Surge" to Fight Nationstate Ransomware Backers]
 . https://hackernoon.com/how-a-team-of-hackers-left-stolen-phishing-credentials-up-for-grabs[How a Team of Hackers left Stolen Phishing Credentials up for Grabs]
@@ -89,6 +106,8 @@ Tags: #numando #bankingtrojan #trojan #crypto #cryptoscam #zloader #windowsdefen
 == Template - Week of DD MMMMMMMM, 2021
 Tags: 
 === Active Threats
+
+=== Incident Response
 
 === Privacy
 
