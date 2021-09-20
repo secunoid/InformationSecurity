@@ -27,11 +27,16 @@ This newsletter is updated daily with news grouped by week.
 
 <<<
 == Week of 20 September, 2021
-Tags: #xdr #ransomware #
+Tags: #xdr #ransomware #malware #android
 
-=== Active Threats
+=== Active Threats/Breaches/Data Leak
+. https://www.cyberscoop.com/blackmatter-new-cooperative-ransomware-iowa/[Ransomware gang strikes Iowa agriculture business New Cooperative, the latest hack on food supply chain]
+. https://nakedsecurity.sophos.com/2021/09/20/back-to-basics-as-courier-scammers-skip-fake-fees-and-missed-deliveries/[“Back to basics” as courier scammers skip fake fees and missed deliveries]
+. https://www.syxsense.com/linux-vulnerabilities-09-20-2021[Linux Vulnerabilities of the Week: September 20, 2021]
+. https://www.bleepingcomputer.com/news/security/republican-governors-association-email-server-breached-by-state-hackers/[Republican Governors Association email server breached by state hackers]
 . https://thehackernews.com/2021/09/a-new-wave-of-malware-attack-targeting.html[A New Wave of Malware Attack Targeting Organizations in South America]
 . https://www.csoonline.com/article/3262972/7-hot-cyber-security-trends-and-4-going-cold.html[7 hot cybersecurity trends (and 4 going cold)]
+. https://www.bleepingcomputer.com/news/security/eventbuilder-misconfiguration-exposes-microsoft-event-registrant-data/[EventBuilder misconfiguration exposes Microsoft event registrant data]
 
 === Incident Response
 . https://www.csoonline.com/article/3632854/7-unexpected-ransomware-costs.html[7 unexpected ransomware costs]
@@ -39,6 +44,8 @@ Tags: #xdr #ransomware #
 === Privacy
 
 === FYI!
+. https://hackercombat.com/microsoft-researches-ransomware-attack-targeting-app-developers/[Microsoft Researches Ransomware Attack Targeting App Developers]
+. https://www.cyberscoop.com/ftc-privacy-alvaro-bedoya-big-tech/[Momentum builds to strengthen FTC's role as privacy enforcer, though hurdles remain]
 . https://thehackernews.com/2021/09/europol-busts-major-cybercrime-ring.html[Europol Busts Major Crime Ring, Arrests Over 100 Online Fraudsters]
 . https://newsroom.nccgroup.com/pressreleases/ncc-group-reveals-threefold-increase-in-targeted-ransomware-attacks-in-2021-3124798[NCC Group reveals threefold increase in targeted ransomware attacks in 2021]
 . https://securityaffairs.co/wordpress/122382/cyber-crime/att-hacking-scheme-man-sentenced.html[Pakistani man sentenced to 12 years of prison for his role in AT&T hacking scheme]
