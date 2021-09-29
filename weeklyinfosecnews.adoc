@@ -83,6 +83,7 @@ Tags: #xdr #ransomware #malware #android
 === Privacy
 
 === FYI!
+. https://www.cyberscoop.com/arbitration-cybercriminal-xss-exploit-revil-ransomware/[Ransomware gangs are starting more drama on cybercrime forums, upending 'honor among thieves' conventions]
 . https://hackercombat.com/microsoft-researches-ransomware-attack-targeting-app-developers/[Microsoft Researches Ransomware Attack Targeting App Developers]
 . https://www.cyberscoop.com/ftc-privacy-alvaro-bedoya-big-tech/[Momentum builds to strengthen FTC's role as privacy enforcer, though hurdles remain]
 . https://thehackernews.com/2021/09/europol-busts-major-cybercrime-ring.html[Europol Busts Major Crime Ring, Arrests Over 100 Online Fraudsters]
