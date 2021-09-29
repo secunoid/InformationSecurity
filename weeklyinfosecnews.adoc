@@ -30,6 +30,8 @@ This newsletter is updated daily with news grouped by week.
 Tags: #atlassian #confluence #rce #brazil #pixstealer #group-ib #finspy #UEFIbootkit #finfisher
 
 === Active Threats
+. https://www.recordedfuture.com/chinese-apt-groups-target-afghan-telecommunications-firm/[4 Chinese APT Groups Identified Targeting Mail Server of Afghan Telecommunications Firm Roshan]
+. https://krebsonsecurity.com/2021/09/the-rise-of-one-time-password-interception-bots/[The Rise of One-Time Password Interception Bots]
 . https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-microsoft-edge-could-allow-for-arbitrary-code-execution_2021-123/[Multiple Vulnerabilities in Microsoft Edge Could Allow for Arbitrary Code Execution]
 . https://thehackernews.com/2021/09/new-finspy-malware-variant-infects.html[New FinSpy Malware Variant Infects Windows Systems With UEFI Bootkit]
 . https://thehackernews.com/2021/09/atlassian-confluence-rce-flaw-abused-in.html[Atlassian Confluence RCE Flaw Abused in Multiple Cyberattack Campaigns]
@@ -39,14 +41,18 @@ Tags: #atlassian #confluence #rce #brazil #pixstealer #group-ib #finspy #UEFIboo
 === Incident Response
 
 === Privacy
+. https://blogs.cisco.com/security/building-consumer-confidence-through-transparency-and-control[Building Consumer Confidence Through Transparency and Control]
 
 === FYI!
+. https://www.recordedfuture.com/business-fraud-laundering-fund-criminal-underground/[The Business of Fraud: Laundering Funds in the Criminal Underground]
+. https://blogs.cisco.com/security/the-new-trust-standard[The New Trust Standard]
 . https://www.msspalert.com/investments/cyber-insurance-funding-coalition-raises-205-million/[Cyber insurance & security company Coalition raises $205 million]
 . https://www.csoonline.com/article/3633907/4-lessons-from-recent-microsoft-azure-cloud-vulnerabilities.html[4 lessons from recent Microsoft Azure cloud vulnerabilities]
 . https://www.csoonline.com/article/3303580/5-tips-for-better-cloud-security.html[5 tips for better cloud security]
 . https://securityaffairs.co/wordpress/122710/cyber-crime/group-ib-ceo-arrested-treason-changes.html[Russian media reported that the police made searches in the Moscow office of security firm Group-IB apparently linked to an investigation into a criminal case]
 
 === Tools/Frameworks/Guidelines
+. https://umbrella.cisco.com/blog/remote-browser-isolation-protects-users-from-online-threats[Protecting Users From Online Threats With Remote Browser Isolation]
 . https://securityaffairs.co/wordpress/122718/security/hardening-access-via-vpn-solutions.html[NSA, CISA release guidance on hardening remote access via VPN solutions]
 . https://www.kitploit.com/2021/09/kodex-privacy-and-security-engineering.html[Kodex - A Privacy And Security Engineering Toolkit: Discover, Understand, Pseudonymize, Anonymize, Encrypt And Securely Share Sensitive And Personal Data: Privacy And Security As Code]
 
