@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.20.01
+v1.21.09.29.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -26,6 +26,24 @@ https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 This newsletter is updated daily with news grouped by week.
 
 <<<
+== Week of 27 September, 2021
+Tags: #atlassian #confluence #rce
+
+=== Active Threats
+. https://thehackernews.com/2021/09/atlassian-confluence-rce-flaw-abused-in.html[Atlassian Confluence RCE Flaw Abused in Multiple Cyberattack Campaigns]
+. 
+
+=== Incident Response
+
+=== Privacy
+
+=== FYI!
+
+=== Tools/Frameworks/Guidelines
+. https://securityaffairs.co/wordpress/122718/security/hardening-access-via-vpn-solutions.html[NSA, CISA release guidance on hardening remote access via VPN solutions]
+
+
+
 == Week of 20 September, 2021
 Tags: #xdr #ransomware #malware #android
 
@@ -120,4 +138,4 @@ Tags:
 
 === FYI!
 
-=== Tools/Frameworks
+=== Tools/Frameworks/Guidelines
