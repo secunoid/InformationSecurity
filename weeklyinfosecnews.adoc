@@ -41,6 +41,7 @@ Tags: #atlassian #confluence #rce
 
 === Tools/Frameworks/Guidelines
 . https://securityaffairs.co/wordpress/122718/security/hardening-access-via-vpn-solutions.html[NSA, CISA release guidance on hardening remote access via VPN solutions]
+. https://www.kitploit.com/2021/09/kodex-privacy-and-security-engineering.html[Kodex - A Privacy And Security Engineering Toolkit: Discover, Understand, Pseudonymize, Anonymize, Encrypt And Securely Share Sensitive And Personal Data: Privacy And Security As Code]
 
 
 
