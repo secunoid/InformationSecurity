@@ -1,6 +1,6 @@
 = Weekly Information Security News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.29.01
+v1.21.09.30.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -30,6 +30,8 @@ This newsletter is updated daily with news grouped by week.
 Tags: #atlassian #confluence #rce #brazil #pixstealer #group-ib #finspy #UEFIbootkit #finfisher #tomiris #conti #ransomware #solarwinds #apple #ios15
 
 === Active Threats
+. https://www.trendmicro.com/en_us/research/21/i/mac-users-targeted-by-trojanized-iterm2-app.html[Mac Users Targeted by Trojanized iTerm2 App]
+. https://www.cyberscoop.com/amnesty-international-spyware-scam-pegasus/[Hackers posed as Amnesty International, promising anti-spyware tool that actually collects passwords]
 . https://securityaffairs.co/wordpress/122740/hacking/lock-screen-vulnerability.html[Expert discloses new iPhone lock screen vulnerability in iOS 15]
 . https://threatpost.com/telegram-bots-compromise-paypal/175099/[Threat Actors Weaponize Telegram Bots to Compromise PayPal Accounts]
 . https://threatpost.com/conti-ransomware-backups/175114/[Conti Ransomware Expands Ability to Blow Up Backups]
