@@ -37,7 +37,6 @@ Tags: #atlassian #confluence #rce #brazil #pixstealer #group-ib #finspy #UEFIboo
 . https://www.bleepingcomputer.com/news/security/ransomexx-ransomware-linux-encryptor-may-damage-victims-files/[RansomEXX ransomware Linux encryptor may damage victims' files]
 . https://threatpost.com/google-emergency-update-chrome-zero-days/175266/[Google Emergency Update Fixes Two Chrome Zero Days]
 . https://www.trendmicro.com/en_us/research/21/i/mac-users-targeted-by-trojanized-iterm2-app.html[Mac Users Targeted by Trojanized iTerm2 App]
-
 . https://www.cyberscoop.com/amnesty-international-spyware-scam-pegasus/[Hackers posed as Amnesty International, promising anti-spyware tool that actually collects passwords]
 . https://securityaffairs.co/wordpress/122740/hacking/lock-screen-vulnerability.html[Expert discloses new iPhone lock screen vulnerability in iOS 15]
 . https://threatpost.com/telegram-bots-compromise-paypal/175099/[Threat Actors Weaponize Telegram Bots to Compromise PayPal Accounts]
