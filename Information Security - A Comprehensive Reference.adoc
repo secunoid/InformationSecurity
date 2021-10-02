@@ -2029,18 +2029,18 @@ All organizations who traditionally had brick and mortar presence are moving to 
 === What should I do to protect myself online?
 It is key that we practise good hygiene when using online services:
 
-. Ensure you are using the latest version of the operating systems on your devices.
-.. Windows Computers: Latest version of Windows10 and associated patches
-.. Apple Mac Computers: Latest version of Mac OS
-.. Apple iPad: : Latest version of iOS
-.. Apple iPhones: Latest versino of iOS
-.. Apple Watch: Latest version of WatchOS
-.. Android Phones: Latest version of Android OS
-.. Android Tablets: Latest version of the Android OS
-. Enable Multifactor Authentication
-. Use a password that is at least 13 characters long.  If the site allows, try to use a passphrase instead, such as "My cat does not chase mice!95"
-. Ensure you are using the latest versino of the browser
-. when re-cycling or selling your electronic device make sure you factory reset it so that none of your information stays on it.
+* Ensure you are using the latest version of the operating systems on your devices.
+** Windows Computers: Latest version of Windows10 and associated patches
+** Apple Mac Computers: Latest version of Mac OS
+** Apple iPad: : Latest version of iOS
+** Apple iPhones: Latest versino of iOS
+** Apple Watch: Latest version of WatchOS
+** Android Phones: Latest version of Android OS
+** Android Tablets: Latest version of the Android OS
+* Enable Multifactor Authentication
+* Use a password that is at least 13 characters long.  If the site allows, try to use a passphrase instead, such as "My cat does not chase mice!95"
+* Ensure you are using the latest versino of the browser
+* when re-cycling or selling your electronic device make sure you factory reset it so that none of your information stays on it.
 
 
 <<<
