@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.19.01
+v1.21.09.10.19.02.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -2004,9 +2004,40 @@ Some of the strategies and methodologies that a business implements are directly
 . https://www.forbes.com/sites/danpontefract/2020/03/01/in-the-wake-of-coronavirus-heres-how-to-lead-remote-employees/#1d44ec7152a4
 . https://www.timedoctor.com/blog/run-a-remote-team/
 	
-
-
 === Disaster Recovery
+
+<<<
+== Online Protection
+The purpose of the internet was to connect networks for information sharing.  However, the marketers and service providers have embraced it.
+
+=== Marketers 
+ Are offering free services to get access to your information such as:
+. Age
+. Gender
+. Income
+. Home address
+. Shopping preferences
+. Personal interests
+. etc.
+
+This helps them target ads to lure you into making impulse purchases.  By offering you free services, the marketing companies such as Google, Facebook, and others are after your personal information, which they sell to organizations to target their products and services to you.
+
+=== Service Providers
+All organizations who traditionally had brick and mortar presence are moving to online presence.  When you start engaging with these business online you need to have a way to identify yourself, which is usually via a userid and password.  Depending on the information these organizations hold about you, if your userid and password get compromised this could have negative consequences on you.
+
+=== What should I do to protect myself online?
+It is key that we practise good hygiene when using online services: 
+. Ensure you are using the latest version of the operating systems on your devices.
+.. Windows Computers: Latest version of Windows10 and associated patches
+.. Apple Mac Computers: Latest version of Mac OS
+.. Apple iPad: : Latest version of iOS
+.. Apple iPhones: Latest versino of iOS
+.. Apple Watch: Latest version of WatchOS
+.. 
+.. Android Phones: Latest version of Adnroid OS
+.. 
+. Enable Multifactor Authentication
+. 
 
 
 <<<
