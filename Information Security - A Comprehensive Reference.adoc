@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.09.10.19.02.01
+v1.21.10.11.19.02.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -2029,7 +2029,15 @@ All organizations who traditionally had brick and mortar presence are moving to 
 === What should I do to protect myself online?
 It is key that we practise good hygiene when using online services:
 
-* Ensure you are using the latest version of the operating systems on your devices.
+* Use a password that is at least 13 characters long.  If the site allows, try to use a passphrase instead, such as "My cat does not chase mice!95"
+* Use a password manager to store your passwords this avoids the urge to write passwords on paper/yellow sticky notes.
+* No passwords can be same
+* Enable Multifactor Authentication where possible
+* Ensure you are using the latest versins of all software on your computers
+* When re-cycling or selling your electronic device make sure you factory reset it so that none of your information stays on it.
+* Think before you click on links.
+* Only open emails from people you know
+* Ensure you are using the latest version of the operating systems on all your devices.
 ** Windows Computers: Latest version of Windows10 and associated patches
 ** Apple Mac Computers: Latest version of Mac OS
 ** Apple iPad: : Latest version of iOS
@@ -2037,10 +2045,7 @@ It is key that we practise good hygiene when using online services:
 ** Apple Watch: Latest version of WatchOS
 ** Android Phones: Latest version of Android OS
 ** Android Tablets: Latest version of the Android OS
-* Enable Multifactor Authentication
-* Use a password that is at least 13 characters long.  If the site allows, try to use a passphrase instead, such as "My cat does not chase mice!95"
-* Ensure you are using the latest versino of the browser
-* when re-cycling or selling your electronic device make sure you factory reset it so that none of your information stays on it.
+
 
 
 <<<
