@@ -193,6 +193,7 @@ Before any solution is implemented, a security policy must be created to ensure 
 To ensure the success of a information security program, following metrics should be tracked over at least a year.
 
 Most Important ones at the top
+
 * Asset Count
 ** Servers
 ** Laptops
