@@ -189,6 +189,37 @@ image::InformationSecurityProgram.png[]
 Before any solution is implemented, a security policy must be created to ensure all the industry, regulatory,  and other compliance requirements are documented.  This document will provide the security requirements to ensure the deployment is secure. All the requirements should be very high level without delving into implementation details.
 
 <<<
+=== Security Metrics
+To ensure the success of a information security program, following metrics should be tracked over at least a year.
+
+Most Important ones at the top
+* Asset Count
+** Servers
+** Laptops
+** Desktops
+** Switches
+** Routers
+** Firewalls
+** Printers
+** Access Points
+* AD Asset Counts
+** User accounts
+** Application Accounts
+** Computer Accounts
+** Groups
+** Mailboxes
+* Patching
+** OS Patching
+** Application Patching
+* Active Threat Metrics
+** Malware Blocked
+** Malware Allowed
+** Phishing Blocked
+** Phishing Allowed
+** DDOS Attacks Prevented
+
+
+<<<
 === Security Manual
 This document goes into details on the how the security policy requirements must be implemented.  It can be one document, or multiple depending on the size of implementation.
 
