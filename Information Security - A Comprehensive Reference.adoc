@@ -1856,6 +1856,14 @@ Development, Operations, and Security operate as silos.
 
 image::knowyourapplication.png[title="Know your application"]
 
+The benefits of DEVSECOPS are:
+
+* Observability throughout the varios stages of a user story. IDEA --> CODE --> BUILD --> DEPLOY --> MANAGE --> LEARN
+* Traceability
+* Confidence
+* Compliance
+
+
 Some activities to consider for DevSecOps:
 
 * Threat Modeling
@@ -1873,9 +1881,9 @@ Teams who are considering DevSecOps should think about:
 
 Five principles for Securing DevOps
 
-* Automate Security In
+* Automate Security Into you DevOps process
 * Integration to fail quickly
-* No false Alarm
+* No false Alarms
 * Build Security Champions
 * Keep Operational Visibility
 
