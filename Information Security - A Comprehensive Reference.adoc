@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.10.16.01
+v1.21.10.31.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -647,6 +647,41 @@ All the servers that the distributed ledger platform runs on must be:
 . Monitored for availability
 . Intrusion Detection/Intrusion Protection mechanisms deployed to protect from attacks coupled with SIEM for proactive defense.
 . Based on the security be in a DMZ 
+
+<<<
+== Container Security
+A container environment consists of components that increase your attack surface.
+
+. Images
+.. Keep updated at all times
+.. Sign
+. Image Registry
+.. Private
+.. Monitor the registry
+.. Registry host server is secure
+. Runtime
+.. Good application security
+.. Monitor network protocols
+.. Monitor network payloads
+.. Monitor the host
+. Orchestration Platforms: manage container lifecycle (Kubernetes, Docker, OCP)
+.. Set limits on provileged users
+.. Set limits on amounts of privilege you provide
+.. Host running the orchestration platform
+. Host OS that manages the Docker Daemon and Docker Client
+.. Selinux
+.. Access control
+.. Monitor
+
+=== Container Scanners
+DockerBench tests containers
+OpenSCAP
+
+=== Container Monitoring
+Prometheus
+
+=== Firewall
+Cilium
 
 <<<
 == Vulnerability Management Program
