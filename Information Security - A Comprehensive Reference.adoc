@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.10.31.01
+v1.21.11.06.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -650,6 +650,11 @@ All the servers that the distributed ledger platform runs on must be:
 
 <<<
 == Container Security
+A container is a way to package application with all the necessary dependencies and configuration.  It is a portable artifact, easily shared and moved around.  Makes development and deployment more efficient.
+
+Containers are layers of images.  Mostly Linux Base Image, because of small size.  Application goes on top.
+
+=== Container Environment
 A container environment consists of components that increase your attack surface.
 
 . Images
