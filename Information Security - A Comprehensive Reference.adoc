@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.11.06.01
+v1.21.11.07.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -195,6 +195,9 @@ To ensure the success of a information security program, following metrics shoul
 Most Important ones at the top
 
 * Asset Count
+** Access Points
+** Cameras
+** Domains
 ** Servers
 ** Laptops
 ** Desktops
@@ -202,7 +205,6 @@ Most Important ones at the top
 ** Routers
 ** Firewalls
 ** Printers
-** Access Points
 * AD Asset Counts
 ** User accounts
 ** Application Accounts
