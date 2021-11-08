@@ -711,6 +711,9 @@ The architecture should be to enable business to ensure time to market is reduce
 
 Microservices are key, and three microservices that play key role are authentication, authorization, and logging.
 
+=== Cost Management
+
+
 
 
 
