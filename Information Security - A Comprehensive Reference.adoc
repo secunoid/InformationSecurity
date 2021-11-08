@@ -691,6 +691,26 @@ Prometheus
 Cilium
 
 <<<
+== Cloud Computing
+Cloud has commoditized compute making it very easy to deploy environments at break neck speed.  With this speed comes the need for careful planning of the cloud deployments. Not all workloads are built to be migrated to the cloud.
+
+=== Human Resources
+First action every organization has to take is to ensure they have resources who understand how cloud environments are configured. Training is the key.  Configuring on premise infrastructure is quite different from configuring infrastructure in the cloud, it is a total paradigm shift.
+
+=== Security
+Since the cloud technology is still evolving, misconfiguration is a given that will happen.  Hence what the organizations have ensure is to embed "by design" principles into their cloud strategy.  A framework has to be established which ensures that as the data moves into the cloud is tagged at the source and those tags are used to ensure it is protected while in use, in transit, and in storage.
+
+Ensure that:
+
+. Your infrastructure teams understand Infrastrucutre As Code (IaC) for the clouds you will be deploying in.
+. A process is in place where the IaC templates are 
+
+=== Architecture
+
+
+
+
+<<<
 == Vulnerability Management Program
 Red team-blue team exercises take their name from their military antecedents. The idea is simple: One group of security pros — a red team — attacks something, and an opposing group — the blue team — defends it. Originally, the exercises were used by the military to test force-readiness.
 
