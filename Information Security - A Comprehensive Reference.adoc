@@ -703,9 +703,13 @@ Since the cloud technology is still evolving, misconfiguration is a given that w
 Ensure that:
 
 . Your infrastructure teams understand Infrastrucutre As Code (IaC) for the clouds you will be deploying in.
-. A process is in place where the IaC templates are 
+. A process is in place where the IaC templates are reviewed to ensure a security review is conducted to avoid misconfiguration that may expose the data
+. The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
 
 === Architecture
+The architecture should be to enable business to ensure time to market is reduced as much as possible when it comes to IT.
+
+Microservices are key, and three microservices that play key role are authentication, authorization, and logging.
 
 
 
