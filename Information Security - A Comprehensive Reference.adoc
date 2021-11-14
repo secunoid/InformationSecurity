@@ -652,6 +652,19 @@ All the servers that the distributed ledger platform runs on must be:
 . Based on the security be in a DMZ 
 
 <<<
+== Security-as-Code
+
+Apply automation of process and policies to:
+
+. Test the source code
+. Test the code's execution
+. Test the app's infrastructure
+. Test the Infrastructure as Code
+. Monitor and protect access to "the app" and its data
+. Secure the software factory itself
+
+
+<<<
 == Container Security
 A container is a way to package application with all the necessary dependencies and configuration.  It is a portable artifact, easily shared and moved around.  Makes development and deployment more efficient.
 
