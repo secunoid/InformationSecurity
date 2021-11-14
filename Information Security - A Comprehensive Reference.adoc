@@ -654,7 +654,7 @@ All the servers that the distributed ledger platform runs on must be:
 <<<
 == Security-as-Code
 
-Apply automation of process and policies to:
+Process:
 
 . Test the source code
 . Test the code's execution
@@ -663,6 +663,19 @@ Apply automation of process and policies to:
 . Monitor and protect access to "the app" and its data
 . Secure the software factory itself
 
+Policy considerations
+
+. What gets tested? Fail build with critical vulns?
+. Who can approve exceptions?
+. Frequency of testing
+. Are containers and packages scanned?
+. Who reviews configurations?
+. Are templates required/enforced?
+. How is IaC testing and protection incorporated?
+. Who reviews/approves?
+. Inspecting E-W and N-S traffict/from containers, clusters, and pods
+. Separation of duties?
+. Common controls
 
 <<<
 == Container Security
