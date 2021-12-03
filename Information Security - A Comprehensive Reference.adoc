@@ -216,6 +216,8 @@ Most Important ones at the top
 ** OS Patching
 ** Application Patching
 * Active Threat Metrics
+** Mean Time To Detect Threats
+** Mean Time To Respond To Threats
 ** Malware Blocked
 ** Malware Allowed
 ** Phishing Blocked
