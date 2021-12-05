@@ -748,8 +748,21 @@ Prevent it by:
 ... Communication Rules
 . Securing Secrets Data
 .. Do not use as environment vars or hard coded
-.. By Default, secret data is stored in plaintext in etcdl
+.. By Default, secret data is stored in plaintext in etcd
+... Restrict access to etcd data
+... Encrypt etcd backups
+... Run & Manage etcd outside the cluster
 .. K8s supports encryption at rest
+.. Use tools like HashiCorp Vault
+. Securing Access to K8s cluster
+.. Authentication
+... Certificates in Kubernetes
+... Client certificates for human users
+... Service Accounts for non-human users
+. Securing Access t K8s cluster
+.. Do not use NodePort
+.. LoadBalancer is better
+.. Ingress - even better
 
 
 
