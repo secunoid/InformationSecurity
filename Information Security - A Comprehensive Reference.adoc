@@ -722,6 +722,22 @@ Prometheus
 === Firewall
 Cilium
 
+=== Kubernetes
+How do I run my workloads securely in Kubernetes
+
+. Code frum untrusted registries
+. Vulnerabilities in tools of OS or code libraries
+. Bloated Base Images
+
+Prevent it by:
+
+. Use approved lean images
+. Create list of trusted registires
+. Image Scanning
+
+
+
+
 <<<
 == Cloud Computing
 Cloud has commoditized compute making it very easy to deploy environments at break neck speed.  With this speed comes the need for careful planning of the cloud deployments. Not all workloads are built to be migrated to the cloud.
