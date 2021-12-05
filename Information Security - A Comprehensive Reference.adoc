@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.21.11.14.01
+v1.21.12.05.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -723,7 +723,7 @@ Prometheus
 Cilium
 
 === Kubernetes
-How do I run my workloads securely in Kubernetes
+How do I run my workloads securely in Kubernetes to:
 
 . Code frum untrusted registries
 . Vulnerabilities in tools of OS or code libraries
@@ -734,6 +734,26 @@ Prevent it by:
 . Use approved lean images
 . Create list of trusted registires
 . Image Scanning
+. Do not run containers with root
+. Avoid running privileged pods
+. Set limits on cluster resources for containers
+.. Resource Quota, limits the number of resources or capacity of resources granted
+..
+. Secure Communication between pods
+.. Network Policies
+.. Firewalls for Pods
+.. Namespaces, keep resources and teams seperate from each other
+.. Service Mesh, takes the logic of communication between services from app code to network layer
+... mTLS
+... Communication Rules
+. Securing Secrets Data
+.. Do not use as environment vars or hard coded
+.. By Default, secret data is stored in plaintext in etcdl
+.. K8s supports encryption at rest
+
+
+
+Prometheus container should not be running as root.
 
 
 
