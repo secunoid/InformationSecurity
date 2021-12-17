@@ -1,0 +1,12 @@
+[
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "$repo=repo:secunoid/InformationSecurity\r\n$whoami=secunoid"
+  },
+  {
+    "kind": 2,
+    "language": "github-issues",
+    "value": "$repo is:closed assignee:$whoami"
+  }
+]
