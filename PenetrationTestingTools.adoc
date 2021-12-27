@@ -200,13 +200,15 @@ https://www.hackingarticles.in/command-control-poshc2/[PoshC2] is an open-source
 
 ===== Persistence
 
-===== Chisel
+===== To Organize by attach phase
+
+====== Chisel
 
 
 
 
 
-===== DNSCAT
+====== DNSCAT
 DNScat is such praised tool because it can create a command and control tunnel over the DNS protocol which lets an attacker work in stealth mode. You can access any data along with uploading and downloading files and to get a shell. For this tool to work over 53 port, you don’t need to have authoritative access to DNS server, you can just simply establish your connection over port 53 and it will be faster and it will still be sensed as usual traffic. But it makes its presence well known in the packet log.
 
 DNScat is made of two components i.e. a server and a client. To know the working of dnscat, it is important to understand both of these components.
@@ -216,9 +218,9 @@ The client is intended to be kept running on a target machine. It’s written in
 The server is intended to be kept running on a definitive DNS server. It’s developed in ruby and relies upon a few distinct gems. When you run it, much like the client, you indicate from which domain(s) it listens to over 53. When it gets traffic for one of those domains, it endeavours to set up a legitimate association. It gets other traffic it will automatically disregard it but, however, it can also advance it upstream.
 Link: https://www.hackingarticles.in/dnscat2-command-and-control-over-the-dns/?
 
-===== DNSSPOOF
+====== DNSSPOOF
 
-===== Empire
+====== Empire
 Empire 3.0 is a post-exploitation framework that includes a pure-PowerShell 2.0 Windows agent, and compatibility with Python 2.x/3.x Linux/OS X agents. It is the merger of the previous PowerShell Empire and Python EmPyre projects. The framework offers cryptologically-secure communications and a flexible architecture. On the PowerShell side, Empire implements the ability to run PowerShell agents without needing powershell.exe, rapidly deployable post-exploitation modules ranging from key loggers to Mimikatz, and adaptable communications to evade network detection, all wrapped up in a usability-focused framework. PowerShell Empire premiered at BSidesLV in 2015 and Python EmPyre premeiered at HackMiami 2016. BC-Security presented updates to further evade Microsoft Antimalware Scan Interface (AMSI) and JA3/S signatures at DEF CON 27.
 
 Empire relies heavily on the work from several other projects for its underlying functionality. We have tried to call out a few of those people we've interacted with heavily here and have included author/reference link information in the source of each Empire module as appropriate. If we have failed to properly cite existing or prior work, please let us know at Empire@BC-Security.org.
@@ -227,31 +229,31 @@ Empire is developed by @harmj0y, @sixdub, @enigma0x3, @rvrsh3ll, @killswitch_gui
 
 https://github.com/BC-SECURITY/Empire/ 
 
-===== Ettercap
+====== Ettercap
 
-===== Exiftool
+====== Exiftool
 Shows exif data about a file.   To ensure you get the correct date time meta data, always use wget.
 
-===== Eyewitness
+====== Eyewitness
 
-===== Evilarc
+====== Evilarc
 evilarc.py is an archiving tool that allows for folder manipulation.
 
-===== FatRat
+====== FatRat
 TheFatRat by Edo Maland, is a massive exploiting tool which compiles a malware with famous payloads, generate backdoor that allows easy post exploitation attacks such as browser attacks etc.. and then the compiled maware can be executed on Linux , Windows , Mac and Android. TheFatRat Provides An Easy way to create Backdoors and Payload which can bypass most anti-virus.
 
 Link: https://www.blackhatethicalhacking.com/tools/thefatrat/
 
 
-===== Ghidra
+====== Ghidra
 Ghidra is a software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra supports a wide variety of processor instruction sets and executable formats and can be run in both user-interactive and automated modes. Users may also develop their own Ghidra plug-in components and/or scripts using Java or Python.
 Link: https://ghidra-sre.org/
 
-===== Gitleaks
+====== Gitleaks
 
 Link: https://github.com/zricethezav/gitleaks
 
-===== Gobuster
+====== Gobuster
 
 Gobuster is a tool used to brute-force:
 
@@ -277,19 +279,19 @@ Author:: OJ Reeves
 License:: Apache-2.0
 Syntax:: gobuster dir -u http://<site-name or IP address>/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o dirbust-root.log
 
-===== Hashcat
+====== Hashcat
 
-===== HTTPROBE
+====== HTTPROBE
 [horizontal]
 Github:: https://github.com/tomnomnom/httprobe
 Perform a scan on specific ports:: cat domains.txt | httprobe -s -p https:8443
 
 
-===== Hydra
+====== Hydra
 
-===== Impacket-secretsdump
+====== Impacket-secretsdump
 
-===== JQ
+====== JQ
 jq is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease that sed, awk, grep and friends let you play with text.
 
 jq is written in portable C, and it has zero runtime dependencies. You can download a single binary, scp it to a far away machine of the same type, and expect it to work.
@@ -298,7 +300,7 @@ jq can mangle the data format that you have into the one that you want with very
 
 More information here: https://stedolan.github.io/jq/
 
-===== Kali Linux
+====== Kali Linux
 
 [horizontal]
 Install ntpdate package:: sudo apt-get install ntpdate
@@ -307,32 +309,32 @@ Install all the tools on Kali:: sudo apt-get install kali-linux-full
 Kali Tools Listing:: https://en.kali.tools/all/
 Update Kali:: sudo apt-get update; sudo apt-get dist-upgrade;sudo apt-get clean
 
-===== LinEnum
+====== LinEnum
 Linux enumeration & privilege escalation checks
 
 Link: https://github.com/rebootuser/LinEnum
 
 
 
-===== Mentalist
+====== Mentalist
 Mentalist is a graphical tool for custom wordlist generation. It utilizes common human paradigms for constructing passwords and can output the full wordlist as well as rules compatible with Hashcat and John the Ripper.
 Link: https://github.com/sc0tfree/mentalist/blob/master/README.md
 
-===== Metasploit
+====== Metasploit
 
 [horizontal]
 On Kali metasploit is in this directory:: /usr/share/metssploit-framework
 To Update metasploit:: apt update; apt install metasploit-framework
 Metasploit Online Database:: https://www.rapid7.com/db/modules
 
-===== Mimikatz
+====== Mimikatz
 Mimikatz is a leading post-exploitation tool that dumps passwords from memory, as well as hashes, PINs and Kerberos tickets. Other useful attacks it enables are pass-the-hash, pass-the-ticket or building Golden Kerberos tickets. This makes post-exploitation lateral movement within a network easy for attackers.
 
 Link: https://github.com/gentilkiwi/mimikatz
 
 
 
-===== Nikto
+====== Nikto
 Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.
 
 Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker's anti-IDS methods in case you want to give it a try (or test your IDS system).
@@ -342,19 +344,19 @@ Not every check is a security problem, though most are. There are some items tha
 
 https://cirt.net/Nikto2 
 
-===== Powershell Empire
+====== Powershell Empire
 Empire has an inbuilt listener named http_hop which allows us to redirect our traffic to one of our another active listener after getting an agent. Thus, the name hop as it hops the agent from one listener to another in order to redirect traffic.
 
 Similar to Metasploit, the hop listener in empire uses a hop.php file. When you activate the hop listener, it will generate three PHP files that will redirect your existing listener. Place the said files in your jump server (ubuntu) and then set up your stager in according to get the session through the mediator i.e. our hop listener.
 Link: https://www.hackingarticles.in/hiding-ip-during-pentest-using-powershell-empire-http_hop/
 
-===== Pupy
+====== Pupy
 Pupy is a cross-platform, post exploitation tool as well as a multi-function RAT. It’s written in python which makes it very convenient. It also has low detectability that’s why it’s a great tool for the red team.  Pupy can communicate using multiple transports, migrate into processes using reflective injection, and load remote python code, python packages and python C-extensions from memory.
 
 It uses a reflected DLL to load python interpreter from memory which is great as nothing will be shown in the disk. It doesn’t have any special dependencies. It can also migrate into other processes. The communication protocols of pupy are modular and stackable. It can execute non-interactive commands on multiple hosts at once. All the interactive shells can be accessed remotely.
 Link: https://www.hackingarticles.in/command-control-tool-pupy/
 
-===== Responder
+====== Responder
 This tool is first an LLMNR and NBT-NS responder, it will answer to *specific* NBT-NS (NetBIOS Name Service) queries based on their name suffix (see: http://support.microsoft.com/kb/163409). By default, the tool will only answers to File Server Service request, which is for SMB. The concept behind this, is to target our answers, and be stealthier on the network. This also helps to ensure that we don’t break legitimate NBT-NS behavior. You can set the -r option to 1 via command line if you want this tool to answer to the Workstation Service request name suffix.
 
 Usage Example
@@ -362,9 +364,9 @@ Specify the IP address to redirect to (-i 192.168.1.202), enabling the WPAD rogu
 
 	responder -i 192.168.1.202 -w On -r On -f On
 
-===== Sbmclient
+====== Sbmclient
 
-===== Sharp Cookie Monster
+====== Sharp Cookie Monster
 
 If you steal a users Chrome cookie, you can log into their accounts on every website they are logged into.
 
@@ -374,11 +376,11 @@ This tool is based on Cookie Crimes module: https://github.com/defaultnamehere/c
 
 Link: https://www.blackhatethicalhacking.com/tools/sharp-cookie-monster/
 
-===== Smbmap
+====== Smbmap
 
-===== SSLStrip
+====== SSLStrip
 
-===== Sublist3r
+====== Sublist3r
 
 Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu, and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster, and ReverseDNS.
 
@@ -412,18 +414,18 @@ Source:: https://github.com/aboul3la/Sublist3r
 Author:: Ahmed Aboul-Ela
 License:: GPL-2+
 
-===== TheHarvester
+====== TheHarvester
 
-===== Tokenvator
+====== Tokenvator
 A Tool to Elevate Privilege using Windows Tokens
 
 Link: https://blog.netspi.com/tokenvator-a-tool-to-elevate-privilege-using-windows-tokens/
 
-===== TruffleHog
+====== TruffleHog
 
 Link: https://github.com/dxa4481/truffleHog
 
-===== Wfuzz
+====== Wfuzz
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc.
 
 [horizontal]
@@ -431,4 +433,4 @@ Source:: https://github.com/xmendez/wfuzz/
 Author:: Christian Martorella, Carlos del ojo, Xavier Mendez aka Javi
 License:: GPLv2
 
-===== Yara
+====== Yara
