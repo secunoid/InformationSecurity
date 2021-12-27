@@ -948,7 +948,7 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 
 Here is a list of https://github.com/secunoid/InformationSecurity/blob/master/DFIRTools.adoc[DFIR Tools] that can be used when responding to incidents.
 
-Use this template https://github.com/secunoid/InformationSecurity/blob/master/Templates/SecurityThreatAssessment-IncidentResponseReport-Template-v01.odt[Security Threat Assessment & Incident Response Report] as required.
+Use https://github.com/secunoid/InformationSecurity/blob/master/Templates/SecurityThreatAssessment-IncidentResponseReport-Template-v01.odt[Security Threat Assessment & Incident Response Report Template] to establish an incident timeline and remeidation.
 
 === Preparation
 . Know your tools, practise, practise, practise
