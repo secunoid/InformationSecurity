@@ -309,64 +309,6 @@ Web site content is located on a non-system NTFS volume.
 <<<
 === Security Guidelines
 
-<<<
-
-<<<
-== Leadership
-Having the right leadership at every level is key to the success of an organization.  This starts all the way from the top.  Leading a team is just like tending to a garden, that needs constant grooming, support and care.  It is this capability that helps the leader identify any issues and correct them before they get out of control.
-
-Building high performing teams entirely depends on the leader.  The leader must understand they they have to deliverables are and then build their team based on business requriements to ensure alignment with business.
-
-One, is that the leader hires team members who are domian experts and also have experience developing high performing teams.
-
-Two, is that the leader is also a domain expert and is willing to groom and coach team members into the role they need to be in.
-
-In each case leader is they key, they should know enough about business and domains to lead and coach the teams.
-
-=== Leader vs Manager
-A manager typically ensures tasks are assigned and delivered on time.  A leader on the other hand is someone who provides direction to the organization and the team.  A Leader invests time and energy in grooming and coaching their team members to be successful in their career at the current organization and also in their future endavours.
-
-=== Why do team members leave?
-Here are some of the reasons that might cause team members to leave an organization.
-
-==== Not cultivating the team member
-Giving someone a title does not mean that they know exactly what is required.  To set the team member(s) for success the leader has to understand which key ingredients the team member is missing to fulfill the role.  Then come up with a plan to to coach them to build and/or strengthen those capabilities and slowly move them into higher roles.
-
-Inexperienced leaders often make this mistake of promoting a team member to a role without any coaching and skillset development.  Nine out of ten times, the leader has pretty much set the team member for failure and this also becomes the cause of stress and anxiety for the team member.  The team member ends up in meeting where they are expected for deliverables which they have never produced and have no idea on how to produce them.  Since the leader themselves are inexperienced they have no way of salvaging the situation either.
-
-Eventually team members start looking for ways out of the team or the organization.
-
-==== Not listening to experienced team members
-Following are the situations when a leader does not listen to an experience team member: 
-
-* Afraid of leading and bringing about the change, do not want to rock the boat
-* Are incapable of visualizing the big picture as they lack the knowledge and experience
-* Are in the wrong role, hence the hesitation
-* Don't have a vision
-* Don't have a strategy
-* Don't have the self-confidence
-
-==== Teams are not aligned with the organizational goals
-It is the leaders role to ensure team members are engaged.  Engagement is brought about when the leader: 
-
-* Ensures that the team is aware of the organizational goals and
-* Has put forth a plan for the team to execute upon
-* Engages with the team to track the progress and make changes as required
-* Ensures that their immediate teams, if they are managing multiple teams, are aware of of each other's goals and deliverables
-
-=== Important qualities of a leader 
-Following are some of the qualities a leader should have: 
-
-* Domain Expert, which means the leader is able to: 
-** Set vision/goals for the team
-** Provide career advise to team members
-** Coach and train team members and set them up for success at the current organization and for their future
-** Roll up the sleeves and work with the team
-** Provide direction to the team
-** Leverage their past exeprience
-* Understand the difference between Managing People vs Leading People
-* Good listener
-* Familiar with Project delivery methodologies
 
 
 <<<
@@ -2093,6 +2035,65 @@ Compliance function ensures that all the Industry, Governmental,  & Financial re
 ==== Assesment Tools
 
 Automating security assessments using Cloud Katana: https://www.microsoft.com/security/blog/2021/08/19/automating-security-assessments-using-cloud-katana/ 
+
+<<<
+== Leadership
+Having the right leadership at every level is key to the success of an organization.  This starts all the way from the top.  Leading a team is just like tending to a garden, that needs constant grooming, support and care.  It is this capability that helps the leader identify any issues and correct them before they get out of control.
+
+Building high performing teams entirely depends on the leader.  The leader must understand they they have to deliverables are and then build their team based on business requriements to ensure alignment with business.
+
+One, is that the leader hires team members who are domian experts and also have experience developing high performing teams.
+
+Two, is that the leader is also a domain expert and is willing to groom and coach team members into the role they need to be in.
+
+In each case leader is they key, they should know enough about business and domains to lead and coach the teams.
+
+=== Leader vs Manager
+A manager typically ensures tasks are assigned and delivered on time.  A leader on the other hand is someone who provides direction to the organization and the team.  A Leader invests time and energy in grooming and coaching their team members to be successful in their career at the current organization and also in their future endavours.
+
+=== Why do team members leave?
+Here are some of the reasons that might cause team members to leave an organization.
+
+==== Not cultivating the team member
+Giving someone a title does not mean that they know exactly what is required.  To set the team member(s) for success the leader has to understand which key ingredients the team member is missing to fulfill the role.  Then come up with a plan to to coach them to build and/or strengthen those capabilities and slowly move them into higher roles.
+
+Inexperienced leaders often make this mistake of promoting a team member to a role without any coaching and skillset development.  Nine out of ten times, the leader has pretty much set the team member for failure and this also becomes the cause of stress and anxiety for the team member.  The team member ends up in meeting where they are expected for deliverables which they have never produced and have no idea on how to produce them.  Since the leader themselves are inexperienced they have no way of salvaging the situation either.
+
+Eventually team members start looking for ways out of the team or the organization.
+
+==== Not listening to experienced team members
+Following are the situations when a leader does not listen to an experience team member: 
+
+* Afraid of leading and bringing about the change, do not want to rock the boat
+* Are incapable of visualizing the big picture as they lack the knowledge and experience
+* Are in the wrong role, hence the hesitation
+* Don't have a vision
+* Don't have a strategy
+* Don't have the self-confidence
+
+==== Teams are not aligned with the organizational goals
+It is the leaders role to ensure team members are engaged.  Engagement is brought about when the leader: 
+
+* Ensures that the team is aware of the organizational goals and
+* Has put forth a plan for the team to execute upon
+* Engages with the team to track the progress and make changes as required
+* Ensures that their immediate teams, if they are managing multiple teams, are aware of of each other's goals and deliverables
+
+=== Important qualities of a leader 
+Following are some of the qualities a leader should have: 
+
+* Domain Expert, which means the leader is able to: 
+** Set vision/goals for the team
+** Provide career advise to team members
+** Coach and train team members and set them up for success at the current organization and for their future
+** Roll up the sleeves and work with the team
+** Provide direction to the team
+** Leverage their past exeprience
+* Understand the difference between Managing People vs Leading People
+* Good listener
+* Familiar with Project delivery methodologies
+
+
 
 
 <<<
