@@ -947,10 +947,9 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 == Digital Forensics & Incident Response
 
 === Preparation
-. Never use flow charts for incident response
 . Know your tools, practise, practise, practise
 . Have procedures on when and how to use your tools
-. There are differences on how to respond to an incident based on based on environment, hence ensure you are familiar with the environment and know which tools to use.  Some to of environments are:
+. There are differences on how to respond to an incident based on based on environment, hence ensure you are familiar with the environment and know which tools to use.  You should have a playbook for each environment. Some to of environments are:
 .. On Premise
 .. Azure
 .. GCP
@@ -974,6 +973,8 @@ Controls, safeguards, countermeasures are implemented to reduce the risk.
 .. Router Logs
 .. Access Point Logs
 
+=== Playbooks
+
 ==== Windows Persistence
 Focus on System & Security logs.  Standard artifact utilized in any investigation.
 
@@ -994,219 +995,7 @@ Following log types are important:
 
 Scheduled tasks with abnormal names or directories.  Attackers usually create a verly long task name.  Check the command syntax.
 
-=== System Tools
 
-==== References
-. https://holisticinfosec.io/post/deepbluecli/[DeepBlueCLI: Powershell Threat Hunting]
-. https://www.netscylla.com/blog/2020/02/01/Threat-hunting-with-Windows-Event-Logs.html[Threat Hunting with Windows Event Logs & Sysmon]
-
-==== Autollr
-AutoLLR is a live Linux evidence collection script that gathers key artifacts important for Incident Response investigations. In addition to gathering artifacts AutoLLR does some low overhead post processing to produce refined results that analysts can look at immediately.
-
-Github: https://github.com/Dead-Simple-Scripts/AutoLLR 
-
-Dead Simple Scripts: http://github.com/Dead-Simple-Scripts 
-
-==== Autopsy
-Autopsy® is the premier end-to-end open source digital forensics platform. Built by Basis Technology with the core features you expect in commercial forensic tools, Autopsy is a fast, thorough, and efficient hard drive investigation solution that evolves with your needs.
-
-https://www.autopsy.com/
-
-==== Bluegate
-Proof of Concept (Denial of Service + scanner) for CVE-2020-0609 and CVE-2020-0610.
-
-These vulnerabilities allows an unauthenticated attacker to gain remote code execution with highest privileges via RD Gateway for RDP.
-
-Please use for research and educational purpose only.
-Link: https://github.com/ollypwn/BlueGate
-
-==== Bulk-extractor
-It is a program that extracts features such as email addresses, credit card numbers, URLs, and other types of information from digital evidence files. It is a useful forensic investigation tool for many tasks such as malware and intrusion investigations, identity investigations and cyber investigations, as well as analyzing imagery and pass-word cracking. The program provides several unusual capabilities including:
-
-* It finds email addresses, URLs and credit card numbers that other tools miss because it can process compressed data (like ZIP, PDF and GZIP ﬁles) and incomplete or partially corrupted data. It can carve JPEGs, office documents and other kinds of files out of fragments of compressed data. It will detect and carve encrypted RAR files.
-* It builds word lists based on all of the words found within the data, even those in compressed files that are in unallocated space. Those word lists can be useful for password cracking.
-* It is multi-threaded; running bulk_extractor on a computer with twice the number of cores typically makes it complete a run in half the time.
-* It creates histograms showing the most common email addresses, URLs, domains, search terms and other kinds of information on the drive.
-
-Link: https://tools.kali.org/forensics/bulk-extractor
-
-==== Cortex
-https://github.com/TheHive-Project/Cortex/[Cortex] tries to solve a common problem frequently encountered by SOCs, CSIRTs and security researchers in the course of threat intelligence, digital forensics and incident response: how to analyze observables they have collected, at scale, by querying a single tool instead of several?
-
-Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
-
-==== Cuckoo
-https://cuckoosandbox.org/[Cuckoo] Sandbox is the leading open source automated malware analysis system.You can throw any suspicious file at it and in a matter of minutes Cuckoo will provide a detailed report outlining the behavior of the file when executed inside a realistic but isolated environment.
-
-Malware is the swiss-army knife of cybercriminals and any other adversary to your corporation or organization.
-
-In these evolving times, detecting and removing malware artifacts is not enough: it's vitally important to understand how they operate in order to understand the context, the motivations, and the goals of a breach.
-
-Cuckoo Sandbox is free software that automated the task of analyzing any malicious file under Windows, macOS, Linux, and Android.
-
-==== DeepBlueCLI
-https://github.com/sans-blue-team/DeepBlueCLI[DeepBlueCLI] is a PowerShell Module for Threat Hunting via Windows Event Logs.
-
-==== DensityScout
-DensityScout is a tool that has been written for one purpose: finding (possibly unknown) malware on a potentially infected system. Therefore it takes advantage of the typical approach of malware authors to protect their "products" with obfuscation like run-time-packing and -encryption. The tool itself is based on the concept of our Bytehist tool, btw.
-
-*So what does DensityScout do?*
-DensityScout's main focus is to scan a desired file-system-path by calculating the density of each file to finally print out an accordingly descending list. Usually most Microsoft Windows executables are not packed or encrypted in any way which throws the hits of malicious executables to the top of the list where one can easily focus on.
-
-*What's Density?*
-Density can also be understood as "entropy". However, the algorithm behind density is not 100% equal to the one which entropy is based on. So we decided to choose a different name.
-
-Link: https://www.cert.at/downloads/software/densityscout_en.html
-
-==== DNSTwist
-https://www.blackhatethicalhacking.com/tools/dnstwist/[dnstwist] takes in your domain name as a seed, generates a list of potential phishing domains and then checks to see if they are registered. Additionally it can test if the mail server from MX record can be used to intercept misdirected corporate e-mails and it can generate fuzzy hashes of the web pages to see if they are live phishing sites.
-
-==== First Incident Response
-https://github.com/certsocietegenerale/FIR[FIR] (Fast Incident Response) is an cybersecurity incident management platform designed with agility and speed in mind. It allows for easy creation, tracking, and reporting of cybersecurity incidents.
-
-FIR is for anyone needing to track cybersecurity incidents (CSIRTs, CERTs, SOCs, etc.). It was tailored to suit our needs and our team's habits, but we put a great deal of effort into making it as generic as possible before releasing it so that other teams around the world may also use it and customize it as they see fit.
-
-==== Kape
-KAPE is a multi-function program that primarily: 
-
-. collects files
-. processes collected files with one or more programs.
-
-KAPE reads configuration files on the fly and based on their contents, collects and processes relevant files. This makes KAPE very extensible in that the program’s author does not need to be involved to add or expand functionality.
-
-As we will see later in more detail, KAPE uses the concepts of targets and modules to do its work. KAPE comes with a range of default targets and modules for operations most commonly required in forensic exams. These can also serve as models  for creating new targets and modules.
-
-At a high level, KAPE works by adding file masks to a queue. This queue is then used to find and copy files from a source location. For files that are locked by the operating system, a second run bypasses the lock. At the end of the process, KAPE will make a copy and preserve metadata about all available files from a source location into a given directory. The second (optional) stage of processing is to run one or more programs against the collected data. This too works by targeting either specific file names or directories. Various programs are run against the files, and the output from the programs is then saved in directories named after a category, such as EvidenceOfExecution, BrowserHistory or AccountUsage.
-
-By grouping things by category, examiners of all skill levels have the means to discover relevant information regardless of an individual artifact's source. In other words, an examiner no longer need to know how to process prefetch, shimcache, amcache, userassist, etc., as they relate to evidence of execution artifacts. Ultimately, a wider range of artifacts can be leveraged for any given requirement.
-
-Link: https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape
-
-==== LogonTracer
-https://github.com/JPCERTCC/LogonTracer[LogonTracer] is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs. This tool associates a host name (or an IP address) and account name found in logon-related events and displays it as a graph. This way, it is possible to see in which account login attempt occurs and which host is used.
-This tool can visualize the following event id related to Windows logon based on https://www.first.org/resources/papers/conf2016/FIRST-2016-105.pdf[this research].
-
-* 4624: Successful logon
-* 4625: Logon failure
-* 4768: Kerberos Authentication (TGT Request)
-* 4769: Kerberos Service Ticket (ST Request)
-* 4776: NTLM Authentication
-* 4672: Assign special privileges
-
-==== Loki
-LOKI Free IOC Scanner: http://www.nextron-systems.com/loki/ 
-
-Loki Github: http://github.com/Neo23x0/Loki
-
-Automating APT Scanning with Loki Scanner and Splunk: http://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html
-
-==== Red Ripper
-When you an image file, load them into red ripper.  Has plugins that you can run against a registry hive.
-
-==== Rekall
-http://www.rekall-forensic.com/[Rekall] is an advanced forensic and incident response framework. While it began life purely as a memory forensic framework, it has now evolved into a complete platform.  Rekall implements the most advanced analysis techniques in the field, while still being developed in the open, with a free and open source license. Many of the innovations implemented within Rekall have been published in http://www.rekall-forensic.com/documentation-1/publications[peer reviewed papers] .  
-
-Rekall provides an end-to-end solution to incident responders and forensic analysts. From state of the art acquisition tools, to the most advanced open source memory analysis framework. http://www.rekall-forensic.com/documentation-1/rekall-documentation/rekall-at-a-glance[Rekall at a glance].
-
-==== Rsync
-Last ditch collection tool.  
-
-==== Sharpchromium
-https://www.blackhatethicalhacking.com/tools/sharp-chromium/
-
-==== SIFT Workstation
-The https://digital-forensics.sans.org/community/downloads[SIFT] Workstation is a group of free open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep dive digital forensic techniques to intrusions can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.
-
-==== Sysmon
-A windows system driver that captures events and sends them to eventlog. It can be downloaded from sysinternals website. 
-
-. https://github.com/SwiftOnSecurity/[Swift on Security Sysmon Config file]
-
-==== The Hive Project
-https://github.com/TheHive-Project[TheHive] is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
-
-==== Volatility Framework
-Digital investigations had focused primarily on finding contraband within hard drive images. https://www.volatilityfoundation.org/[Volatility Foundation] introduced people to the power of analyzing the runtime state of a system using the data found in volatile storage (RAM). It also provided a cross-platform, modular, and extensible platform to encourage further work into this exciting area of research. Another major goal of the project was to encourage the collaboration, innovation, and accessibility to knowledge that had been common within the offensive software communities.
-
-​Since that time, memory analysis has become one of the most important topics to the future of digital investigations and Volatility has become the world’s most widely used memory forensics platform. The project is supported by one of the largest and most active communities in the forensics industry. Volatility also provides a unique platform that enables cutting edge research to be immediately transitioned into the hands of digital investigators. As a result, research built on top of Volatility has appeared at the top academic conferences and Volatility has been used on some of the most critical investigations of the past decade. It has become an indispensible digital investigation tool relied upon by law enforcement, military, academia, and commercial investigators throughout the world.
-
-Volatility development is now supported by The Volatility Foundation, an independent 501(c) (3) non-profit organization. The foundation was established to promote the use of Volatility and memory analysis within the forensics community, to defend the project's intellectual property (trademarks, licenses, etc.) and longevity, and, finally, to help advance innovative memory analysis research. Along these lines, the foundation was also formed to help protect the rights of the developers who sacrifice their time and resources to make the world’s most advanced memory forensics platform free and open source.
-
-==== Winpmem
-
-==== Persistence Investigations & Layered Drivers
-* Layered drivers help find network sniffers, keyboard key loggers
-* Triage methodology for persistence, focusing on layered drivers
-* Common attacker practices:
-** Redline - detects drivers and displaying information about them
-** NTFS Driver - System Restore Driver should be check what is layered on top of it. It is called SR
-KBD Class driver, associated with Key logging driver.
-
-New Audit Viewer for Memoryze: https://www.fireeye.com/blog/threat-research/2008/11/new-audit-viewer-for-memoryze.html
-Forensics #2 / Windows Forensics using Redline: https://attackersmindset.com/2018/05/22/forensics-2-windows-forensics-using-redline/
-Redline user’s Guide: https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf
-
-==== SOF ELK
-
-SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat). With a significant amount of customization and ongoing development, SOF-ELK® users can avoid the typically long and involved setup process the Elastic stack requires. Instead, they can simply download the pre-built and ready-to-use SOF-ELK® virtual appliance that consumes various source data types (numerous log types as well as NetFlow), parsing out the most critical data and visualizing it on several stock dashboards. Advanced users can build visualizations the suit their own investigative or operational requirements, optionally contributing those back to the primary code repository.
-
-Link: https://github.com/philhagen/sof-ELK 
-Training: https://youtu.be/Hk6An-LJ4jY   
-
-==== Base64 Encoded Data
-Base64 endoded data is not human readable, but it is determinsitic, similar to rot13 decoder.
-
-. https://digital-forensics.sans.org/blog/2011/01/09/digital-forensics-finding-encoded-evidence[Finding encoded evidence]
-. https://az4n6.blogspot.com/2017/10/finding-and-decoding-malicious.html[Finding and Decoding Malicious PowerShell Scripts]
-. https://skorks.com/2009/08/different-types-of-encoding-schemes-a-primer/[Different Types Of Encoding Schemes – A Primer]
-. https://github.com/secnonsense/decode.py[Python Decoder]
-
-=== Network Tools
-
-==== Security Onion
-https://securityonion.net/[Security Onion] is a free and open source Linux distribution for intrusion detection, enterprise security monitoring, and log management. It includes Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek (formerly known as Bro), Wazuh, Sguil, Squert, CyberChef, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-
-==== Suricata
-https://suricata-ids.org/[Suricata] is a free and open source, mature, fast and robust network threat detection engine.
-
-The Suricata engine is capable of real time intrusion detection (IDS), inline intrusion prevention (IPS), network security monitoring (NSM) and offline pcap processing.
-
-Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
-
-With standard input and output formats like YAML and JSON integrations with tools like existing SIEMs, Splunk, Logstash/Elasticsearch, Kibana, and other database become effortless.
-
-Suricata’s fast paced community driven development focuses on security, usability and efficiency.
-
-The Suricata project and code is owned and supported by the Open Information Security Foundation (OISF), a non-profit foundation committed to ensuring Suricata’s development and sustained success as an open source project.
-
-==== Bro/Zeek
-https://zeek.org/[Zeek] is an open source software platform that provides compact, high-fidelity transaction logs, file content, and fully customized output to analysts, from the smallest home office to the largest, fastest research and commercial networks.
-
-Zeek helps organizations understand how their network is being used, supporting security, performance, audit, and capacity missions.
-
-Thanks to its network optimized programming language, vibrant open source community, and global footprint, Zeek provides the data and insights needed to tackle today’s toughest network challenges, in the enterprise, cloud, and industrial computing environments.
-
-==== RITA
-https://www.blackhillsinfosec.com/projects/rita/[RITA] stands for Real Intelligence Threat Analytics.   It helps you to not look at individual TCP streams, but rather look at the communication as it relates to much larger timeframes.
-
-RITA's specific goal in life is frequency analysis and beconing detection.  It also does black list analysis, long connection analysis. It uses median and average distribution of a mean.
-
-==== Ntop
-https://www.ntop.org/[ntop] started as an open source project in 1998 whose goal was to create a simple yet effective web-based traffic monitoring platform. Many things have changed since then, including the nature of the traffic being analyzed, operating systems running on PCs, and the type of users. ntop changed too and from a single-project centric effort, we evolved into a full fledged research company whose goal is still the original one. Namely innovate in network monitoring using commodity hardware and open-source operating systems. As we benefit from the open-source community, we feel obliged to return to the community what we develop, so that many others, and not just us, can benefit too.
-
-The industry is full of hardware companies who bundle their products with open-source products, just to offer a sale argument for their products. Or software companies who depend on other (either hardware or software companies) for running their applications. ntop does not belong to any of these categories. We are not hardware-vendor dependent, and our software does not rely on third-party companies who might impose high license fee or decide to send us (and thus our users) out of business. We are developing both software that better exploit commodity hardware (so we’re not vendor locked) and that runs on the operating system kernel, and monitoring applications. We control the whole lifecycle, optimize every single bit, and provide you support for all our components, as we have developed them and nobody knows them better than us. This is quite rare on this market, and thus we have the ability to optimize the software for the hardware we use, and create better products. Very few other companies such as Ferrari, Ducati or Apple can do that (we’re small but we believe we belong to this club).
-
-==== Coffee
-
-==== Wireshark
-
-=== Reverse Engineering
-
-Link: https://github.com/0xZ0F/Z0FCourse_ReverseEngineering
-Link: https://github.com/wtsxDev/reverse-engineering
-
-=== References
-. https://www.youtube.com/watch?v=DuIXbz30mqk[Think You're Compromised? What Do We Do Next?]
 
 <<<
 == Enterprise Architecture
