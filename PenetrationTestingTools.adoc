@@ -58,28 +58,28 @@ Chery Tree is a note taking app
 
 . Take notes of all the findings and also include screen captures. 
 
-===== Open Source Intelligence (OSINT)
+====== Open Source Intelligence (OSINT)
 
-====== Search Engines
+======= Search Engines
 
 image::SearchEnginesForSecurityProfessionals.jpg[Best Search Engines for Security Professionals and Pen Testers] 
 
-====== Katana
+======= Katana
 https://github.com/adnane-X-tebbaa/Katana[Katana-ds] (ds for dork_scanner) is a simple python tool that automates Google Hacking/Dorking and support Tor
 It becomes a more powerfull in combination with https://www.exploit-db.com/google-hacking-database[GHDB]
 
-====== Metabigor
+======= Metabigor
 Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.
 
 Link: https://www.kitploit.com/2020/02/metabigor-intelligence-tool-but-without.html
 
-====== Maltego
+======= Maltego
 
-====== Maryam
+======= Maryam
 OWASP Maryam is an Open-source intelligence(OSINT) and Web-based Footprinting modular framework BASED on The Recon-ng and written in Python.
 Link: https://www.owasp.org/index.php/OWASP_Maryam_Project 
 
-====== OSI.IG
+======= OSI.IG
 https://github.com/th3unkn0n/osi.ig [Instagram OSINT Tool] gets a range of information from an Instagram account that you normally wouldn't be able to get from just looking at their profile
 
 The information includes:
@@ -89,7 +89,7 @@ The information includes:
 * [ email ] : if any email is used any where it'll be displayed
 * [ posts ] : accessability caption, location, timestamp, caption, picture url, etc
 
-====== Recon_Spider
+======= Recon_Spider
 https://github.com/Aravindha1234u/Recon_Spider[Recon_Spider] scrapes social media account details from Instagram, Facebook and Twitter. It can find details about Phone number, Email data Breach.
 Domain module has various scans for domain check for vulnerability and spider crawlers
 Metadata Analyser
@@ -102,7 +102,7 @@ Tool is currently available only in Command Line Interface (CLI)
 
 Its public to use with your own api keys
 
-====== Shodan
+======= Shodan
 . Shodan is a search engine for devices connected to internet
 
 ===== Footprinting
