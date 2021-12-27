@@ -355,187 +355,6 @@ All critical components must be monitored at all times, and SIEM   leveraged to 
 
 ==== Security Strategy
 
-<<<
-=== Project Management Office (PMO)
-PMO sets standards for how projects are managed and to monitor their progress.
-
-* Define standards and rules for project management
-* Monitor and approve projects
-* Improve the success rate of projects
-* Provide training around project management methodologies and standards
-* Create relevant documentation and templates
-
-Reasons for having a PMO:
-
-* Ensure compliance with business strategy. The reason why companies run projects is because they need to innovate. They must constantly create new products or services so they won’t end up as the next Kodak. Once you understand this, you understand why having projects succeed is so important. A PMO can act as a watchdog for ensuring projects actually deliver business value.
-* Improve overall project success rate. If many of the projects in your company fail, exceed their budget or get delayed, then that’s a good reason for having a PMO.
-* Set common standards. If every department has their own set of templates and follows their own project methodology, this can make it hard for cross-functional projects to succeed. A PMO can define common standards that departments have to follow.
-* Security, Compliance, and Industry requirements are considered.
-
-There are key roles every project needs, and PMO has to ensure that those roles exist in the organization.
-
-==== Organizational Structure
-Following organizational structures have been put togther for illustrative purposes, and can be modified as long as the segegration of duty and deliverables are maintained.
-
-===== Centralized
-
-image::PMOStructure-Centralized.png[]
-
-===== De-Centralized
-
-image::PMOStructure-DeCentralized.png[]
-
-==== Key Organizational Roles
-This section identifies roles that are key for successful project delivery and organizational compliance.
-
-===== Product Owner 
-
-* Sits in the business hierarchy
-* Translates business requirements into how the product will operate within the organization
-* Product creation, operationalization, and ongoing evolutionevolution
-* Maintains the product lifecycle
-* Understands roles of everty department in the organization as it pertains to operating and maintaining the product
-* Ultimate decision maker on behalf of the business
-
-===== Business Analyst
-
-“Business analysis is the practice of enabling change in an enterprise by defining needs and recommending solutions that deliver value to stakeholders”
-
-* Consult with management, staff and customers on how work is done in an organization
-* Design solutions to improve organizational efficiency and productivity
-* Write functional requiremnets using models and diagrams
-* Communicate with internal colleagues to understand the needs of departments and the ogranization as a whole
-* Work with external stakeholders to understand and investigate feedback into the service/function/product provided
-* Use data modeling practises to analyse findings and create suggestions for strategic and operational improvements and changes
-* Product end to end process maps to for the entire lifecycle of the product
-* Good understanding of flowcharting specifically Business Process Model & Notation (BPMN)
-
-===== Systems Analyst
-
-* Ability to understand translate BPMN diagrams to system level flow diagrams
-* Ability to create Unified Modeling Language (UML) diagrams
-* Identify, understand and plan for organizational and human impacts of planned systems, and ensure that new technical requirements are properly integrated with existing processes and skill sets.
-* Plan a system flow from the ground up.
-* Interact with internal users and customers to learn and document requirements that are then used to produce business required documents.
-* Write technical requirements from a critical phase.
-* Interact with software architects to understand software limitations.
-* Help programmers during system development, e.g. provide use cases, flowcharts, UML and BPMN diagrams.
-* Document requirements or contribute to user manuals.
-* Whenever a development process is conducted, the system analyst is responsible for designing components and providing that information to the developer.
-* Identify Impacted Systems and required configuration changes
-
-===== Security Architect
-
-* Ensure Information Security Policy is being adered to
-* Privacy Impact Assessment (PIA) is completed
-* Data Classification is completed 
-* Information protection mechanisms are considered in the design
-* Security Monitoring 
-* Incident Response
-* Data Retention
-* Security Testing
-
-===== Infrastructure Architect
-
-* Identify Network, Server, Storage, & Monitoring Requirements
-* Create Network, Server, Storage, & Monitoring Designs
-* Create Network, Server, Storage, & Monitoring Implementation Plans
-* Capacity Planning
-* Infrastructure Resiliency Planning, Designing, and Implementation
-
-==== Tools
-Following tools & technology are may be required to establish a successful project delivey pipeline
-
-* Project Management
-* Requirements mangement & tracabillity tools such as: 
-** Azure Dev Ops
-** JIRA
-* Business Process Model & Notification (BPMN) Tools, such as:
-** Camunda
-* Unified Modeling Language (UML) tools such as: 
-** Rational Rose Tools 
-
-==== Project Delivery Process
-This section outlines the process, key deliverables at each phase of the project delivery.
-
-===== Gate 0 -> Gate 3
-
-image::Project Lifecycle-Gate 0-3.png[]
-
-===== Gate 4
-
-image::Project Lifecycle-Gate 4.png[]
-
-===== Gate 5 -> Gate 6
-
-image::Project Lifecycle-Gate 5 - 6.png[]
-
-==== Project Deliverables Matrix
-
-[format="csv",cols="3,^2,^2,^2,^2,^2",options="header"]
-|===================================================
-Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,Infrastructure Architect 
-include::includes/DeliverablesMatrix.csv[]
-|===================================================
-image::DeliverablesMatrix.png[]
-
-==== Project Governance
-To ensure the project meets is deliverables, timelines, and budget, it has to have checkpoints at different intervals to ensure all the stakeholders are on the same page.  The sub-sections below will outline "suggested" checkpoints for you to consider.
-
-image::ProjectGovernance.png[]
-
-===== Meeting Minutes
-It goes without saying how important minutes for each of these meetings are to ensure all the decisions were documented and action items logged and assigned to named individuals.
-
-===== Gates
-"Gates" are checkpoints where two distinct teams should be reviewing the projects.  
-
-====== Technical Review
-A technical review board should be established that conducts the review of the solution from Gates 1 through 4.  This review ensures projects' adherence strategic plan and blueprints for: 
-
-* Business Requirements
-* Enterprise Architecture
-** Business Architecture
-** Application Architecture
-** Data Architecture
-** Technology/Infrastructure Architecture
-* Security Architecture
-* Compliance  
- 
-====== Financial Review
-Financial Reivew is ususally conducted by the Finance to who is providing funding to the project.  Funding is released at specific deliverable milestones.  Most organizations align these reviews to the Technical Reviews whereby after the technical reivew is compelte, i.e. the criteria for that specific gate has been met then the project is cleared to request funding for the next Gate of the project.  The Finance team can review following criteria:
-
-* Estimates vs Actuals
-* Capital Burn Rate
-* Depending on the project performance and timelines decide how much to fund this initiative
-
-===== Steering Committee Meetings
-Also called Steerco meetings are held with project sponsors and key stakeholders at senior level where identified project risks are discussed and their treatment discussed.
-
-===== Internal Team Meetings
-These meetings are held with technical and business stakeholders in the organizatino, who are responsible for delivering work packages.  These meetings are usually held weekly to ensure project deliverables, timelines, and budget are tracked and project risks identified.  These risks are then shared with the steerco for further decisioning.
-
-===== Weekly Internal/External Team Meetings
-These meetings are held with external entities who are part of the project delivery, select techincal and business lead should attend this meeting to land on overall solution deliverables.  Depending on the complexity of the project, they can be held weekly or as required by the internal project teams.
-
-
-==== Implementation Plan
-The organizational structure and methodology that has been proposed above is the "Lean" way to get "started", what I may call quick and dirty.
-
-. Keep it simple, do not overwhelm the business with too much information, advise them of the end goal and provide assurances that you will manage the complexity of this implementation.  
-. The whole implementation could take years, however implement changes in phases to ensure organization is not overwhelmed by the changes.
-. In absence of the establishment of the required org structure, document a plan on how to start using the new methodology
-. Start creating Templates for: 
-.. Project Charter
-.. Project Change Requests
-.. Meeting Minutes
-.. Issues and Actions register
-.. Financial Reporting
-.. Financial Expenses Tracking
-.. Implementation Plans/MOP's
-. Create Job Aids and Samples
-. Create Checklists
-. Governance Processes
 
 <<<
 
@@ -2093,8 +1912,187 @@ Following are some of the qualities a leader should have:
 * Good listener
 * Familiar with Project delivery methodologies
 
+<<<
+== Project Management Office (PMO)
+PMO sets standards for how projects are managed and to monitor their progress.
+
+* Define standards and rules for project management
+* Monitor and approve projects
+* Improve the success rate of projects
+* Provide training around project management methodologies and standards
+* Create relevant documentation and templates
+
+Reasons for having a PMO:
+
+* Ensure compliance with business strategy. The reason why companies run projects is because they need to innovate. They must constantly create new products or services so they won’t end up as the next Kodak. Once you understand this, you understand why having projects succeed is so important. A PMO can act as a watchdog for ensuring projects actually deliver business value.
+* Improve overall project success rate. If many of the projects in your company fail, exceed their budget or get delayed, then that’s a good reason for having a PMO.
+* Set common standards. If every department has their own set of templates and follows their own project methodology, this can make it hard for cross-functional projects to succeed. A PMO can define common standards that departments have to follow.
+* Security, Compliance, and Industry requirements are considered.
+
+There are key roles every project needs, and PMO has to ensure that those roles exist in the organization.
+
+=== Organizational Structure
+Following organizational structures have been put togther for illustrative purposes, and can be modified as long as the segegration of duty and deliverables are maintained.
+
+==== Centralized
+
+image::PMOStructure-Centralized.png[]
+
+==== De-Centralized
+
+image::PMOStructure-DeCentralized.png[]
+
+=== Key Organizational Roles
+This section identifies roles that are key for successful project delivery and organizational compliance.
+
+==== Product Owner 
+
+* Sits in the business hierarchy
+* Translates business requirements into how the product will operate within the organization
+* Product creation, operationalization, and ongoing evolutionevolution
+* Maintains the product lifecycle
+* Understands roles of everty department in the organization as it pertains to operating and maintaining the product
+* Ultimate decision maker on behalf of the business
+
+==== Business Analyst
+
+“Business analysis is the practice of enabling change in an enterprise by defining needs and recommending solutions that deliver value to stakeholders”
+
+* Consult with management, staff and customers on how work is done in an organization
+* Design solutions to improve organizational efficiency and productivity
+* Write functional requiremnets using models and diagrams
+* Communicate with internal colleagues to understand the needs of departments and the ogranization as a whole
+* Work with external stakeholders to understand and investigate feedback into the service/function/product provided
+* Use data modeling practises to analyse findings and create suggestions for strategic and operational improvements and changes
+* Product end to end process maps to for the entire lifecycle of the product
+* Good understanding of flowcharting specifically Business Process Model & Notation (BPMN)
+
+==== Systems Analyst
+
+* Ability to understand translate BPMN diagrams to system level flow diagrams
+* Ability to create Unified Modeling Language (UML) diagrams
+* Identify, understand and plan for organizational and human impacts of planned systems, and ensure that new technical requirements are properly integrated with existing processes and skill sets.
+* Plan a system flow from the ground up.
+* Interact with internal users and customers to learn and document requirements that are then used to produce business required documents.
+* Write technical requirements from a critical phase.
+* Interact with software architects to understand software limitations.
+* Help programmers during system development, e.g. provide use cases, flowcharts, UML and BPMN diagrams.
+* Document requirements or contribute to user manuals.
+* Whenever a development process is conducted, the system analyst is responsible for designing components and providing that information to the developer.
+* Identify Impacted Systems and required configuration changes
+
+==== Security Architect
+
+* Ensure Information Security Policy is being adered to
+* Privacy Impact Assessment (PIA) is completed
+* Data Classification is completed 
+* Information protection mechanisms are considered in the design
+* Security Monitoring 
+* Incident Response
+* Data Retention
+* Security Testing
+
+==== Infrastructure Architect
+
+* Identify Network, Server, Storage, & Monitoring Requirements
+* Create Network, Server, Storage, & Monitoring Designs
+* Create Network, Server, Storage, & Monitoring Implementation Plans
+* Capacity Planning
+* Infrastructure Resiliency Planning, Designing, and Implementation
+
+=== Tools
+Following tools & technology are may be required to establish a successful project delivey pipeline
+
+* Project Management
+* Requirements mangement & tracabillity tools such as: 
+** Azure Dev Ops
+** JIRA
+* Business Process Model & Notification (BPMN) Tools, such as:
+** Camunda
+* Unified Modeling Language (UML) tools such as: 
+** Rational Rose Tools 
+
+=== Project Delivery Process
+This section outlines the process, key deliverables at each phase of the project delivery.
+
+==== Gate 0 -> Gate 3
+
+image::Project Lifecycle-Gate 0-3.png[]
+
+==== Gate 4
+
+image::Project Lifecycle-Gate 4.png[]
+
+==== Gate 5 -> Gate 6
+
+image::Project Lifecycle-Gate 5 - 6.png[]
+
+=== Project Deliverables Matrix
+
+[format="csv",cols="3,^2,^2,^2,^2,^2",options="header"]
+|===================================================
+Deliverable,Project Manager,Business Analyst,System Analyst,Security Architect,Infrastructure Architect 
+include::includes/DeliverablesMatrix.csv[]
+|===================================================
+image::DeliverablesMatrix.png[]
+
+=== Project Governance
+To ensure the project meets is deliverables, timelines, and budget, it has to have checkpoints at different intervals to ensure all the stakeholders are on the same page.  The sub-sections below will outline "suggested" checkpoints for you to consider.
+
+image::ProjectGovernance.png[]
+
+==== Meeting Minutes
+It goes without saying how important minutes for each of these meetings are to ensure all the decisions were documented and action items logged and assigned to named individuals.
+
+==== Gates
+"Gates" are checkpoints where two distinct teams should be reviewing the projects.  
+
+===== Technical Review
+A technical review board should be established that conducts the review of the solution from Gates 1 through 4.  This review ensures projects' adherence strategic plan and blueprints for: 
+
+* Business Requirements
+* Enterprise Architecture
+** Business Architecture
+** Application Architecture
+** Data Architecture
+** Technology/Infrastructure Architecture
+* Security Architecture
+* Compliance  
+ 
+===== Financial Review
+Financial Reivew is ususally conducted by the Finance to who is providing funding to the project.  Funding is released at specific deliverable milestones.  Most organizations align these reviews to the Technical Reviews whereby after the technical reivew is compelte, i.e. the criteria for that specific gate has been met then the project is cleared to request funding for the next Gate of the project.  The Finance team can review following criteria:
+
+* Estimates vs Actuals
+* Capital Burn Rate
+* Depending on the project performance and timelines decide how much to fund this initiative
+
+==== Steering Committee Meetings
+Also called Steerco meetings are held with project sponsors and key stakeholders at senior level where identified project risks are discussed and their treatment discussed.
+
+==== Internal Team Meetings
+These meetings are held with technical and business stakeholders in the organizatino, who are responsible for delivering work packages.  These meetings are usually held weekly to ensure project deliverables, timelines, and budget are tracked and project risks identified.  These risks are then shared with the steerco for further decisioning.
+
+==== Weekly Internal/External Team Meetings
+These meetings are held with external entities who are part of the project delivery, select techincal and business lead should attend this meeting to land on overall solution deliverables.  Depending on the complexity of the project, they can be held weekly or as required by the internal project teams.
 
 
+=== Implementation Plan
+The organizational structure and methodology that has been proposed above is the "Lean" way to get "started", what I may call quick and dirty.
+
+. Keep it simple, do not overwhelm the business with too much information, advise them of the end goal and provide assurances that you will manage the complexity of this implementation.  
+. The whole implementation could take years, however implement changes in phases to ensure organization is not overwhelmed by the changes.
+. In absence of the establishment of the required org structure, document a plan on how to start using the new methodology
+. Start creating Templates for: 
+.. Project Charter
+.. Project Change Requests
+.. Meeting Minutes
+.. Issues and Actions register
+.. Financial Reporting
+.. Financial Expenses Tracking
+.. Implementation Plans/MOP's
+. Create Job Aids and Samples
+. Create Checklists
+. Governance Processes
 
 <<<
 == Kali Reference
