@@ -869,7 +869,7 @@ Penetration Tests can include following scopes:
 Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
 
 ===== Documentation
-==== CherryTree
+====== CherryTree
 Chery Tree is a note taking app
 
 ===== Open Source Intelligence (OSINT)
