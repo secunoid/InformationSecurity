@@ -26,7 +26,11 @@ https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 This document covers penetration testing tools
 
 <<<
-==== Penetration Testing Methodology
+==== Penetration Testing Methodology & Tools
+
+===== Documentation
+====== CherryTree
+Chery Tree is a note taking app
 
 ===== Reconnaissance
 . Open Source Intelligence Gathering
@@ -52,15 +56,7 @@ This document covers penetration testing tools
 	dirb -d <domainname> 
 	gobuster 
 
-. Take notes of all the findings and also include screen captures.
-. 
-
-==== Penetration Testing Tools
-Following are some of the Pentesting tools organized by a particular stage in my pentesting methodology.
-
-===== Documentation
-====== CherryTree
-Chery Tree is a note taking app
+. Take notes of all the findings and also include screen captures. 
 
 ===== Open Source Intelligence (OSINT)
 
