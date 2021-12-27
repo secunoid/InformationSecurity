@@ -3,10 +3,10 @@ Doc Writer <ssharif@secunoid.com>
 v1.21.12.27.01
 :numbered:
 :sectnum:
-:sectnumlevels: 6
+:sectnumlevels: 10
 :chapter-label:
 :toc: right
-:toclevels: 6
+:toclevels: 10
 :docinfo:
 :docinfo1:
 :docinfo2:
