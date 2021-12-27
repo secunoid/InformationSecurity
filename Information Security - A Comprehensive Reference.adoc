@@ -655,7 +655,7 @@ Penetration Tests can include following scopes:
 . Cloud
 . Social
 
-Here are some https://github.com/secunoid/InformationSecurity/blob/master/PenetrationTestingTools.adoc[Penetration Testing Tools]
+I have created a seperate document listing some of the https://github.com/secunoid/InformationSecurity/blob/master/PenetrationTestingTools.adoc[Penetration Testing Tools] that I have used.
 
 
 ==== Red team Assessment
