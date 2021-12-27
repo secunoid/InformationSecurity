@@ -655,7 +655,7 @@ Penetration Tests can include following scopes:
 . Cloud
 . Social
 
-I have created a seperate document listing some of the https://github.com/secunoid/InformationSecurity/blob/master/PenetrationTestingTools.adoc[Penetration Testing Tools] that I have used.
+I have created a seperate document listing some of the https://github.com/secunoid/InformationSecurity/blob/master/PenetrationTestingTools.adoc[Penetration Testing Tools] that we have used.
 
 
 ==== Red team Assessment
@@ -716,7 +716,9 @@ It is a structured approach that enables you to identify, quantify, and address 
 
 Some great information here  https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
 
-==== CVSS
+==== Threat Scoring and Databases
+
+===== CVSS
 CVSS stands for Common Vulnerability Scoring System, which provides a score to indicate the severity of the CVE vulnerabilities.
 
 Assignment of a CVSS score is based on:
@@ -728,7 +730,7 @@ Assignment of a CVSS score is based on:
 * How easy it is to remediate the vulnerability
 * How confident the testing team is about the existence of the vulnerability
 
-==== NVD
+===== NVD
 National Vulnerability Database (NVD) is the U.S. government repository of standards based vulnerability management data. NVD also provides severity rankings of "Low," "Medium," and "High" in addition to the numeric CVSS scores. These qualitative rankings are simply mapped from the numeric CVSS scores:
 
 * Vulnerabilities are labeled "Low" severity if they have a CVSS base score of 0.0-3.9.

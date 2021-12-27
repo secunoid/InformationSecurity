@@ -1,0 +1,27 @@
+= Digital Forensics & Incident Response Tools
+Doc Writer <ssharif@secunoid.com>
+v1.21.12.27.01
+:numbered:
+:sectnum:
+:sectnumlevels: 10
+:chapter-label:
+:toc: right
+:toclevels: 10
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document covers Digital Forensics & Incident Response Tools
+:keywords: information security, cyber security, digital forensics, incident response
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+
+<<<
+== Author
+https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
+
+== Overview
+This document covers Digital Forensics & Incident Response Tools
+<<<
