@@ -656,8 +656,6 @@ Penetration Tests can include following scopes:
 . Social
 
 
-
-
 ==== Red team Assessment
 A Red Team Assessment is similar to a penetration test in many ways but is more targeted. The goal of the Red Team Assessment is NOT to find as many vulnerabilities as possible. The goal is to test the organization's detection and response capabilities. The red team will try to get in and access sensitive information in any way possible, as quietly as possible. The Red Team Assessment emulates a malicious actor targeting attacks and looking to avoid detection, similar to an Advanced Persistent Threat (APT). (Ugh! I said it…) Red Team Assessments are also normally longer in duration than Penetration Tests. A Penetration Test often takes place over 1-2 weeks, whereas a Red Team Assessment could be over 3-4 weeks or longer, and often consists of multiple people.
 
@@ -1287,7 +1285,9 @@ SABSA's governance model provide a control feedback loop
 . Management & Measure
 
 <<<
-== NIST Cyber Security Framework(CSF)
+== Information Security  Frameworks
+
+=== NIST Cyber Security Framework(CSF)
 
 Key functions are
 
@@ -1351,8 +1351,6 @@ Five principles for Securing DevOps
 * No false Alarms
 * Build Security Champions
 * Keep Operational Visibility
-
-
 
 === OWASP Top 10 App Sec Risks
 
