@@ -18,35 +18,49 @@ v1.22.04.10.01
 '''
 
 == Pattern Template
-[PATTERN-NAME]
-Author
-[YOUR-NAME] ([YOU@YOUR.ADDR]).
-Last updated on [TODAY'S-DATE]
+*Pattern Name (Scope, Purpose)*
+The pattern's name conveys the essence of the pattern succinctly. A good name is vital, because it will become part of your design vocabulary.
 
-Context
-[PARAG-1]
-[PARAG-2]
+*Intent*
+A short statement that answers the following questions: What does the design pattern do? What is its rationale and intent? What particular design issue or problem does it address?
 
-Problem
-[ONE-ASPECT]
-[ANOTHER-ASPECT]
-Examples
-Forces
-[FORCE-1]
-[FORCE-2]
-Design
-[PARAG-1]
-[PARAG-2] 
+*Also Known As*
+Other well-known names for the pattern, if any.
 
-An Implementation
-     [SOME-CODE]
-  
-Examples
-Variants
-[VARIANT]
-[ANOTHER-VARIANT]
-See Also
-Patterns Home Page.
-[ANOTHER-REF]
-[SOME-AUTHOR, SOME-ARTICLE]
-[SOME-PATTERNS-LIST-POSTING]
+*Motivation*
+A scenario that illustrates a design problem and how the class and object structures in the pattern solve the problem. The scenario will help you understand the more abstract description of the pattern that follows.
+
+*Applicability*
+What are the situations in which the design pattern can be applied? What are examples of poor designs that the pattern can address? How can you recognize these situations?
+An applicable situation
+
+*Structure*
+
+*Participants*
+The classes and/or objects participating in the design pattern and their responsibilities.
+
+*Participant Name*
+Responsibility for what
+
+*Collaborations*
+How the participants collaborate to carry out their responsibilities.
+
+. [Collaboration]
+
+*Consequences*
+How does the pattern support its objectives? What are the trade-offs and results of using the pattern? What aspect of system structure does it let you vary independently?
+A consequence bullet. Description of consequence
+
+*Implementation*
+What pitfalls, hints, or techniques should you be aware of when implementing the pattern? Are there language-specific issues?
+An implementation Bullet. Description of Bullet
+
+*Sample Code and Usage*
+Code fragments that illustrate how you might implement the pattern in C++ or Smalltalk.
+Program Listing
+
+*Known Uses*
+Examples of the pattern found in real systems. We include at least two examples from different domains.
+
+*Related Patterns*
+What design patterns are closely related to this one? What are the important differences? With which other patterns should this one be used?
