@@ -22,7 +22,6 @@ v1.22.04.10.01
 
 * Tiered/Distributed Security
 * Defense in Depth
-* Belt and Suspenders
 
 === Motivation
 Networked applications are susceptible to many forms of attack that may target the network, host or application layer and the communication between them. Naturally, the overall security of a system is greatly improved when each one of these layers are identified, protected, and audited for possible weakness.
@@ -59,6 +58,50 @@ Don't ignore insider threat. Intrusions and attacks can originate from the insid
 
 === Related Patterns
 Risk Assessment and Management
+
+== The Security Provider
+=== Alias
+Single Sign On
+
+=== Motivation
+An enterprise application may be comprised of a number of software and hardware components with each potentially performing its own authentication, authorization, or encryption. While some of these components may implement open or standards-based APIs, others may use closed or unknown technology or simply lack functionality altogether. By abstracting security services from individual applications, an organization is able to centralize the management and functionality of the protocols and policies governing authentication and authorization services.
+
+=== Problem
+When disparate applications seek to provide their own security services, privacy, synchronization and management of data becomes unnecessarily complex. Moreover, applications may not provide the security features or strength required, risking the overall integrity of the data. These applications may be communicating securely or they may be using weak or inappropriately vulnerable methods. Without a common security infrastructure, the management becomes unnecessarily difficult and risks the security of the entire environment.
+
+=== Forces
+* Desire to use a single service to provide management and auditing for a common set of security services for all enterprise applications.
+* Desire to use stronger, or more flexible security features in applications.
+* Desire to provide integrity and consistency of data for authentication and authorization.
+
+=== Solution
+A Security Provider is a central service to which are directed all authentication and authorization requests. Applications such as email, web, corporate applications and others, would communicate directly with the Security Provider. The Security Provider then communicates with a user or policy store to evaluate a user's credentials and privileges.
+
+A Security Provider has the following properties:
+* Authoritative source for user verification (authentication)
+* Authoritative source for role assignment and policy enforcement (authorization)
+* Provides centralized (and possibly delegated) management of security policies
+* Provides consolidated reporting and auditing facilities
+* Implements secured connections to possibly separate user and policy data stores
+* Defines appropriate type and strength of technology for information protection (encryption) between itself and requesting applications
+* May provide single sign on (SSO) facilities across applications
+* May provide single sign on facilities across organizations or satellite offices
+
+=== Example
+* BEA's WebLogic Server can abstract authentication requests to an external user store, affording integration with a Security Provider.
+* Entrust and other vendors provide single sign on applications that centralizes user credentials and authorization policies.
+* Netegrity's Siteminder can effectively create a single sign on across multiple disparate applications by brokering trust back to the user's "home" authentication service.
+
+=== Consequences
+* [x] Efficient user and data management due to centralized user store
+* [x] Common set of technologies and standards used for all security services
+* [x] Transparent session for end users across applications and potentially across participating organizations
+* [ ] Applications need to be configured (or reconfigured) to utilize this common authentication service.
+
+=== Related Patterns
+* Layered Security
+* Authoritative Source of Data
+* Roles
 
 == Pattern Template
 *Pattern Name (Scope, Purpose)*
