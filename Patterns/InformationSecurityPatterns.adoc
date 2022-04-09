@@ -1,0 +1,52 @@
+= Information Security Patterns
+Doc Writer <ssharif@secunoid.com>
+v1.22.04.10.01
+:numbered:
+:sectnum:
+:sectnumlevels: 5
+:chapter-label:
+:toc: right
+:toclevels: 5
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document lists patterns for various problems in information security
+:keywords: information security, cyber security, it security, data security, compliance, risk management, patterns, solutions
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+== Pattern Template
+[PATTERN-NAME]
+Author
+[YOUR-NAME] ([YOU@YOUR.ADDR]).
+Last updated on [TODAY'S-DATE]
+
+Context
+[PARAG-1]
+[PARAG-2]
+
+Problem
+[ONE-ASPECT]
+[ANOTHER-ASPECT]
+Examples
+Forces
+[FORCE-1]
+[FORCE-2]
+Design
+[PARAG-1]
+[PARAG-2] 
+
+An Implementation
+     [SOME-CODE]
+  
+Examples
+Variants
+[VARIANT]
+[ANOTHER-VARIANT]
+See Also
+Patterns Home Page.
+[ANOTHER-REF]
+[SOME-AUTHOR, SOME-ARTICLE]
+[SOME-PATTERNS-LIST-POSTING]
