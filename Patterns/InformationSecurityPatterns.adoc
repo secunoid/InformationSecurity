@@ -16,6 +16,49 @@ v1.22.04.10.01
 :stylesheet:
 :homepage: https://www.secunoid.com
 '''
+== Layered Security
+
+=== Alias
+
+* Tiered/Distributed Security
+* Defense in Depth
+* Belt and Suspenders
+
+=== Motivation
+Networked applications are susceptible to many forms of attack that may target the network, host or application layer and the communication between them. Naturally, the overall security of a system is greatly improved when each one of these layers are identified, protected, and audited for possible weakness.
+
+Moreover, attacks may originate internally or externally. Basing security rules on the premise of internal users are good and external users are bad is fundamentally flawed (read insider threat) and difficult to manage. With increased use of external business communication channels, it therefore becomes much more difficult to identify which users or sessions are internal and which are external.
+
+=== Problem
+Networked applications and the environment within which they operate are vulnerable at many layers and from all directions. Each device, data object, session, file and process is a potential target and needs to be identified and secured.
+
+=== Forces
+* Once standalone applications are suddenly now networked and unprepared to withstand network attacks.
+* Protection of any one of network, server or application is not sufficient to adequately protect the data within an enterprise.
+* While one or many components of a system may be protected, it truly is only as secure as the weakest link.
+* If a single devices or application fails or is misconfigured it could potentially expose all private resources.
+
+=== Solution
+Employ security measures at all layers of a networked application and throughout its operating environment.
+
+Router ACLs, address translation and intrusion detection systems protect the network layer. OS hardening, thoughtful application installation and configuration protect the host and the applications that run on it. Practicing secure coding techniques protect all of the above. Finally, proper baselining and monitoring methodologies protect all these layers on an ongoing basis.
+
+Don't ignore insider threat. Intrusions and attacks can originate from the inside just as they can from the outside. Authentication, authorization, antivirus software, and intrusion detection systems should protect resources from both sides of the corporate boundary.
+
+=== Example
+* Firewalls provide ingress/egress packet and protocol filtering.
+* Application servers and 3rd party services authenticate users over SSL.
+* Applications validate form data by length, bounds and type.
+* All network and application activity is monitored and logged for analysis.
+
+=== Consequences
+* [*] Greatly improved overall security
+* [*] Reduced exposure to attack if one security measure should be subverted or misconfigured
+* [*] Continuously validates security efforts
+* [ ] More complex security architecture
+
+=== Related Patterns
+Risk Assessment and Management
 
 == Pattern Template
 *Pattern Name (Scope, Purpose)*
