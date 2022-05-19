@@ -553,6 +553,41 @@ Ensure that:
 ====== Terraform
 image::ShiftingLeftOnCloudSecurity.png[]
 
+Best approach is to:
+
+* IaC Scanning 
+** OpenSource Tools
+*** Checkov by bridgecrew
+*** Regula By Fuge
+*** Semgrep
+*** Terraform Compliance
+*** Terrascan by accurics
+*** TFSEC
+* Drift Control
+** OpenSource Tools
+*** driftctl
+* Runtime Scanning
+** OpenSource Tools
+*** ScoutSuite
+*** Prowler
+*** CloudMapper
+*** Cartography
+*** Cloudsplaining
+*** SteamPipe
+** Commercial Tools
+*** AWS Config
+*** BridgeCrew
+*** DivvyCloud
+*** Fuge*
+
+====== Terraform scanners
+. Checkov by bridgecrew
+. Regula By Fuge
+. Semgrep
+. Terraform Compliance
+. Terrascan by accurics
+. TFSEC
+
 
 ==== Azure
 
