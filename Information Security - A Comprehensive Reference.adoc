@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.22.04.09.01
+v1.22.05.19.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -545,6 +545,13 @@ Ensure that:
 . Your infrastructure teams understand Infrastrucutre As Code (IaC) for the clouds you will be deploying in.
 . A process is in place where the IaC templates are reviewed to ensure a security review is conducted to avoid misconfiguration that may expose the data
 . The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
+
+==== AWS
+
+
+==== Azure
+
+==== GCP
 
 === Architecture
 The architecture should be to enable business to ensure time to market is reduced as much as possible when it comes to IT.
@@ -1320,7 +1327,7 @@ Compliance function ensures that all the Industry, Governmental,  & Financial re
 
 ==== Assesment Tools
 
-Automating security assessments using Cloud Katana: https://www.microsoft.com/security/blog/2021/08/19/automating-security-assessments-using-cloud-katana/ 
+Automating security assessments using CloudBXPC-W3W-TYZ-9PP-BO4G Katana: https://www.microsoft.com/security/blog/2021/08/19/automating-security-assessments-using-cloud-katana/ 
 
 <<<
 == Leadership
