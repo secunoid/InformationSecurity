@@ -548,6 +548,11 @@ Ensure that:
 
 ==== AWS
 
+===== Infrastructure As Code
+
+====== Terraform
+image::ShiftingLeftOnCloudSecurity.png[]
+
 
 ==== Azure
 
