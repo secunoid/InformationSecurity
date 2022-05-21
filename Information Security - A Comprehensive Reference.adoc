@@ -653,6 +653,25 @@ HCL code is comprised of two areas, blocks and arguments, in key value format.
 
 image::TerraformLocalFileResourceExample.png[Example of a local file resource]
 
+You can have configurations in multiple files with **.tf* extensions.  
+when `terraform` `init`, `plan`, and `apply` are executed all files are considered by terraform.  Alternatively all the files can be included into a single file `main.tf` and produces the same result.
+
+[options="header"]
+|=======================================================================
+| File Name     | Purpose                                               
+| main.tf       | Main configuration file containing resource definition
+| variables.tf  | Contains variable declarations                        
+| outputs.tf    | Contains outputs from resources                       
+| provider.tf   | Contains Provider definition                          
+|=======================================================================
+
+===== Terraform Providers
+
+Are available at https://registry.terraform.io and there are three types:
+
+. Official: Providers from major cloud vendors AWS, GCP, Azure, 
+. Verified: F5, Heroku, Digitalocean
+. Community: Active Directory, Ucloud, Netapp-gcp
 
 ===== Installing Terraform
 Terraform is supported on:
