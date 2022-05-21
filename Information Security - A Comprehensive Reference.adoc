@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.22.05.19.01
+v1.22.05.21.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -546,16 +546,17 @@ Ensure that:
 . A process is in place where the IaC templates are reviewed to ensure a security review is conducted to avoid misconfiguration that may expose the data
 . The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
 
-==== AWS
 
-===== Infrastructure As Code
+==== Infrastructure As Code(IaC) - Terraform
+Terraform is a platform that abstracts the complexities of each of the cloud environments from the administrators/end users.
 
-====== Terraform
+
 image::ShiftingLeftOnCloudSecurity.png[]
 
-Best approach is to:
+Best approach is to perform *IaC Scanning*+*Drift Control*+*Runtime Scaning*
 
-* IaC Scanning 
+Some of the tools available to accomplish each of the steps above:
+. IaC Scanning 
 ** OpenSource Tools
 *** Checkov by bridgecrew
 *** Regula By Fuge
@@ -563,10 +564,10 @@ Best approach is to:
 *** Terraform Compliance
 *** Terrascan by accurics
 *** TFSEC
-* Drift Control
+. Drift Control
 ** OpenSource Tools
 *** driftctl
-* Runtime Scanning
+. Runtime Scanning
 ** OpenSource Tools
 *** ScoutSuite
 *** Prowler
@@ -580,14 +581,9 @@ Best approach is to:
 *** DivvyCloud
 *** Fuge*
 
-====== Terraform scanners
-. Checkov by bridgecrew
-. Regula By Fuge
-. Semgrep
-. Terraform Compliance
-. Terrascan by accurics
-. TFSEC
 
+
+==== AWS
 
 ==== Azure
 
