@@ -615,10 +615,11 @@ Terraform uses a simple *declarative* language called *HashiCorp Configuration L
 *Declarative* means that you specify the target or end state.
 
 Files with a *.tf* extension are configuration files that contains blocks of code to to provision the infrastructure. Can be available via version control systems for easy maintainability.
-TerraformDotTFFile
+
 image::TerraformDotTFFile.png[Terraform TF File Sample]
 
 Terraform works in three phases:
+
 * Init: Initializes the project, and identifies the providers required for the target state. 
 * Plan: Drafts the plan to get to the target state
 * Apply: Makes the necessary changes on the environment to bring it to the target state.
@@ -629,6 +630,28 @@ Terraform manages the lifecycle of resources from provisioning, configuration, a
 
 Terraform tracks the state of resources via the *terraform.tfstate* file.  This helps it determine when updating resources for a particular platform.
 The state is a blueprint of the insfrastructure deployed by Terraform. Terraform can also import other resources outside of Terraform that were created by other means and bring it under its control.
+
+A Terra from *resource* can be:
+
+* A file in a local host
+* S3 Bucket
+* VM
+* Databases
+* etc...
+
+===== HCL Basics
+HCL code is comprised of two areas, blocks and arguments, in key value format.
+
+[source,terraform]
+----
+<block> <parameters> {
+	key1 = value1
+	key2 = value2
+}
+----
+
+ image::TerraformLocalFileResourceExample.png[Example of a local file resource]
+
 
 ===== Installing Terraform
 Terraform is supported on:
