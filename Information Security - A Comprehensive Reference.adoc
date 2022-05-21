@@ -577,6 +577,7 @@ Terraform is a platform that abstracts the complexities of each of the cloud env
 
 image::ShiftingLeftOnCloudSecurity.png[]
 
+===== Cloud Environment Security
 Best approach is to perform *IaC Scanning*+*Drift Control*+*Runtime Scaning*
 
 Some of the tools available to accomplish each of the steps above:
@@ -605,6 +606,20 @@ Some of the tools available to accomplish each of the steps above:
 *** DivvyCloud
 *** Fuge*
 
+===== Using Terraform
+
+image::TerraformTargetUseCases.png[Resources Terraform Can Manage]
+
+Terraform uses a simple *declarative* language called *HashiCorp Configuration Language* *HCL* for short.
+
+*Declarative* means that you specify the target or end state.
+
+*main.tf* is a Terraform configuration file that contains blocks of code to to provision the infrastructure. Can be available via version control systems for easy maintainability.
+
+Terraform works in three phases:
+* Init: Initializes the project, and identifies the providers required for the target state. 
+* Plan: Drafts the plan to get to the target state
+* Apply: Makes the necessary changes on the environment to bring it to the target state.
 
 
 ==== AWS
