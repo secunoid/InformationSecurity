@@ -547,8 +547,16 @@ Ensure that:
 . The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
 
 
-==== Infrastructure As Code(IaC) - Terraform
+==== Infrastructure As Code(IaC)
+A mechanism to automate the deployment of infrastructure via scripting to the varous IaaS platforms.
+
+Some of the platforms are
+image::IaCPlatforms.png[Infrastructure As Code Platforms]
+
+===== Terraform
 Terraform is a platform that abstracts the complexities of each of the cloud environments from the administrators/end users.
+
+I
 
 
 image::ShiftingLeftOnCloudSecurity.png[]
