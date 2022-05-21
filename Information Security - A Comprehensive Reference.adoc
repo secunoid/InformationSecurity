@@ -618,11 +618,12 @@ Files with a *.tf* extension are configuration files that contains blocks of cod
 
 image::TerraformDotTFFile.png[Terraform TF File Sample]
 
-Terraform works in three phases:
+Terraform worksflow is comprised of four steps:
 
-* Init: Initializes the project, and identifies the providers required for the target state. 
-* Plan: Drafts the plan to get to the target state
-* Apply: Makes the necessary changes on the environment to bring it to the target state.
+. Create the .tf file
+. Init: Initializes the project, and identifies the providers required for the target state. 
+. Plan: Drafts the plan to get to the target state
+. Apply: Makes the necessary changes on the environment to bring it to the target state.
 
 Every object that Terraform manages is called a resource.
 
@@ -650,7 +651,7 @@ HCL code is comprised of two areas, blocks and arguments, in key value format.
 }
 ----
 
- image::TerraformLocalFileResourceExample.png[Example of a local file resource]
+image::TerraformLocalFileResourceExample.png[Example of a local file resource]
 
 
 ===== Installing Terraform
