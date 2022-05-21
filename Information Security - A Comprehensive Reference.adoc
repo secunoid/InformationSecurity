@@ -606,7 +606,7 @@ Some of the tools available to accomplish each of the steps above:
 *** DivvyCloud
 *** Fuge*
 
-===== Using Terraform
+===== Introduction to Terraform
 
 image::TerraformTargetUseCases.png[Resources Terraform Can Manage]
 
@@ -614,13 +614,33 @@ Terraform uses a simple *declarative* language called *HashiCorp Configuration L
 
 *Declarative* means that you specify the target or end state.
 
-*main.tf* is a Terraform configuration file that contains blocks of code to to provision the infrastructure. Can be available via version control systems for easy maintainability.
+Files with a *.tf* extension are configuration files that contains blocks of code to to provision the infrastructure. Can be available via version control systems for easy maintainability.
+TerraformDotTFFile
+image::TerraformDotTFFile.png[Terraform TF File Sample]
 
 Terraform works in three phases:
 * Init: Initializes the project, and identifies the providers required for the target state. 
 * Plan: Drafts the plan to get to the target state
 * Apply: Makes the necessary changes on the environment to bring it to the target state.
 
+Every object that Terraform manages is called a resource.
+
+Terraform manages the lifecycle of resources from provisioning, configuration, and decomissioning.
+
+Terraform tracks the state of resources via the *terraform.tfstate* file.  This helps it determine when updating resources for a particular platform.
+The state is a blueprint of the insfrastructure deployed by Terraform. Terraform can also import other resources outside of Terraform that were created by other means and bring it under its control.
+
+===== Installing Terraform
+Terraform is supported on:
+
+* MacOS
+* FreeBSD
+* Linux
+* OpenBSD
+* Solaris
+* Windows
+
+On some OSes it can be downloaded a an executable binary.
 
 ==== AWS
 
