@@ -709,9 +709,10 @@ Data sources allow Terraform to read resources that are created from other means
 ===== Terraform State
 Terraform keeps track of the environment in the cloud provider in a file called *terraform.tfstate*.  
 
-. This file is very important.
+. This file is very important
+. It has a lot of sensitive information about your environment
 . Never manually manipulate this file
-. If multiple users are using terraform, it is key that this file gets updated with the latest state of the environment.
+. If multiple users are using terraform, it is key that this file gets updated with the latest state of the environment
 . This file should never be stored in public repositories
 . It should be stored in a private protected store 
 . When a team member is updating environment this file should be locked so that other team members do not implement the changes at the same time.
