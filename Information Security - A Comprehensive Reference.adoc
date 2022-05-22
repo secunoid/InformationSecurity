@@ -731,6 +731,21 @@ This playbook outlines steps that need to be taken to deploy an environment with
 #9. Assign an elastic IP to the network interface created in step 8
 #10. Create Ubuntu server and install/enable apache2
 
+====== Automation
+Values in a Terraform script can be:
+
+. Embedded in the script
+. Prompted for at runtime
+. Supplied at runtime by passing command line arguments
+. Use input files for variables, via *terraform.tfvars* file
+. Environment Variables
+
+====== Misc Commands
+
+. Terraform state list: List all services deployed
+. Terraform state show <service name from the out above>: show details about the specific service
+. 
+
 ==== AWS
 
 ==== Azure
