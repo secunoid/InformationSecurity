@@ -685,6 +685,16 @@ Terraform is supported on:
 
 On some OSes it can be downloaded a an executable binary.
 
+===== Terraform Lifecycle Rules
+
+[options="header"]
+|=======================================================================
+| Order| Option                 | Action                             
+| 1    | create_before_destory  | Create the resource first and then destroy older
+| 2    | prevent_destroy        | Prevents destroy of a resource               
+| 3    | ignore_changes         | Ignore Changes to Resource Attributes (specific/all)                                        
+|=======================================================================
+
 ==== AWS
 
 ==== Azure
