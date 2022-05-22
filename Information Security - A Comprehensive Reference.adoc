@@ -695,6 +695,17 @@ On some OSes it can be downloaded a an executable binary.
 | 3    | ignore_changes         | Ignore Changes to Resource Attributes (specific/all)                                        
 |=======================================================================
 
+===== Terraform Data Sources
+Data sources allow Terraform to read resources that are created from other means.
+
+[options="header"]
+|=======================================================================
+| Resource                                  | Data Source                                               
+| Keyword: resource                         | Keyword: data
+| Creates, Updates, Destroys Infrastructure | Only Reads Infrastructure                        
+| Also called Managed Resources             | Also called Data Resources                                         
+|=======================================================================
+
 ==== AWS
 
 ==== Azure
