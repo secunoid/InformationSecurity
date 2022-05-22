@@ -742,9 +742,9 @@ Values in a Terraform script can be:
 
 ====== Misc Commands
 
-. Terraform state list: List all services deployed
-. Terraform state show <service name from the out above>: show details about the specific service
-. 
+. `terraform state list` : List all services deployed
+. `terraform state show <service name from the out above>` : Show details about the specific service
+. `terraform fmt` : Fix formatting of the terraform files
 
 ==== AWS
 
