@@ -718,6 +718,19 @@ Terraform keeps track of the environment in the cloud provider in a file called 
 . When a team member is updating environment this file should be locked so that other team members do not implement the changes at the same time.
 . Store the credentials in a common store that protects your secrets
 
+====== Terraform VPC Playbook-Webserver
+This playbook outlines steps that need to be taken to deploy an environment with a webserver exposed to the internet
+#1. Select Provider, region, access & secret keys
+#2. Create VPC
+#3. Create Internet Gateway
+#4. Create Custom Route Table
+#5. Create a subnet
+#6. Associate subnet with Route Table 
+#7. Create Security Geroup to allow port 22, 80, 443
+#8. Create a network interface with an ip in the subnet that was created in step 4
+#9. Assign an elastic IP to the network interface created in step 8
+#10. Create Ubuntu server and install/enable apache2
+
 ==== AWS
 
 ==== Azure
