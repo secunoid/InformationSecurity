@@ -623,7 +623,7 @@ Terraform worksflow is comprised of four steps:
 . Create the .tf file
 . Init: Initializes the project, and identifies the providers required for the target state. 
 . Plan: Drafts the plan to get to the target state
-. Apply: Makes the necessary changes on the environment to bring it to the target state.
+. Apply: Makes the necessary changes on the environment to bring it to the target state.  You can use `terraform apply -auto-approve` to not prompt you for a *yes* when you just use `terraform apply`
 
 Every object that Terraform manages is called a resource.
 
