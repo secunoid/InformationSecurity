@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.22.05.21.01
+v1.22.05.22.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -705,6 +705,8 @@ Data sources allow Terraform to read resources that are created from other means
 | Creates, Updates, Destroys Infrastructure | Only Reads Infrastructure                        
 | Also called Managed Resources             | Also called Data Resources                                         
 |=======================================================================
+
+===== Terraform State
 
 ==== AWS
 
