@@ -750,6 +750,11 @@ Values in a Terraform script can be:
 
 ==== Azure
 
+* Azure Automation: uses runbooks to process a set of tasks on the VM's we target.  It is used to manage existing VMs rather than to create an infrastrucutre
+* Azure Resource Manager (ARM) Templates: Using ARM templates enables us to deploy and manage Azure resources (create, update, delete, etc..). Uses JSON format.
+* Azure Bicep: Bicep is a language that uses domain-specific languate (DSL) to deploy Azure Resources
+
+
 ==== GCP
 
 === Architecture
