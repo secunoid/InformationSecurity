@@ -751,6 +751,7 @@ Values in a Terraform script can be:
 ===== Security Assessment of the environment
 
 * https://github.com/awslabs/aws-security-assessment-solution/blob/master/docs/how-to-deploy.md[AWS Self-Service Security Assessment Tool(SAT)]
+* https://github.com/awslabs[Amazon Web Services - Labs]
 
 ==== Azure
 
