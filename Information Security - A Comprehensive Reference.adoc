@@ -748,8 +748,13 @@ Values in a Terraform script can be:
 
 ==== AWS
 
+===== Security Assessment of the environment
+
+* https://github.com/awslabs/aws-security-assessment-solution/blob/master/docs/how-to-deploy.md[AWS Self-Service Security Assessment Tool(SAT)]
+
 ==== Azure
 
+===== Azure Products
 * Azure Automation: uses runbooks to process a set of tasks on the VM's we target.  It is used to manage existing VMs rather than to create an infrastrucutre
 * Azure Resource Manager (ARM) Templates: Using ARM templates enables us to deploy and manage Azure resources (create, update, delete, etc..). Uses JSON format.
 * Azure Bicep: Bicep is a language that uses domain-specific languate (DSL) to deploy Azure Resources
@@ -762,6 +767,13 @@ Values in a Terraform script can be:
 . Install Azure CLI
 . Once Azure CLI is installed, at command prompt type in `az login` to configure tenant access and secrets
 . In Azure CLI type in `az extension add --upgrade -n account`
+
+===== Azure Virtual Network
+Azure Virtual Network or VPC has following components:
+
+* Subnet
+* Routing
+* Network Security Group
 
 ==== GCP
 
