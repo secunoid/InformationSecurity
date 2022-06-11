@@ -1316,6 +1316,21 @@ SABSA's governance model provide a control feedback loop
 . Implement
 . Management & Measure
 
+=== Solution Architecture
+
+AWS Systems Manager == Microsoft SCCM
+AWS Network Firewall == Microsoft Azure Firewall
+
+==== AWS Security
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
+
+image::AWSSRA.png[title="AWS Security Reference Architecure]
+
+
+image::AWSSecurityServices.png[title="AWS Security Services"]
+
+
 <<<
 == Information Security  Frameworks
 
@@ -2392,11 +2407,12 @@ WPAD:: Web Proxy Auto Discovery Protocol
 
 <<<
 [bibliography]
-== References
+== References & Links
 
 . Writing Position Papers: http://www.studygs.net/wrtstr9.htm 
 . Cover Page graphic: https://www.pinterest.com/pin/352758583290504850/ 
-. What is Malware? https://www.avg.com/en/signal/what-is-malware
+. https://www.avg.com/en/signal/what-is-malware[What is Malware?]
+. https://gowthams.gitbook.io/bughunter-handbook/[Bug Hunter Handbook]
 
 
 
