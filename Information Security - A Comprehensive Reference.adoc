@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.22.05.22.01
+v1.22.06.11.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -546,38 +546,6 @@ Ensure that:
 . A process is in place where the IaC templates are reviewed to ensure a security review is conducted to avoid misconfiguration that may expose the data
 . The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
 
-
-==== Infrastructure As Code(IaC)
-A mechanism to codify the deployment of infrastructure via scripting to the varous IaaS platforms.  With IAAC you can manage any infrasturcutre component as a code.  Each IaaS platfrom provides its own mechanisms to write code and automate deployment of infrastrcuture.  When teams have to deploy worloads in multiple cloud environments learning how to write code and maintain that code for each IaaS platform becomes a 
-
-Some of the platforms are
-
-image::IaCPlatforms.png[]
-
-===== Terraform
-Terraform is a platform that abstracts the complexities of each of the cloud environments from the administrators/end users. Makes code human readable, easy to learn, and maintain.
-
-*Configuration Management* tools are:
-* Designed to Install & Manage Software
-* Maintains Standard Structure
-* Version Control
-* Idempotent
-
-*Server Templating Tools* tools are:
-* Pre installed software and dependencies
-* Virtual Machine or Docker Images
-* Immutable Infrastructure
-
-*Provisioning Tools*
-* Deploy Immutable Infrastructure resources
-* Servers, Databases, Network Composnents etc.
-* Multiple Providers
-
-
-
-image::ShiftingLeftOnCloudSecurity.png[]
-
-===== Cloud Environment Security
 Best approach is to perform *IaC Scanning*+*Drift Control*+*Runtime Scaning*
 
 Some of the tools available to accomplish each of the steps above:
@@ -606,7 +574,39 @@ Some of the tools available to accomplish each of the steps above:
 *** DivvyCloud
 *** Fuge*
 
-===== Introduction to Terraform
+
+=== Infrastructure As Code(IaC)
+A mechanism to codify the deployment of infrastructure via scripting to the varous IaaS platforms.  With IAAC you can manage any infrasturcutre component as a code.  Each IaaS platfrom provides its own mechanisms to write code and automate deployment of infrastrcuture.  When teams have to deploy worloads in multiple cloud environments learning how to write code and maintain that code for each IaaS platform becomes a 
+
+Some of the platforms are
+
+image::IaCPlatforms.png[]
+
+==== Terraform
+Terraform is a platform that abstracts the complexities of each of the cloud environments from the administrators/end users. Makes code human readable, easy to learn, and maintain.
+
+*Configuration Management* tools are:
+* Designed to Install & Manage Software
+* Maintains Standard Structure
+* Version Control
+* Idempotent
+
+*Server Templating Tools* tools are:
+* Pre installed software and dependencies
+* Virtual Machine or Docker Images
+* Immutable Infrastructure
+
+*Provisioning Tools*
+* Deploy Immutable Infrastructure resources
+* Servers, Databases, Network Composnents etc.
+* Multiple Providers
+
+
+
+image::ShiftingLeftOnCloudSecurity.png[]
+
+
+===== Introduction
 
 image::TerraformTargetUseCases.png[Resources Terraform Can Manage]
 
