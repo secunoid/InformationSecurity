@@ -1330,6 +1330,7 @@ image::AWSSRA.png[title="AWS Security Reference Architecure]
 
 image::AWSSecurityServices.png[title="AWS Security Services"]
 
+https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
 
 <<<
 == Information Security  Frameworks
