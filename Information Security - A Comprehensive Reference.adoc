@@ -385,10 +385,12 @@ Link: https://github.com/gophish/gophish/releases/
 == Application Security
 Application Security is one of the key areas that need a lot of attention.  A successful application security program ensures that during the lifecycle of the code development and deployment following mechanisms are considered:
 
-. SAST - Static Code Analysis
-. DAST - Dynamic Code Analysis
+. SAST - Static Application Code Analysis
+. DAST - Dynamic Application Code Analysis
 
 followed by at least an annual Penetration Testing exercise, where a human being attempts to break the application using various mechanisms that only a human being can manage.
+
+SAST & DAST complement each other, one does not replace the other.
 
 
 === Static Code Analysis (SAST)
