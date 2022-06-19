@@ -396,6 +396,7 @@ followed by at least an annual Penetration Testing exercise, where an human bein
 === Dynamic Code Analysis (DAST)
 
 === Penetration Testing
+This testing has to be done by a human being to mimic a hacker performing the activities as they normally would.
 
 ==== Microsoft Application Inspector
 Microsoft Application Inspector is a software source code analysis tool that helps identify and surface well-known features and other interesting characteristics of source code to aid in determining what the software is or what it does. It has received attention on ZDNet, SecurityWeek, CSOOnline, Linux.com/news, HelpNetSecurity, Twitter and more and was first featured on Microsoft.com.
