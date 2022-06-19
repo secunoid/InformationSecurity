@@ -383,7 +383,12 @@ Link: https://github.com/gophish/gophish/releases/
 
 <<<
 == Application Security
-The scope of application security would be the 
+Application Security is one of the key areas that need a lot of attention.  A successful application security program ensures that during the lifecycle of the code development and deployment following mechanisms are considered:
+
+. SAST - Static Code Analysis
+. DAST - Dynamic Code Analysis
+
+followed by at least an annual Penetration Testing exercise, where an human being attempts to break the application using various mechanisms that only a human being can manage.
 
 
 === Code Analysis
