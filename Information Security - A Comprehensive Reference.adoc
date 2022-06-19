@@ -391,7 +391,11 @@ Application Security is one of the key areas that need a lot of attention.  A su
 followed by at least an annual Penetration Testing exercise, where an human being attempts to break the application using various mechanisms that only a human being can manage.
 
 
-=== Code Analysis
+=== Static Code Analysis (SAST)
+
+=== Dynamic Code Analysis (DAST)
+
+=== Penetration Testing
 
 ==== Microsoft Application Inspector
 Microsoft Application Inspector is a software source code analysis tool that helps identify and surface well-known features and other interesting characteristics of source code to aid in determining what the software is or what it does. It has received attention on ZDNet, SecurityWeek, CSOOnline, Linux.com/news, HelpNetSecurity, Twitter and more and was first featured on Microsoft.com.
