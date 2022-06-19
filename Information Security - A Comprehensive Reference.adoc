@@ -429,7 +429,8 @@ An open source tool to perform malware static analysis on Portable Executable
 Link: https://github.com/Th3Hurrican3/PEpper
 
 
-=== Key Management
+=== Key & Secrets Management
+Credentials/Key should never be stored within source code in clear text.  Hence the use of Key Vaults is suggested.
 
 <<<
 == System Security
