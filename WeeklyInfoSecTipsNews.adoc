@@ -1,6 +1,6 @@
-= Weekly Information Security News by Shahid Sharif
+= Weekly Information Security Tips and News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.21.10.03.01
+v1.22.07.10.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -10,7 +10,7 @@ v1.21.10.03.01
 :docinfo:
 :docinfo1:
 :docinfo2:
-:description: This weekly newsletter covers important events in the cyber security universe
+:description: This document lists security tips and overs important events in the cyber security universe
 :keywords: cybersecurity, it security, news
 :imagesdir: images
 :stylesheet:
