@@ -26,7 +26,15 @@ https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 This document is updated at least weekly based on the threat landscape.
 
 <<<
-== List of security tips
+== Security tips
+. Enable MFA
+. Use passphrases at least 13 characters long
+. Use password managers
+. Never re-use passwords
+. Change passwords regularly
+. Never write passwords on stickies and stick them in your work space
+. Never store passwords/credentials in cleartext
+. 
 
 
 == Active Threats
