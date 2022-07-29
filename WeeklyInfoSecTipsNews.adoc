@@ -1,6 +1,6 @@
 = Weekly Information Security Tips and News by Shahid Sharif
 Doc Writer <ssharif@secunoid.com>
-v1.22.07.10.01
+v1.29.07.10.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -35,7 +35,7 @@ This document is updated at least weekly based on the threat landscape.
 . Never write passwords on stickies and stick them in your work space
 . Never store passwords/credentials in cleartext
 . PII (Personally Identifiable Information) should always be send securely
-. 
+. Before deleting applications from your Mobile Phones log out of the application as the login credentials are cached on the phone. Logging out ensures they are deleted.
 
 
 == Active Threats
