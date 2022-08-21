@@ -1,0 +1,84 @@
+Company Description
+
+We are a purpose-driven, creative community who believes challenging convention moves culture forward, so we use our platform to amplify the voices that are changing the way we see the world. When you join us, you will become a part of an industry-leading fashion platform with a global reach.
+
+Founded in 2003, we pace the vanguard of directional retail with a mix of luxury, streetwear, and avant-garde labels. We produce cutting-edge original content and take pride in building our own technology solutions and systems from scratch. Our field of focus has grown beyond that of a typical e-commerce entity as we explore the nexus of content, commerce, and culture.
+
+Our team is currently 1100 strong, serving 150 countries, generating an average of 76 million monthly page views, and achieving high double-digit annual growth since inception. Our work is varied and ambitious. We have a roadmap full of rewarding projects to keep you motivated and engaged, with a leadership ethos based on transparency, collaboration and enabling performance.
+
+Job Description
+
+Reporting to the Senior Technical Director of the SSENSE Technology Platform, the CISO holds a critical role within SSENSE. The SSENSE Information Security Program is designed to protect information and critical resources from a wide range of threats in order to ensure business continuity, minimize business risk, and maximize return on investments and business opportunities. The objective in the development and implementation of this Information Security Program is to create effective administrative, technical, and physical safeguards in order to protect SSENSE and its subsidiaries' data.
+
+The Chief Information Security Officer (CISO) works collaboratively with the business units to assure compliance with government, business, and other international regulatory policies and laws related to information security and privacy.
+
+The CISO assesses information systems, oversees and deploys security awareness programs, assists in responding to security inquiries, develops the security and privacy components that support overall SSENSE business strategy, leads exco (board-level) presentations on cybersecurity, and develops strategies to reduce risk and allow for business continuity. The primary purpose of the CISO position is to set and maintain the overall corporate strategy concerning cyber security within the SSENSE Information Security Program. This includes leading the development of information security strategies, technology best practices, vulnerability management, access controls, vendor risk management, cloud security, security architecture and Disaster Recovery / Contingency Planning. The position will manage the development and delivery of IT security standards, architecture and systems to ensure data and information security across the company.
+
+Responsibilities
+
+Information security Strategy
+Provide leadership, vision and direction for Information Security initiatives that support and protect the company's business objectives and requirements
+Responsible for identifying internal and external information security risks; performing risk assessments and cost benefit analysis to determine appropriate level of security controls for monitoring IT systems and other document processing systems
+Develop and implement a comprehensive plan, program and architecture for information systems security
+Maintain a role as technical expert for information security policies, practices and procedures; ensure information security policies, procedures and updates are communicated appropriately
+Evaluate, test and assist in the selection of manual and/or automated security control solutions that promote safeguarding of assets, including monitoring compliance with approved processes
+Coordinate information systems security efforts with third party auditors and outside vendors
+Develop ongoing risk management programs for all vendor technology environments that service SSENSE customers
+Information Security Operations
+With the help of the Information Security Staff perform the following: Complete ongoing security training for associates; Manage user access; New hire and termination procedures over all applications; Manage and report information security incidents, Conduct security compliance reviews annually; Maintain PCI-DSS compliance throughout the company and subsidiaries; Maintain HITRUST CSF compliance for select subsidiaries
+vendor contracts for required security and privacy provisions in combination with Legal and the Privacy Office
+Develop and maintain the Information Security Incident Response Playbook on an annual basis. Perform an annual TABLE TOP exercise with senior management of the corporation. Responsible for setting strategy to integrate all subsidiaries within the Incident Response Playbook
+Review and perform risk assessments of all SSENSE vendors on a recurring basis to ensure vendors meet SSENSE security standards
+Perform an EDA (Early Data Assessments) together with security partners
+People leadership & development - 15%
+Work with Managers to ensure hiring targets are being met
+Hold weekly one-on-ones, conduct performance reviews, analyze individual KPIs and assess promotion readiness to help each contributor evolve in their roles
+Ensure team mobilization by regularly gauging team engagement and implementing appropriate means to create a transparent, collaborative and productive work environment
+Identify current gaps within the team/department structure and work with Senior Leadership on resourcing plans
+Establish the resource plan for the direct team
+Establish the short term objectives for the department and ensure team's are engaged towards achieving the department's missions
+Enforce the Department's mission and vision throughout the teams
+
+Qualifications
+Bachelor’s Degree in Arts/Sciences (BA/BS) Information Systems or Computer Science required
+Master’s degree in Arts/Sciences (MA/MS) an asset
+10 years of experience in AWS Cloud Technologies, Modern Application Development, Technology Operations required
+7 years of experience in Strong Network relationships with Industry Peers, Vendors and Government Agencies preferred
+The candidate must have two of the following certifications:
+Certified Information Security Auditor (CISA) required
+Certified Information Systems Manager (CISM) required
+Certified Information Systems Risk & Control (CRISC) required
+Certified Information Systems Security Professional (CISSP) required
+AWS Certified Security – Specialty required
+Excellent written and spoken communication skills in both French and English
+
+Skills
+Strong stakeholder management skills and ability to lead by influence across functional teams
+Strong leadership, project management, time management, and problem solving skills
+Strong analytical skills
+Self-motivated with the ability to work within rigorous deadlines in a high growth environment
+Strong business acumen
+Team player with solid interpersonal skills
+
+Additional Information
+
+WORLD CLASS TECHNOLOGY
+
+Technology is at the core of everything we do at SSENSE. Driven by an engineering mindset and a problem-solving attitude, we blend fashion with technology to deliver an unparalleled experience to our customers as we build seamless, custom solutions to deliver the SSENSE offering.
+
+WORLD CLASS TEAM
+The SSENSE tech team is responsible for an international headless commerce platform. Working in an agile environment, our squads are made up of experienced innovators in Product Management, QA, Design, DevOps, Software Development, Machine Learning, Data Engineering, and Security. Headquartered in Montreal, our technology organization has been growing at a rate of 2X year-over-year and is doubling once again in 2021 as we expand across Canada, US, and Europe.
+
+WORLD CLASS PLATFORM
+
+The SSENSE platform runs on Amazon Web Services making use of serverless microservices across web, mobile and app. Our event-source architecture already achieves over 10,000 requests / second and growing at an unmatched pace, currently unseen across the industry. Our data-driven culture of innovation empowers every product team across the tech organization to explore building, testing and learning with the latest in Machine Learning techniques. Our automated continuous improvement DevOps model (making use of both blue / green and canary deployments) results in an average of 50 production releases every day.
+Seniority Level
+Executive
+
+Industry
+Information Technology & Services  Internet  Retail
+Employment Type
+Full-time
+
+Job Functions
+Information Technology
