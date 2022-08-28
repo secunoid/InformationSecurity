@@ -23,10 +23,35 @@ v1.22.08.28.01
 https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 
 == Overview
-This document covers Networking technologies
+This document covers Networking technologies.  With the introduction of the cloud, the *new* network has to be:
+
+. Resilient
+.. Security
+.. Availabilily
+. Agile
+.. Expandable
 
 <<<
 === SDN
+Methods of SDN:
+
+. OpenFlow
+. Network Virtualization
+. ACI
+
+Split into:
+. Data Plane
+. Control Plane
 
 === CISCO ACI
+
+
+==== To be organized
+Tetration
+EPG: End Point Groups
+Cloud Center (Clicker) now called APIC
+
+Policy(old): QOS, User Experience, SEcurity, ACL, Firewalls (CLI, subnets, VLANs)
+Policy(new): group to group (Policy in between)
+
 
