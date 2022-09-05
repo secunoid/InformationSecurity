@@ -1,0 +1,36 @@
+= Ansible Knowledge Base
+Doc Writer <ssharif@secunoid.com>
+v1.22.09.05.01
+:numbered:
+:sectnum:
+:sectnumlevels: 10
+:chapter-label:
+:toc: right
+:toclevels: 10
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document covers using Ansible
+:keywords: information security, cyber security, network, zero trust, ansible, configuration management, configuration as code
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+
+<<<
+== Author
+https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
+
+== Overview
+This document covers using Ansible for managing operating systems, and network devices.  
+
+<<<
+==== To be organized
+
+. Check if Ansible can reach the end points: ansible all -m ping --private-key="~/.ssh/ansible.ppk" -u ansible
+. Check if Ansible can reach the end points in verbose mode: ansible all -m ping --private-key="~/.ssh/ansible.ppk" -u ansible -vvv
+. Run Ansible playbook on a target host: ansible-playbook -i elk-fedora, update-fedora.yaml -u ansible
+. How to Use Ansible: A Reference Guide https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide
+
+
