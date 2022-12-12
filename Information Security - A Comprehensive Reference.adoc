@@ -1570,6 +1570,8 @@ image::TheThreeLinesOfDefenseModel.png[]
 
 === IT Risk Management
 
+image::RiskCentricGRC.png[]
+
 === Integrated Risk Management
 
 === Opertional Risk Management
