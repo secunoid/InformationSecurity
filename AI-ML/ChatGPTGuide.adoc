@@ -28,7 +28,7 @@ This document provides guidance on how to use ChatGPT
 <<<
 == Rewrite
 Rewrite text 
-\[Rewrite\] blah blah
+\[\Rewrite\]\ blah blah
 
 == Return
 Return only the main response.
