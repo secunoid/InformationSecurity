@@ -67,4 +67,11 @@ create 10 compelling, clickbiat titles for "how to create a website"
 == Make an outline
 create an outline for a blog post title "how to make money with the brave browser"
 
-== 
+== Meta Description
+Write a meta description that is 150-156 characters for a page title "how to make money on twitch as a streamer"
+
+== Proof Read
+[proof read]
+
+== Generate Code Snippets with ChatGPT
+
