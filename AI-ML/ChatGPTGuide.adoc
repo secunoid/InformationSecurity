@@ -1,0 +1,38 @@
+= ChatGPT Guide
+Doc Writer <ssharif@secunoid.com>
+v1.22.03.25.01
+:numbered:
+:sectnum:
+:sectnumlevels: 10
+:chapter-label:
+:toc: right
+:toclevels: 10
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document provides guidance on how to use ChatGPT 
+:keywords: ai, aritificial intelligence, prompts
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+
+<<<
+== Author
+https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
+
+== Overview
+This document provides guidance on how to use ChatGPT 
+
+<<<
+== Rewrite
+Rewrite text 
+[rewrite] blah blah
+
+== Return
+Return only the main response.
+[Return only the main response. Remove pre-text and post-text]
+
+== Style dictation
+[write at a 5th grade level.  User clear and simple language. Fias toward short sentences. Avoid jargon] blah blah blah
