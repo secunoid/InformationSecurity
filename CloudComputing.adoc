@@ -1,0 +1,284 @@
+= Cloud Computing - A Comprehensive Reference
+Doc Writer <ssharif@secunoid.com>
+v1.23.04.16.01
+:numbered:
+:sectnum:
+:sectnumlevels: 5
+:chapter-label:
+:toc: right
+:toclevels: 5
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: This document covers all aspects of cloud computing
+:keywords: cloud computing, SaaS, IaaS, PaaS, Hybrid computing
+:imagesdir: images
+:stylesheet:
+:homepage: https://www.secunoid.com
+'''
+
+
+<<<
+== Author
+https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
+
+== Overview
+
+<<<
+== Cloud Computing
+Cloud has commoditized compute making it very easy to deploy environments at break neck speed.  With this speed comes the need for careful planning of the cloud deployments. Not all workloads are built to be migrated to the cloud.
+
+=== Human Resources
+First action every organization has to take is to ensure they have resources who understand how cloud environments are configured. Training is the key.  Configuring on premise infrastructure is quite different from configuring infrastructure in the cloud, it is a total paradigm shift.
+
+=== Security
+Since the cloud technology is still evolving, misconfiguration is a given that will happen.  Hence what the organizations have ensure is to embed "by design" principles into their cloud strategy.  A framework has to be established which ensures that as the data moves into the cloud is tagged at the source and those tags are used to ensure it is protected while in use, in transit, and in storage.
+
+Ensure that:
+
+. Your infrastructure teams understand Infrastrucutre As Code (IaC) for the clouds you will be deploying in.
+. A process is in place where the IaC templates are reviewed to ensure a security review is conducted to avoid misconfiguration that may expose the data
+. The IaC repository is closely monitored for unauthorized changes and its integrity maintained at all times.
+
+Best approach is to perform *IaC Scanning*+*Drift Control*+*Runtime Scaning*
+
+Some of the tools available to accomplish each of the steps above:
+. IaC Scanning 
+** OpenSource Tools
+*** Checkov by bridgecrew
+*** Regula By Fuge
+*** Semgrep
+*** Terraform Compliance
+*** Terrascan by accurics
+*** TFSEC
+. Drift Control
+** OpenSource Tools
+*** driftctl
+. Runtime Scanning
+** OpenSource Tools
+*** ScoutSuite
+*** Prowler
+*** CloudMapper
+*** Cartography
+*** Cloudsplaining
+*** SteamPipe
+** Commercial Tools
+*** AWS Config
+*** BridgeCrew
+*** DivvyCloud
+*** Fuge*
+
+
+=== Infrastructure As Code(IaC)
+A mechanism to codify the deployment of infrastructure via scripting to the varous IaaS platforms.  With IAAC you can manage any infrasturcutre component as a code.  Each IaaS platfrom provides its own mechanisms to write code and automate deployment of infrastrcuture.  When teams have to deploy worloads in multiple cloud environments learning how to write code and maintain that code for each IaaS platform becomes a 
+
+Some of the platforms are
+
+image::IaCPlatforms.png[]
+
+==== Terraform
+Terraform is a platform that abstracts the complexities of each of the cloud environments from the administrators/end users. Makes code human readable, easy to learn, and maintain.
+
+*Configuration Management* tools are:
+* Designed to Install & Manage Software
+* Maintains Standard Structure
+* Version Control
+* Idempotent
+
+*Server Templating Tools* tools are:
+* Pre installed software and dependencies
+* Virtual Machine or Docker Images
+* Immutable Infrastructure
+
+*Provisioning Tools*
+* Deploy Immutable Infrastructure resources
+* Servers, Databases, Network Composnents etc.
+* Multiple Providers
+
+
+
+image::ShiftingLeftOnCloudSecurity.png[]
+
+
+===== Introduction
+
+image::TerraformTargetUseCases.png[Resources Terraform Can Manage]
+
+Terraform uses a simple *declarative* language called *HashiCorp Configuration Language* *HCL* for short.
+
+*Declarative* means that you specify the target or end state.
+
+Files with a *.tf* extension are configuration files that contains blocks of code to to provision the infrastructure. Can be available via version control systems for easy maintainability.
+
+image::TerraformDotTFFile.png[Terraform TF File Sample]
+
+Terraform worksflow is comprised of four steps:
+
+. Create the .tf file
+. Init: Initializes the project, and identifies the providers required for the target state. 
+. Plan: Drafts the plan to get to the target state
+. Apply: Makes the necessary changes on the environment to bring it to the target state.  You can use `terraform apply -auto-approve` to not prompt you for a *yes* when you just use `terraform apply`.  If you change a config and would like to update the state without destroying the environment use the command `terraform apply -refresh-only`
+
+Every object that Terraform manages is called a resource.
+
+Terraform manages the lifecycle of resources from provisioning, configuration, and decomissioning.
+
+Terraform tracks the state of resources via the *terraform.tfstate* file.  This helps it determine when updating resources for a particular platform.
+The state is a blueprint of the insfrastructure deployed by Terraform. Terraform can also import other resources outside of Terraform that were created by other means and bring it under its control.
+
+A Terra from *resource* can be:
+
+* A file in a local host
+* S3 Bucket
+* VM
+* Databases
+* etc...
+
+===== HCL Basics
+HCL code is comprised of two areas, blocks and arguments, in key value format.
+
+[source,terraform]
+----
+<block> <parameters> {
+	key1 = value1
+	key2 = value2
+}
+----
+
+image::TerraformLocalFileResourceExample.png[Example of a local file resource]
+
+You can have configurations in multiple files with **.tf* extensions.  
+when `terraform` `init`, `plan`, and `apply` are executed all files are considered by terraform.  Alternatively all the files can be included into a single file `main.tf` and produces the same result.
+
+[options="header"]
+|=======================================================================
+| File Name     | Purpose                                               
+| main.tf       | Main configuration file containing resource definition
+| variables.tf  | Contains variable declarations                        
+| outputs.tf    | Contains outputs from resources                       
+| provider.tf   | Contains Provider definition                          
+|=======================================================================
+
+===== Terraform Providers
+
+Are available at https://registry.terraform.io and there are three types:
+
+. Official: Providers from major cloud vendors AWS, GCP, Azure, 
+. Verified: F5, Heroku, Digitalocean
+. Community: Active Directory, Ucloud, Netapp-gcp
+
+===== Installing Terraform
+Terraform is supported on:
+
+* MacOS
+* FreeBSD
+* Linux
+* OpenBSD
+* Solaris
+* Windows
+
+On some OSes it can be downloaded a an executable binary.
+
+===== Terraform Lifecycle Rules
+
+[options="header"]
+|=======================================================================
+| Order| Option                 | Action                             
+| 1    | create_before_destory  | Create the resource first and then destroy older
+| 2    | prevent_destroy        | Prevents destroy of a resource               
+| 3    | ignore_changes         | Ignore Changes to Resource Attributes (specific/all)                                        
+|=======================================================================
+
+===== Terraform Data Sources
+Data sources allow Terraform to read resources that are created from other means.
+
+[options="header"]
+|=======================================================================
+| Resource                                  | Data Source                                               
+| Keyword: resource                         | Keyword: data
+| Creates, Updates, Destroys Infrastructure | Only Reads Infrastructure                        
+| Also called Managed Resources             | Also called Data Resources                                         
+|=======================================================================
+
+===== Terraform State
+Terraform keeps track of the environment in the cloud provider in a file called *terraform.tfstate*.  
+
+. This file is very important
+. It has a lot of sensitive information about your environment
+. Never manually manipulate this file
+. If multiple users are using terraform, it is key that this file gets updated with the latest state of the environment
+. This file should never be stored in public repositories
+. It should be stored in a private protected store 
+. When a team member is updating environment this file should be locked so that other team members do not implement the changes at the same time.
+. Store the credentials in a common store that protects your secrets
+
+====== Terraform VPC Playbook-Webserver
+This playbook outlines steps that need to be taken to deploy an environment with a webserver exposed to the internet
+#1. Select Provider, region, access & secret keys
+#2. Create VPC
+#3. Create Internet Gateway
+#4. Create Custom Route Table
+#5. Create a subnet
+#6. Associate subnet with Route Table 
+#7. Create Security Geroup to allow port 22, 80, 443
+#8. Create a network interface with an ip in the subnet that was created in step 4
+#9. Assign an elastic IP to the network interface created in step 8
+#10. Create Ubuntu server and install/enable apache2
+
+====== Automation
+Values in a Terraform script can be:
+
+. Embedded in the script
+. Prompted for at runtime
+. Supplied at runtime by passing command line arguments
+. Use input files for variables, via *terraform.tfvars* file
+. Environment Variables
+
+====== Misc Commands
+
+. `terraform state list` : List all services deployed
+. `terraform state show <service name from the out above>` : Show details about the specific service
+. `terraform fmt` : Fix formatting of the terraform files
+
+==== AWS
+
+===== Security Assessment of the environment
+
+* https://github.com/awslabs/aws-security-assessment-solution/blob/master/docs/how-to-deploy.md[AWS Self-Service Security Assessment Tool(SAT)]
+* https://github.com/awslabs[Amazon Web Services - Labs]
+
+==== Azure
+
+===== Azure Products
+* Azure Automation: uses runbooks to process a set of tasks on the VM's we target.  It is used to manage existing VMs rather than to create an infrastrucutre
+* Azure Resource Manager (ARM) Templates: Using ARM templates enables us to deploy and manage Azure resources (create, update, delete, etc..). Uses JSON format.
+* Azure Bicep: Bicep is a language that uses domain-specific languate (DSL) to deploy Azure Resources
+
+===== Environment Configuration
+
+*Windows*
+
+. Install Terraform
+. Install Azure CLI
+. Once Azure CLI is installed, at command prompt type in `az login` to configure tenant access and secrets
+. In Azure CLI type in `az extension add --upgrade -n account`
+
+===== Azure Virtual Network
+Azure Virtual Network or VPC has following components:
+
+* Subnet
+* Routing
+* Network Security Group
+
+==== GCP
+
+=== Architecture
+The architecture should be to enable business to ensure time to market is reduced as much as possible when it comes to IT.
+
+Microservices are key, and three microservices that play key role are authentication, authorization, and logging.
+
+=== Cost Management
+
+
+
+
