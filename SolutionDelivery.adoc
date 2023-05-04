@@ -79,7 +79,7 @@ This section identifies roles that are key for successful project delivery and o
 * Product end to end process maps to for the entire lifecycle of the product
 * Good understanding of flowcharting specifically Business Process Model & Notation (BPMN)
 
-==== Systems Analyst
+==== Solution Architect
 
 * Ability to understand translate BPMN diagrams to system level flow diagrams
 * Ability to create Unified Modeling Language (UML) diagrams
@@ -105,6 +105,7 @@ This section identifies roles that are key for successful project delivery and o
 * Security Testing
 
 ==== Infrastructure Architect
+There can be multiple Infra Architects such as Server, Network, Storage.
 
 * Identify Network, Server, Storage, & Monitoring Requirements
 * Create Network, Server, Storage, & Monitoring Designs
