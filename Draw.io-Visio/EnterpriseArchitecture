@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-08T00:07:44.587Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="wC5MmcQrp3wv2FguGNyt" version="21.2.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-05-08T00:13:20.891Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="zZXo8zdZJs1vjENt0Upv" version="21.2.9" type="github" pages="2">
   <diagram name="Page-1" id="qC1ZYluLyTQtiZ1xCcdh">
     <mxGraphModel dx="481" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -48,6 +48,51 @@
         </mxCell>
         <mxCell id="QyMZxapAAkvtKAHcXRyv-2" value="" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-180;" vertex="1" parent="1">
           <mxGeometry x="310" y="120" width="120" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-3" value="Diverse" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-4" value="Prescriptive" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-5" value="Harmonized" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-6" value="Flexible" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-7" value="Local Customization" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-8" value="Application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-9" value="Platform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-10" value="Infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-12" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="190" as="sourcePoint" />
+            <mxPoint x="280" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-15" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="259.5" as="sourcePoint" />
+            <mxPoint x="280" y="259.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-16" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="320" as="sourcePoint" />
+            <mxPoint x="280" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QyMZxapAAkvtKAHcXRyv-17" value="&lt;h1&gt;Harmonize &amp;amp; Govern&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Publish common principles to be considered by projects&lt;/li&gt;&lt;li&gt;Track projects through direct involvement&lt;/li&gt;&lt;li&gt;Have a review/decision&lt;/li&gt;&lt;li&gt;Ensure the review board brings value to projects&lt;/li&gt;&lt;li&gt;Have an escalation path&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="400" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
