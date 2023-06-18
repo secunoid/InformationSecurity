@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.23.04.16.01
+v1.23.06.18.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -1338,6 +1338,20 @@ Compliance function ensures that all the Industry, Governmental,  & Financial re
 ==== Assesment Tools
 
 Automating security assessments using CloudBXPC-W3W-TYZ-9PP-BO4G Katana: https://www.microsoft.com/security/blog/2021/08/19/automating-security-assessments-using-cloud-katana/ 
+
+<<<
+== Observability
+Network Observability is the key to maintaining a secure, resilient, agile, availability, and programmability.
+
+To establish this the network should be broken down into:
+
+Areas: Areas where observability is required
+Capability: Which capability we are after in each of the areas
+Technology/Solution: Which technology/solution will help us realize this capability
+
+image::EnvironmentObservability.drawio.png
+
+The image above depicts how you should organize your area, capability, and technology matrix.
 
 <<<
 == Leadership
