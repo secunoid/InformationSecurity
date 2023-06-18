@@ -1349,7 +1349,7 @@ Areas: Areas where observability is required
 Capability: Which capability we are after in each of the areas
 Technology/Solution: Which technology/solution will help us realize this capability
 
-image::EnvironmentObservability.drawio.png[]
+image::EnvironmentObservability.drawio.png[The image above depicts how you should organize your area, capability, and technology matrix.]
 
 The image above depicts how you should organize your area, capability, and technology matrix.
 
