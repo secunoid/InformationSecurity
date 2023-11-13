@@ -34,7 +34,7 @@ Data about living entities, especially us humans is very valuable.  With the dev
 <<<
 == What is Data?
 
-In the cosmos of data, understanding its various facets is key to unlocking its power. Here's a snapshot of the essential terms that shape our data-driven narratives. 🌌
+In the cosmos of data, understanding its various facets is key to unlocking its power and securing it. Here's a snapshot of the essential terms that shape our data-driven narratives. 🌌
 
 🌊 **Data Lake**: An expansive reservoir of raw, unstructured data. It’s the starting point, rich with possibility, awaiting exploration. Think of it as the primordial soup from which all data-driven insights emerge.
 
@@ -51,6 +51,8 @@ In the cosmos of data, understanding its various facets is key to unlocking its 
 👀 **Data Observability**: The window into the health of data systems. It’s about maintaining visibility to ensure reliability and performance, the behind-the-scenes hero ensuring everything runs smoothly.
 
 These terms aren't just jargon—they're the building blocks of a data-centric world, and understanding them is your first step toward mastery. 🛠️
+
+Data has to be protected in each of the above facets.  Section below delves deeper into which aspects of data must be protected at all times.
 
 <<<	
 == What is information security?
