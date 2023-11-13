@@ -34,6 +34,27 @@ Data about non living entities when modified leads to mis-information and curren
 Data about living entities, especially us humans is very valuable.  With the devices we carry, and use in our daily lives, we are constantly producing data, every hour, every second of our lives. 
 
 <<<
+== What is Data?
+
+In the cosmos of data, understanding its various facets is key to unlocking its power. Here's a snapshot of the essential terms that shape our data-driven narratives. 🌌
+
+🌊 **Data Lake**: An expansive reservoir of raw, unstructured data. It’s the starting point, rich with possibility, awaiting exploration. Think of it as the primordial soup from which all data-driven insights emerge.
+
+🛒 **Datamart**: A specialized 'boutique' within the larger 'market' of a Data Warehouse, focused on a specific business area. It’s where data gets personal, tailored to domain-specific queries.
+
+🕸️ **DATA mesh**: An approach where data is decentralized, empowering individual teams with ownership and control. This mesh network ensures that data's value is maximized through collective stewardship.
+
+🚀 **Data Pipelines**: The dynamic flow of data, moving and transforming from raw to ready. It’s the journey that prepares data for action, making it accessible and meaningful.
+
+🏛️ **Data Warehouse**: The structured archive where data is stored, organized, and ready for analysis. It’s the foundation that supports data-driven decision-making, a repository built for speed and scale.
+
+🔎 **Data Quality**: The lifeblood of reliable analytics. Accuracy, consistency, and completeness define the trustworthiness of the data. Without quality, there’s no clarity.
+
+👀 **Data Observability**: The window into the health of data systems. It’s about maintaining visibility to ensure reliability and performance, the behind-the-scenes hero ensuring everything runs smoothly.
+
+These terms aren't just jargon—they're the building blocks of a data-centric world, and understanding them is your first step toward mastery. 🛠️
+
+<<<	
 == What is information security?
 The foundation of information security is based on three pillars also known as the *triad*
 
@@ -41,7 +62,7 @@ The foundation of information security is based on three pillars also known as t
 . Integrity
 . Availability
 
-== Why are they important?
+=== Why is the triad important?
 What is the the topic of discussion, *Information Security* , there two key words here *information* and *security*, viz a viz securing information.
 
 You have to condition yourself to always think about what protecting,  the *information*.  Once you get this concept the rest is easy.
@@ -56,13 +77,13 @@ Then think of how does this information move in the environment.  Information of
 
 The sections below will build upon them.
 
-=== Confidentiality
+==== Confidentiality
 NIST defines "Confidentiality" as Preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information.
 
-=== Integrity
+==== Integrity
 NIST defines "Integrity" as Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity.
 
-=== Availability
+==== Availability
 NIST devines "Availability" as Ensuring timely and reliable access to and use of information.
 
 
