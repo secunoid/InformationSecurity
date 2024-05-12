@@ -201,6 +201,41 @@ Enter Information Security, which at the most fundamental level is the basis for
 This book will cover the various aspects of implementing an Information Security Program at an organization of any size. You don't have to be a huge organization to have an information security program.  If you are in business you are collecting, storing, and transmitting all kinds of information and it important that you know how to ensure that information is protected at all times.  If it is not then maybe your business might be at risk.
 
 <<<
+== Organizational Structure
+You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
+
+
+<<<	
+=== Security Organization
+For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
+
+* Centralized
+* Distributed
+
+In centralized operational model, all aspects of security operations are within the security organization, such as:
+
+* User provisioning/de-provisioning
+* Security Information & Event Management (SIEM)
+* Security Operations Center
+* Incident Response
+* Firewall & Network Operations
+
+In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
+
+==== Reporting to CEO (Ideal)
+image::CyberSecurityOrganization-27Dec2018-v03-Ideal.png[]
+
+==== Reporting to CFO
+image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
+
+==== Reporting to CIO
+image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
+
+==== Reporting to CTO
+image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
+
+
+<<<	
 == Information Security Program
 
 image::InformationSecurityProgram.png[]
@@ -330,57 +365,38 @@ Web site content is located on a non-system NTFS volume.
 <<<
 === Security Guidelines
 
+=== Security Strategy
 
+=== Security Architecture
 
-<<<
-== Organizational Structure
-You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
+**Security architecture** refers to a **unified security design** that addresses the necessities and potential risks in a specific scenario or environment. It outlines **when and where to apply security controls**. This design process is generally reproducible². In essence, security architecture is the strategic alignment of systems, policies, and technologies to safeguard IT and business assets from cyber threats. It ensures that cybersecurity aligns with the unique business goals and risk management profile of an organization³⁴.
 
+At its core, security architecture involves:
 
-<<<	
-=== Security Organization
-For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
+1. **Physical and Logical Representations**: It encompasses a set of physical and logical security-relevant representations (views) of system architecture. These convey how the system is partitioned into **security domains** and utilize security-relevant elements to enforce security policies within and between these domains based on data protection requirements¹.
 
-* Centralized
-* Distributed
+2. **Alignment with Business Goals**: A well-designed security architecture aligns with the organization's mission and strategic plans. It describes the structure and behavior of security processes, information security systems, personnel, and organizational sub-units³.
 
-In centralized operational model, all aspects of security operations are within the security organization, such as:
+3. **Executable Security Requirements**: By translating business requirements into executable security requirements, security architecture ensures that the organization remains resilient against cyber threats⁴.
 
-* User provisioning/de-provisioning
-* Security Information & Event Management (SIEM)
-* Security Operations Center
-* Incident Response
-* Firewall & Network Operations
+Remember, security architecture is not a one-size-fits-all solution; it adapts to the unique context and needs of each organization.
 
-In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
+Sources
+(1) What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
+(2) What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
+(3) Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
+(4) security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
+==== Network Architecture
 
-==== Reporting to CEO (Ideal)
-image::CyberSecurityOrganization-27Dec2018-v03-Ideal.png[]
+==== Application Architecture
 
-==== Reporting to CFO
-image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
+==== System Architecture
 
-==== Reporting to CIO
-image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
+=== Security Development
 
-==== Reporting to CTO
-image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
-
-==== Security Strategy
-
-==== Security Architecture
-
-==== Security Development
-
-==== Security Operations
+=== Security Operations
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
 All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
-
-
-
-
-
-
 
 
 <<<
@@ -1224,30 +1240,8 @@ Cost
 Getting compliant can get pricey and be time-consuming, but SOC 2 typically costs less because it doesn’t include an ISMS. Experts say the cost to become ISO 27001 compliant can be up to about 50% more than SOC 2.*
 
 <<<
-	
-== Security Architecture
-**Security architecture** refers to a **unified security design** that addresses the necessities and potential risks in a specific scenario or environment. It outlines **when and where to apply security controls**. This design process is generally reproducible². In essence, security architecture is the strategic alignment of systems, policies, and technologies to safeguard IT and business assets from cyber threats. It ensures that cybersecurity aligns with the unique business goals and risk management profile of an organization³⁴.
 
-At its core, security architecture involves:
 
-1. **Physical and Logical Representations**: It encompasses a set of physical and logical security-relevant representations (views) of system architecture. These convey how the system is partitioned into **security domains** and utilize security-relevant elements to enforce security policies within and between these domains based on data protection requirements¹.
-
-2. **Alignment with Business Goals**: A well-designed security architecture aligns with the organization's mission and strategic plans. It describes the structure and behavior of security processes, information security systems, personnel, and organizational sub-units³.
-
-3. **Executable Security Requirements**: By translating business requirements into executable security requirements, security architecture ensures that the organization remains resilient against cyber threats⁴.
-
-Remember, security architecture is not a one-size-fits-all solution; it adapts to the unique context and needs of each organization.
-
-Sources
-(1) What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
-(2) What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
-(3) Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
-(4) security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
-=== Network Architecture
-
-=== Application Architecture
-
-=== System Architecture
 
 <<<
 == Dev, Sec, Ops
