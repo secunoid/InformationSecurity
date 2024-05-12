@@ -392,10 +392,103 @@ Remember, security architecture is not a one-size-fits-all solution; it adapts t
 . security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
 
 ==== Network Architecture
+**Network architecture** refers to the **way network devices and services** are **structured** to serve the **connectivity needs** of client devices. Let's break it down:
+
+. **Components of Network Architecture**:
+    - **Network Devices**: These include **switches** and **routers** that facilitate data flow.
+    - **Services**: Examples include **DHCP** (Dynamic Host Configuration Protocol) for IP address assignment and **DNS** (Domain Name System) for translating domain names to IP addresses.
+    - **Client Devices**: These comprise **end-user devices** (like laptops, tablets, and smartphones), **servers**, and **smart things** (such as IoT devices).
+
+. **Types of Enterprise Networks**:
+    - **Access Networks**: Designed for campuses and branches, they bring users and devices onboard (e.g., connecting employees within an office building).
+    - **Data Center Networks**: Connect servers hosting data and applications, making them available to users.
+    - **Wide-Area Networks (WANs)**: Link users to applications, even over long distances (e.g., connecting hospital workers to health applications).
+
+. **Security Considerations**:
+    - Different networks face **unique security threats** that they need to guard against.
+    - **Network architectures** must adapt to serve the exacting needs brought on by technology advancements and digital transformation initiatives.
+
+. **Modern Approaches**:
+    - **Intent-Based Networking (IBN)**: Sets up the network based on desired outcomes, automates operations, analyzes performance, enhances security, and integrates with business processes.
+    - **Controller-Led Networks**: Controllers simplify operations, automate configurations, and monitor devices continuously.
+
+In summary, network architecture ensures efficient connectivity, security, and adaptability in the digital age¹.
+
+*Sources*
+
+. What Is Network Architecture? - Cisco. https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-network-architecture.html.
+. Network architecture - Wikipedia. https://en.wikipedia.org/wiki/Network_architecture.
+. What is Network Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/8549/network-architecture.
 
 ==== Application Architecture
 
+**Application architecture** refers to the **patterns and techniques** used in designing and building an application. It provides a roadmap and best practices to ensure that the resulting application is well-structured and meets its intended goals¹.
+
+Here are some key points about application architecture:
+
+. **Design Patterns and Techniques**:
+    - **Patterns**: These are repeatable solutions to common problems. They help address specific challenges during application development.
+    - **Techniques**: Techniques describe how to implement patterns effectively. They guide decisions related to components, data flow, and interactions.
+
+. **Front-End and Back-End Services**:
+    - **Front-End Development**: Focuses on the **user experience** of the application. It deals with user interfaces, responsiveness, and interactions.
+    - **Back-End Development**: Concerned with providing access to data, services, and existing systems that make the application work. It handles business logic, databases, and APIs.
+
+. **Programming Languages**:
+    - Choosing a programming language is an essential step. Popular languages include:
+        - **JavaScript**: Widely used for web application development.
+        - **Python**, **Ruby**, **Java**, **Swift**, and others: Each has its strengths and use cases.
+
+. **Monolith vs. Microservices**:
+    - **Monolith**: Historically, applications were written as a single unit of code (monolith). All components shared the same resources and memory space.
+    - **Modern Architecture**: Applications are now more **loosely coupled**, using **microservices** and APIs. Microservices allow modular development and scalability.
+
+. **Cloud-Native Development**:
+    - Cloud-native development accelerates building and optimizing applications across private, public, and hybrid clouds.
+    - It leverages microservices, containers, and automation for consistent management.
+
+. **Choosing an Architecture**:
+    - Start by determining your **strategic goals**.
+    - Design an architecture that aligns with your objectives rather than fitting an application into a predefined structure.
+
+In summary, application architecture provides guidance for creating well-structured, efficient, and adaptable applications that meet business needs¹.
+
+*Sources*
+
+. What is an application architecture? - Red Hat. https://www.redhat.com/en/topics/cloud-native-apps/what-is-an-application-architecture.
+. Applications architecture - Wikipedia. https://en.wikipedia.org/wiki/Applications_architecture.
+
 ==== System Architecture
+
+**System architecture** refers to the **conceptual model** that defines the structure, behavior, and different perspectives of a system. Let's explore it in more detail:
+
+. **Definition**:
+    - A **system architecture** provides a **formal description and representation** of a system.
+    - It organizes the system's components and sub-systems, ensuring they work together cohesively.
+
+. **Key Aspects**:
+    - **Structure**: System architecture defines the **fundamental organization** of a system. This includes the arrangement of components, their relationships, and their interactions with the environment.
+    - **Behavior**: It describes how the system behaves, including its functionality, data flow, and interactions.
+    - **Views**: System architecture provides different **perspectives** (views) of the system, such as functional, hardware, software, and human interaction views.
+
+. **Components of System Architecture**:
+    - **Hardware Components**: These include servers, network devices, storage, and other physical infrastructure.
+    - **Software Components**: These encompass applications, databases, middleware, and operating systems.
+    - **Documentation**: Descriptions, diagrams, and specifications that capture the system's design.
+    - **Human Interaction**: How users interact with the system, including interfaces and user experience.
+
+. **Purpose and Importance**:
+    - **Design Guidance**: System architecture guides the design process, ensuring that the system meets its intended goals.
+    - **Scalability and Adaptability**: A well-designed architecture allows for future growth and changes.
+    - **Communication**: It serves as a common language for stakeholders, developers, and engineers.
+
+In summary, system architecture is a critical aspect of designing robust, efficient, and reliable systems, whether they are software applications, hardware devices, or complex integrated solutions¹²³.
+
+Source: Conversation with Bing, 5/12/2024
+. Systems architecture - Wikipedia. https://en.wikipedia.org/wiki/Systems_architecture.
+. System Architecture Definition - SEBoK. https://sebokwiki.org/wiki/System_Architecture_Definition.
+. What is Systems Architecture? - reqi.io. https://reqi.io/articles/what-is-systems-architecture.
+. System Architecture - Detailed Explanation - InterviewBit. https://www.interviewbit.com/blog/system-architecture/.
 
 ==== Cloud Architecture
 
