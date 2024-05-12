@@ -381,26 +381,22 @@ At its core, security architecture involves:
 
 Remember, security architecture is not a one-size-fits-all solution; it adapts to the unique context and needs of each organization.
 
-Sources
-(1) What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
-(2) What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
-(3) Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
-(4) security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
+*Sources*
+
+. What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
+. What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
+. Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
+. security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
+
 ==== Network Architecture
 
 ==== Application Architecture
 
 ==== System Architecture
 
-=== Security Development
+==== Cloud Architecture
 
-=== Security Operations
-A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
-All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
-
-=== Cloud Architecture
-
-==== AWS Security Reference Architecture
+===== AWS Security Reference Architecture
 
 https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
 
@@ -408,9 +404,17 @@ https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS 
 
 image::AWSSRA.png[title="AWS Security Reference Architecure]
 
-==== AWS Security Services
+====== AWS Security Services
 
 image::AWSSecurityServices.png[title="AWS Security Services"]
+
+
+=== Security Development
+
+=== Security Operations
+A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
+All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
+
 
 <<<
 
@@ -764,6 +768,48 @@ Blue team assessment is usually a test of the teams' ability to identify and def
 * Cooperate to improve/test detection
 * Vulnerability Scanning & Pen Testing
 
+==== Security Defense Modeling
+
+===== Cyber Kill Chain
+
+The **Cyber Kill Chain®** is a **security defense model** developed by **Lockheed Martin**. It aims to identify and stop sophisticated cyberattacks before they impact an organization. Let's explore its key aspects:
+
+. **Purpose and Origin**:
+    - The Cyber Kill Chain® was initially created by Lockheed Martin in 2011.
+    - Its purpose is to bolster an organization's defenses against **advanced persistent threats (APTs)**—sophisticated cyberattacks.
+    - The concept draws inspiration from military operations, where enemy attacks are broken down into stages, and preventive measures are implemented.
+
+. **Seven Stages of the Cyber Kill Chain®**:
+    - The Cyber Kill Chain® divides an attack into seven stages:
+        1. **Reconnaissance**: Gathering information about the target.
+        2. **Weaponization**: Creating or acquiring malware.
+        3. **Delivery**: Delivering malware to the victim (e.g., via email attachments).
+        4. **Exploitation**: Exploiting vulnerabilities to gain access.
+        5. **Installation**: Installing malware on the victim's system.
+        6. **Command and Control**: Establishing communication channels.
+        7. **Actions on Objectives**: Achieving the attack goals.
+
+. **Benefits and Caution**:
+    - By breaking down the attack process, the Cyber Kill Chain® allows security teams to recognize, intercept, or prevent attacks.
+    - When used correctly, it enhances incident management and response.
+    - However, if misapplied, it can put organizations at risk.
+    - Some shortcomings in the kill chain have led to questions about its future.
+
+. **Comparison with MITRE ATT&CK**:
+    - The Cyber Kill Chain® is often compared to the **MITRE ATT&CK framework**.
+    - While both illustrate phases of a cyberattack, MITRE ATT&CK provides a broader view of **adversary behaviors** and techniques.
+    - Unlike the specific grouping and linear structure of the kill chain, MITRE ATT&CK lists tactics without a particular order.
+
+In summary, the Cyber Kill Chain® helps organizations stay ahead of hackers by understanding and defending against attacks at every stage—from conceptualization to execution. While it's not a threat modeling framework per se, it plays a crucial role in cybersecurity strategy¹².
+
+*Sources*
+
+. Cyber Kill Chains Explained: Phases, Pros/Cons & Security Tactics. https://www.splunk.com/en_us/blog/learn/cyber-kill-chains.html.
+. What Is the Cyber Kill Chain? - Proofpoint. https://bing.com/search?q=is+cyber+kill-chain+a+threat+modeling+framework.
+. What Is the Cyber Kill Chain? Definition & Steps | Proofpoint AU. https://www.proofpoint.com/au/threat-reference/cyber-kill-chain.
+. What Is the Cyber Kill Chain? - Proofpoint. https://www.proofpoint.com/us/threat-reference/cyber-kill-chain.
+. What Is The Cyber Kill Chain? Process & Model. https://securityboulevard.com/2023/11/what-is-the-cyber-kill-chain-process-model/.
+
 ==== Methods
 social engineering, phishing, vishing or simply posing as a company employee.
 
@@ -778,6 +824,58 @@ Some great information here  https://www.threatmodelingmanifesto.org/[Threat Mod
 https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
 
 With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
+Here are the key points about ATT&CK:
+
+. **Foundation for Threat Models**: MITRE ATT&CK serves as a foundation for developing specific threat models and methodologies in various sectors, including the private sector, government, and the cybersecurity industry. It helps organizations understand their security readiness and uncover vulnerabilities in their defenses¹².
+
+. **Adversarial Tactics and Techniques**: ATT&CK catalogs a comprehensive set of **adversarial tactics and techniques**. These include the methods, procedures, and approaches used by cybercriminals during different phases of an attack lifecycle.
+
+. **Open and Accessible**: MITRE ATT&CK is **open-source** and freely available to any person or organization. It encourages collaboration and knowledge sharing across the cybersecurity community.
+
+. **Matrix for Enterprise**: The ATT&CK matrix organizes tactics and techniques into categories such as **Reconnaissance**, **Execution**, **Privilege Escalation**, **Lateral Movement**, and more. Each technique provides detailed information on how adversaries operate and the platforms they target¹.
+
+In summary, MITRE ATT&CK empowers organizations to better understand and defend against cyber threats by providing a structured framework based on real-world observations of adversary behavior¹³⁴.
+
+*Sources*
+
+. MITRE ATT&CK®. https://attack.mitre.org/.
+. What Is MITRE ATT&CK - Definition | VMware Glossary. https://www.vmware.com/topics/glossary/content/mitre-attack.html.
+. What is the MITRE ATT&CK Framework? | IBM. https://www.ibm.com/topics/mitre-attack.
+. What Is the MITRE ATT&CK Framework? | Get the 101 Guide | Trellix. https://www.trellix.com/security-awareness/cybersecurity/what-is-mitre-attack-framework/.
+
+===== Relationship between Tactics & Techniques
+The relationship between **tactics** and **techniques** in the **MITRE ATT&CK framework**:
+
+. **Tactics**:
+    - **Tactics** represent the **highest-level objectives** of an attacker. They provide insight into **why** an adversary is performing specific actions.
+    - Each tactic corresponds to a strategic goal or intent. For example, an adversary might aim to achieve **credential access**, establish **persistence**, or perform **lateral movement**.
+    - Think of tactics as the **strategic phases** an attacker goes through during an attack lifecycle.
+
+. **Techniques**:
+    - **Techniques** represent **how** an adversary achieves their tactical goals. They describe the specific actions and methods used.
+    - Each technique corresponds to a specific way an adversary operates. For instance:
+        - **Initial Access Techniques**: These involve gaining the first foothold into a target environment (e.g., **drive-by compromise** or **spear phishing**).
+        - **Defense Evasion Techniques**: These focus on bypassing or evading security controls (e.g., using **fileless storage**).
+    - Techniques provide **granularity and specificity** when describing attacker behavior.
+
+. **Layered Structure**:
+    - The relationship between tactics and techniques can be visualized as a layered structure:
+        - An **initial tactic** is associated with one or more **techniques**.
+        - Each technique, in turn, comprises a set of **procedures** (specific actions taken by the adversary).
+
+. **TTP: Tactic, Technique, Procedure**:
+    - The layering from general tactics down to specific procedures gives rise to the concept of **TTP**:
+        - **Tactic**: The overarching objective.
+        - **Technique**: The method used to achieve the tactic.
+        - **Procedure**: The detailed steps within a technique.
+
+In summary, MITRE ATT&CK goes beyond describing attack stages; it models specific attacker actions, motivations, and the interplay between tactics and techniques. Understanding this relationship helps defenders better prepare and respond to cyber threats¹²³.
+
+*Sources*
+. What is the MITRE ATT&CK Framework? - An Easy Guide - SentinelOne. https://www.sentinelone.com/cybersecurity-101/mitre-attack-framework/.
+. What is the MITRE ATT&CK Framework? | IBM. https://www.ibm.com/topics/mitre-attack.
+. FAQ | MITRE ATT&CK®. https://attack.mitre.org/resources/faq/.
 
 ==== Threat Scoring and Databases
 
