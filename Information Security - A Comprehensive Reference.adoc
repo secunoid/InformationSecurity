@@ -1638,6 +1638,14 @@ image::RiskCentricGRC.png[]
 
 === Integrated Risk Management
 
+**Integrated Risk Management (IRM)** is an **organizationwide discipline** informed by certain attributes, including **strategy**, **assessment**, **response**, **communication**, and **reporting**, as well as **monitoring** and **technology**. IRM is underpinned by a framework of practices, processes, and enabling technologies that support a **risk-aware culture**, **improved decision making**, and **performance**. This discipline delivers an **integrated view** of how well an organization manages its unique set of risks¹. In other words, IRM ensures that risk considerations are embedded throughout an organization, linking technology spending directly to the value of the resource protected and the associated risks controlled by that technology². It involves integrating various risk management processes, such as operational, financial, and strategic risk management³. Overall, IRM aims to enhance decision-making and performance by providing a holistic perspective on risk management¹.
+
+*Sources*
+
+. Definition of Integrated Risk Management (IRM) - Gartner. https://www.gartner.com/en/information-technology/glossary/integrated-risk-management-irm.
+. What Is Integrated Risk Management? Definition & Implementation. https://www.esecurityplanet.com/threats/integrated-risk-management/.
+. What Is Integrated Risk Management - Risk Publishing. https://riskpublishing.com/what-is-integrated-risk-management/.
+
 === Opertional Risk Management
 
 The top operational risks in banking include:
