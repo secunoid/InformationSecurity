@@ -398,6 +398,19 @@ Sources
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
 All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
 
+=== Cloud Architecture
+
+==== AWS Security Reference Architecture
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
+
+https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
+
+image::AWSSRA.png[title="AWS Security Reference Architecure]
+
+==== AWS Security Services
+
+image::AWSSecurityServices.png[title="AWS Security Services"]
 
 <<<
 
@@ -761,6 +774,11 @@ It is a structured approach that enables you to identify, quantify, and address 
 
 Some great information here  https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
 
+==== MITRE ATT&CK
+https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
+
+With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
 ==== Threat Scoring and Databases
 
 ===== CVSS
@@ -857,19 +875,37 @@ This is the key methodology that every cyber security practictioner should be fa
 
 ==== Search Engines
 
-===== IoT
-
-
-
-==== Threat Exchanges
-
-
-==== MITRE ATT&CK
-https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
-
-With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+==== IoT
 
 ==== Open Threat Exchange(OTX)
+
+**Open Threat Exchange (OTX)** is a **crowd-sourced computer-security platform** that fosters collaboration and information sharing among cybersecurity experts, organizations, and researchers. Here are the key points about OTX:
+
+. **Community-Driven Intelligence**: OTX is an **open-source** initiative developed by **AlienVault (now part of AT&T Cybersecurity)**. It serves as a **centralized repository** where participants from **over 180,000 organizations** across **140 countries** share valuable threat information.
+
+. **Daily Threat Sharing**: Participants contribute and exchange **more than 19 million potential threats daily**. The platform covers a wide range of security-related topics, including viruses, malware, intrusion detection, and firewalls.
+
+. **Free to Use**: OTX is **freely accessible** to all users. Its goal is to democratize threat intelligence and empower organizations to enhance their cybersecurity defenses.
+
+. **Components and Features**:
+    - **Data Cleansing and Aggregation**: OTX's automated tools cleanse, aggregate, validate, and publish data shared by participants.
+    - **Anonymity**: Shared data is validated and stripped of identifying information to protect contributors' privacy.
+    - **Social Network**: OTX 2.0 introduced a social network feature, enabling members to discuss and research security threats in real time.
+    - **Threat Feeds**: Users can share IP addresses or websites associated with attacks and explore existing threat information.
+    - **Pulses**: OTX provides detailed threat analyses (called "Pulses") that include data on Indicators of Compromise (IoC), impact, and targeted software. These Pulses can be exported in various formats (STIX, JSON, OpenIOC, MAEC, CSV) and used to update local security products.
+    - **Community Interaction**: Users can up-vote and comment on specific Pulses, helping others identify critical threats.
+    - **Integration with Security Products**: OTX integrates with major security products, including firewalls and perimeter security hardware.
+    - **Automated Data Extraction**: The platform extracts relevant information from security reports in various formats (PDF, CSV, JSON).
+
+. **Private Communities**: In 2016, AlienVault enhanced OTX, allowing participants to create private communities and discussion groups. These groups facilitate in-depth discussions on specific threats, industries, and regions.
+
+In summary, OTX acts as the "neighborhood watch" for the global intelligence community, promoting greater security by openly sharing information about emerging threats, attack methods, and malicious actors¹²³.
+
+*Sources*
+
+. Open Threat Exchange - Wikipedia. https://en.wikipedia.org/wiki/Open_Threat_Exchange.
+. Open Threat Exchange (OTX): Enhancing Cybersecurity with ... - Medium. https://medium.com/@paritoshblogs/open-threat-exchange-otx-enhancing-cybersecurity-with-collaborative-threat-intelligence-33f1ae6dbcb9.
+. LevelBlue - Open Threat Exchange. https://otx.alienvault.com/.
 
 ==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
@@ -1064,8 +1100,8 @@ Frameworks provide guidelines on how to implement enterprise architecture.  Fram
 Some of the frameworks are:
 
 * TOGAF (covers all three, content, process, and organization)
-* Zachman (Purely covers content)
 * SABSA
+* Zachman (Purely covers content)
 * DODAF
 * MODAF
 
@@ -1085,6 +1121,8 @@ Following domains cut across the typical domains:
 *Architecture Activities* typically when you are performing any sort of change, you have to document the current state and future state.  This represents the strategic vision of the organization, where they want to be in 3-5 years time.
 
 Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.
+
+=== TOGAF
 
 === SABSA
 SABSA is a framework that supports the business in reaching its goals.  It is the leading methodology for developing business operational risk-based architectures.  SABSA stands for Sherwood Applied Business Security Architecture.
@@ -1126,22 +1164,18 @@ SABSA's governance model provide a control feedback loop
 . Implement
 . Management & Measure
 
+=== Zachman
+
+=== DODAF
+
+=== MODAF
+
 === Solution Architecture
 
 AWS Systems Manager == Microsoft SCCM
 AWS Network Firewall == Microsoft Azure Firewall
 
-==== AWS Security Reference Architecture
 
-https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
-
-https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
-
-image::AWSSRA.png[title="AWS Security Reference Architecure]
-
-==== AWS Security Services
-
-image::AWSSecurityServices.png[title="AWS Security Services"]
 
 
 
