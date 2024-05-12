@@ -511,6 +511,43 @@ image::AWSSecurityServices.png[title="AWS Security Services"]
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
 All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
 
+=== Incident Response
+
+**Cybersecurity incident response** refers to an organization's processes and technologies for detecting, analyzing, and responding to **cyberthreats**, **security breaches**, or **cyberattacks**. Let's explore the key aspects of an effective incident response approach:
+
+. **Incident Response Phases**:
+.. **Preparation**: Establish an **incident response plan (IRP)** that outlines how different types of cyberattacks should be identified, contained, and resolved. Identify key personnel, communication channels, and procedures.
+.. **Detection and Analysis**: Continuously monitor for security incidents. When an incident occurs, analyze its impact, scope, and severity. Understand the adversary's tactics and techniques.
+.. **Containment, Eradication, and Recovery**:
+... **Containment**: Isolate affected systems to prevent further damage.
+... **Eradication**: Remove the threat and address vulnerabilities.
+... **Recovery**: Restore affected systems, data, and services.
+.. **Post-Incident Activity**: Conduct a thorough review of the incident. Document lessons learned, update the IRP, and improve security controls.
+. **Security Incidents vs. Events**:
+    - A **security incident** (or security event) is any breach that threatens the confidentiality, integrity, or availability of an organization's information systems or sensitive data.
+    - Incidents can range from intentional cyberattacks by hackers to unintentional policy violations by authorized users.
+. **Common Security Incidents**:
+.. **Ransomware**: Malware that locks up data or devices until a ransom is paid.
+.. **Phishing and Social Engineering**: Manipulative messages that deceive recipients into sharing sensitive information or taking damaging actions.
+.. **DDoS Attacks**: Distributed Denial-of-Service attacks overwhelm systems with traffic.
+.. **Supply Chain Attacks**: Target vulnerabilities in third-party software or services.
+.. **Insider Threats**: Unauthorized actions by legitimate users.
+
+. **Benefits of Incident Response**:
+.. **Faster Detection and Containment**: A well-prepared incident response team can detect and contain threats promptly.
+.. **Reduced Impact**: Effective response minimizes business disruption, lost revenue, and regulatory fines.
+.. **Improved Resilience**: Organizations with tested IRPs recover faster from incidents.
+
+Remember that incident response is a continuous process. Regularly test and update your IRP to stay prepared and resilient against evolving cyber threats¹⁴⁵.
+
+*Sources*
+
+. A Strategic Response to Cyber Incidents in Health Care: Becoming Prepared and Resilient. https://www.beckershospitalreview.com/cybersecurity/a-strategic-response-to-cyber-incidents-in-health-care-becoming-prepared-and-resilient.html.
+. What is Incident Response? | IBM. https://www.ibm.com/topics/incident-response.
+. What is incident response? – CyberProof. https://www.cyberproof.com/cyber-101/incident-response/.
+. ITS Holding a Free Online Webinar on Incident Response. https://news.marketersmedia.com/its-holding-a-free-online-webinar-on-incident-response/89128847.
+. Armor Unveils a Disruptive Approach to Managed Detection and Response. https://finance.yahoo.com/news/armor-unveils-disruptive-approach-managed-150000081.html.
+. How to Create a Cybersecurity Incident Response Plan - Hyperproof. https://hyperproof.io/resource/cybersecurity-incident-response-plan/.
 
 <<<
 
