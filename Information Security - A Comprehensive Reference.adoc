@@ -1224,6 +1224,7 @@ Cost
 Getting compliant can get pricey and be time-consuming, but SOC 2 typically costs less because it doesn’t include an ISMS. Experts say the cost to become ISO 27001 compliant can be up to about 50% more than SOC 2.*
 
 <<<
+	
 == Security Architecture
 **Security architecture** refers to a **unified security design** that addresses the necessities and potential risks in a specific scenario or environment. It outlines **when and where to apply security controls**. This design process is generally reproducible². In essence, security architecture is the strategic alignment of systems, policies, and technologies to safeguard IT and business assets from cyber threats. It ensures that cybersecurity aligns with the unique business goals and risk management profile of an organization³⁴.
 
