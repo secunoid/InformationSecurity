@@ -1636,6 +1636,42 @@ image::TheThreeLinesOfDefenseModel.png[]
 
 image::RiskCentricGRC.png[]
 
+Certainly! Here are some **risk management frameworks** that organizations commonly use:
+
+1. **ISO 31000**:
+   - ISO 31000 is a widely recognized international standard for risk management. It provides principles, a framework, and a process for managing risk. Organizations of any size, activity, or sector can use ISO 31000 to enhance their risk management practices. However, it cannot be used for certification purposes¹.
+
+2. **Risk Management Framework (RMF)**:
+   - The RMF is a structured set of management goals and guidelines that define how an organization interacts with information security, privacy, and risk. It enables organizations to identify, assess, and analyze risk effectively. The RMF typically follows these steps:
+     - **Categorize**: Identify and categorize information systems based on their impact levels.
+     - **Select**: Select appropriate security controls.
+     - **Implement**: Implement the selected controls.
+     - **Assess**: Assess the effectiveness of the controls.
+     - **Authorize**: Obtain authorization to operate.
+     - **Monitor**: Continuously monitor and maintain the controls².
+
+3. **Industry-Specific Frameworks**:
+   - Various industries have their own risk management frameworks tailored to their unique needs. For example:
+     - **NIST SP 800-37**: Used by U.S. federal agencies.
+     - **COSO ERM Framework**: Focused on enterprise risk management.
+     - **FAIR (Factor Analysis of Information Risk)**: Quantitative risk assessment framework.
+     - **ITIL (Information Technology Infrastructure Library)**: Includes risk management practices for IT services.
+     - **COBIT (Control Objectives for Information and Related Technologies)**: Addresses IT governance and risk management⁴.
+
+4. **Internal Organizational Frameworks**:
+   - Many organizations develop their own customized risk management frameworks based on their specific needs, industry, and risk appetite.
+
+Remember that the choice of framework depends on the organization's context, industry, and risk tolerance. Each framework has its strengths and limitations, so organizations often tailor them to fit their unique requirements. 😊👍
+
+If you'd like more details about any specific framework or need further assistance, feel free to ask!¹²⁴
+
+Source: Conversation with Bing, 2024-05-12
+(1) ISO - ISO 31000 — Risk management. https://www.iso.org/iso-31000-risk-management.html/.
+(2) What Is A Risk Management Framework (RMF)? 2024 Guide - SelectHub. https://www.selecthub.com/risk-management/risk-management-framework/.
+(3) What are the different types of risk frameworks?. https://advancedsecurity.com/risk-management-framework-rmf/what-are-the-different-types-of-risk-frameworks/.
+(4) Risk Management Framework (RMF): Overview + Best Practices - Drata. https://drata.com/blog/risk-management-framework.
+(5) Risk Management Framework (RMF) Definition - Investopedia. https://www.investopedia.com/articles/professionals/021915/risk-management-framework-rmf-overview.asp.
+
 === Integrated Risk Management
 
 **Integrated Risk Management (IRM)** is an **organizationwide discipline** informed by certain attributes, including **strategy**, **assessment**, **response**, **communication**, and **reporting**, as well as **monitoring** and **technology**. IRM is underpinned by a framework of practices, processes, and enabling technologies that support a **risk-aware culture**, **improved decision making**, and **performance**. This discipline delivers an **integrated view** of how well an organization manages its unique set of risks¹. In other words, IRM ensures that risk considerations are embedded throughout an organization, linking technology spending directly to the value of the resource protected and the associated risks controlled by that technology². It involves integrating various risk management processes, such as operational, financial, and strategic risk management³. Overall, IRM aims to enhance decision-making and performance by providing a holistic perspective on risk management¹.
