@@ -1131,16 +1131,19 @@ SABSA's governance model provide a control feedback loop
 AWS Systems Manager == Microsoft SCCM
 AWS Network Firewall == Microsoft Azure Firewall
 
-==== AWS Security
+==== AWS Security Reference Architecture
 
 https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
 
+https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
+
 image::AWSSRA.png[title="AWS Security Reference Architecure]
 
+==== AWS Security Services
 
 image::AWSSecurityServices.png[title="AWS Security Services"]
 
-https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
+
 
 <<<
 == Information Security  Frameworks
@@ -1148,6 +1151,26 @@ https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS 
 === ISO2700x
 
 === NIST Cyber Security Framework(CSF)
+
+The **NIST Cybersecurity Framework (CSF) 2.0** is a comprehensive guidance document provided by the **National Institute of Standards and Technology (NIST)**. It serves as a valuable resource for **industry, government agencies, and other organizations** to **manage and reduce cybersecurity risks**. Here are the key points about CSF 2.0:
+
+1. **High-Level Cybersecurity Outcomes**: CSF 2.0 offers a **taxonomy of high-level cybersecurity outcomes** that can be applied by any organization, regardless of its size, sector, or maturity. These outcomes help organizations better understand, assess, prioritize, and communicate their cybersecurity efforts.
+
+2. **Adaptability and Flexibility**: Unlike a rigid set of rules, the CSF does not prescribe how outcomes should be achieved. Instead, it **links to online resources** that provide additional guidance on practices and controls. This adaptability allows organizations to tailor their approach based on their unique context and needs.
+
+3. **Risk Management Focus**: The CSF assists organizations in managing and reducing cybersecurity risks. It aligns with enterprise risk management principles and helps organizations address risk effectively.
+
+4. **Profiles and Tiers**: CSF 2.0 describes a **five-step process** for creating and using **Organizational Profiles**. These profiles compare an aspirational **Target Profile** to an assessed **Current Profile**, enabling organizations to identify gaps and develop action plans⁴.
+
+In summary, the NIST Cybersecurity Framework 2.0 provides a strategic framework for organizations to enhance their cybersecurity posture, regardless of their level of maturity or technical sophistication¹²³.
+
+Sources:
+
+(1) NIST Cybersecurity Framework 2.0. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957411.
+(2) The NIST Cybersecurity Framework (CSF) 2.0. https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final.
+(3) NIST Cybersecurity Framework 2.0: Resource & Overview Guide. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1299.pdf.
+(4) The NIST Cybersecurity Framework (CSF) 2. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.
+
 
 Key functions are
 
