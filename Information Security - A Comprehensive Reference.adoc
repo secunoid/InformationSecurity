@@ -1166,23 +1166,23 @@ In summary, the NIST Cybersecurity Framework 2.0 provides a strategic framework 
 
 Sources:
 
-(1) NIST Cybersecurity Framework 2.0. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957411.
-(2) The NIST Cybersecurity Framework (CSF) 2.0. https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final.
-(3) NIST Cybersecurity Framework 2.0: Resource & Overview Guide. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1299.pdf.
-(4) The NIST Cybersecurity Framework (CSF) 2. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.
+. NIST Cybersecurity Framework 2.0. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957411.
+. The NIST Cybersecurity Framework (CSF) 2.0. https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final.
+. NIST Cybersecurity Framework 2.0: Resource & Overview Guide. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1299.pdf.
+. The NIST Cybersecurity Framework (CSF) 2. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.
 
 
-Key functions are
+=== Key Functions
 
-Identify:: involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
+Identify:: Involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
 
-Protect:: is about deploying the required security controls (technologies and processes) to defend your digital assets, and then validating that these controls align to the risks you identified. For example, controls should be applied to set up defenses against exploit kits, as well as undisclosed zero-day and embargoed vulnerabilities, as identified by your threat intelligence platform. You also need to safeguard against the exploitation of high-risk vulnerabilities in your technology stack.
+Protect:: Is about deploying the required security controls (technologies and processes) to defend your digital assets, and then validating that these controls align to the risks you identified. For example, controls should be applied to set up defenses against exploit kits, as well as undisclosed zero-day and embargoed vulnerabilities, as identified by your threat intelligence platform. You also need to safeguard against the exploitation of high-risk vulnerabilities in your technology stack.
 
-Detect:: revolves around your ability to block attacks before they impact digital assets. Threat intelligence helps by enabling you to identify and research the evolution and trends of malware families with high risk to your organization. In addition to identifying the security patches to apply, you will also gain intelligence on which systems are most susceptible and which are being actively targeted and exploited.
+Detect:: Revolves around your ability to block attacks before they impact digital assets. Threat intelligence helps by enabling you to identify and research the evolution and trends of malware families with high risk to your organization. In addition to identifying the security patches to apply, you will also gain intelligence on which systems are most susceptible and which are being actively targeted and exploited.
 
-Respond:: refers to how fast your security team reacts to breaches; even the strongest security postures do not offer a 100% guarantee that cyberattacks will not succeed. Threat intelligence assists in the response process by evaluating the data exposure and the digital asset damage your organization is facing. This can then be reported to all affected parties and stakeholders — not only for remediation teams, but also for non-technical personnel who may need to prepare for the impact on day-to-day operations and the potential impact on vendors, clients, and perhaps even the overall market in which you operate.
+Respond:: Refers to how fast your security team reacts to breaches; even the strongest security postures do not offer a 100% guarantee that cyberattacks will not succeed. Threat intelligence assists in the response process by evaluating the data exposure and the digital asset damage your organization is facing. This can then be reported to all affected parties and stakeholders — not only for remediation teams, but also for non-technical personnel who may need to prepare for the impact on day-to-day operations and the potential impact on vendors, clients, and perhaps even the overall market in which you operate.
 
-Recover:: is all about how quickly the damage inflicted upon the organization’s technology stack and surrounding ecosystem can be mitigated, including any and all operations that must be restored as the security incidents are being closed out. Threat intelligence helps pinpoint the specific measures the security team should take in order to quarantine infected systems and inoculate the malicious elements coursing through the environment. The ultimate goal in the case of a breach, of course, is to quickly and safely restore the digital assets back to fully functioning systems with all security measures intact.
+Recover:: Is all about how quickly the damage inflicted upon the organization’s technology stack and surrounding ecosystem can be mitigated, including any and all operations that must be restored as the security incidents are being closed out. Threat intelligence helps pinpoint the specific measures the security team should take in order to quarantine infected systems and inoculate the malicious elements coursing through the environment. The ultimate goal in the case of a breach, of course, is to quickly and safely restore the digital assets back to fully functioning systems with all security measures intact.
 
 Top two are proactive measures, and bottom three are reactive measures.
 
