@@ -88,6 +88,38 @@ NIST devines "Availability" as Ensuring timely and reliable access to and use of
 
 
 <<<
+== Due Care & Due Deligence
+Understanding the nuances between **“due care”** and **“due diligence”** is essential for effective risk management, especially in the complex domain of **cybersecurity**. While both terms are pivotal in establishing a robust security posture for risk mitigation, they differ significantly in their application and focus.
+
+. **Due Care**:
+
+.. In everyday life, **due care** refers to the habitual actions, policies, and procedures we employ to maintain safety and avoid risks. It’s about doing the right thing consistently.
+.. In a **cybersecurity context**, **due care** translates to the ongoing efforts an organization makes to keep its data and systems secure. This includes:
+... Implementing and maintaining appropriate **security measures**.
+... Regularly updating software to **patch vulnerabilities**.
+... Ensuring that all employees are trained in **security best practices**.
+. **Due Diligence**:
+.. In a general sense, **due diligence** involves taking the necessary steps to avoid harm in a specific situation. It’s about doing the necessary homework.
+.. In the realm of **cybersecurity**, particularly within a regulatory framework, **due diligence** refers to the comprehensive process an organization undertakes to understand and manage the cyber risks associated with **third-party partners**, **vendors**, and **acquisitions**. This means:
+... Thoroughly assessing the **security posture** of these external entities.
+... Continuously monitoring their **compliance**.
+... Ensuring they align with the organization’s **cybersecurity standards**.
+. **Why Both Are Crucial**:
+.. **Due care** and **due diligence** in cybersecurity are about **proactive** and **reactive** measures:
+... **Due care** focuses on **preventing security incidents** through ongoing maintenance and good practices.
+... **Due diligence** is about the **investigative actions** taken to ensure external parties do not introduce new risks into the organization.
+
+In summary, both concepts are not only crucial in everyday risk management but become even more critical in a regulatory and compliance environment where the stakes are higher. Integrating these principles into your organization’s cybersecurity practices enhances your defensive posture and ensures compliance in an ever-evolving threat environment¹².
+
+*Sources*
+
+. Due Care vs Due Diligence: What Is the Difference?. https://reciprocity.com/blog/due-care-vs-due-diligence-what-is-the-difference/.
+. What's the Difference? Due Diligence vs Due Care in Cybersecurity .... https://cyberinsight.co/what-is-due-diligence-vs-due-care-in-cyber-security/.
+. Cybersecurity – Due Diligence and Due Care. What are they?. https://northstarr-ltd.com/cybersecurity-due-diligence-and-due-care-what-are-they/.
+. An Overview of Due Diligence and Due Care in Cyber Security. https://library.mosse-institute.com/articles/2022/07/an-overview-of-due-diligence-and-due-care-in-cyber-security/an-overview-of-due-diligence-and-due-care-in-cyber-security.html.
+
+
+<<<
 == Privacy
 Centralization has very damaging impacts to a users privacy.  Once the user has provided their information to an entity, they are at entities' mercy for data protection.
 
