@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.23.11.13.01
+v1.24.05.12.01
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -363,18 +363,24 @@ image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
 ==== Reporting to CIO
 image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
 
-==== Reporting to CtO
+==== Reporting to CTO
 image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
 
-==== Security Operations
-A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
-All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
+==== Security Strategy
 
 ==== Security Architecture
 
 ==== Security Development
 
-==== Security Strategy
+==== Security Operations
+A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
+All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
+
+
+
+
+
+
 
 
 <<<
@@ -1219,7 +1225,23 @@ Getting compliant can get pricey and be time-consuming, but SOC 2 typically cost
 
 <<<
 == Security Architecture
+**Security architecture** refers to a **unified security design** that addresses the necessities and potential risks in a specific scenario or environment. It outlines **when and where to apply security controls**. This design process is generally reproducible². In essence, security architecture is the strategic alignment of systems, policies, and technologies to safeguard IT and business assets from cyber threats. It ensures that cybersecurity aligns with the unique business goals and risk management profile of an organization³⁴.
 
+At its core, security architecture involves:
+
+1. **Physical and Logical Representations**: It encompasses a set of physical and logical security-relevant representations (views) of system architecture. These convey how the system is partitioned into **security domains** and utilize security-relevant elements to enforce security policies within and between these domains based on data protection requirements¹.
+
+2. **Alignment with Business Goals**: A well-designed security architecture aligns with the organization's mission and strategic plans. It describes the structure and behavior of security processes, information security systems, personnel, and organizational sub-units³.
+
+3. **Executable Security Requirements**: By translating business requirements into executable security requirements, security architecture ensures that the organization remains resilient against cyber threats⁴.
+
+Remember, security architecture is not a one-size-fits-all solution; it adapts to the unique context and needs of each organization.
+
+Sources
+(1) What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
+(2) What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
+(3) Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
+(4) security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
 === Network Architecture
 
 === Application Architecture
