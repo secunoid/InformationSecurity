@@ -1668,7 +1668,7 @@ image::TheThreeLinesOfDefenseModel.png[]
 
 image::RiskCentricGRC.png[]
 
-Certainly! Here are some **risk management frameworks** that organizations commonly use:
+Here are some **risk management frameworks** that organizations commonly use:
 
 1. **ISO 31000**:
    - ISO 31000 is a widely recognized international standard for risk management. It provides principles, a framework, and a process for managing risk. Organizations of any size, activity, or sector can use ISO 31000 to enhance their risk management practices. However, it cannot be used for certification purposes¹.
@@ -1695,14 +1695,15 @@ Certainly! Here are some **risk management frameworks** that organizations commo
 
 Remember that the choice of framework depends on the organization's context, industry, and risk tolerance. Each framework has its strengths and limitations, so organizations often tailor them to fit their unique requirements. 😊👍
 
-If you'd like more details about any specific framework or need further assistance, feel free to ask!¹²⁴
+If you'd like more details about any specific framework or need further assistance, feel free to check!¹²⁴
 
-Source: Conversation with Bing, 2024-05-12
-(1) ISO - ISO 31000 — Risk management. https://www.iso.org/iso-31000-risk-management.html/.
-(2) What Is A Risk Management Framework (RMF)? 2024 Guide - SelectHub. https://www.selecthub.com/risk-management/risk-management-framework/.
-(3) What are the different types of risk frameworks?. https://advancedsecurity.com/risk-management-framework-rmf/what-are-the-different-types-of-risk-frameworks/.
-(4) Risk Management Framework (RMF): Overview + Best Practices - Drata. https://drata.com/blog/risk-management-framework.
-(5) Risk Management Framework (RMF) Definition - Investopedia. https://www.investopedia.com/articles/professionals/021915/risk-management-framework-rmf-overview.asp.
+*Sources*
+
+. ISO - ISO 31000 — Risk management. https://www.iso.org/iso-31000-risk-management.html/.
+. What Is A Risk Management Framework (RMF)? 2024 Guide - SelectHub. https://www.selecthub.com/risk-management/risk-management-framework/.
+. What are the different types of risk frameworks?. https://advancedsecurity.com/risk-management-framework-rmf/what-are-the-different-types-of-risk-frameworks/.
+. Risk Management Framework (RMF): Overview + Best Practices - Drata. https://drata.com/blog/risk-management-framework.
+. Risk Management Framework (RMF) Definition - Investopedia. https://www.investopedia.com/articles/professionals/021915/risk-management-framework-rmf-overview.asp.
 
 === Integrated Risk Management
 
