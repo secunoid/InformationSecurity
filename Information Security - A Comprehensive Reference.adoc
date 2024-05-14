@@ -1716,6 +1716,20 @@ If you'd like more details about any specific framework or need further assistan
 
 === Opertional Risk Management
 
+Operational risk management (ORM) is a systematic approach to identify, assess, and mitigate the risks associated with an organization's operations. It involves identifying potential risks, evaluating their likelihood and impact, and implementing controls to reduce or eliminate them. ORM aims to minimize losses and maximize opportunities, ensuring the organization can achieve its objectives.
+
+Key components of operational risk management include:
+
+1. Risk identification: Identifying potential operational risks through techniques like scenario analysis, root cause analysis, and risk assessments.
+2. Risk assessment: Evaluating the likelihood and impact of identified risks, using techniques like probability and impact matrices.
+3. Risk prioritization: Prioritizing risks based on their likelihood and impact, to focus on the most critical ones.
+4. Risk mitigation: Implementing controls and mitigation strategies to reduce the likelihood or impact of prioritized risks.
+5. Risk monitoring and review: Continuously monitoring and reviewing the risks and controls, to ensure their effectiveness and identify new risks.
+6. Risk reporting: Reporting operational risk information to stakeholders, including management and the board of directors.
+7. Risk governance: Establishing clear roles, responsibilities, and policies for operational risk management.
+
+Effective operational risk management can help organizations reduce losses, improve efficiency, and enhance their overall resilience.
+
 The top operational risks in banking include:
 	
 * Cybersecurity risks: Even as financial institutions ramp up their cybersecurity efforts, cyber risks, including ransomware and phishing, have become more frequent and more effective, posing a major risk to financial institutions. 
