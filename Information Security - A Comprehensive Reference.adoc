@@ -1706,13 +1706,33 @@ If you'd like more details about any specific framework or need further assistan
 
 === Integrated Risk Management
 
-**Integrated Risk Management (IRM)** is an **organizationwide discipline** informed by certain attributes, including **strategy**, **assessment**, **response**, **communication**, and **reporting**, as well as **monitoring** and **technology**. IRM is underpinned by a framework of practices, processes, and enabling technologies that support a **risk-aware culture**, **improved decision making**, and **performance**. This discipline delivers an **integrated view** of how well an organization manages its unique set of risks¹. In other words, IRM ensures that risk considerations are embedded throughout an organization, linking technology spending directly to the value of the resource protected and the associated risks controlled by that technology². It involves integrating various risk management processes, such as operational, financial, and strategic risk management³. Overall, IRM aims to enhance decision-making and performance by providing a holistic perspective on risk management¹.
+Integrated Risk Management (IRM) is a holistic approach to managing risks across an organization, combining multiple risk management disciplines into a single, coordinated framework. IRM considers all types of risks, including strategic, operational, financial, compliance, and reputational risks, and aims to identify, assess, mitigate, and monitor them in an integrated manner.
 
-*Sources*
+The key characteristics of IRM include:
 
-. Definition of Integrated Risk Management (IRM) - Gartner. https://www.gartner.com/en/information-technology/glossary/integrated-risk-management-irm.
-. What Is Integrated Risk Management? Definition & Implementation. https://www.esecurityplanet.com/threats/integrated-risk-management/.
-. What Is Integrated Risk Management - Risk Publishing. https://riskpublishing.com/what-is-integrated-risk-management/.
+1. Comprehensive: IRM considers all risks, across all business units and functions.
+2. Integrated: IRM combines different risk management disciplines, such as enterprise risk management, operational risk management, and compliance risk management.
+3. Holistic: IRM views risks in the context of the organization's overall strategy and objectives.
+4. Dynamic: IRM continuously monitors and updates risk assessments and mitigation strategies.
+5. Collaborative: IRM involves stakeholders across the organization, including risk managers, business leaders, and board members.
+
+IRM aims to:
+
+1. Identify and prioritize risks
+2. Assess risks in a consistent and systematic way
+3. Develop and implement effective risk mitigation strategies
+4. Monitor and review risks and controls
+5. Provide risk information to support strategic decision-making
+
+The benefits of IRM include:
+
+1. Improved risk oversight and governance
+2. Enhanced risk management efficiency
+3. Better alignment of risk management with business objectives
+4. Increased transparency and reporting
+5. Reduced risk of unexpected losses
+
+Overall, IRM enables organizations to manage risks in a more effective and efficient way, supporting long-term success and sustainability.
 
 === Opertional Risk Management
 
