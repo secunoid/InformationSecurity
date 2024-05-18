@@ -1,6 +1,6 @@
 = Information Security - A Comprehensive Reference
 Doc Writer <ssharif@secunoid.com>
-v1.23.06.18.01
+v1.24.05.12.013
 :numbered:
 :sectnum:
 :sectnumlevels: 5
@@ -23,9 +23,7 @@ v1.23.06.18.01
 https://www.linkedin.com/in/shahidsharif[Shahid Sharif]
 
 == Overview
-Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important to protect it.
-
-There exist approximately 4,294,967,296 (four billion two hundred ninety-four million nine hundred sixty-seven thousand to hundred ninety-six) IPv4 Addresses.  This pool is 32-bits in size.  Scanning these addresses is an embarrassingly parallel workload and ca be easily distributed over any number of systems.  The term embarrassingly parallel simply means that little or no effort is needed to seperate this problem into a number of parallel tasks.  Password cracking and 3d video rendering are also examples o this type of problem.
+Everything in this world is centered around information, knowledge, which translates into a generic term _data_.  This data can be about individuals, places, or things.  Regardless of who or what it is about it is important that it is protected.
 
 === Non-living Entities
 Data about non living entities when modified leads to mis-information and currently in the digital age our ability to provide the authenticity of that data is very difficult.  If the source is trustworthy, then we deem it authentic, currently there are no mechanisms to ensure that the data has not been modified in between from when the trustworthy source released and to the time it got to you.
@@ -34,6 +32,29 @@ Data about non living entities when modified leads to mis-information and curren
 Data about living entities, especially us humans is very valuable.  With the devices we carry, and use in our daily lives, we are constantly producing data, every hour, every second of our lives. 
 
 <<<
+== What is Data?
+
+In the cosmos of data, understanding its various facets is key to unlocking its power and securing it. Here's a snapshot of the essential terms that shape our data-driven narratives. 🌌
+
+🌊 **Data Lake**: An expansive reservoir of raw, unstructured data. It’s the starting point, rich with possibility, awaiting exploration. Think of it as the primordial soup from which all data-driven insights emerge.
+
+🛒 **Datamart**: A specialized 'boutique' within the larger 'market' of a Data Warehouse, focused on a specific business area. It’s where data gets personal, tailored to domain-specific queries.
+
+🕸️ **DATA mesh**: An approach where data is decentralized, empowering individual teams with ownership and control. This mesh network ensures that data's value is maximized through collective stewardship.
+
+🚀 **Data Pipelines**: The dynamic flow of data, moving and transforming from raw to ready. It’s the journey that prepares data for action, making it accessible and meaningful.
+
+🏛️ **Data Warehouse**: The structured archive where data is stored, organized, and ready for analysis. It’s the foundation that supports data-driven decision-making, a repository built for speed and scale.
+
+🔎 **Data Quality**: The lifeblood of reliable analytics. Accuracy, consistency, and completeness define the trustworthiness of the data. Without quality, there’s no clarity.
+
+👀 **Data Observability**: The window into the health of data systems. It’s about maintaining visibility to ensure reliability and performance, the behind-the-scenes hero ensuring everything runs smoothly.
+
+These terms aren't just jargon—they're the building blocks of a data-centric world, and understanding them is your first step toward mastery. 🛠️
+
+Data has to be protected in each of the above facets.  Section below delves deeper into which aspects of data must be protected at all times.
+
+<<<	
 == What is information security?
 The foundation of information security is based on three pillars also known as the *triad*
 
@@ -41,7 +62,7 @@ The foundation of information security is based on three pillars also known as t
 . Integrity
 . Availability
 
-== Why are they important?
+=== Why is the triad important?
 What is the the topic of discussion, *Information Security* , there two key words here *information* and *security*, viz a viz securing information.
 
 You have to condition yourself to always think about what protecting,  the *information*.  Once you get this concept the rest is easy.
@@ -56,14 +77,46 @@ Then think of how does this information move in the environment.  Information of
 
 The sections below will build upon them.
 
-=== Confidentiality
+==== Confidentiality
 NIST defines "Confidentiality" as Preserving authorized restrictions on information access and disclosure, including means for protecting personal privacy and proprietary information.
 
-=== Integrity
+==== Integrity
 NIST defines "Integrity" as Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity.
 
-=== Availability
+==== Availability
 NIST devines "Availability" as Ensuring timely and reliable access to and use of information.
+
+
+<<<
+== Due Care & Due Deligence
+Understanding the nuances between **“due care”** and **“due diligence”** is essential for effective risk management, especially in the complex domain of **cybersecurity**. While both terms are pivotal in establishing a robust security posture for risk mitigation, they differ significantly in their application and focus.
+
+. **Due Care**:
+
+.. In everyday life, **due care** refers to the habitual actions, policies, and procedures we employ to maintain safety and avoid risks. It’s about doing the right thing consistently.
+.. In a **cybersecurity context**, **due care** translates to the ongoing efforts an organization makes to keep its data and systems secure. This includes:
+... Implementing and maintaining appropriate **security measures**.
+... Regularly updating software to **patch vulnerabilities**.
+... Ensuring that all employees are trained in **security best practices**.
+. **Due Diligence**:
+.. In a general sense, **due diligence** involves taking the necessary steps to avoid harm in a specific situation. It’s about doing the necessary homework.
+.. In the realm of **cybersecurity**, particularly within a regulatory framework, **due diligence** refers to the comprehensive process an organization undertakes to understand and manage the cyber risks associated with **third-party partners**, **vendors**, and **acquisitions**. This means:
+... Thoroughly assessing the **security posture** of these external entities.
+... Continuously monitoring their **compliance**.
+... Ensuring they align with the organization’s **cybersecurity standards**.
+. **Why Both Are Crucial**:
+.. **Due care** and **due diligence** in cybersecurity are about **proactive** and **reactive** measures:
+... **Due care** focuses on **preventing security incidents** through ongoing maintenance and good practices.
+... **Due diligence** is about the **investigative actions** taken to ensure external parties do not introduce new risks into the organization.
+
+In summary, both concepts are not only crucial in everyday risk management but become even more critical in a regulatory and compliance environment where the stakes are higher. Integrating these principles into your organization’s cybersecurity practices enhances your defensive posture and ensures compliance in an ever-evolving threat environment¹².
+
+*Sources*
+
+. Due Care vs Due Diligence: What Is the Difference?. https://reciprocity.com/blog/due-care-vs-due-diligence-what-is-the-difference/.
+. What's the Difference? Due Diligence vs Due Care in Cybersecurity .... https://cyberinsight.co/what-is-due-diligence-vs-due-care-in-cyber-security/.
+. Cybersecurity – Due Diligence and Due Care. What are they?. https://northstarr-ltd.com/cybersecurity-due-diligence-and-due-care-what-are-they/.
+. An Overview of Due Diligence and Due Care in Cyber Security. https://library.mosse-institute.com/articles/2022/07/an-overview-of-due-diligence-and-due-care-in-cyber-security/an-overview-of-due-diligence-and-due-care-in-cyber-security.html.
 
 
 <<<
@@ -180,6 +233,41 @@ Enter Information Security, which at the most fundamental level is the basis for
 This book will cover the various aspects of implementing an Information Security Program at an organization of any size. You don't have to be a huge organization to have an information security program.  If you are in business you are collecting, storing, and transmitting all kinds of information and it important that you know how to ensure that information is protected at all times.  If it is not then maybe your business might be at risk.
 
 <<<
+== Organizational Structure
+You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
+
+
+<<<	
+=== Security Organization
+For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
+
+* Centralized
+* Distributed
+
+In centralized operational model, all aspects of security operations are within the security organization, such as:
+
+* User provisioning/de-provisioning
+* Security Information & Event Management (SIEM)
+* Security Operations Center
+* Incident Response
+* Firewall & Network Operations
+
+In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
+
+==== Reporting to CEO (Ideal)
+image::CyberSecurityOrganization-27Dec2018-v03-Ideal.png[]
+
+==== Reporting to CFO
+image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
+
+==== Reporting to CIO
+image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
+
+==== Reporting to CTO
+image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
+
+
+<<<	
 == Information Security Program
 
 image::InformationSecurityProgram.png[]
@@ -309,52 +397,189 @@ Web site content is located on a non-system NTFS volume.
 <<<
 === Security Guidelines
 
+=== Security Strategy
+
+=== Security Roadmap
+Roadmap is the *how* the security strategy will be implemented.  The roadmap would become the Cyber Security Program which will contain multiple projrects over multiple years to realize the *security strategy*
+
+=== Security Architecture
+
+**Security architecture** refers to a **unified security design** that addresses the necessities and potential risks in a specific scenario or environment. It outlines **when and where to apply security controls**. This design process is generally reproducible². In essence, security architecture is the strategic alignment of systems, policies, and technologies to safeguard IT and business assets from cyber threats. It ensures that cybersecurity aligns with the unique business goals and risk management profile of an organization³⁴.
+
+At its core, security architecture involves:
+
+1. **Physical and Logical Representations**: It encompasses a set of physical and logical security-relevant representations (views) of system architecture. These convey how the system is partitioned into **security domains** and utilize security-relevant elements to enforce security policies within and between these domains based on data protection requirements¹.
+
+2. **Alignment with Business Goals**: A well-designed security architecture aligns with the organization's mission and strategic plans. It describes the structure and behavior of security processes, information security systems, personnel, and organizational sub-units³.
+
+3. **Executable Security Requirements**: By translating business requirements into executable security requirements, security architecture ensures that the organization remains resilient against cyber threats⁴.
+
+Remember, security architecture is not a one-size-fits-all solution; it adapts to the unique context and needs of each organization.
+
+*Sources*
+
+. What is Security Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/72/security-architecture.
+. What Is Security Architecture? - Palo Alto Networks. https://www.paloaltonetworks.com/cyberpedia/what-is-security-architecture.
+. Security Architecture: What it is, Benefits and Frameworks. https://www.threatintelligence.com/blog/security-architecture.
+. security architecture - Glossary | CSRC. https://csrc.nist.gov/glossary/term/security_architecture.
+
+==== Network Architecture
+**Network architecture** refers to the **way network devices and services** are **structured** to serve the **connectivity needs** of client devices. Let's break it down:
+
+. **Components of Network Architecture**:
+    - **Network Devices**: These include **switches** and **routers** that facilitate data flow.
+    - **Services**: Examples include **DHCP** (Dynamic Host Configuration Protocol) for IP address assignment and **DNS** (Domain Name System) for translating domain names to IP addresses.
+    - **Client Devices**: These comprise **end-user devices** (like laptops, tablets, and smartphones), **servers**, and **smart things** (such as IoT devices).
+
+. **Types of Enterprise Networks**:
+    - **Access Networks**: Designed for campuses and branches, they bring users and devices onboard (e.g., connecting employees within an office building).
+    - **Data Center Networks**: Connect servers hosting data and applications, making them available to users.
+    - **Wide-Area Networks (WANs)**: Link users to applications, even over long distances (e.g., connecting hospital workers to health applications).
+
+. **Security Considerations**:
+    - Different networks face **unique security threats** that they need to guard against.
+    - **Network architectures** must adapt to serve the exacting needs brought on by technology advancements and digital transformation initiatives.
+
+. **Modern Approaches**:
+    - **Intent-Based Networking (IBN)**: Sets up the network based on desired outcomes, automates operations, analyzes performance, enhances security, and integrates with business processes.
+    - **Controller-Led Networks**: Controllers simplify operations, automate configurations, and monitor devices continuously.
+
+In summary, network architecture ensures efficient connectivity, security, and adaptability in the digital age¹.
+
+*Sources*
+
+. What Is Network Architecture? - Cisco. https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-network-architecture.html.
+. Network architecture - Wikipedia. https://en.wikipedia.org/wiki/Network_architecture.
+. What is Network Architecture? - Definition from Techopedia. https://www.techopedia.com/definition/8549/network-architecture.
+
+==== Application Architecture
+
+**Application architecture** refers to the **patterns and techniques** used in designing and building an application. It provides a roadmap and best practices to ensure that the resulting application is well-structured and meets its intended goals¹.
+
+Here are some key points about application architecture:
+
+. **Design Patterns and Techniques**:
+    - **Patterns**: These are repeatable solutions to common problems. They help address specific challenges during application development.
+    - **Techniques**: Techniques describe how to implement patterns effectively. They guide decisions related to components, data flow, and interactions.
+
+. **Front-End and Back-End Services**:
+    - **Front-End Development**: Focuses on the **user experience** of the application. It deals with user interfaces, responsiveness, and interactions.
+    - **Back-End Development**: Concerned with providing access to data, services, and existing systems that make the application work. It handles business logic, databases, and APIs.
+
+. **Programming Languages**:
+    - Choosing a programming language is an essential step. Popular languages include:
+        - **JavaScript**: Widely used for web application development.
+        - **Python**, **Ruby**, **Java**, **Swift**, and others: Each has its strengths and use cases.
+
+. **Monolith vs. Microservices**:
+    - **Monolith**: Historically, applications were written as a single unit of code (monolith). All components shared the same resources and memory space.
+    - **Modern Architecture**: Applications are now more **loosely coupled**, using **microservices** and APIs. Microservices allow modular development and scalability.
+
+. **Cloud-Native Development**:
+    - Cloud-native development accelerates building and optimizing applications across private, public, and hybrid clouds.
+    - It leverages microservices, containers, and automation for consistent management.
+
+. **Choosing an Architecture**:
+    - Start by determining your **strategic goals**.
+    - Design an architecture that aligns with your objectives rather than fitting an application into a predefined structure.
+
+In summary, application architecture provides guidance for creating well-structured, efficient, and adaptable applications that meet business needs¹.
+
+*Sources*
+
+. What is an application architecture? - Red Hat. https://www.redhat.com/en/topics/cloud-native-apps/what-is-an-application-architecture.
+. Applications architecture - Wikipedia. https://en.wikipedia.org/wiki/Applications_architecture.
+
+==== System Architecture
+
+**System architecture** refers to the **conceptual model** that defines the structure, behavior, and different perspectives of a system. Let's explore it in more detail:
+
+. **Definition**:
+    - A **system architecture** provides a **formal description and representation** of a system.
+    - It organizes the system's components and sub-systems, ensuring they work together cohesively.
+
+. **Key Aspects**:
+    - **Structure**: System architecture defines the **fundamental organization** of a system. This includes the arrangement of components, their relationships, and their interactions with the environment.
+    - **Behavior**: It describes how the system behaves, including its functionality, data flow, and interactions.
+    - **Views**: System architecture provides different **perspectives** (views) of the system, such as functional, hardware, software, and human interaction views.
+
+. **Components of System Architecture**:
+    - **Hardware Components**: These include servers, network devices, storage, and other physical infrastructure.
+    - **Software Components**: These encompass applications, databases, middleware, and operating systems.
+    - **Documentation**: Descriptions, diagrams, and specifications that capture the system's design.
+    - **Human Interaction**: How users interact with the system, including interfaces and user experience.
+
+. **Purpose and Importance**:
+    - **Design Guidance**: System architecture guides the design process, ensuring that the system meets its intended goals.
+    - **Scalability and Adaptability**: A well-designed architecture allows for future growth and changes.
+    - **Communication**: It serves as a common language for stakeholders, developers, and engineers.
+
+In summary, system architecture is a critical aspect of designing robust, efficient, and reliable systems, whether they are software applications, hardware devices, or complex integrated solutions¹²³.
+
+Source: Conversation with Bing, 5/12/2024
+. Systems architecture - Wikipedia. https://en.wikipedia.org/wiki/Systems_architecture.
+. System Architecture Definition - SEBoK. https://sebokwiki.org/wiki/System_Architecture_Definition.
+. What is Systems Architecture? - reqi.io. https://reqi.io/articles/what-is-systems-architecture.
+. System Architecture - Detailed Explanation - InterviewBit. https://www.interviewbit.com/blog/system-architecture/.
+
+==== Cloud Architecture
+
+===== AWS Security Reference Architecture
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
+
+https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
+
+image::AWSSRA.png[title="AWS Security Reference Architecure]
+
+====== AWS Security Services
+
+image::AWSSecurityServices.png[title="AWS Security Services"]
 
 
-<<<
-== Organizational Structure
-You can have the best security organization, however, if you do not have security embedded in Project Delivery, Vendor Management, Change Management, and Operations then it becomes to enforce security.
+=== Security Development
 
-
-<<<	
-=== Security Organization
-For Security to be taken seriously a security organization is mandatory, while the non operational team would report to the CISO, the operational structure can be based on two models:
-
-* Centralized
-* Distributed
-
-In centralized operational model, all aspects of security operations are within the security organization, such as:
-
-* User provisioning/de-provisioning
-* Security Information & Event Management (SIEM)
-* Security Operations Center
-* Incident Response
-* Firewall & Network Operations
-
-In a decentralized operations model, the above aspects are managed by different business units with the security organization providing oversight in form of GRC.
-
-==== Reporting to CEO (Ideal)
-image::CyberSecurityOrganization-27Dec2018-v03-Ideal.png[]
-
-==== Reporting to CFO
-image::CyberSecurityOrganization-27Dec2018-v03-CFO.png[]
-
-==== Reporting to CIO
-image::CyberSecurityOrganization-27Dec2018-v03-CIO.png[]
-
-==== Reporting to CtO
-image::CyberSecurityOrganization-27Dec2018-v03-CTO.png[]
-
-==== Security Operations
+=== Security Operations
 A robust mechanism must be instituted to ensure all systems are baselined and any deviation from the baseline is reported to the SOC  for action.
 All critical components must be monitored at all times, and SIEM   leveraged to discover anomalies and ensure they are addressed in a timely fashion.
 
-==== Security Architecture
+=== Incident Response
 
-==== Security Development
+**Cybersecurity incident response** refers to an organization's processes and technologies for detecting, analyzing, and responding to **cyberthreats**, **security breaches**, or **cyberattacks**. Let's explore the key aspects of an effective incident response approach:
 
-==== Security Strategy
+. **Incident Response Phases**:
+.. **Preparation**: Establish an **incident response plan (IRP)** that outlines how different types of cyberattacks should be identified, contained, and resolved. Identify key personnel, communication channels, and procedures.
+.. **Detection and Analysis**: Continuously monitor for security incidents. When an incident occurs, analyze its impact, scope, and severity. Understand the adversary's tactics and techniques.
+.. **Containment, Eradication, and Recovery**:
+... **Containment**: Isolate affected systems to prevent further damage.
+... **Eradication**: Remove the threat and address vulnerabilities.
+... **Recovery**: Restore affected systems, data, and services.
+.. **Post-Incident Activity**: Conduct a thorough review of the incident. Document lessons learned, update the IRP, and improve security controls.
+. **Security Incidents vs. Events**:
+    - A **security incident** (or security event) is any breach that threatens the confidentiality, integrity, or availability of an organization's information systems or sensitive data.
+    - Incidents can range from intentional cyberattacks by hackers to unintentional policy violations by authorized users.
+. **Common Security Incidents**:
+.. **Ransomware**: Malware that locks up data or devices until a ransom is paid.
+.. **Phishing and Social Engineering**: Manipulative messages that deceive recipients into sharing sensitive information or taking damaging actions.
+.. **DDoS Attacks**: Distributed Denial-of-Service attacks overwhelm systems with traffic.
+.. **Supply Chain Attacks**: Target vulnerabilities in third-party software or services.
+.. **Insider Threats**: Unauthorized actions by legitimate users.
 
+. **Benefits of Incident Response**:
+.. **Faster Detection and Containment**: A well-prepared incident response team can detect and contain threats promptly.
+.. **Reduced Impact**: Effective response minimizes business disruption, lost revenue, and regulatory fines.
+.. **Improved Resilience**: Organizations with tested IRPs recover faster from incidents.
+
+Remember that incident response is a continuous process. Regularly test and update your IRP to stay prepared and resilient against evolving cyber threats¹⁴⁵.
+
+*Sources*
+
+. A Strategic Response to Cyber Incidents in Health Care: Becoming Prepared and Resilient. https://www.beckershospitalreview.com/cybersecurity/a-strategic-response-to-cyber-incidents-in-health-care-becoming-prepared-and-resilient.html.
+. What is Incident Response? | IBM. https://www.ibm.com/topics/incident-response.
+. What is incident response? – CyberProof. https://www.cyberproof.com/cyber-101/incident-response/.
+. ITS Holding a Free Online Webinar on Incident Response. https://news.marketersmedia.com/its-holding-a-free-online-webinar-on-incident-response/89128847.
+. Armor Unveils a Disruptive Approach to Managed Detection and Response. https://finance.yahoo.com/news/armor-unveils-disruptive-approach-managed-150000081.html.
+. How to Create a Cybersecurity Incident Response Plan - Hyperproof. https://hyperproof.io/resource/cybersecurity-incident-response-plan/.
 
 <<<
 
@@ -708,6 +933,48 @@ Blue team assessment is usually a test of the teams' ability to identify and def
 * Cooperate to improve/test detection
 * Vulnerability Scanning & Pen Testing
 
+==== Security Defense Modeling
+
+===== Cyber Kill Chain
+
+The **Cyber Kill Chain®** is a **security defense model** developed by **Lockheed Martin**. It aims to identify and stop sophisticated cyberattacks before they impact an organization. Let's explore its key aspects:
+
+. **Purpose and Origin**:
+    - The Cyber Kill Chain® was initially created by Lockheed Martin in 2011.
+    - Its purpose is to bolster an organization's defenses against **advanced persistent threats (APTs)**—sophisticated cyberattacks.
+    - The concept draws inspiration from military operations, where enemy attacks are broken down into stages, and preventive measures are implemented.
+
+. **Seven Stages of the Cyber Kill Chain®**:
+    - The Cyber Kill Chain® divides an attack into seven stages:
+        1. **Reconnaissance**: Gathering information about the target.
+        2. **Weaponization**: Creating or acquiring malware.
+        3. **Delivery**: Delivering malware to the victim (e.g., via email attachments).
+        4. **Exploitation**: Exploiting vulnerabilities to gain access.
+        5. **Installation**: Installing malware on the victim's system.
+        6. **Command and Control**: Establishing communication channels.
+        7. **Actions on Objectives**: Achieving the attack goals.
+
+. **Benefits and Caution**:
+    - By breaking down the attack process, the Cyber Kill Chain® allows security teams to recognize, intercept, or prevent attacks.
+    - When used correctly, it enhances incident management and response.
+    - However, if misapplied, it can put organizations at risk.
+    - Some shortcomings in the kill chain have led to questions about its future.
+
+. **Comparison with MITRE ATT&CK**:
+    - The Cyber Kill Chain® is often compared to the **MITRE ATT&CK framework**.
+    - While both illustrate phases of a cyberattack, MITRE ATT&CK provides a broader view of **adversary behaviors** and techniques.
+    - Unlike the specific grouping and linear structure of the kill chain, MITRE ATT&CK lists tactics without a particular order.
+
+In summary, the Cyber Kill Chain® helps organizations stay ahead of hackers by understanding and defending against attacks at every stage—from conceptualization to execution. While it's not a threat modeling framework per se, it plays a crucial role in cybersecurity strategy¹².
+
+*Sources*
+
+. Cyber Kill Chains Explained: Phases, Pros/Cons & Security Tactics. https://www.splunk.com/en_us/blog/learn/cyber-kill-chains.html.
+. What Is the Cyber Kill Chain? - Proofpoint. https://bing.com/search?q=is+cyber+kill-chain+a+threat+modeling+framework.
+. What Is the Cyber Kill Chain? Definition & Steps | Proofpoint AU. https://www.proofpoint.com/au/threat-reference/cyber-kill-chain.
+. What Is the Cyber Kill Chain? - Proofpoint. https://www.proofpoint.com/us/threat-reference/cyber-kill-chain.
+. What Is The Cyber Kill Chain? Process & Model. https://securityboulevard.com/2023/11/what-is-the-cyber-kill-chain-process-model/.
+
 ==== Methods
 social engineering, phishing, vishing or simply posing as a company employee.
 
@@ -717,6 +984,63 @@ Threat modeling is a process by which potential threats, such as structural vuln
 It is a structured approach that enables you to identify, quantify, and address the security risks associated with an application. Threat modeling is not an approach to reviewing code, but it does complement the security code review process.
 
 Some great information here  https://www.threatmodelingmanifesto.org/[Threat Modeling Manifesto]
+
+==== MITRE ATT&CK
+https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
+
+With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+
+Here are the key points about ATT&CK:
+
+. **Foundation for Threat Models**: MITRE ATT&CK serves as a foundation for developing specific threat models and methodologies in various sectors, including the private sector, government, and the cybersecurity industry. It helps organizations understand their security readiness and uncover vulnerabilities in their defenses¹².
+
+. **Adversarial Tactics and Techniques**: ATT&CK catalogs a comprehensive set of **adversarial tactics and techniques**. These include the methods, procedures, and approaches used by cybercriminals during different phases of an attack lifecycle.
+
+. **Open and Accessible**: MITRE ATT&CK is **open-source** and freely available to any person or organization. It encourages collaboration and knowledge sharing across the cybersecurity community.
+
+. **Matrix for Enterprise**: The ATT&CK matrix organizes tactics and techniques into categories such as **Reconnaissance**, **Execution**, **Privilege Escalation**, **Lateral Movement**, and more. Each technique provides detailed information on how adversaries operate and the platforms they target¹.
+
+In summary, MITRE ATT&CK empowers organizations to better understand and defend against cyber threats by providing a structured framework based on real-world observations of adversary behavior¹³⁴.
+
+*Sources*
+
+. MITRE ATT&CK®. https://attack.mitre.org/.
+. What Is MITRE ATT&CK - Definition | VMware Glossary. https://www.vmware.com/topics/glossary/content/mitre-attack.html.
+. What is the MITRE ATT&CK Framework? | IBM. https://www.ibm.com/topics/mitre-attack.
+. What Is the MITRE ATT&CK Framework? | Get the 101 Guide | Trellix. https://www.trellix.com/security-awareness/cybersecurity/what-is-mitre-attack-framework/.
+
+===== Relationship between Tactics & Techniques
+The relationship between **tactics** and **techniques** in the **MITRE ATT&CK framework**:
+
+. **Tactics**:
+    - **Tactics** represent the **highest-level objectives** of an attacker. They provide insight into **why** an adversary is performing specific actions.
+    - Each tactic corresponds to a strategic goal or intent. For example, an adversary might aim to achieve **credential access**, establish **persistence**, or perform **lateral movement**.
+    - Think of tactics as the **strategic phases** an attacker goes through during an attack lifecycle.
+
+. **Techniques**:
+    - **Techniques** represent **how** an adversary achieves their tactical goals. They describe the specific actions and methods used.
+    - Each technique corresponds to a specific way an adversary operates. For instance:
+        - **Initial Access Techniques**: These involve gaining the first foothold into a target environment (e.g., **drive-by compromise** or **spear phishing**).
+        - **Defense Evasion Techniques**: These focus on bypassing or evading security controls (e.g., using **fileless storage**).
+    - Techniques provide **granularity and specificity** when describing attacker behavior.
+
+. **Layered Structure**:
+    - The relationship between tactics and techniques can be visualized as a layered structure:
+        - An **initial tactic** is associated with one or more **techniques**.
+        - Each technique, in turn, comprises a set of **procedures** (specific actions taken by the adversary).
+
+. **TTP: Tactic, Technique, Procedure**:
+    - The layering from general tactics down to specific procedures gives rise to the concept of **TTP**:
+        - **Tactic**: The overarching objective.
+        - **Technique**: The method used to achieve the tactic.
+        - **Procedure**: The detailed steps within a technique.
+
+In summary, MITRE ATT&CK goes beyond describing attack stages; it models specific attacker actions, motivations, and the interplay between tactics and techniques. Understanding this relationship helps defenders better prepare and respond to cyber threats¹²³.
+
+*Sources*
+. What is the MITRE ATT&CK Framework? - An Easy Guide - SentinelOne. https://www.sentinelone.com/cybersecurity-101/mitre-attack-framework/.
+. What is the MITRE ATT&CK Framework? | IBM. https://www.ibm.com/topics/mitre-attack.
+. FAQ | MITRE ATT&CK®. https://attack.mitre.org/resources/faq/.
 
 ==== Threat Scoring and Databases
 
@@ -814,19 +1138,37 @@ This is the key methodology that every cyber security practictioner should be fa
 
 ==== Search Engines
 
-===== IoT
-
-
-
-==== Threat Exchanges
-
-
-==== MITRE ATT&CK
-https://attack.mitre.org/[MITRE ATT&CK™] is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
-
-With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge.
+==== IoT
 
 ==== Open Threat Exchange(OTX)
+
+**Open Threat Exchange (OTX)** is a **crowd-sourced computer-security platform** that fosters collaboration and information sharing among cybersecurity experts, organizations, and researchers. Here are the key points about OTX:
+
+. **Community-Driven Intelligence**: OTX is an **open-source** initiative developed by **AlienVault (now part of AT&T Cybersecurity)**. It serves as a **centralized repository** where participants from **over 180,000 organizations** across **140 countries** share valuable threat information.
+
+. **Daily Threat Sharing**: Participants contribute and exchange **more than 19 million potential threats daily**. The platform covers a wide range of security-related topics, including viruses, malware, intrusion detection, and firewalls.
+
+. **Free to Use**: OTX is **freely accessible** to all users. Its goal is to democratize threat intelligence and empower organizations to enhance their cybersecurity defenses.
+
+. **Components and Features**:
+    - **Data Cleansing and Aggregation**: OTX's automated tools cleanse, aggregate, validate, and publish data shared by participants.
+    - **Anonymity**: Shared data is validated and stripped of identifying information to protect contributors' privacy.
+    - **Social Network**: OTX 2.0 introduced a social network feature, enabling members to discuss and research security threats in real time.
+    - **Threat Feeds**: Users can share IP addresses or websites associated with attacks and explore existing threat information.
+    - **Pulses**: OTX provides detailed threat analyses (called "Pulses") that include data on Indicators of Compromise (IoC), impact, and targeted software. These Pulses can be exported in various formats (STIX, JSON, OpenIOC, MAEC, CSV) and used to update local security products.
+    - **Community Interaction**: Users can up-vote and comment on specific Pulses, helping others identify critical threats.
+    - **Integration with Security Products**: OTX integrates with major security products, including firewalls and perimeter security hardware.
+    - **Automated Data Extraction**: The platform extracts relevant information from security reports in various formats (PDF, CSV, JSON).
+
+. **Private Communities**: In 2016, AlienVault enhanced OTX, allowing participants to create private communities and discussion groups. These groups facilitate in-depth discussions on specific threats, industries, and regions.
+
+In summary, OTX acts as the "neighborhood watch" for the global intelligence community, promoting greater security by openly sharing information about emerging threats, attack methods, and malicious actors¹²³.
+
+*Sources*
+
+. Open Threat Exchange - Wikipedia. https://en.wikipedia.org/wiki/Open_Threat_Exchange.
+. Open Threat Exchange (OTX): Enhancing Cybersecurity with ... - Medium. https://medium.com/@paritoshblogs/open-threat-exchange-otx-enhancing-cybersecurity-with-collaborative-threat-intelligence-33f1ae6dbcb9.
+. LevelBlue - Open Threat Exchange. https://otx.alienvault.com/.
 
 ==== Palo Alto Unit42
 Unit 42 is the global threat intelligence team at Palo Alto Networks®
@@ -1021,8 +1363,8 @@ Frameworks provide guidelines on how to implement enterprise architecture.  Fram
 Some of the frameworks are:
 
 * TOGAF (covers all three, content, process, and organization)
-* Zachman (Purely covers content)
 * SABSA
+* Zachman (Purely covers content)
 * DODAF
 * MODAF
 
@@ -1042,6 +1384,8 @@ Following domains cut across the typical domains:
 *Architecture Activities* typically when you are performing any sort of change, you have to document the current state and future state.  This represents the strategic vision of the organization, where they want to be in 3-5 years time.
 
 Enterprise architecture is about overseeing these changes by defining various architecture principles and standards.  Architects then govern those changes to ensure that the standards and principles are being followed.
+
+=== TOGAF
 
 === SABSA
 SABSA is a framework that supports the business in reaching its goals.  It is the leading methodology for developing business operational risk-based architectures.  SABSA stands for Sherwood Applied Business Security Architecture.
@@ -1083,21 +1427,20 @@ SABSA's governance model provide a control feedback loop
 . Implement
 . Management & Measure
 
+=== Zachman
+
+=== DODAF
+
+=== MODAF
+
 === Solution Architecture
 
 AWS Systems Manager == Microsoft SCCM
 AWS Network Firewall == Microsoft Azure Firewall
 
-==== AWS Security
-
-https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html[The AWS Security Reference Architecture]
-
-image::AWSSRA.png[title="AWS Security Reference Architecure]
 
 
-image::AWSSecurityServices.png[title="AWS Security Services"]
 
-https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS Security Reference Architecture Examples Github Repository]
 
 <<<
 == Information Security  Frameworks
@@ -1106,17 +1449,37 @@ https://github.com/aws-samples/aws-security-reference-architecture-examples[AWS 
 
 === NIST Cyber Security Framework(CSF)
 
-Key functions are
+The **NIST Cybersecurity Framework (CSF) 2.0** is a comprehensive guidance document provided by the **National Institute of Standards and Technology (NIST)**. It serves as a valuable resource for **industry, government agencies, and other organizations** to **manage and reduce cybersecurity risks**. Here are the key points about CSF 2.0:
 
-Identify:: involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
+1. **High-Level Cybersecurity Outcomes**: CSF 2.0 offers a **taxonomy of high-level cybersecurity outcomes** that can be applied by any organization, regardless of its size, sector, or maturity. These outcomes help organizations better understand, assess, prioritize, and communicate their cybersecurity efforts.
 
-Protect:: is about deploying the required security controls (technologies and processes) to defend your digital assets, and then validating that these controls align to the risks you identified. For example, controls should be applied to set up defenses against exploit kits, as well as undisclosed zero-day and embargoed vulnerabilities, as identified by your threat intelligence platform. You also need to safeguard against the exploitation of high-risk vulnerabilities in your technology stack.
+2. **Adaptability and Flexibility**: Unlike a rigid set of rules, the CSF does not prescribe how outcomes should be achieved. Instead, it **links to online resources** that provide additional guidance on practices and controls. This adaptability allows organizations to tailor their approach based on their unique context and needs.
 
-Detect:: revolves around your ability to block attacks before they impact digital assets. Threat intelligence helps by enabling you to identify and research the evolution and trends of malware families with high risk to your organization. In addition to identifying the security patches to apply, you will also gain intelligence on which systems are most susceptible and which are being actively targeted and exploited.
+3. **Risk Management Focus**: The CSF assists organizations in managing and reducing cybersecurity risks. It aligns with enterprise risk management principles and helps organizations address risk effectively.
 
-Respond:: refers to how fast your security team reacts to breaches; even the strongest security postures do not offer a 100% guarantee that cyberattacks will not succeed. Threat intelligence assists in the response process by evaluating the data exposure and the digital asset damage your organization is facing. This can then be reported to all affected parties and stakeholders — not only for remediation teams, but also for non-technical personnel who may need to prepare for the impact on day-to-day operations and the potential impact on vendors, clients, and perhaps even the overall market in which you operate.
+4. **Profiles and Tiers**: CSF 2.0 describes a **five-step process** for creating and using **Organizational Profiles**. These profiles compare an aspirational **Target Profile** to an assessed **Current Profile**, enabling organizations to identify gaps and develop action plans⁴.
 
-Recover:: is all about how quickly the damage inflicted upon the organization’s technology stack and surrounding ecosystem can be mitigated, including any and all operations that must be restored as the security incidents are being closed out. Threat intelligence helps pinpoint the specific measures the security team should take in order to quarantine infected systems and inoculate the malicious elements coursing through the environment. The ultimate goal in the case of a breach, of course, is to quickly and safely restore the digital assets back to fully functioning systems with all security measures intact.
+In summary, the NIST Cybersecurity Framework 2.0 provides a strategic framework for organizations to enhance their cybersecurity posture, regardless of their level of maturity or technical sophistication¹²³.
+
+Sources:
+
+. NIST Cybersecurity Framework 2.0. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957411.
+. The NIST Cybersecurity Framework (CSF) 2.0. https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final.
+. NIST Cybersecurity Framework 2.0: Resource & Overview Guide. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1299.pdf.
+. The NIST Cybersecurity Framework (CSF) 2. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.
+
+
+=== Key Functions
+
+Identify:: Involves determining your IT risks and securing the necessary budget and resources to defend your digital resources. Your decisions should be based on the contextualized threat intelligence you collect. In addition to assessing internal IT risk, this goal should include analyzing the security competence of third-party vendors and any customers with which you exchange data. It’s critical to identify those that represent an elevated risk to your organization’s systems and data. It’s also important to bring in threat intelligence on the risks your competitors face because you likely face similar threats.
+
+Protect:: Is about deploying the required security controls (technologies and processes) to defend your digital assets, and then validating that these controls align to the risks you identified. For example, controls should be applied to set up defenses against exploit kits, as well as undisclosed zero-day and embargoed vulnerabilities, as identified by your threat intelligence platform. You also need to safeguard against the exploitation of high-risk vulnerabilities in your technology stack.
+
+Detect:: Revolves around your ability to block attacks before they impact digital assets. Threat intelligence helps by enabling you to identify and research the evolution and trends of malware families with high risk to your organization. In addition to identifying the security patches to apply, you will also gain intelligence on which systems are most susceptible and which are being actively targeted and exploited.
+
+Respond:: Refers to how fast your security team reacts to breaches; even the strongest security postures do not offer a 100% guarantee that cyberattacks will not succeed. Threat intelligence assists in the response process by evaluating the data exposure and the digital asset damage your organization is facing. This can then be reported to all affected parties and stakeholders — not only for remediation teams, but also for non-technical personnel who may need to prepare for the impact on day-to-day operations and the potential impact on vendors, clients, and perhaps even the overall market in which you operate.
+
+Recover:: Is all about how quickly the damage inflicted upon the organization’s technology stack and surrounding ecosystem can be mitigated, including any and all operations that must be restored as the security incidents are being closed out. Threat intelligence helps pinpoint the specific measures the security team should take in order to quarantine infected systems and inoculate the malicious elements coursing through the environment. The ultimate goal in the case of a breach, of course, is to quickly and safely restore the digital assets back to fully functioning systems with all security measures intact.
 
 Top two are proactive measures, and bottom three are reactive measures.
 
@@ -1197,13 +1560,8 @@ Cost
 Getting compliant can get pricey and be time-consuming, but SOC 2 typically costs less because it doesn’t include an ISMS. Experts say the cost to become ISO 27001 compliant can be up to about 50% more than SOC 2.*
 
 <<<
-== Security Architecture
 
-=== Network Architecture
 
-=== Application Architecture
-
-=== System Architecture
 
 <<<
 == Dev, Sec, Ops
@@ -1310,9 +1668,87 @@ image::TheThreeLinesOfDefenseModel.png[]
 
 image::RiskCentricGRC.png[]
 
+Here are some **risk management frameworks** that organizations commonly use:
+
+. **ISO 31000**:
+.. ISO 31000 is a widely recognized international standard for risk management. It provides principles, a framework, and a process for managing risk. Organizations of any size, activity, or sector can use ISO 31000 to enhance their risk management practices. However, it cannot be used for certification purposes¹.
+
+. **Risk Management Framework (RMF)**:
+.. The RMF is a structured set of management goals and guidelines that define how an organization interacts with information security, privacy, and risk. It enables organizations to identify, assess, and analyze risk effectively. The RMF typically follows these steps:
+... **Categorize**: Identify and categorize information systems based on their impact levels.
+... **Select**: Select appropriate security controls.
+... **Implement**: Implement the selected controls.
+... **Assess**: Assess the effectiveness of the controls.
+... **Authorize**: Obtain authorization to operate.
+... **Monitor**: Continuously monitor and maintain the controls².
+
+. **Industry-Specific Frameworks**:
+.. Various industries have their own risk management frameworks tailored to their unique needs. For example:
+... **NIST SP 800-37**: Used by U.S. federal agencies.
+... **COSO ERM Framework**: Focused on enterprise risk management.
+... **FAIR (Factor Analysis of Information Risk)**: Quantitative risk assessment framework.
+... **ITIL (Information Technology Infrastructure Library)**: Includes risk management practices for IT services.
+... **COBIT (Control Objectives for Information and Related Technologies)**: Addresses IT governance and risk management⁴.
+. **Internal Organizational Frameworks**:
+.. Many organizations develop their own customized risk management frameworks based on their specific needs, industry, and risk appetite.
+
+Remember that the choice of framework depends on the organization's context, industry, and risk tolerance. Each framework has its strengths and limitations, so organizations often tailor them to fit their unique requirements. 😊👍
+
+If you'd like more details about any specific framework or need further assistance, feel free to check!¹²⁴
+
+*Sources*
+
+. ISO - ISO 31000 — Risk management. https://www.iso.org/iso-31000-risk-management.html/.
+. What Is A Risk Management Framework (RMF)? 2024 Guide - SelectHub. https://www.selecthub.com/risk-management/risk-management-framework/.
+. What are the different types of risk frameworks?. https://advancedsecurity.com/risk-management-framework-rmf/what-are-the-different-types-of-risk-frameworks/.
+. Risk Management Framework (RMF): Overview + Best Practices - Drata. https://drata.com/blog/risk-management-framework.
+. Risk Management Framework (RMF) Definition - Investopedia. https://www.investopedia.com/articles/professionals/021915/risk-management-framework-rmf-overview.asp.
+
 === Integrated Risk Management
 
+Integrated Risk Management (IRM) is a holistic approach to managing risks across an organization, combining multiple risk management disciplines into a single, coordinated framework. IRM considers all types of risks, including strategic, operational, financial, compliance, and reputational risks, and aims to identify, assess, mitigate, and monitor them in an integrated manner.
+
+The key characteristics of IRM include:
+
+1. Comprehensive: IRM considers all risks, across all business units and functions.
+2. Integrated: IRM combines different risk management disciplines, such as enterprise risk management, operational risk management, and compliance risk management.
+3. Holistic: IRM views risks in the context of the organization's overall strategy and objectives.
+4. Dynamic: IRM continuously monitors and updates risk assessments and mitigation strategies.
+5. Collaborative: IRM involves stakeholders across the organization, including risk managers, business leaders, and board members.
+
+IRM aims to:
+
+1. Identify and prioritize risks
+2. Assess risks in a consistent and systematic way
+3. Develop and implement effective risk mitigation strategies
+4. Monitor and review risks and controls
+5. Provide risk information to support strategic decision-making
+
+The benefits of IRM include:
+
+1. Improved risk oversight and governance
+2. Enhanced risk management efficiency
+3. Better alignment of risk management with business objectives
+4. Increased transparency and reporting
+5. Reduced risk of unexpected losses
+
+Overall, IRM enables organizations to manage risks in a more effective and efficient way, supporting long-term success and sustainability.
+
 === Opertional Risk Management
+
+Operational risk management (ORM) is a systematic approach to identify, assess, and mitigate the risks associated with an organization's operations. It involves identifying potential risks, evaluating their likelihood and impact, and implementing controls to reduce or eliminate them. ORM aims to minimize losses and maximize opportunities, ensuring the organization can achieve its objectives.
+
+Key components of operational risk management include:
+
+1. Risk identification: Identifying potential operational risks through techniques like scenario analysis, root cause analysis, and risk assessments.
+2. Risk assessment: Evaluating the likelihood and impact of identified risks, using techniques like probability and impact matrices.
+3. Risk prioritization: Prioritizing risks based on their likelihood and impact, to focus on the most critical ones.
+4. Risk mitigation: Implementing controls and mitigation strategies to reduce the likelihood or impact of prioritized risks.
+5. Risk monitoring and review: Continuously monitoring and reviewing the risks and controls, to ensure their effectiveness and identify new risks.
+6. Risk reporting: Reporting operational risk information to stakeholders, including management and the board of directors.
+7. Risk governance: Establishing clear roles, responsibilities, and policies for operational risk management.
+
+Effective operational risk management can help organizations reduce losses, improve efficiency, and enhance their overall resilience.
 
 The top operational risks in banking include:
 	
