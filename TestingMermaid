@@ -1,0 +1,12 @@
+flowchart LR
+    A[Request for Firewall Change] --> B{Change Request Approval}
+    B -- Approved --> C[Risk Assessment]
+    C -- High Risk --> D[Security Review Board]
+    C -- Low/Medium Risk --> E[Change Implementation Plan]
+    D -- Approved --> E
+    E --> F[Firewall Configuration Changes]
+    F --> G[Testing and Validation]
+    G -- Successful --> H[Documentation Update]
+    G -- Failed --> I[Troubleshooting & Re-testing]
+    I --> G
+    H --> J[Change Closure]
