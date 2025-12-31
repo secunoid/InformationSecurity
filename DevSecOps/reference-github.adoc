@@ -1,0 +1,82 @@
+= Github Reference
+Shahid Sharif <smsharif@secunoid.com>
+v1.0, 9Oct2018
+:numbered:
+:sectnum:
+:chapter-label:
+:toc:
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: Github Reference
+:keywords: reference,github,programming
+:imagesdir: assets/images
+:homepage: https://www.secunoid.com
+
+== Notes
+Adding a new repository to github.com
+	1. On the github.com page, click on 
+	
+	2. Select "New Repository"
+	
+	3. Provide repository name in the provided field
+	
+	4. Click to create repository 
+	
+	5. Follow instructions on the page displayed on you local computer which has ssh access to github.
+
+
+
+Creating a new GIT repository
+	1. Git status
+	2. Git init
+	3. Git status
+	4. Git add .
+	5. Git commit -m "comment"
+	6. Git remote add origin <path from your new github repository>
+	7. Git push -u origin master
+	8. Git push heroku master
+
+Normal workflow after creating GIT repository
+	1. Git status
+	2. Git add .
+	3. Git commit -m "comment"
+	4. Git push
+	5. Git push heroku master
+
+
+Create a new Github repository:
+echo "# blockchainsecurity" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:secunoid/blockchainsecurity.git
+git push -u origin master
+
+
+
+
+
+== Level 1 Section Title
+The shop is closed on <<monday>> but it opens on <<saturday,Saturday>> every week.
+
+=== Level 2 Section Title
+
+==== Level 3 Section Title
+
+===== Level 4 Section Title
+
+====== Level 5 Section Title
+
+== References
+
+* link:https://powerman.name/doc/asciidoc[Ascii Doctor Cheatsheet]
+* link:https://asciidoctor.org/docs/user-manual/[Ascii Doctor User Manual]
+
+== Glossary
+[glossary]
+    [[monday]]monday::
+    First day of the week.
+
+    [[saturday]]saturday::
+    6th day of the week.

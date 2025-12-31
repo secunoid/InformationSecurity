@@ -1,0 +1,238 @@
+= Javascript 101
+Shahid Sharif <smsharif@secunoid.com>
+v1.0, 6Oct2018
+:numbered:
+:sectnum:
+:chapter-label:
+:toc:
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: My javascript notes 
+:keywords: asciidoctor, javascript
+:imagesdir: assets/images
+:stylesheet:
+:homepage: https://www.secunoid.com
+
+== Introduction
+My notes javascript training
+
+
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node is a runtime or environment. It is not a framework.
+
+== Variables
+. Variable names can start with uppercase alphabets a through z, $, and underscore(_) only. After the first character you can use numbers.
+. Variable names cannot be reserved.
+
+=== Declaring Variables
+. `Let` can be re-assigned
+. `Const` [red]#cannot# be re-asigned.
+. `Var` should be avoided as it has been depricated. When using `var` , JavaScript does not warn the user that the variable has been reassigned causing confusion. `Var` is function scoped, not block scoped.
+. Without `let` or `const` the variable can be re-assigned
+
+`let` and `const` helps us describe what a variable is supposed to do and makes the code more readable, it is a matter of semantics.
+
+== Arrays
+. arrayname.pop() to remove an item, if () has no value then the last item in the array is removed.
+. arrayname.push('some data') to add a new item to the bottom of the array
+. arrayname.shift() to remove an item from the top of the array
+. arrayname.unshift('some data') to add data to the top of the array
+. arrayname.splice(start, item number from start, 'some data')
+
+=== forEach
+Used to loop through the array top to bottom. arrayname.forEach(function (item, index) {})
+
+=== Callbacks
+Passing function into a function, is also called a callback.
+
+
+== Strings
+For strings you can use:
+. Single quotes `'`
+. Double quotes `"`
+. Backtick ```` 
+
+=== Template Strings
+For creating template string were you want to display the contents of a variable you can use it as such:
+
+[source,js,numbered]
+Console.log(`This the latest ${variableName}`}
+
+== Data Structures
+. String
+. Number
+.. Infinity
+.. NaN (Not a number)
+. Boolean
+.. true
+.. false
+. Structure
+
+== Type Conversions
+. ToString
+. ToNumber
+. 
+
+== Conditional Operators
+. if statement
+.. if 
+.. else
+.. elsif
+. Ternary: Allows us to implement logic in your code without an _if_ statement.
+[source,js,numbered]
+var a=5
+var b=2
+if (a<b) {
+result = '1';
+} else {
+result ="2";
+}
+
+becomes
+[source,js,numbered]
+var a=5
+var b=2
+var result = a< b ? "1" : "2"
+
+
+== Truthy & Falsy
+Truthy: Values that resolve to true in boolean context
+Falsy: Values that resolve to false in boolean context. Falsy values - false, 0, empty string, null, undefined, and NaN. Anything that is not in this list will be Truthy.
+
+== Type coercion
+There are three values you can coerce to, string, number, and boolean.
+[source,js,numbered]
+console.log('5'+5)                                              <1>
+console.log('5'-5)                                              <2>
+console.log('5' === 5)                                          <3>
+
+<1> Outputs 55 as there is a string operator, +,  where you concatenate two strings
+<2> Outputs 0 as there is no string operator, -, hence it becomes a number and a subtraction math operator is performed.
+<3> Always use , ====, as it matches exactly.  Never use , == .
+
+== typeof & throw
+Type checking that input is checked before it is used in a function.
+
+[source,js,numbered]
+const getTip = (amount) => {
+    if (typeof amount === 'number') {
+        return amount * 0.25
+    } else {
+        throw Error('Argument must be a number')
+    }
+}
+const result = getTip(2)
+console.log(result)
+
+== Try & catch
+Used to recover gracefully from errors.
+
+== Strict Mode
+
+
+== Functions
+Functions are little sub-programs that you can run over and over.
+There are three parts to a function, input, code, and output(also known as a return value). 
+
+[source,js,numbered]
+let hey = function() {                                              #<1>
+    console.log('Hello');
+}
+hey()                                                               #<2>
+
+<1> Use `function` keyword
+<2> Call the function
+
+=== Scopes
+. *Lexical scope* also known as static scope
+. *Global scope* defined outside of all the code blocks
+. *Local scope* defined inside a code block
+
+=== Types
+. *Undefined*: When you create a variable `let blah` and dont assign it a value as in `let blah='blah'` javascript will display an error message `undefined`. When we see `undefined`, it is a language default.
+. *Null*: When we see `null` it means the value was _explictly_ cleared by the developer.
+
+== Objects
+Objects are essential to development in javascript.  An object allows us to store related pieces of information in a single, central location.
+[source,js,numbered]
+let myBook = {
+    title: '1984',
+    author: 'George Orwell',
+    pageCount: 326
+}
+
+=== Methods
+A method is an object property whose value is a function.  There are:
+
+. Regular methods
+. link:https://developer.mozilla.org/bm/docs/Web/JavaScript/Reference/Global_Objects/String[String methods] 
+. link:https://developer.mozilla.org/bm/docs/Web/JavaScript/Reference/Global_Objects/Number[Number methods] 
+
+== When to use Arrow Functions
+image::WhenToUseArrowFunctions.png[title="When to use arrow functions"]
+
+== Object Oriented Programming
+
+
+== Prototypal Inheritance
+
+=== Primitives & Objects
+String, number, boolean, null, and undefined are all primitives, and all others are objects.
+
+Object: myObject --> Object.prototype --> null
+Array: myArray --> Array.prototype --> Object.prototype --> null
+Function: myFunc --> Function.prototype --> Object.prototype --> null
+String: myString --> String.prototype --> Object.prototype --> null
+Number: myNumber --> Number.prototype --> Object.prototype --> null
+Boolean: myBoolean --> Boolean.prototype --> Object.prototype --> null
+
+
+
+
+== Javascript Resources
+. https://github.com/getify/You-Dont-Know-JS 
+. https://developer.mozilla.org/bm/docs/Web/JavaScript
+
+
+== Node.js plugins
+. *Live-server* used to serve webpages on your local computer
+
+
+== Interview Questions
+
+http://www.lazyquestion.com/interview-questions-and-answer/nodejs?page=4 
+
+https://www.tutorialspoint.com/nodejs/pdf/nodejs_mock_test_ii.pdf
+
+https://www.tutorialspoint.com/nodejs/nodejs_mock_test.htm?min=51&max=75
+
+
+== Level 1 Section Title
+The shop is closed on <<monday>> but it opens on <<saturday,Saturday>> every week.
+
+=== Level 2 Section Title
+color
+[red]#Obvious# and [big red yellow-background]*very obvious*.
+[underline]#Underline text#, [overline]#overline text# and
+[blue line-through]*bold blue and line-through*.
+
+==== Level 3 Section Title
+
+===== Level 4 Section Title
+
+====== Level 5 Section Title
+
+== References
+
+* link:https://powerman.name/doc/asciidoc[Ascii Doctor Cheatsheet]
+* link:https://asciidoctor.org/docs/user-manual/[Ascii Doctor User Manual]
+
+* link:https://github.com/darshandsoni/asciidoctor-skins[Ascii Doctor Style Sheets]
+
+== Glossary
+[glossary]
+    [[monday]]monday::
+    First day of the week.
+
+    [[saturday]]saturday::
+    6th day of the week.

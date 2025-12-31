@@ -1,0 +1,326 @@
+= React 101
+Shahid Sharif <smsharif@secunoid.com>
+v1.0, 5Oct2018
+:numbered:
+:sectnum:
+:chapter-label:
+:toc:
+:docinfo:
+:docinfo1:
+:docinfo2:
+:description: My notes on react, react-router, and redux
+:keywords: asciidoctor, react, router, redux, javascript
+:imagesdir: assets/images
+:stylesheet:
+:homepage: https://www.secunoid.com
+
+== Introduction
+My notes on react, react router, and redux.
+
+== Rules
+. Golden rule: Always make only one component per file.
+. Inside a JSX ,whenever we reference a javascript variable we *must* wrap it with curly braces.
+. *Downwards data flow* means that only the most parent component in the application should be responsible for fetching data, be it from an API, FLUX framework , or REDUX.
+
+== React
+React is a javascript library that is used to produce HTML
+
+_React_ is used to create and maange components.
+
+== React-Dom
+_React Dom_ is used to interact with the DOM.
+
+[source, javascript]
+ReactDOM.render(<App />, document.querySelector('.container'))
+
+will disply on a following index.html (see the _container_ class in _body_ tags)
+
+[source, html]
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs"></script>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+  <script src="/bundle.js"></script>
+</html>
+
+== ES5, ES6, babel, and webpack
+ES6 is also knowns as ES2016
+
+ES6 class is an actual javascript object with properties and methods associated to it.
+
+Not a lot of browsers understand ES6, hence it needs to be converted to ES5.  Babel is a tool to do just that.
+
+Webpack packs all the react project files into a single file called bundle.js.
+
+== Components(Views)
+
+Components and View are same and can be used interchangeably
+
+When we write react code we are writing multiple components.
+
+Components are snippets of code that produce HTML.
+
+Component is a collection of javascript functions that produces HTML.
+
+Take this component's generated HTML and put it on the page (in the DOM).
+
+=== Class based components
+Class based components are used whenever we have a component that needs to be aware of state in some fashion, so your data is changing over time.  Such as reacting to user events and we need to keep track of some aspect of state from other.
+
+=== Functional based components
+Functional based components are used whenever we are taking in some information and spitting out some JSX.  also note that functional component can contain a class based component totally fine.
+
+=== Convert Functional Component to Class Component
+
+==== Functional Component
+[source,javascript,numbered]
+import React from 'react';
+const App = () => {
+ return (
+  <div>
+    <searchBar />
+  </div>
+ );
+}
+
+==== Class Component
+[source,javascript,numbered]
+import React, { Component } from 'react';       #<1> 
+class App extends Component {                   #<2>
+ return (
+  <div>
+    <searchBar />
+  </div>
+ );
+}
+
+<1> Added *{ Component }* to import 
+<2> Arrow function removed and replaced *const* with *class*
+
+== JSX
+
+JSX is a dialect of javascript , allows us to write what looks like HTML in javascript.
+
+. Create a new component
+. Take this components generated HTML and put in on the page.
+
+
+== Functions & Classes
+A function is a class that can have many instances
+
+*<XYZ></XYZ>* is same as *<XYZ />*
+
+=== ES6 class normalization
+
+This class below
+
+[source, javascript]
+Import React from 'react';
+class SearchBar extends React.Component {
+    render() {
+        return <input />;
+    }
+}
+export default SearchBar
+
+can be normalized to
+
+[source, javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input />;
+    }
+}
+export default SearchBar
+
+== Javascript Functional Component
+
+Following is an example of a Javascript Functional Component
+
+[source, javascript]
+const App = function() {
+    return <div>Hi!</div>
+}
+
+== Event Handlers 
+
+An event handler is a function that should run whenever the event occurs.
+
+We have to pass the event handler to the element that we want to monitor for events.
+
+=== Naming event handlers
+
+Highly recommended to name event handlers as such. In this event handler name `onInputChange`
+
+. Start with keyword *on* or *handle*
+. Then, the name of the element you are watching for the event `Input`
+. Then, the name of the event you are handling 'Change`
+
+=== Adding event handler
+
+Add event handler to this class below:
+
+[source, javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input />;
+    }
+}
+export default SearchBar
+
+. Define a new method in class above. The `event` object can be named anything, it is named `event` here.
+[source, Javascript]
+onInputChange(event) {
+    console.log(event.target.value);
+}
+
+. Add it to the element we want to monitor
+[source, Javascript]
+<input onchange={this.onInputChange} />
+
+Final code:
+[source, Javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input onchange={this.onInputChange} />;
+    }
+    onInputChange(event) {
+    console.log(event.target.value)
+    }
+}
+export default SearchBar
+
+Re-factor above code with an `arrow function`
+
+[source, Javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input onchange={(event) => console.log(event.target.value)} />;
+    }
+}
+export default SearchBar
+
+Which can further be normalized to:
+
+[source, Javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input onchange={event => console.log(event.target.value)} />;
+    }
+}
+export default SearchBar
+
+== State
+State is a plain javascript object that is used to record and react to user events.  Each class based component that we define has its own state object whenever a component state is changed the component immediately renders and also forces all of its children to be rendered as well.
+
+Before we use state inside a component we need to initialize the state object. We st the property state to a plain javascript object inside the class's constructor method.
+
+State is javascript object that exists on any component that is class based.  Each instance of a class based component has its wone copy of states.  We initialize the state by defining the constructor method and setting the state as the start state inside it.
+
+=== Constructor
+Adding constructor to this code
+[source, Javascript]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    render() {
+        return <input onchange={event => console.log(event.target.value)} />;
+    }
+}
+export default SearchBar
+
+looks like this:
+
+[source,javascript,numbered]
+Import React, { Component } from 'react';
+class SearchBar extends Component {
+    constructor(props) {                            #<1>
+    super(props);                                   #<2>
+    this.state = {term: ''};                        #<3>
+    }
+    render() {
+        return (
+        <div>
+            <input
+             value={this.state.term}
+             onChange={event => this.setState({term:event.target.value})} />;             #<4>
+            Value of the input: {this.state.term} 
+        </div>
+        );
+    }
+}
+export default SearchBar
+
+<1> The constructor function is the called automatically whenever a new instance of the class is created.  It is reserved for doing some setup inside of a class, like intializing variables and state.
+<2> Component has its own constructor function.  When we define a method tha tis already defined on the parent class which is component we can call that parent method on the parent class by calling `super`.
+<3> Whenever we use state, we initialize it by creating a new object in assigning it to this.state.  The object we pass will also contain properties we want to record on the state. Here we want to record the property term on state term.
+<4> Via `this.setState` we pass an object that contains the new state what we want to give our component. We passed an object that is term with the new value that is `event.target.value`  
+
+== Normalizing Code
+
+=== Example 1: React code to ES6
+
+[source, javascript]
+const App = function() {
+    return <div>Hi!</div>
+}
+
+Above react code is same as ES6 code below
+
+[source, javascript]
+const App = () => {
+    return <div>Hi!</div>
+}
+
+=== Example 2: 
+[source,javascript,numbered]
+YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {this.setState({ videos: data});
+
+Refactored to:
+[source,javascript,numbered]
+YTSearch({key: API_KEY, term: 'surfboards'}, (videos) =>{this.setState({ videos });                      #<1>
+
+<1> *function(data)* becomes *(data) =>* and object we are passing to this.setState has a key  of *videos* and value of *data*, can also make it videos.  When Key and value are same exact string.
+
+
+
+== Level 1 Section Title
+The shop is closed on <<monday>> but it opens on <<saturday,Saturday>> every week.
+
+=== Level 2 Section Title
+color
+[red]#Obvious# and [big red yellow-background]*very obvious*.
+[underline]#Underline text#, [overline]#overline text# and
+[blue line-through]*bold blue and line-through*.
+
+==== Level 3 Section Title
+
+===== Level 4 Section Title
+
+====== Level 5 Section Title
+
+== References
+
+* link:https://powerman.name/doc/asciidoc[Ascii Doctor Cheatsheet]
+* link:https://asciidoctor.org/docs/user-manual/[Ascii Doctor User Manual]
+
+* link:https://github.com/darshandsoni/asciidoctor-skins[Ascii Doctor Style Sheets]
+
+== Glossary
+[glossary]
+    [[monday]]monday::
+    First day of the week.
+
+    [[saturday]]saturday::
+    6th day of the week.
